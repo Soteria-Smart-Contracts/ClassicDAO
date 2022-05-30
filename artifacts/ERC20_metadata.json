@@ -9,6 +9,25 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "AddytoCheck",
+						"type": "address"
+					}
+				],
+				"name": "CheckMinter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "_MintTo",
 						"type": "address"
 					},
@@ -185,11 +204,11 @@
 	},
 	"sources": {
 		"CLDcrowdsale.sol": {
-			"keccak256": "0xab38fe74130cf4cc2f22496988b046587318c092ab57150356fe03a81b3d6c5d",
+			"keccak256": "0xe14ac93c26bf401343be1b3e88743825e46b263db97104d63183f9ad8131347a",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://57f068f0ca77f0ab09d7f3fae8283dd66c9a0bf0ab2eeeb3d6fb9d5fe3b5dcff",
-				"dweb:/ipfs/QmYHRdj7Y4Z7HhqWJy9Te659ffgBha1nez6xZWg4sSfZwj"
+				"bzz-raw://ab18180fd5c176227c15ab3c76b3775716db83f7b99f2936b23010917eef9690",
+				"dweb:/ipfs/QmY2XW2GVDYaVz7dBuhUjj9WGQe4XknBwGLTQxzZFktxWK"
 			]
 		}
 	},

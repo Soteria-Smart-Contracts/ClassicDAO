@@ -3,10 +3,9 @@ pragma solidity ^0.8.4;
 
 
 contract CLS_Crowdsale {
-    address payable CLS;
-    address payable wETC;
-    uint256 public CLS_Sale_Allocation;
-    uint256 public Total_wETC_Deposited; 
+    address payable CLD;
+    uint256 public CLD_Sale_Allocation;
+    uint256 public Total_ETC_Deposited; 
     uint256 public Allocation_Exchange_Rate = 0;
     uint256 public Total_CLS_Distributed;
     address public CrowdSale_Operator;
@@ -39,10 +38,9 @@ contract CLS_Crowdsale {
     
     
     //Crowdsale Contract constructor
-    constructor(uint256 Sale_Allocation, address payable _CLS, address payable _wETC){
-        CLS_Sale_Allocation = Sale_Allocation;
-        CLS = _CLS;
-        wETC = _wETC;
+    constructor(uint256 Sale_Allocation, address payable _CLD, address payable _wETC){
+        CLD_Sale_Allocation = Sale_Allocation;
+        CLD = _CLD;
         Crowdsale_Mode = Mode("Before sale preperation", 1);
         CrowdSale_Operator = msg.sender;
     }
@@ -66,13 +64,11 @@ contract CLS_Crowdsale {
     function DepositETC(uint256 amount) public returns(bool success){
         require(Crowdsale_Mode.Sale_Mode == 2);
         require(block.timestamp < Crowdsale_End_Unix);
-        require(amount >= 1000000000000000);
+        require(msg.value >= 1000000000000000);
         
-        ERC20(wETC).transferFrom(msg.sender, address(this), amount);
+        ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] + msg.value);
         
-        wETC_Deposited[msg.sender] = (wETC_Deposited[msg.sender] + amount);
-        
-        Total_wETC_Deposited = (Total_wETC_Deposited + amount);
+        Total_ETC_Deposited = (Total_wETC_Deposited + msg.value);
         emit wETCdeposited(msg.sender, amount);
         return(success);
     }
