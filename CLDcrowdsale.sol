@@ -160,7 +160,7 @@ contract CLS_Crowdsale {
         
         if (Multisig == true){
             (LiquidityAddress).transfer(LiquidityFunds);
-            (TreasuryFund).transfer((DevFunds * 160) / 100);));
+            (TreasuryFund).transfer((DevFunds * 160) / 1000);
             (Dev_1).transfer(((DevFunds * 620) / 1000));
             (Dev_2).transfer(((DevFunds * 45) / 1000));
         }
