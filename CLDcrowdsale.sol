@@ -3,6 +3,7 @@ pragma solidity ^0.8.4;
 
 //Make this contract accept ETH instead of WETH
 
+
 contract CLS_Crowdsale {
     address payable CLS;
     address payable wETC;
