@@ -58,7 +58,7 @@ contract CLS_Crowdsale {
     
     
     //Deposit Tracker
-    mapping(address => uint256) wETC_Deposited;
+    mapping(address => uint256) ETC_Deposited;
     
     
     //Buyer Functions
