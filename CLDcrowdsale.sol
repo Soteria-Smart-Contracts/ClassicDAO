@@ -7,7 +7,7 @@ contract CLS_Crowdsale {
     uint256 public CLD_Sale_Allocation;
     uint256 public Total_ETC_Deposited; 
     uint256 public Allocation_Exchange_Rate = 0;
-    uint256 public Total_CLS_Distributed;
+    uint256 public Total_CLD_Distributed;
     address public CrowdSale_Operator;
     uint256 public Crowdsale_End_Unix;
     
@@ -98,11 +98,11 @@ contract CLS_Crowdsale {
         
         uint256 CLStoMintandSend;
         CLStoMintandSend = (((ETC_Deposited[msg.sender] / 100000000) * Allocation_Exchange_Rate) / 100000000);
-        require((Total_CLS_Distributed + CLStoMintandSend) <= CLS_Sale_Allocation);
+        require((Total_CLD_Distributed + CLStoMintandSend) <= CLD_Sale_Allocation);
         
-        wETC_Deposited[msg.sender] = 0;
+        ETC_Deposited[msg.sender] = 0;
         
-        ERC20(CLS).Mint(msg.sender, CLStoMintandSend);
+        ERC20(CLD).Mint(msg.sender, CLStoMintandSend);
         
         Total_CLS_Distributed = (Total_CLS_Distributed + CLStoMintandSend);
         emit CLSwithdrawn(msg.sender, CLStoMintandSend);
