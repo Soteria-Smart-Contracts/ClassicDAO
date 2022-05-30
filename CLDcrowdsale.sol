@@ -48,8 +48,8 @@ contract CLS_Crowdsale {
     //Event Declarations
     event CrowdsaleStarted(address Operator, uint256 Crowdsale_Allocation, uint256 Unix_End);
     event CrowdsaleEnded(address Operator, uint256 wETCraised, uint256 BlockTimestamp);
-    event wETCdeposited(address Depositor, uint256 Amount);
-    event wETCwithdrawn(address Withdrawee, uint256 Amount);
+    event ETCdeposited(address Depositor, uint256 Amount);
+    event ETCwithdrawn(address Withdrawee, uint256 Amount);
     event CLSwithdrawn(address Withdrawee, uint256 Amount);
     event VariableChange(string Change);
     
@@ -68,36 +68,36 @@ contract CLS_Crowdsale {
         
         ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] + msg.value);
         
-        Total_ETC_Deposited = (Total_wETC_Deposited + msg.value);
-        emit wETCdeposited(msg.sender, amount);
+        Total_ETC_Deposited = (Total_ETC_Deposited + msg.value);
+        emit ETCdeposited(msg.sender, amount);
         return(success);
     }
     
     //There is a 5% fee for withdrawing deposited wETC
     function WithdrawETC(uint256 amount) public returns(bool success){
-        require(amount <= wETC_Deposited[msg.sender]);
+        require(amount <= ETC_Deposited[msg.sender]);
         require(Crowdsale_Mode.Sale_Mode != 3 && Crowdsale_Mode.Sale_Mode != 1);
         require(amount >= 1000000000000000);
         uint256 amount_wFee;
         amount_wFee = (amount * 95 / 100);
         
-        wETC_Deposited[msg.sender] = (wETC_Deposited[msg.sender] - amount);
+        ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] - amount);
         
-        ERC20(wETC).transfer(msg.sender, amount_wFee);
         
-        Total_wETC_Deposited = (Total_wETC_Deposited - amount_wFee);
-        emit wETCwithdrawn(msg.sender, amount);
+        
+        Total_ETC_Deposited = (Total_ETC_Deposited - amount_wFee);
+        emit ETCwithdrawn(msg.sender, amount);
         return(success);
     }
     
     function WithdrawCLS() public returns(uint256 _CLSwithdrawn){
         require(Crowdsale_Mode.Sale_Mode == 3);
         require(block.timestamp > Crowdsale_End_Unix);
-        require(wETC_Deposited[msg.sender] >= 1000000000000000);
+        require(ETC_Deposited[msg.sender] >= 1000000000000000);
         
         
         uint256 CLStoMintandSend;
-        CLStoMintandSend = (((wETC_Deposited[msg.sender] / 100000000) * Allocation_Exchange_Rate) / 100000000);
+        CLStoMintandSend = (((ETC_Deposited[msg.sender] / 100000000) * Allocation_Exchange_Rate) / 100000000);
         require((Total_CLS_Distributed + CLStoMintandSend) <= CLS_Sale_Allocation);
         
         wETC_Deposited[msg.sender] = 0;
