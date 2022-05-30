@@ -153,14 +153,14 @@ contract CLS_Crowdsale {
         Contract_ETC_Balance = (address(this).balance);
         
         uint256 LiquidityFunds;
-        LiquidityFunds = ((Contract_ETC_Balance * 80) / 100);
+        LiquidityFunds = ((Contract_ETC_Balance * 60) / 100);
         
         uint256 DevFunds;
         DevFunds = ((Contract_ETC_Balance * 20) / 100);
         
         if (Multisig == true){
             (LiquidityAddress).transfer(LiquidityFunds);
-            (LiquidityAddress).transfer(LiquidityFunds);
+            (TreasuryFund).transfer(DevFunds);
             (Dev_1).transfer(((DevFunds * 620) / 1000));
             (Dev_2).transfer(((DevFunds * 45) / 1000));
         }
