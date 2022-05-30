@@ -13,15 +13,15 @@ contract CLS_Crowdsale {
     
     //DEV WALLETS
     
-    address LiquidityAddress = 0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341; //This address will be used to add the 80% of crowdsale funds as liquidity for wETC-CLS
+    address payable LiquidityAddress = payable(0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341); //This address will be used to add the 80% of crowdsale funds as liquidity for wETC-CLS
     
-    address Dev_1 = 0x19b2a627Dd49587E021290b3eEF38ea8DE541eE5; //Personal Wallet of one of the developers (Wedergarten) 62%
-    address Dev_2 = 0xb24f9473Fee391c8FE0ED3fF423E135AaEC8023E; //Personal Wallet of one of the developers (Kosimoto) 4.5%
-    address Dev_3 = 0xF24f578ea9dFed642Cd41016F863a8cc839e4766; //Personal Wallet of one of the developers (Rephyx) 3%
-    address Dev_4 = 0x0000000000000000000000000000000000000000; //Personal Wallet of one of the developers (Autorotate) 6.5%
-    address Dev_5 = 0xCe02AC65DFAFAe00b7dB3a1410848aD6e621d3fB; //Personal Wallet of one of the developers (Arrow) 15%
-    address Dev_6 = 0xD73F080b9D12A51292fc22aBb27FE78A502de494; //Personal Wallet of one of the developers (Spicy) 4.5%
-    address Dev_7 = 0x258206BFa2FeD7D8786cE182B7fBe3c3c4976c7B; //Personal Wallet of one of the developers (Decentra) 4.5%
+    address payable Dev_1 = payable(0x19b2a627Dd49587E021290b3eEF38ea8DE541eE5); //Personal Wallet of one of the developers (Wedergarten) 62%
+    address payable Dev_2 = payable(0xb24f9473Fee391c8FE0ED3fF423E135AaEC8023E); //Personal Wallet of one of the developers (Kosimoto) 4.5%
+    address payable Dev_3 = payable(0xF24f578ea9dFed642Cd41016F863a8cc839e4766); //Personal Wallet of one of the developers (Rephyx) 3%
+    address payable Dev_4 = payable(0x0000000000000000000000000000000000000000); //Personal Wallet of one of the developers (Autorotate) 6.5%
+    address payable Dev_5 = payable(0xCe02AC65DFAFAe00b7dB3a1410848aD6e621d3fB); //Personal Wallet of one of the developers (Arrow) 15%
+    address payable Dev_6 = payable(0xD73F080b9D12A51292fc22aBb27FE78A502de494); //Personal Wallet of one of the developers (Spicy) 4.5%
+    address payable Dev_7 = payable(0x258206BFa2FeD7D8786cE182B7fBe3c3c4976c7B); //Personal Wallet of one of the developers (Decentra) 4.5%
     
     //Crowdsale Mode struct 
     struct Mode {
@@ -83,7 +83,7 @@ contract CLS_Crowdsale {
         
         ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] - amount);
         
-        (msg.sender).transfer(amount_wFee);
+        (payable(msg.sender)).transfer(amount_wFee);
         
         Total_ETC_Deposited = (Total_ETC_Deposited - amount_wFee);
         emit ETCwithdrawn(msg.sender, amount);
@@ -129,7 +129,7 @@ contract CLS_Crowdsale {
     
     function EndCrowdsale() public returns(bool success){
         require(msg.sender == CrowdSale_Operator);
-        require(ERC20(CLS).CheckMinter(address(this)) == 1);
+        require(ERC20(CLD).CheckMinter(address(this)) == 1);
         require(Crowdsale_Mode.Sale_Mode == 2);
         require(block.timestamp > Crowdsale_End_Unix);
         
@@ -152,24 +152,24 @@ contract CLS_Crowdsale {
         Multisig = MultiSignature();
         
         
-        uint256 Contract_wETC_Balance;
-        Contract_wETC_Balance = ERC20(wETC).balanceOf(address(this));
+        uint256 Contract_ETC_Balance;
+        Contract_ETC_Balance = (address(this).balance);
         
         uint256 LiquidityFunds;
-        LiquidityFunds = ((Contract_wETC_Balance * 80) / 100);
+        LiquidityFunds = ((Contract_ETC_Balance * 80) / 100);
         
         uint256 DevFunds;
-        DevFunds = ((Contract_wETC_Balance * 20) / 100);
+        DevFunds = ((Contract_ETC_Balance * 20) / 100);
         
         if (Multisig == true){
-            ERC20(wETC).transfer(LiquidityAddress, LiquidityFunds);
-            ERC20(wETC).transfer(Dev_1, ((DevFunds * 620) / 1000));
-            ERC20(wETC).transfer(Dev_2, ((DevFunds * 45) / 1000));
-            ERC20(wETC).transfer(Dev_3, ((DevFunds * 30) / 1000));
-            ERC20(wETC).transfer(Dev_4, ((DevFunds * 65) / 1000));
-            ERC20(wETC).transfer(Dev_5, ((DevFunds * 150) / 1000));
-            ERC20(wETC).transfer(Dev_6, ((DevFunds * 45) / 1000));
-            ERC20(wETC).transfer(Dev_7, ((DevFunds * 45) / 1000));
+            (LiquidityAddress).transfer(LiquidityFunds);
+            (Dev_1).transfer(((DevFunds * 620) / 1000));
+            (Dev_2).transfer(((DevFunds * 45) / 1000));
+            (Dev_3).transfer(((DevFunds * 30) / 1000));
+            (Dev_4).transfer(((DevFunds * 65) / 1000));
+            (Dev_5).transfer(((DevFunds * 150) / 1000));
+            (Dev_6).transfer(((DevFunds * 45) / 1000));
+            (Dev_7).transfer(((DevFunds * 45) / 1000));
         }
 
         return success;
