@@ -38,7 +38,7 @@ contract CLS_Crowdsale {
     
     
     //Crowdsale Contract constructor
-    constructor(uint256 Sale_Allocation, address payable _CLD, address payable _wETC){
+    constructor(uint256 Sale_Allocation, address payable _CLD){
         CLD_Sale_Allocation = Sale_Allocation;
         CLD = _CLD;
         Crowdsale_Mode = Mode("Before sale preperation", 1);
