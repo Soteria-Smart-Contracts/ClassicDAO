@@ -17,11 +17,7 @@ contract CLS_Crowdsale {
     
     address payable Dev_1 = payable(0x19b2a627Dd49587E021290b3eEF38ea8DE541eE5); //Personal Wallet of one of the developers (Wedergarten) 62%
     address payable Dev_2 = payable(0xb24f9473Fee391c8FE0ED3fF423E135AaEC8023E); //Personal Wallet of one of the developers (Kosimoto) 4.5%
-    address payable Dev_3 = payable(0xF24f578ea9dFed642Cd41016F863a8cc839e4766); //Personal Wallet of one of the developers (Rephyx) 3%
-    address payable Dev_4 = payable(0x0000000000000000000000000000000000000000); //Personal Wallet of one of the developers (Autorotate) 6.5%
-    address payable Dev_5 = payable(0xCe02AC65DFAFAe00b7dB3a1410848aD6e621d3fB); //Personal Wallet of one of the developers (Arrow) 15%
-    address payable Dev_6 = payable(0xD73F080b9D12A51292fc22aBb27FE78A502de494); //Personal Wallet of one of the developers (Spicy) 4.5%
-    address payable Dev_7 = payable(0x258206BFa2FeD7D8786cE182B7fBe3c3c4976c7B); //Personal Wallet of one of the developers (Decentra) 4.5%
+    address payable Dev_3 = payable(0); //Personal Wallet of one of the developers
     
     //Crowdsale Mode struct 
     struct Mode {
@@ -166,10 +162,6 @@ contract CLS_Crowdsale {
             (Dev_1).transfer(((DevFunds * 620) / 1000));
             (Dev_2).transfer(((DevFunds * 45) / 1000));
             (Dev_3).transfer(((DevFunds * 30) / 1000));
-            (Dev_4).transfer(((DevFunds * 65) / 1000));
-            (Dev_5).transfer(((DevFunds * 150) / 1000));
-            (Dev_6).transfer(((DevFunds * 45) / 1000));
-            (Dev_7).transfer(((DevFunds * 45) / 1000));
         }
 
         return success;
