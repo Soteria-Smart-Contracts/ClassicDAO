@@ -2,7 +2,7 @@
 pragma solidity ^0.8.4;
 
 
-contract CLS_Crowdsale {
+contract CLD_Crowdsale {
     address payable CLD;
     uint256 public CLD_Sale_Allocation;
     uint256 public Total_ETC_Deposited; 
