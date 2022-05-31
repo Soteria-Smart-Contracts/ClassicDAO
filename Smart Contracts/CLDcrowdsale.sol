@@ -156,7 +156,7 @@ contract CLD_Crowdsale {
         LiquidityFunds = ((Contract_ETC_Balance * 60) / 100);
         
         uint256 DevFunds;
-        DevFunds = ((Contract_ETC_Balance * 20) / 100);
+        DevFunds = ((Contract_ETC_Balance * 40) / 100);
         
         if (Multisig == true){
             (LiquidityAddress).transfer(LiquidityFunds);
