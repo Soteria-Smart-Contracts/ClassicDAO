@@ -68,7 +68,7 @@ contract CLD_Crowdsale {
         Total_ETC_Deposited = (Total_ETC_Deposited + msg.value);
         emit ETCdeposited(msg.sender, msg.value);
         return(success);
-    }
+    } 
     
     //There is a 5% fee for withdrawing deposited wETC
     function WithdrawETC(uint256 amount) public returns(bool success){
