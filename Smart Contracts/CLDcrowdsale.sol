@@ -124,7 +124,7 @@ contract CLD_Crowdsale {
         
     }
     
-    function EndCrowdsale() public returns(bool success){
+    function EndCrowdsale() public returns(bool success){   //TESTED - WORKS
         require(msg.sender == CrowdSale_Operator);
         require(ERC20(CLD).CheckMinter(address(this)) == 1);
         require(Crowdsale_Mode.Sale_Mode == 2);
@@ -141,7 +141,7 @@ contract CLD_Crowdsale {
         
     }
     //This function only works when the crowdsale is in the post-sale mode(3), or in the Emergency mode(99)
-    function PullETC() public returns(bool success){
+    function PullETC() public returns(bool success){ //TESTED - UNSURE IF WORKS
         require(Crowdsale_Mode.Sale_Mode == 3 || Crowdsale_Mode.Sale_Mode == 99);
         require(block.timestamp > Crowdsale_End_Unix);
         
