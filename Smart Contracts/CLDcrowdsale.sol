@@ -140,6 +140,7 @@ contract CLD_Crowdsale {
         return(success);
         
     }
+
     //This function only works when the crowdsale is in the post-sale mode(3), or in the Emergency mode(99)
     function PullETC() public returns(bool success){ //TESTED - UNSURE IF WORKS
         require(Crowdsale_Mode.Sale_Mode == 3 || Crowdsale_Mode.Sale_Mode == 99);
@@ -168,7 +169,7 @@ contract CLD_Crowdsale {
         return success;
     }
     
-    function Emergency_Mode_Activate() public returns(bool success){
+    function Emergency_Mode_Activate() public returns(bool success){ 
         bool Multisig;
         Multisig = MultiSignature();
         
