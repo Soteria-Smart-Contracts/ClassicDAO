@@ -1,10 +1,9 @@
-// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.4;
 
 
-contract ClassicDAO {
+contract ClassicSwap {
     uint256 public TokenCap;
-    uint256 public TotalSupply;
+    uint256 public totalSupply;
     string public name;
     string public symbol;
     uint8 public decimals;
@@ -25,12 +24,12 @@ contract ClassicDAO {
     
     mapping(address => uint)minter;
     
-    constructor(uint256 _TokenCap, string memory _name, string memory _symbol){
+    constructor(uint256 _TokenCap, string memory _name, string memory _symbol, uint8 _decimals){
     TokenCap = _TokenCap;
-    TotalSupply = 0;
+    totalSupply = 0;
     name = _name;
     symbol = _symbol;
-    decimals = 18;
+    decimals = _decimals;
     ownerAddy = msg.sender;
     //Deployment Constructors
     }
@@ -74,9 +73,9 @@ contract ClassicDAO {
 
     function Mint(address _MintTo, uint256 _MintAmount) public {
         require (minter[msg.sender] == 1);
-        require (TotalSupply+(_MintAmount) <= TokenCap);
+        require (totalSupply+(_MintAmount) <= TokenCap);
         balances[_MintTo] = balances[_MintTo]+(_MintAmount);
-        TotalSupply = TotalSupply+(_MintAmount);
+        totalSupply = totalSupply+(_MintAmount);
         ZeroAddress = 0x0000000000000000000000000000000000000000;
         emit Transfer(ZeroAddress ,_MintTo, _MintAmount);
     }
@@ -86,7 +85,7 @@ contract ClassicDAO {
     function Burn(uint256 _BurnAmount) public {
         require (balances[msg.sender] >= _BurnAmount);
         balances[msg.sender] = balances[msg.sender]-(_BurnAmount);
-        TotalSupply = TotalSupply-(_BurnAmount);
+        totalSupply = totalSupply-(_BurnAmount);
         ZeroAddress = 0x0000000000000000000000000000000000000000;
         emit Transfer(msg.sender, ZeroAddress, _BurnAmount);
         emit BurnEvent(msg.sender, _BurnAmount);
@@ -110,6 +109,11 @@ contract ClassicDAO {
         return allowed[owner][delegate];
     
     }
+    
+      function CheckMinter(address AddytoCheck) public view returns(uint Minter){
+          return(minter[AddytoCheck]);
+          
+      }
 
 
 }
