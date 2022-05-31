@@ -289,7 +289,7 @@ contract CLD_Crowdsale {
     }
     
     
-    function MultiSigVerification() public returns(bool success){ 
+    function MultiSigVerification() public returns(bool success){ //TESTED - WORKS
         require(Verified == false);
         bool Verify;
         Verify = MultiSignature();
