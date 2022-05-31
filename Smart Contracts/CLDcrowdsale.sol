@@ -17,7 +17,7 @@ contract CLD_Crowdsale {
     address payable TreasuryFund = payable(0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341); //This address will be used to add the 16% of crowdsale funds as liquidity for wETC-CLS
     
     address payable Dev_1 = payable(0x0000000000000000000000000000000000000000); //Personal Wallet of one of the developers () 62%
-    address payable Dev_2 = payable(0xc932b3a342658A2d3dF79E4661f29DfF6D7e93Ce); //Personal Wallet of one of the developers (Kosimoto) 4.5%
+    address payable Dev_2 = payable(0xc932b3a342658A2d3dF79E4661f29DfF6D7e93Ce); //
 
     
     //Crowdsale Mode struct 
