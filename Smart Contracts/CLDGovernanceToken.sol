@@ -30,7 +30,7 @@ contract ClassicDAO {
     TotalSupply = 0;
     name = _name;
     symbol = _symbol;
-    decimals = 10;
+    decimals = 18;
     ownerAddy = msg.sender;
     //Deployment Constructors
     }
