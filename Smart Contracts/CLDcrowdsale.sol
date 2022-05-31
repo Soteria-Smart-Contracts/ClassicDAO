@@ -253,7 +253,7 @@ contract CLD_Crowdsale {
         return(success);
     }
     
-    function MultiSignature() internal returns(bool AllowTransaction){
+    function MultiSignature() internal returns(bool AllowTransaction){ //TESTED - WORKS
         require(msg.sender == SigAddress1 || msg.sender == SigAddress2 || msg.sender == SigAddress3);
         require(Signed[msg.sender] == 0);
         require(Setup == 1);
@@ -274,7 +274,7 @@ contract CLD_Crowdsale {
 
     }
     
-    function SweepSignatures() public returns(bool success){
+    function SweepSignatures() public returns(bool success){ //TESTED - WORKS
         require(msg.sender == CrowdSale_Operator);
         require(Setup == 1);
         
@@ -289,7 +289,7 @@ contract CLD_Crowdsale {
     }
     
     
-    function MultiSigVerification() public returns(bool success){
+    function MultiSigVerification() public returns(bool success){ 
         require(Verified == false);
         bool Verify;
         Verify = MultiSignature();
