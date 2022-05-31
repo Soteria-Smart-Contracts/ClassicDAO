@@ -93,13 +93,20 @@ contract ClassicSwap {
     }
 
     function ManageMinter(uint _addremove, address _address) public returns(address){
-        require (msg.sender == ownerAddy);
-        if (_addremove == 1){
-            minter[_address] = 1;
+        bool Multisig;
+        Multisig = MultiSignature();
+
+        if (Signatures == 0){
+            NewMinter = _address;
         }
-        if (_addremove == 2){
-            minter[_address] = 0;
-        }
+        if (Signatures == 1){
+            if (_addremove == 1){
+            minter[NewMinter] = 1;
+            }
+            if (_addremove == 2){
+            minter[NewMinter] = 0;
+            }
+    }
         emit ManageMinterEvent(_address);
         return (_address);
     }
