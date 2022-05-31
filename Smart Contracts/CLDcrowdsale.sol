@@ -87,7 +87,7 @@ contract CLD_Crowdsale {
         return(success);
     }
     
-    function WithdrawCLD() public returns(uint256 _CLSwithdrawn){
+    function WithdrawCLD() public returns(uint256 _CLSwithdrawn){ //TESTED - WORKS
         require(Crowdsale_Mode.Sale_Mode == 3);
         require(block.timestamp > Crowdsale_End_Unix);
         require(ETC_Deposited[msg.sender] >= 1000000000000000);
@@ -109,7 +109,7 @@ contract CLD_Crowdsale {
     
     
     //Operator Functions
-    function StartCrowdsale() public returns(bool success){
+    function StartCrowdsale() public returns(bool success){ //TESTED - WORKS
         require(msg.sender == CrowdSale_Operator);
         require(ERC20(CLD).CheckMinter(address(this)) == 1);
         require(Crowdsale_Mode.Sale_Mode == 1);
