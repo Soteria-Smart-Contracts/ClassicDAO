@@ -2,7 +2,7 @@
 pragma solidity ^0.8.4;
 
 
-contract ClassicSwap {
+contract ClassicDAO {
     uint256 public TokenCap;
     uint256 public totalSupply;
     string public name;

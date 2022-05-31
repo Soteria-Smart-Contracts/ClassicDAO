@@ -87,7 +87,7 @@ contract CLD_Crowdsale {
         return(success);
     }
     
-    function WithdrawCLS() public returns(uint256 _CLSwithdrawn){
+    function WithdrawCLD() public returns(uint256 _CLSwithdrawn){
         require(Crowdsale_Mode.Sale_Mode == 3);
         require(block.timestamp > Crowdsale_End_Unix);
         require(ETC_Deposited[msg.sender] >= 1000000000000000);
@@ -115,7 +115,7 @@ contract CLD_Crowdsale {
         require(Crowdsale_Mode.Sale_Mode == 1);
         require(Setup == 1);
         
-        Crowdsale_End_Unix = (block.timestamp + 10);
+        Crowdsale_End_Unix = (block.timestamp + 300);
         Crowdsale_Mode.Sale_Mode_Text = ("Sale is Open to buy CLS");
         Crowdsale_Mode.Sale_Mode = 2;
         
@@ -211,7 +211,7 @@ contract CLD_Crowdsale {
         
     }
     
-    function GetwETCdeposited(address _address) public view returns(uint256){
+    function GetETCdeposited(address _address) public view returns(uint256){
         return (ETC_Deposited[_address]);
     }
 
