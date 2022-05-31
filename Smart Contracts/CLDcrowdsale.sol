@@ -14,10 +14,10 @@ contract CLD_Crowdsale {
     //DEV WALLETS
     
     address payable LiquidityAddress = payable(0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341); //This address will be used to add the 80% of crowdsale funds as liquidity for wETC-CLS
-    address payable TreasuryFund = payable(0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341); //This address will be used to add 20% of crowdsale funds to the ClassicDAO Treasury
+    address payable TreasuryFund = payable(0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341); //This address will be used to add the 20% of crowdsale funds as liquidity for wETC-CLS
     
     address payable Dev_1 = payable(0x0000000000000000000000000000000000000000); //Personal Wallet of one of the developers () 62%
-    address payable Dev_2 = payable(0xc932b3a342658A2d3dF79E4661f29DfF6D7e93Ce); //Personal Wallet of one of the developers () 4.5%
+    address payable Dev_2 = payable(0xc932b3a342658A2d3dF79E4661f29DfF6D7e93Ce); //Personal Wallet of one of the developers (Kosimoto) 4.5%
 
     
     //Crowdsale Mode struct 
@@ -141,7 +141,7 @@ contract CLD_Crowdsale {
         
     }
     //This function only works when the crowdsale is in the post-sale mode(3), or in the Emergency mode(99)
-    function PullwETC() public returns(bool success){
+    function PullETC() public returns(bool success){
         require(Crowdsale_Mode.Sale_Mode == 3 || Crowdsale_Mode.Sale_Mode == 99);
         require(block.timestamp > Crowdsale_End_Unix);
         
@@ -156,7 +156,7 @@ contract CLD_Crowdsale {
         LiquidityFunds = ((Contract_ETC_Balance * 60) / 100);
         
         uint256 DevFunds;
-        DevFunds = ((Contract_ETC_Balance * 40) / 100);
+        DevFunds = ((Contract_ETC_Balance * 20) / 100);
         
         if (Multisig == true){
             (LiquidityAddress).transfer(LiquidityFunds);
