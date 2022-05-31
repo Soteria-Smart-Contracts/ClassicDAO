@@ -207,12 +207,12 @@ contract CLD_Crowdsale {
     }
     
     //Call Functions
-    function GetContractMode() public view returns(uint256, string memory){ 
+    function GetContractMode() public view returns(uint256, string memory){ //TESTED - WORKS
         return (Crowdsale_Mode.Sale_Mode, Crowdsale_Mode.Sale_Mode_Text);
         
     }
     
-    function GetETCdeposited(address _address) public view returns(uint256){
+    function GetETCdeposited(address _address) public view returns(uint256){ //TESTED - WORKS
         return (ETC_Deposited[_address]);
     }
 
@@ -238,7 +238,7 @@ contract CLD_Crowdsale {
     
 
     
-    function MultiSigSetup(address _1, address _2, address _3) public returns(bool success){
+    function MultiSigSetup(address _1, address _2, address _3) public returns(bool success){ //TESTED - WORKS
         require(Setup == 0);
         require(msg.sender == CrowdSale_Operator);
         require(Crowdsale_Mode.Sale_Mode == 1);
