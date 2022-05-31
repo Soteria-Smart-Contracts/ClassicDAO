@@ -11,7 +11,7 @@ contract CLD_Crowdsale {
     address public CrowdSale_Operator;
     uint256 public Crowdsale_End_Unix;
     
-    //DEV WALLETS
+    //DEV WALLETS ()
     
     address payable LiquidityAddress = payable(0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341); //This address will be used to add the 80% of crowdsale funds as liquidity for wETC-CLS
     address payable TreasuryFund = payable(0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341); //This address will be used to add the 20% of crowdsale funds as liquidity for wETC-CLS
