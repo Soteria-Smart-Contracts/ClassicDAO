@@ -169,7 +169,7 @@ contract CLD_Crowdsale {
         return success;
     }
     
-    function Emergency_Mode_Activate() public returns(bool success){ //
+    function Emergency_Mode_Activate() public returns(bool success){ //TESTED - WORKS
         bool Multisig;
         Multisig = MultiSignature();
         
@@ -182,7 +182,7 @@ contract CLD_Crowdsale {
         }
     }
 
-    function Resume_Sale() public returns(bool success){
+    function Resume_Sale() public returns(bool success){ //UNTESTED
         bool Multisig;
         Multisig = MultiSignature();
         require(Crowdsale_Mode.Sale_Mode == 99);
