@@ -58,7 +58,7 @@ contract CLD_Crowdsale {
     
     //Buyer Functions
     
-    function DepositETC() public payable returns(bool success){
+    function DepositETC() public payable returns(bool success){ //TESTED - WORKS
         require(Crowdsale_Mode.Sale_Mode == 2);
         require(block.timestamp < Crowdsale_End_Unix);
         require(msg.value >= 1000000000000000);
