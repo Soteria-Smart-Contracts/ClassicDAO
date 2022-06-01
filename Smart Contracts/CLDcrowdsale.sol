@@ -180,7 +180,6 @@ contract CLD_Crowdsale {
         bool Multisig;
         Multisig = MultiSignature();
         require(Crowdsale_Mode.Sale_Mode == 99);
-        require(block.timestamp < Crowdsale_End_Unix);
         
         if (Multisig == true){
             
