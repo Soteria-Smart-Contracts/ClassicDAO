@@ -151,21 +151,13 @@ contract CLD_Crowdsale {
         bool Multisig;
         Multisig = MultiSignature();
         
-        
-        uint256 Contract_ETC_Balance;
-        Contract_ETC_Balance = (address(this).balance);
-        
-        uint256 LiquidityFunds;
-        LiquidityFunds = ((Contract_ETC_Balance * 60) / 100);
-        
-        uint256 DevFunds;
-        DevFunds = ((Contract_ETC_Balance * 20) / 100);
+        uint256 Contract_ETC_Balance = (address(this).balance);
         
         if (Multisig == true){
-            (LiquidityAddress).transfer(LiquidityFunds);
-            (TreasuryFund).transfer(((DevFunds * 160) / 1000));
-            (Dev_1).transfer(((DevFunds * 620) / 1000));
-            (Dev_2).transfer(((DevFunds * 45) / 1000));
+            (LiquidityAddress).transfer((Contract_ETC_Balance * 60));
+            (TreasuryFund).transfer((Contract_ETC_Balance * 160) / 1000);
+            (Dev_1).transfer((Contract_ETC_Balance * 620) / 1000);
+            (Dev_2).transfer((Contract_ETC_Balance * 45) / 1000);
         }
 
         return success;
