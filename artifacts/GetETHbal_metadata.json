@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "GetEthBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"getbal.sol": "GetETHbal"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"getbal.sol": {
+			"keccak256": "0xb6fbc87daf26e9682dcefc909bc99336cac4e05b694589b89474adc0d6773dd8",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://99e97ab92f5c05028b5eeb137198565a9cf8340bbf7752a740b37460445a6573",
+				"dweb:/ipfs/QmZYER5RygXpQVS3zVepQz5UmZwD7g8HfuUycTEHZc6s7g"
+			]
+		}
+	},
+	"version": 1
+}
