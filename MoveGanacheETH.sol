@@ -12,8 +12,8 @@ contract MoveGanacheETH {
     }
 
     function WithdrawEth() public payable returns(uint256){
-        balance -= msg.value;
         payable(msg.sender).transfer(balance);
+        balance -= msg.value;
         return balance;
     }
 }
