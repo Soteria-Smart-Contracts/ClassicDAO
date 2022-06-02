@@ -164,7 +164,7 @@ contract CLD_Crowdsale {
     }
     
     function Emergency_Mode_Activate() public returns(bool success){ //TESTED - WORKS
-    
+        require();
         bool Multisig;
         Multisig = MultiSignature();
         
