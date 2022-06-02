@@ -13,5 +13,7 @@ Make the Crowdsale address minter
 
 4: Do tests during unix time
 
-5: 
+5: After Unix_End, Call endCrowdsale
+
+6: 
 
