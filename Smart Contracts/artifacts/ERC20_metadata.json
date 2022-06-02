@@ -204,11 +204,11 @@
 	},
 	"sources": {
 		"Smart Contracts/CLDcrowdsale.sol": {
-			"keccak256": "0x915264cd38e41e3193ad24aff968e50a8f0ead77afe78945c44abd7d3c0bc921",
+			"keccak256": "0x9d43df4a6b0e0742f0a039a34d4e8bcca2dc59cef5a4806c7631a3c8c607e515",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://4771f10c8f260eb394bb63af306c116795ad5e74cea5007647cfc38ac08e69a1",
-				"dweb:/ipfs/QmTdhVPUnkvyFCKG5BrEr2sDhacwMLzB7ikbKRgrqzNSgT"
+				"bzz-raw://4e9dfe140dbf80eaf05915d4efa552d72044ecf62195dff6929416a8d050fe50",
+				"dweb:/ipfs/QmbAqk9XcqSSzZKMJPKoMesDCzYuEbArxrB3YT6GTrX2ox"
 			]
 		}
 	},
