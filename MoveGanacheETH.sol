@@ -6,7 +6,8 @@ contract MoveGanacheETH {
     uint256 balance;
 
 
-    function DepositEth() public returns(uint256){
-        
+    function DepositEth() public payable returns(uint256){
+        balance += msg.value;
+        return balance;
     }
 }
