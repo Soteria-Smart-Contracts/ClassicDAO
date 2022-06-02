@@ -2,10 +2,10 @@
 pragma solidity ^0.8.4;
 
 
-contract GetETHbal{
+contract MoveGanacheETH {
 
 
-    function GetEthBalance() public view returns(uint256){
+    function DepositEth() public view returns(uint256){
         return msg.sender.balance;
     }
 }
