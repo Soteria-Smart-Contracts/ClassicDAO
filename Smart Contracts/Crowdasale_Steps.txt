@@ -11,7 +11,7 @@ Make the Crowdsale address minter
 
 3: Start the Crowdsale
 
-4: Do tests during unix time (Do emergency test Again)
+4: Do tests during unix time (Do emergency test )
 
 5: After Unix_End, Call endCrowdsale
 
