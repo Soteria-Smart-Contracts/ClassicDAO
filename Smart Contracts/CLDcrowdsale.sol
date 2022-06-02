@@ -2,7 +2,7 @@
 pragma solidity ^0.8.4;
 
 //CLD1 current test: 0x537a505a4CF9F0fC76752fb3995C25e55ec015C6
-//CLDsale current test: 
+//CLDsale current test: 0x58D3c29241C313605436BA7af02f658B9FDb7374
 
 contract CLD_Crowdsale {
     address payable CLD;
