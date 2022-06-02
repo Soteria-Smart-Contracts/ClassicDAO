@@ -7,3 +7,4 @@ Save your sig addresses here:
 :
 
 2: 
+Make the Crowdsale address minter
