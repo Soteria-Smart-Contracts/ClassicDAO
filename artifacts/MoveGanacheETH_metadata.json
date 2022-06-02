@@ -60,11 +60,11 @@
 	},
 	"sources": {
 		"MoveGanacheETH.sol": {
-			"keccak256": "0xa16637683d1ccabfeeae5d35ff54a6008a6df5cfee9e3174641c772f68eea2ad",
+			"keccak256": "0x4e23c54fd75a40071e2e2b6a5b86a520d5ea9e2534d0acb019723510facf05a0",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://8682d100c93a533d6db4df2dd74c0c1c872914e5a74a1d3f9a899f5c2ee1e7b0",
-				"dweb:/ipfs/QmQdai2ECkwKTTp4HYPzfHmUcyRBqaPB3eqcKRjCM9CaZL"
+				"bzz-raw://7a97e55949977254b12df6e4df0885c568673e208a5fe02903ba2e9b269810df",
+				"dweb:/ipfs/QmZ5GAMDPiGBECBp7jpTHLqAYgheB2r6ARvRS11Egao6JW"
 			]
 		}
 	},
