@@ -9,5 +9,9 @@ Save your sig addresses here:
 2: 
 Make the Crowdsale address minter
 
-3:
+3: Start the Crowdsale
+
+4: Do tests during unix time
+
+5: 
 
