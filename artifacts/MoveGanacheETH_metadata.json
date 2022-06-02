@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "DepositEth",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "WithdrawEth",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MoveGanacheETH.sol": "MoveGanacheETH"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MoveGanacheETH.sol": {
+			"keccak256": "0xa16637683d1ccabfeeae5d35ff54a6008a6df5cfee9e3174641c772f68eea2ad",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://8682d100c93a533d6db4df2dd74c0c1c872914e5a74a1d3f9a899f5c2ee1e7b0",
+				"dweb:/ipfs/QmQdai2ECkwKTTp4HYPzfHmUcyRBqaPB3eqcKRjCM9CaZL"
+			]
+		}
+	},
+	"version": 1
+}
