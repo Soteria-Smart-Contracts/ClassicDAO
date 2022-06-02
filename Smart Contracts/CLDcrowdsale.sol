@@ -95,8 +95,7 @@ contract CLD_Crowdsale {
         require(ETC_Deposited[msg.sender] >= 1000000000000000);
         
         
-        uint256 CLDtoMintandSend;
-        CLDtoMintandSend = (((ETC_Deposited[msg.sender] / 100000000) * Allocation_Exchange_Rate) / 100000000);
+        uint256 CLDtoMintandSend = (((ETC_Deposited[msg.sender] / 100000000) * Allocation_Exchange_Rate) / 100000000);
         require((Total_CLD_Distributed + CLDtoMintandSend) <= CLD_Sale_Allocation);
         
         ETC_Deposited[msg.sender] = 0;
