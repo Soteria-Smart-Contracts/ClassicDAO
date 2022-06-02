@@ -7,20 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "DepositEth",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "WithdrawEth",
+				"name": "MoveETH",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -60,11 +47,11 @@
 	},
 	"sources": {
 		"MoveGanacheETH.sol": {
-			"keccak256": "0x4e23c54fd75a40071e2e2b6a5b86a520d5ea9e2534d0acb019723510facf05a0",
+			"keccak256": "0x3230b928b5a9aa05f7f69586097c93d39bfa5b105a0ee82cfaf388f8939f564e",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://7a97e55949977254b12df6e4df0885c568673e208a5fe02903ba2e9b269810df",
-				"dweb:/ipfs/QmZ5GAMDPiGBECBp7jpTHLqAYgheB2r6ARvRS11Egao6JW"
+				"bzz-raw://b7b95a72617b4241c97a0367cb4e4be3353d4ef3ccf19ca9f2dbc7daca951ba4",
+				"dweb:/ipfs/QmcQiYPbP4Cf6bUkkA2HUgQx32diuJoffaJX787p1eW6Aj"
 			]
 		}
 	},
