@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "MoveETH",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tocheck",
+						"type": "address"
+					}
+				],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MoveGanacheETH.sol": "MoveGanacheETH"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MoveGanacheETH.sol": {
+			"keccak256": "0xc3c2e30b86e6b0060ecfaaa9ae24988e2937d589988123b0fd6d29a4bc8908c8",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://03257598d0d9e30b0e3ec30b8add15fe1b9bf653176df84a1ce46cf352d592c4",
+				"dweb:/ipfs/QmavXhSj5rjVkFbH5JYJGKbsuU749NwWBq5ay5H3UFiiKm"
+			]
+		}
+	},
+	"version": 1
+}
