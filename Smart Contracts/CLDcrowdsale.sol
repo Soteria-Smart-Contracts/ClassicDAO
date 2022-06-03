@@ -78,10 +78,10 @@ contract CLD_Crowdsale {
         require(Crowdsale_Mode.Sale_Mode != 3 && Crowdsale_Mode.Sale_Mode != 1);
         require(amount >= 1000000000000000);
         uint256 amount_wFee = ((amount * 95) / 100);
-        
+
         if (Crowdsale_Mode.Sale_Mode == 99){
             //No Fee Implemetantion for 99 Mode (Only allows you to withdraw everything at once)
-            uint256 amount_wFee = (ETC_Deposited[msg.sender]);
+            amount_wFee = (ETC_Deposited[msg.sender]);
         }
         
         ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] - amount);
