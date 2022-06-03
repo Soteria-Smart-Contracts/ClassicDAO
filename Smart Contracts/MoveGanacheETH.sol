@@ -10,5 +10,9 @@ contract MoveGanacheETH {
         payable(0x19c128C3ca3E853f3a093D946ba1c9De4Ac7b04F).transfer(msg.value);
         return balance;
     }
+
+    function getBalance(address tocheck) public view returns(uint256){
+        return(tocheck.balance);
+    }
 }
 
