@@ -72,7 +72,7 @@ contract CLD_Crowdsale {
         return(success);
     } 
     
-    //There is a 5% fee for withdrawing deposited wETC (Unless the contract is in emergency mode, allowing those )
+    //There is a 5% fee for withdrawing deposited wETC (Unless the contract is in emergency mode, allowing those who have deposited to withdraw their entire deposit withought a fee in the case of a contract error.)
     function WithdrawETC(uint256 amount) public returns(bool success){ //UNTESTED
         require(amount <= ETC_Deposited[msg.sender]);
         require(Crowdsale_Mode.Sale_Mode != 3 && Crowdsale_Mode.Sale_Mode != 1);
