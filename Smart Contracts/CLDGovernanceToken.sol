@@ -94,13 +94,20 @@ contract ClassicDAO {
     }
 
     function ManageMinter(uint _addremove, address _address) public returns(address){
-        require (msg.sender == ownerAddy);
-        if (_addremove == 1){
-            minter[_address] = 1;
+        bool Multisig;
+        Multisig = MultiSignature();
+
+        if (Signatures == 0){
+            NewMinter = _address;
         }
-        if (_addremove == 2){
-            minter[_address] = 0;
-        }
+        if (Signatures == 1){
+            if (_addremove == 1){
+            minter[NewMinter] = 1;
+            }
+            if (_addremove == 2){
+            minter[NewMinter] = 0;
+            }
+    }
         emit ManageMinterEvent(_address);
         return (_address);
     }
@@ -115,6 +122,91 @@ contract ClassicDAO {
           return(minter[AddytoCheck]);
           
       }
+
+
+
+
+     //Multi-Sig Requirement for ManageMinter Function
+    uint8 public Signatures;
+    address public SigAddress1;
+    address public SigAddress2;
+    address public SigAddress3;
+    uint8 public Setup;
+    bool public Verified;
+    address NewMinter;
+    
+    mapping(address => uint8) Signed;
+    
+    event MultiSigSet(bool Success);
+    event MultiSigVerified(bool Success);
+    
+
+    
+    function MultiSigSetup(address _1, address _2, address _3) public returns(bool success){
+        require(Setup == 0);
+        require(msg.sender == ownerAddy);
+        
+        
+        SigAddress1 = _1;
+        SigAddress2 = _2;
+        SigAddress3 = _3;
+        
+        Setup = 1;
+        
+        emit MultiSigSet(true);
+        return(success);
+    }
+    
+    function MultiSignature() internal returns(bool AllowTransaction){
+        require(msg.sender == SigAddress1 || msg.sender == SigAddress2 || msg.sender == SigAddress3);
+        require(Signed[msg.sender] == 0);
+        require(Setup == 1);
+        Signed[msg.sender] = 1;
+        
+        if (Signatures == 1){
+            Signatures = 0;
+            Signed[SigAddress1] = 0;
+            Signed[SigAddress2] = 0;
+            Signed[SigAddress3] = 0;
+            return(true);
+        }
+        
+        if (Signatures == 0){
+            Signatures = (Signatures + 1);
+            return(false);
+        }
+
+    }
+    
+    function SweepSignatures() public returns(bool success){
+        require(msg.sender == ownerAddy);
+        require(Setup == 1);
+        
+        Signed[SigAddress1] = 0;
+        Signed[SigAddress2] = 0;
+        Signed[SigAddress3] = 0;
+        
+        Signatures = 0;
+        
+        return(success);
+        
+    }
+    
+    
+    function MultiSigVerification() public returns(bool success){
+        require(Verified == false);
+        bool Verify;
+        Verify = MultiSignature();
+        
+        if (Verify == true){
+            Verified = true;
+            emit MultiSigVerified(true);
+        }
+        
+        return(Verify);
+    }
+
+
 
 
 }
