@@ -143,7 +143,7 @@ contract CLD_Crowdsale {
     }
 
     //This function only works when the crowdsale is in the post-sale mode(3), or in the Emergency mode(99)
-    function PullETC() public returns(bool success){ //TESTED - UNSURE IF WORKS - RETEST
+    function PullETC() public returns(bool success){ //TESTED - Works
         require(Crowdsale_Mode.Sale_Mode == 3 || Crowdsale_Mode.Sale_Mode == 99);
         require(block.timestamp > Crowdsale_End_Unix);
         
