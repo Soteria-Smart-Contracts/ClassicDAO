@@ -77,8 +77,8 @@ contract CLD_Crowdsale {
         require(amount <= ETC_Deposited[msg.sender]);
         require(Crowdsale_Mode.Sale_Mode != 3 && Crowdsale_Mode.Sale_Mode != 1);
         require(amount >= 1000000000000000);
-        uint256 amount_wFee;
-        amount_wFee = ((amount * 95) / 100);
+        
+        uint256 amount_wFee = ((amount * 95) / 100);
         
         ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] - amount);
         
