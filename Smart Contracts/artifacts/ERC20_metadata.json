@@ -189,7 +189,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Smart Contracts/CLDcrowdsale.sol": "ERC20"
+			"CLDcrowdsale.sol": "ERC20"
 		},
 		"evmVersion": "berlin",
 		"libraries": {},
@@ -203,12 +203,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Smart Contracts/CLDcrowdsale.sol": {
-			"keccak256": "0x9d43df4a6b0e0742f0a039a34d4e8bcca2dc59cef5a4806c7631a3c8c607e515",
+		"CLDcrowdsale.sol": {
+			"keccak256": "0xa64d3cabedc06fde60a172a26944e65f09d97607a6ce454dd1e05b31a5b5d89a",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://4e9dfe140dbf80eaf05915d4efa552d72044ecf62195dff6929416a8d050fe50",
-				"dweb:/ipfs/QmbAqk9XcqSSzZKMJPKoMesDCzYuEbArxrB3YT6GTrX2ox"
+				"bzz-raw://0cebfa24aa8dd2b3809b937f32b7625f55176652c563a73f0a60f30a7b59474b",
+				"dweb:/ipfs/QmYNBJgicE5bSxmaXkN7fjSbg3k9KnFNbtxU9SNvYaP2aU"
 			]
 		}
 	},
