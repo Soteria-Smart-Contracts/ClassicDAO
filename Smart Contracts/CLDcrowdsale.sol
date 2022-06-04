@@ -49,7 +49,7 @@ contract CLD_Crowdsale {
     event CrowdsaleEnded(address Operator, uint256 wETCraised, uint256 BlockTimestamp);
     event ETCdeposited(address Depositor, uint256 Amount);
     event ETCwithdrawn(address Withdrawee, uint256 Amount);
-    event CLSwithdrawn(address Withdrawee, uint256 Amount);
+    event CLDwithdrawn(address Withdrawee, uint256 Amount);
     event VariableChange(string Change);
     
     
@@ -106,7 +106,7 @@ contract CLD_Crowdsale {
         ERC20(CLD).Mint(msg.sender, CLDtoMintandSend);
         
         Total_CLD_Distributed = (Total_CLD_Distributed + CLDtoMintandSend);
-        emit CLSwithdrawn(msg.sender, CLDtoMintandSend);
+        emit CLDwithdrawn(msg.sender, CLDtoMintandSend);
         return(CLDtoMintandSend);
     }
     
