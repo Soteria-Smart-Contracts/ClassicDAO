@@ -8,6 +8,8 @@ body{
 .div-center{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: fit-content;
     align-items: center;
     margin-top: 20%;
     border: #ffffff solid 4px;
