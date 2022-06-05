@@ -10,5 +10,5 @@ body{
     flex-direction: column;
     align-items: center;
     padding-top: 20%;
-    border: #ffffff;
+    border: #ffffff solid 4px;
 }
