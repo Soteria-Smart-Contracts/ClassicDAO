@@ -8,10 +8,8 @@ body{
 .div-center{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: max-content;
     align-items: center;
-    margin: 20%;
+    margin-top: 20%;
     border: #ffffff solid 4px;
     border-radius: 30px;
 }
