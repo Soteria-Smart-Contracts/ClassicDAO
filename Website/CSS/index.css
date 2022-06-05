@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: fit-content;
+    width: max-content;
     align-items: center;
     margin: 20%;
     border: #ffffff solid 4px;
