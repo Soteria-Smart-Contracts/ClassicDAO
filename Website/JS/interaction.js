@@ -15,7 +15,7 @@ async function loginWithEth(){
         contract = new window.web3.eth.Contract(abi, contractAddress, window.web3);
         account = accountarray[0];
         document.getElementById('WalletB').innerText = "Connected";
-    } else {x
+    } else {
         alert("No ETHER Wallet available")
     }
     console.log(account);
