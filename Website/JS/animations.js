@@ -1,8 +1,8 @@
 
 function setActive(id) {
-    document.getElementById('menuone').className = "Mactive"; 
-    document.getElementById('menutwo').className = "Mactive"; 
-    document.getElementById('menutre').className = "Mactive"; 
+    document.getElementById('menuone').className = "Minactive"; 
+    document.getElementById('menutwo').className = "Minactive"; 
+    document.getElementById('menutre').className = "Minactive"; 
 
     document.getElementById(id).className = "Mactive"; 
 }
