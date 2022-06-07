@@ -70,7 +70,6 @@ nav{
 }
 
 .wallet{
-    float: right;
     background-color: #05af33;
     font-size: large;
     cursor: pointer;
@@ -80,5 +79,4 @@ nav{
     padding-bottom: 6px;
     border: #1a3b15 solid 3px;
     border-radius: 30px;
-    align-self: right;
 }
