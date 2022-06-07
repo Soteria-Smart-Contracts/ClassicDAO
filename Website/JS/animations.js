@@ -1,5 +1,12 @@
-if(window.)
-
+if(window.location.href == "https://classicdao.one/dscrowdsale"){
+    document.getElementById('menuone').className = "Mactive"; 
+}
+if(window.location.href == "https://classicdao.one/dscrowdsale"){
+    document.getElementById('menuone').className = "Mactive"; 
+}
+if(window.location.href == "https://classicdao.one/dscrowdsale"){
+    document.getElementById('menuone').className = "Mactive"; 
+}
 
 function setActive(id) {
     document.getElementById('menuone').className = "Minactive"; 
