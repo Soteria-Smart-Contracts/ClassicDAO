@@ -37,6 +37,10 @@ nav{
     text-decoration: none;
 }
 
+.Minactive{
+    text-decoration: none;
+}
+
 .wallet{
     cursor: pointer;
 }
