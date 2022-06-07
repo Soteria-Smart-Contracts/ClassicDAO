@@ -72,6 +72,7 @@ nav{
 .wallet{
     float: right;
     background-color: #05af33;
+    font-size: large;
     cursor: pointer;
     font-weight: bolder;
     padding: 13px;
