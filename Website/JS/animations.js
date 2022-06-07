@@ -2,10 +2,10 @@ if(window.location.href == "https://classicdao.one/dscrowdsale"){
     document.getElementById('menuone').className = "Mactive"; 
 }
 if(window.location.href == "https://classicdao.one/dsgovernance"){
-    document.getElementById('menuone').className = "Mactive"; 
+    document.getElementById('menutwo').className = "Mactive"; 
 }
 if(window.location.href == "https://classicdao.one/dscstaking"){
-    document.getElementById('menuone').className = "Mactive"; 
+    document.getElementById('menutre').className = "Mactive"; 
 }
 
 function setActive(id) {
