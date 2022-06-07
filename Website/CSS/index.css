@@ -70,6 +70,6 @@ nav{
 .wallet{
     cursor: pointer;
     float: right;
-    margin-left: 52%;
+    padding-left: 52%;
     font-weight: bolder;
 }
