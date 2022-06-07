@@ -23,7 +23,7 @@ nav{
 }
 
 .logo{
-    width: 30px;
+    width: 50px;
 }
 
 .menu{
@@ -39,8 +39,8 @@ nav{
 .Minactive{
     text-decoration: none;
     color: white;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .wallet{
