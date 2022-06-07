@@ -4,7 +4,6 @@ const contractAddress = "0x0000000000000000000000000000000000000000";
 const abi = window.abi2;
 let account;
 let contract;
-let contractAddress = '0xb4B08d948502185c6A05e90782fc8ba358355ca1';
 
 
 
