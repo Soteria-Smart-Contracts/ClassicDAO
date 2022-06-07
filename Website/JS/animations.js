@@ -1,4 +1,4 @@
 
 function setActive(id) {
-    document.getElementById(id).classList.contains = "Mactive"; 
+    document.getElementById(id).className = "Mactive"; 
 }
