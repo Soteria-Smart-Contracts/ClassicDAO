@@ -50,6 +50,12 @@ nav{
 }
 
 .Mactive{
+    text-decoration: none;
+    font-size: medium;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: bold;
     
 }
 
