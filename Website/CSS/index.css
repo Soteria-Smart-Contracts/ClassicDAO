@@ -35,6 +35,7 @@ nav{
     margin-bottom: 10px;
     font-size: larger;
     padding: 10px;
+    white-space: nowrap;
 }
 
 .Minactive{
@@ -43,7 +44,6 @@ nav{
     padding-left: 2%;
     padding-right: 2%;
     font-weight: bold;
-    
 }
 
 .wallet{
