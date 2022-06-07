@@ -53,7 +53,10 @@ nav{
     font-weight: bold;
 }
 
-.Minactive
+.Minactive:hover{
+    background-color: #126CC3;
+    color: white;
+}
 
 .Mactive{
     text-decoration: none;
