@@ -29,6 +29,7 @@ nav{
 
 .menu{
     display: flex;
+    float: left;
     font-family: 'Roboto', sans-serif;
     flex-direction: row;
     align-items: center;
