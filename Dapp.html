@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"
+    integrity="sha512-5erpERW8MxcHDF7Xea9eBQPiRtxbse70pFcaHJuOhdEBQeAxGQjUwgJbuBDWve+xP/u5IoJbKjyJk50qCnMD7A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    </script>
+    <script src="abi.js"></script>
+    <script src="dapp.js"></script>
+    <title>Dapp</title>
+</head>
+    <header>
+        <nav class="NavLinks">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <a class="ConnectButton" id="WalletB" onclick="loginWithEth()">Connect Wallet</a>
+    </header>
+<body>
+    
+    <section class="dapp">
+        <div>
+            <h1 class="dapp-title">MathDapp</h1>
+
+            <div class="DappSection">
+                <a>Addition</a>
+                <div>
+                    <input type="number" placeholder="First Number" id="AI1"></input>
+                    <a>+</a>
+                    <input type="number" placeholder="Second Number" id="AI2"></input>
+                </div>
+                <button id="+" text-decoration="none" disabled="true" onclick="MathDappAddition()">Calculate</button>
+                <div class="result"><a class="result">Result: <a class="result" id="ResultA"></a></a> </div>
+            </div>
+
+            <div class="DappSection">
+                <a>Substraction</a>
+                <div>
+                    <input type="number" placeholder="First Number" id="SI1"></input>
+                    <a>-</a>
+                    <input type="number" placeholder="Second Number" id="SI2"></input>
+                </div>
+                <button id="-" text-decoration="none" disabled="true" onclick="MathDappSubstraction()">Calculate</button>
+                <div class="result"><a class="result">Result: <a class="result" id="ResultB"></a></a> </div>
+            </div>
+
+            <div class="DappSection">
+                <a>Multiplication</a>
+                <div>
+                    <input type="number" placeholder="First Number" id="MI1"></input>
+                    <a>x</a>
+                    <input type="number" placeholder="Second Number" id="MI2"></input>
+                </div>
+                <button id="x" text-decoration="none" disabled="true" onclick="MathDappMultiplication()">Calculate</button>
+                <div class="result"><a class="result">Result: <a class="result" id="ResultC"></a></a> </div>
+            </div>
+
+            <div class="DappSection">
+                <a>Division</a>
+                <div>
+                    <input type="number" placeholder="First Number" id="DI1"></input>
+                    <a>/</a>
+                    <input type="number" placeholder="Second Number" id="DI2"></input>
+                </div>
+                <button id="/" text-decoration="none" disabled="true" onclick="MathDappDivision()">Calculate</button>
+                <div class="result"><a class="result">Result: <a class="result" id="ResultD"></a></a> </div>
+            </div>
+            
+
+        </div>
+    </section>
+    
+</body>
+</html>
