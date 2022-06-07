@@ -73,5 +73,6 @@ nav{
     float: right;
     cursor: pointer;
     font-weight: bolder;
+    padding: 10px;
     border: #1a3b15 solid 3px;
 }
