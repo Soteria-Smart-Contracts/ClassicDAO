@@ -19,6 +19,9 @@ body{
 }
 
 navbar{
-    display: flex;
-    flex-direction: row
+ 
+}
+
+.logo{
+    size: 5%;
 }
