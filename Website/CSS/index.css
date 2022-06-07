@@ -44,8 +44,11 @@ nav{
     text-decoration: none;
     font-size: medium;
     color: white;
-    padding-left: 2%;
-    padding-right: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-weight: bold;
 }
 
