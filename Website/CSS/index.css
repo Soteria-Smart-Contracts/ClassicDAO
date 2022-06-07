@@ -46,4 +46,5 @@ nav{
 .wallet{
     cursor: pointer;
     float: right;
+    padding-left: 30%;
 }
