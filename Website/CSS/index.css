@@ -75,6 +75,7 @@ nav{
     font-weight: bolder;
     padding: 10px;
     padding-top: 6px;
+    padding-bottom: 6px;
     border: #1a3b15 solid 3px;
     border-radius: 30px;
 }
