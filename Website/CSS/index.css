@@ -28,6 +28,7 @@ nav{
 
 .menu{
     display: flex;
+    color:white
     flex-direction: row;
     align-items: center;
     margin-top: 10px;
