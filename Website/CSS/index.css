@@ -70,8 +70,7 @@ nav{
 }
 
 .wallet{
-    position: float;
-    cursor: pointer;
     float: right;
+    cursor: pointer;
     font-weight: bolder;
 }
