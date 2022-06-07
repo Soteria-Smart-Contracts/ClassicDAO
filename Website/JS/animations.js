@@ -4,7 +4,7 @@ if(window.location.href == "https://classicdao.one/dscrowdsale"){
 if(window.location.href == "https://classicdao.one/dsgovernance"){
     document.getElementById('menuone').className = "Mactive"; 
 }
-if(window.location.href == "https://classicdao.one/dscrowdsale"){
+if(window.location.href == "https://classicdao.one/dscstaking"){
     document.getElementById('menuone').className = "Mactive"; 
 }
 
