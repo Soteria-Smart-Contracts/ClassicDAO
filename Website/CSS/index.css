@@ -45,4 +45,5 @@ nav{
 
 .wallet{
     cursor: pointer;
+    float: right;
 }
