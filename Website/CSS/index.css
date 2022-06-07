@@ -58,6 +58,7 @@ nav{
     font-weight: bold;
     background-color: #126CC3;
     border: #126CC3 solid 2px;
+    border-radius: 30px;
 }
 
 .wallet{
