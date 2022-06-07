@@ -28,6 +28,7 @@ nav{
 
 .menu{
     display: flex;
+    font-family: 'Roboto', sans-serif;
     flex-direction: row;
     align-items: center;
     margin-top: 10px;
@@ -38,7 +39,6 @@ nav{
 
 .Minactive{
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
     color: white;
     padding-left: 2%;
     padding-right: 2%;
