@@ -39,6 +39,8 @@ nav{
 .Minactive{
     text-decoration: none;
     color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .wallet{
