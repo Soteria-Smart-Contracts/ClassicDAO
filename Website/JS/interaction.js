@@ -21,8 +21,8 @@ async function loginWithEth(){
 }
 
 async function getID(){
-    let test = web3.eth._provider.chainId;
+    let idhex = web3.eth._provider.chainId;
     let yourNumber = parseInt(test, 16);
 
-
+    return(yourNumber);
 }
