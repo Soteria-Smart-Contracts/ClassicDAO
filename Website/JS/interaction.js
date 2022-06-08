@@ -10,7 +10,8 @@ async function loginWithEth(){
     if(window.ethereum){
         await ethereum.request({ method: 'eth_requestAccounts' });
         window.web3 = new Web3(ethereum);
-        if (getID() != 61){
+        await getID();
+        if (netID != 61){
             return("Failed to connect")
         }
         accountarray = await web3.eth.getAccounts();
