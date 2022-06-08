@@ -22,4 +22,5 @@ async function loginWithEth(){
 
 async function getID(){
     let test = web3.eth._provider.chainId;
+    
 }
