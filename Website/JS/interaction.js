@@ -17,6 +17,7 @@ async function loginWithEth(){
         alert("No ETHER Wallet available")
     }
     console.log(account);
+    console.log()
      
 }
 
