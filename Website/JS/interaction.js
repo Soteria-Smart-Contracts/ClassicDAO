@@ -17,7 +17,7 @@ async function loginWithEth(){
         alert("No ETHER Wallet available")
     }
     console.log(account);
-
-    console.log(web3.eth.net.getId());
      
 }
+
+async function getID()
