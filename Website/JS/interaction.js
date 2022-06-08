@@ -7,6 +7,7 @@ let yourNumber;
 
 
 async function loginWithEth(){
+    getID();
     if(window.ethereum){
         await ethereum.request({ method: 'eth_requestAccounts' });
         window.web3 = new Web3(ethereum);
@@ -18,7 +19,6 @@ async function loginWithEth(){
         alert("No ETHER Wallet available")
     }
     console.log(account);
-    getID();
 }
 
 async function getID(){
