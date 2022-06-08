@@ -13,7 +13,6 @@ async function loginWithEth(){
         await getID();
         if (netID != 61){
             console.log("The current Metamask/Web3 network is not Ethereum Classic, please connect to the ETC network.");
-            web3
             return("Failed to connect")
         }
         accountarray = await web3.eth.getAccounts();
