@@ -18,13 +18,13 @@ async function loginWithEth(){
         alert("No ETHER Wallet available")
     }
     console.log(account);
-    console.log(getID());
+    getID();
      
 }
 
 async function getID(){
     let idhex = web3.eth._provider.chainId;
-    yourNumber = parseInt(idhex, 16);
+    id = parseInt(idhex, 16);
 
     return(yourNumber);
 }
