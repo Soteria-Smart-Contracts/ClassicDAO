@@ -9,12 +9,12 @@ let yourNumber;
 async function loginWithEth(){
     if(window.ethereum){
         await ethereum.request({ method: 'eth_requestAccounts' });
+        window.web3 = new Web3(ethereum);
         await getID();
         if (netID != 61){
             console.log("The current Metamask/Web3 network is not Ethereum Classic, please connect to the ETC network.");
             return("Failed to connect")
         }
-        window.web3 = new Web3(ethereum);
         accountarray = await web3.eth.getAccounts();
         contract = new window.web3.eth.Contract(ABI, contractAddress, window.web3);
         account = accountarray[0];
