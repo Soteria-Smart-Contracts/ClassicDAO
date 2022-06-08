@@ -22,7 +22,7 @@ async function loginWithEth(){
 
 async function getID(){
     let idhex = web3.eth._provider.chainId;
-    let yourNumber = parseInt(test, 16);
+    let yourNumber = parseInt(idhex, 16);
 
     return(yourNumber);
 }
