@@ -18,7 +18,6 @@ async function loginWithEth(){
     }
     console.log(account);
 
-    web3.eth.net.getId()
-    .then(console.log);
+    console.log(web3.eth.net.getId()
      
 }
