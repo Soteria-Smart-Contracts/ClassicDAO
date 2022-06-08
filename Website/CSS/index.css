@@ -5,6 +5,10 @@ body{
 
 }
 
+h1{
+    font-size: medium;
+}
+
 .e{
     padding: 0;
     margin: 0;
