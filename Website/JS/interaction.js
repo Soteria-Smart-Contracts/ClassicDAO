@@ -19,12 +19,11 @@ async function loginWithEth(){
     }
     console.log(account);
     getID();
-     
 }
 
 async function getID(){
     let idhex = web3.eth._provider.chainId;
-    id = parseInt(idhex, 16);
+    netID = parseInt(idhex, 16);
 
-    return(yourNumber);
+    return(netID);
 }
