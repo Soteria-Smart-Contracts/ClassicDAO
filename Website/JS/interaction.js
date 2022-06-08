@@ -2,6 +2,7 @@ const ABI = window.abi;
 const contractAddress = "0x0000000000000000000000000000000000000000";
 let account;
 let contract;
+let yourNumber;
 
 
 
@@ -23,7 +24,7 @@ async function loginWithEth(){
 
 async function getID(){
     let idhex = web3.eth._provider.chainId;
-    let yourNumber = parseInt(idhex, 16);
+    yourNumber = parseInt(idhex, 16);
 
     return(yourNumber);
 }
