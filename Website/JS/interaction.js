@@ -12,7 +12,7 @@ async function loginWithEth(){
         window.web3 = new Web3(ethereum);
         await getID();
         if (netID != 61){
-            console.log("Wrong network, current is + netID");
+            console.log("Wron");
             return("Failed to connect")
         }
         accountarray = await web3.eth.getAccounts();
