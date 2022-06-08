@@ -5,7 +5,6 @@ let contract;
 
 
 
-
 async function loginWithEth(){
     if(window.ethereum){
         await ethereum.request({ method: 'eth_requestAccounts' });
