@@ -1,7 +1,7 @@
 let currentpage;
 
 document.getElementById('crowdsale').style.display = "none";
-
+d
 if(window.location.href == "https://classicdao.one/dscrowdsale"){
     document.getElementById('menuone').className = "Mactive"; 
 }
