@@ -198,7 +198,7 @@ contract CLD_Crowdsale {
         require(msg.sender == CrowdSale_Operator);
         require(Crowdsale_Mode.Sale_Mode != 3);
         CLD = NewAddy;
-        emit VariableChange("Changed CLS Address");
+        emit VariableChange("Changed CLD Address");
         return(true, CLD);
     }
     
