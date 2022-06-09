@@ -30,4 +30,5 @@ function removeOverlay(){
 
 function WelcomePage(){
     ChangeTab('none', 'Welcome')
+    document.getElementById('Welcome').style.display = "initial";
 }
