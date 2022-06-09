@@ -29,6 +29,12 @@ function removeOverlay(){
 }
 
 function WelcomePage(){
-    ChangeTab('none', 'Welcome');
+    document.getElementById('Crowdsale').style.display = "none";
+    document.getElementById('DAO').style.display = "none";
+    document.getElementById('Staking').style.display = "none";
     document.getElementById('Welcome').style.display = "initial";
+    
+    document.getElementById('Crowdsale').style.display = "none";
+    document.getElementById('DAO').style.display = "none";
+    document.getElementById('Staking').style.display = "none";
 }
