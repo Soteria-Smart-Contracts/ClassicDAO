@@ -186,7 +186,7 @@ contract CLD_Crowdsale {
         
         if (Multisig == true){
             
-        Crowdsale_Mode.Sale_Mode_Text = ("Sale is Open to buy CLS");
+        Crowdsale_Mode.Sale_Mode_Text = ("Sale is Open to buy CLD");
         Crowdsale_Mode.Sale_Mode = 2;
         
         return(success);
