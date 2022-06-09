@@ -92,7 +92,7 @@ contract CLD_Crowdsale {
         return(success);
     }
     
-    function WithdrawCLD() public returns(uint256 _CLSwithdrawn){ //TESTED - WORKS
+    function WithdrawCLD() public returns(uint256 _CLDwithdrawn){ //TESTED - WORKS
         require(Crowdsale_Mode.Sale_Mode == 3);
         require(block.timestamp > Crowdsale_End_Unix);
         require(ETC_Deposited[msg.sender] >= 1000000000000000);
