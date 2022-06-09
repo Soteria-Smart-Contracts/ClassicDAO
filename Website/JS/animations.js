@@ -1,8 +1,8 @@
 let currentpage;
 
 document.getElementById('Crowdsale').style.display = "none";
+document.getElementById('DAO').style.display = "none";
 document.getElementById('').style.display = "none";
-document.getElementById('Crowdsale').style.display = "none";
 document.getElementById('Crowdsale').style.display = "none";
 
 if(window.location.href == "https://classicdao.one/dscrowdsale"){
