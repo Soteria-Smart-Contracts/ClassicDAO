@@ -18,6 +18,7 @@ async function loginWithEth(){
         account = accountarray[0];
         removeOverlay();
         document.getElementById('WalletB').innerText = "Connected";
+        TransactionsAllowed = true;
     } else {
         alert("No ETHER Wallet available")
     }
