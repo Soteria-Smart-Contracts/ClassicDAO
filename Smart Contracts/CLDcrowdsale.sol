@@ -15,8 +15,8 @@ contract CLD_Crowdsale {
     
     //DEV WALLETS (MAKE SURE TO CHANGE THESE)
     
-    address payable LiquidityAddress = payable(0x19b2a627Dd49587E021290b3eEF38ea8DE541eE5); //This address will be used to add the 60% of crowdsale funds as liquidity for wETC-CLS
-    address payable TreasuryFund = payable(0xc932b3a342658A2d3dF79E4661f29DfF6D7e93Ce); //This address will be used to add the 16% of crowdsale funds as liquidity for wETC-CLS
+    address payable LiquidityAddress = payable(0x19b2a627Dd49587E021290b3eEF38ea8DE541eE5); //This address will be used to add the 60% of crowdsale funds as liquidity for wETC-CLD
+    address payable TreasuryFund = payable(0xc932b3a342658A2d3dF79E4661f29DfF6D7e93Ce); //This address will be used to add the 16% of crowdsale funds as liquidity for wETC-CLD
     
     address payable Dev_1 = payable(0x35626e8B7aE2b2D4ab324a542f9B66069D7D1526); //Payout Wallet to a party who worked on ClassicDAO (CryptoGaralo) 12% of the Crowdsale Funds
     address payable Dev_2 = payable(0xc98Fe13Aa0FeC8836F8D3f9dc4712c284aA858cE); //Payout Wallet to a party who worked on ClassicDAO (Soteria-Smart-Contracts) 12% of the Crowdsale Funds   
