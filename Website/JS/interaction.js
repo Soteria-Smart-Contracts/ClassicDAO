@@ -12,7 +12,7 @@ async function loginWithEth(){
     if(window.ethereum){
         await ethereum.request({ method: 'eth_requestAccounts' });
         window.web3 = new Web3(ethereum);
-        let ID = await getID();
+        getID();
         accountarray = await web3.eth.getAccounts();
         contract = new window.web3.eth.Contract(ABI, contractAddress, window.web3);
         account = accountarray[0];
