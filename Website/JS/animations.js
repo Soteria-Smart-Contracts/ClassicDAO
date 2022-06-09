@@ -29,9 +29,13 @@ function removeOverlay(){
 }
 
 function WelcomePage(){
+    document.getElementById('menuone').className = "Minactive"; 
+    document.getElementById('menutwo').className = "Minactive"; 
+    document.getElementById('menutre').className = "Minactive"; 
+    
     document.getElementById('Crowdsale').style.display = "none";
     document.getElementById('DAO').style.display = "none";
     document.getElementById('Staking').style.display = "none";
-    
+
     document.getElementById('Welcome').style.display = "initial";
 }
