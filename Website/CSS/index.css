@@ -99,6 +99,7 @@ nav{
 .logo{
     width: 3.5%;
     padding-right: 30px;
+    cursor: pointer;
 }
 
 .menu{
