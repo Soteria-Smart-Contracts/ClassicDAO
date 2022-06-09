@@ -28,10 +28,11 @@ footer{
 
 .footertext{
     color: #ffffff;
+    text-decoration: none;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     padding-top: 0.8%;
-    
+
 }
 
 .e{
