@@ -18,6 +18,11 @@ async function loginWithEth(){
         account = accountarray[0];
         removeOverlay();
         document.getElementById('WalletB').innerText = "Connected";
+        if (ID != 61){
+            console.log("The current Metamask/Web3 network is not Ethereum Classic, please connect to the ETC network.");
+            alert("The current Metamask/Web3 network is not Ethereum Classic, please connect to the ETC network.");
+            return("Failed to connect")
+        }
         TransactionsAllowed = true;
     } else {
         alert("No ETHER Wallet available")
