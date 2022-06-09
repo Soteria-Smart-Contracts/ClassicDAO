@@ -18,6 +18,8 @@ h1.connect{
 footer{
     background-color: #636262;
     height: 30px;
+    position: fixed;
+    bottom: 0;
 }
 
 .e{
