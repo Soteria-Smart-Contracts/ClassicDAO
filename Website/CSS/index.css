@@ -33,7 +33,10 @@ footer{
     padding-top: 0.8%;
 }
 
-.a
+a.footertext{
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .e{
     padding: 0;
