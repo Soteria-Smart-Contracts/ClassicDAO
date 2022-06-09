@@ -26,7 +26,7 @@ function setActive(id) {
 function ChangeTab(id){
     setActive(id);
 
-    
+    document.getElementById('Crowdsale').style.display = "none";
 
 }
 
