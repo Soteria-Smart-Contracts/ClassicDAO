@@ -29,7 +29,9 @@ footer{
 .footertext{
     color: #ffffff;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     padding-top: 10px;
+    
 }
 
 .e{
