@@ -32,9 +32,6 @@ function WelcomePage(){
     document.getElementById('Crowdsale').style.display = "none";
     document.getElementById('DAO').style.display = "none";
     document.getElementById('Staking').style.display = "none";
-    document.getElementById('Welcome').style.display = "initial";
     
-    document.getElementById('Crowdsale').style.display = "none";
-    document.getElementById('DAO').style.display = "none";
-    document.getElementById('Staking').style.display = "none";
+    document.getElementById('Welcome').style.display = "initial";
 }
