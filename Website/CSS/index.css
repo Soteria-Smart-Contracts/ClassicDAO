@@ -17,10 +17,10 @@ h1.connect{
 
 footer{
     background-color: #636262;
-    height: 30px;
+    height: 50px;
     position: absolute;
     bottom: 0px;
-    width: 102%;
+    width: 102.5%;
     margin-left: -3%;
     margin-right: -3%;
 }
