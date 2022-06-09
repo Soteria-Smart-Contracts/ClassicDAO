@@ -9,10 +9,6 @@ body{
 
 }
 
-.wrapper{
-    padding-bottom: 50px;
-}
-
 h1{
     font-size: 24px;
     padding-top: 0px;
@@ -32,6 +28,7 @@ footer{
     margin: 0;
     padding: 0;
     text-align: center;
+    clear: ;
 }
 
 .footertext{
