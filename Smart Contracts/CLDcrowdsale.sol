@@ -120,7 +120,7 @@ contract CLD_Crowdsale {
         require(Setup == 1);
         
         Crowdsale_End_Unix = (block.timestamp + 600);
-        Crowdsale_Mode.Sale_Mode_Text = ("Sale is Open to buy CLS");
+        Crowdsale_Mode.Sale_Mode_Text = ("Sale is Open to buy CLD");
         Crowdsale_Mode.Sale_Mode = 2;
         
         emit CrowdsaleStarted(msg.sender, CLD_Sale_Allocation, Crowdsale_End_Unix);
@@ -134,7 +134,7 @@ contract CLD_Crowdsale {
         require(Crowdsale_Mode.Sale_Mode == 2);
         require(block.timestamp > Crowdsale_End_Unix);
         
-        Crowdsale_Mode.Sale_Mode_Text = ("Sale is over, Time to withdraw CLS!");
+        Crowdsale_Mode.Sale_Mode_Text = ("Sale is over, Time to withdraw CLD!");
         Crowdsale_Mode.Sale_Mode = 3;
         
         
