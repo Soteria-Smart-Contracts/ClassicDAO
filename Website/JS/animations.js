@@ -23,13 +23,13 @@ function setActive(id) {
     document.getElementById(id).className = "Mactive"; 
 }
 
-function ChangeTab(id){
+function ChangeTab(id, newtab){
     setActive(id);
 
     document.getElementById('Crowdsale').style.display = "none";
     document.getElementById('DAO').style.display = "none";
     document.getElementById('Staking').style.display = "none";
-    
+
     document.getElementById('Crowdsale').style.display = "initial";
 }
 
