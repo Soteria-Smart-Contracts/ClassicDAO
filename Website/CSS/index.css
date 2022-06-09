@@ -40,6 +40,10 @@ a.footertext{
     text-decoration: none;
 }
 
+a.link{
+    font-family: 'Roboto', sans-serif;
+}
+
 .e{
     padding: 0;
     margin: 0;
