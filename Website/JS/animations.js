@@ -15,3 +15,7 @@ function setActive(id) {
 
     document.getElementById(id).className = "Mactive"; 
 }
+
+function removeOverlay(){
+    document.getElementById('overlay').style.display = "none";
+}
