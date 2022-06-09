@@ -125,11 +125,11 @@ nav{
     padding-top: 5px;
     padding-bottom: 5px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .Minactive:hover{
     color: #05af33;
+    cursor: pointer;
 }
 
 .Mactive{
@@ -146,6 +146,7 @@ nav{
     background-color: #3c3c3c;
     border: #3c3c3c solid 2px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .wallet{
