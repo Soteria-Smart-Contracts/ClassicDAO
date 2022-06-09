@@ -31,8 +31,8 @@ contract CLD_Crowdsale {
     Mode Crowdsale_Mode;
     //Crowdsale Modes
     //1: Before sale preperation Mode
-    //2: Sale is Open to buy CLS
-    //3: Sale is over, CLS buyer withdrawal period
+    //2: Sale is Open to buy CLD
+    //3: Sale is over, CLD buyer withdrawal period
     //99 Emergency Shutdown mode, in case any issues or bugs need to be dealt with, Safe for buyers, and ETC withdrawls will be available
     
     
