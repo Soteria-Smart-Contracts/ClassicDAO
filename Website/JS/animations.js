@@ -1,3 +1,6 @@
+let currentpage;
+
+
 if(window.location.href == "https://classicdao.one/dscrowdsale"){
     document.getElementById('menuone').className = "Mactive"; 
 }
