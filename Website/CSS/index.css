@@ -10,7 +10,9 @@ h1{
     padding-top: 0px;
 }
 
-h1.connect
+h1.connect{
+    padding-left: 20px;
+}
 
 .e{
     padding: 0;
