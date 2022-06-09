@@ -194,7 +194,7 @@ contract CLD_Crowdsale {
     }
     
     //Redundancy
-    function ChangeCLDaddy(address payable NewAddy)public returns(bool success, address CLSaddy){ //TESTED - WORKS
+    function ChangeCLDaddy(address payable NewAddy)public returns(bool success, address CLDaddy){ //TESTED - WORKS
         require(msg.sender == CrowdSale_Operator);
         require(Crowdsale_Mode.Sale_Mode != 3);
         CLD = NewAddy;
