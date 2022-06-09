@@ -2,7 +2,7 @@ const ABI = window.abi;
 const contractAddress = "0x0000000000000000000000000000000000000000";
 let account;
 let contract;
-let yourNumber;
+let netID;
 loginWithEth();
 
 
