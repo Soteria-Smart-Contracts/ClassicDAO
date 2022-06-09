@@ -30,5 +30,5 @@ function removeOverlay(){
 }
 
 function WelcomePage(){
-    
+    ChangeTab()
 }
