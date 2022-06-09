@@ -204,7 +204,7 @@ window.abi = [
                 },
                 {
                     "internalType": "address",
-                    "name": "CLSaddy",
+                    "name": "CLDaddy",
                     "type": "address"
                 }
             ],
@@ -517,7 +517,7 @@ window.abi = [
             "outputs": [
                 {
                     "internalType": "uint256",
-                    "name": "_CLSwithdrawn",
+                    "name": "_CLDwithdrawn",
                     "type": "uint256"
                 }
             ],
