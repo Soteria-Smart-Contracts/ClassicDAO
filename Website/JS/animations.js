@@ -23,7 +23,7 @@ function setActive(id) {
     document.getElementById(id).className = "Mactive"; 
 }
 
-function ChangeTab()
+function ChangeTab(id)
 
 function removeOverlay(){
     document.getElementById('overlay').style.display = "none";
