@@ -16,7 +16,6 @@ function setActive(id) {
 function ChangeTab(id, newtab){
     setActive(id);
 
-
     document.getElementById('Welcome').style.display = "none";
     document.getElementById('Crowdsale').style.display = "none";
     document.getElementById('DAO').style.display = "none";
