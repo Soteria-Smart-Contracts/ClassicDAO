@@ -28,7 +28,7 @@ footer{
 
 .footertext{
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     padding-top: 0.8%;
