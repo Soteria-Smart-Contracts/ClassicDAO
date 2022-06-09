@@ -26,6 +26,12 @@ footer{
     text-align: center;
 }
 
+.footertext{
+    color: #ffffff;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
 .e{
     padding: 0;
     margin: 0;
