@@ -21,7 +21,7 @@ async function loginWithEth(){
         if (netID != 61){
             console.log("The current Metamask/Web3 network is not Ethereum Classic, please connect to the ETC network.");
             alert("The current Metamask/Web3 network is not Ethereum Classic, please connect to the ETC network.");
-            
+            TransactionsAllowed = false;
             return("Failed to connect")
         }
     } else {
