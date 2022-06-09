@@ -24,8 +24,10 @@ function setActive(id) {
 }
 
 function ChangeTab(id){
-    setActive(id)
+    setActive(id);
+
     
+
 }
 
 function removeOverlay(){
