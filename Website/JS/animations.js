@@ -1,4 +1,4 @@
-ChangeTab()
+ChangeTab('menuone', 'Welcome');
 
 document.getElementById('Crowdsale').style.display = "none";
 document.getElementById('DAO').style.display = "none";
