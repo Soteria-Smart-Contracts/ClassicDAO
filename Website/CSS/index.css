@@ -111,7 +111,8 @@ a.link{
     height: 50px;
     width: 470px;
     border-radius: 20px;
-    border-top-left-radius: 15px;
+    border-top-left-radius: 14px;
+    border-top-left-radius: 14px;
 }
 
 .dappcontainer{
