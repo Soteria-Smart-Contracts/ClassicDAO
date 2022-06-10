@@ -109,7 +109,8 @@ a.link{
     left: 0px;
     background-color: #494949;
     height: 50px;
-    width: 475px;
+    width: 470px;
+    border-radius: 20px;
 }
 
 .dappcontainer{
