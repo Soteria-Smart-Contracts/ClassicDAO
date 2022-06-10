@@ -81,7 +81,7 @@ a.link{
     margin-left: 10%;
     margin-right: 10%;
     background-color: #494949;
-    height: 1%;
+    max-height: ;
 }
 
 .div-center.connect{
