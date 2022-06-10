@@ -88,6 +88,10 @@ a.link{
     max-height: 30px;
 }
 
+.div-center.info{
+    
+}
+
 .dapp-div{
     display: flex;
     flex-direction: column;
