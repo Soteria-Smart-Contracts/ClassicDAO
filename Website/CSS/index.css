@@ -91,7 +91,7 @@ a.link{
     background-color: #32EA68;
     position: relative;
     min-width: 10%;
-    min-height: 10%;
+    min-height: 200px;
     max-width: 10%;
     max-height: 10%;
     margin-left: 15%;
