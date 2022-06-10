@@ -105,7 +105,8 @@ a.link{
 
 .dapptop{
     background-color: #494949;
-    
+    height: 10px;
+    width: 10px;
 }
 
 .dappcontainer{
