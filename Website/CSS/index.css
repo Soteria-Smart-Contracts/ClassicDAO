@@ -106,7 +106,7 @@ a.link{
 .dapptop{
     position: absolute;
     top: 0px;
-    align-items: center;
+    left: 5%;
     background-color: #494949;
     height: 10px;
     width: 10px;
