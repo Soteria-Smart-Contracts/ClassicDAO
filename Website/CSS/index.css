@@ -86,6 +86,7 @@ a.link{
 
 .dapp-div{
     background-color: #32EA68;
+    position: relative;
     min-width: 10%;
     min-height: 10%;
 
