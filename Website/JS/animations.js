@@ -1,5 +1,5 @@
 document.getElementById('Welcome').style.display = "none";
-document.getElementById("Crowdsale").style.display = "initial";
+document.getElementById("Crowdsale").style.display = "block";
 
 document.getElementById('Crowdsale').style.display = "none";
 document.getElementById('DAO').style.display = "none";
