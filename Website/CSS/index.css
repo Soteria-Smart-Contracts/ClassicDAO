@@ -110,7 +110,7 @@ a.link{
     left: 0px;
     background-color: #494949;
     max-height: 50px;
-    min
+    min-height: 50px;
     width: 470px;
     border-radius: 6px;
     border-top-left-radius: 14px;
