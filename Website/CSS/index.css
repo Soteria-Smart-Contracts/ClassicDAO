@@ -87,7 +87,8 @@ a.link{
 .dapp-div{
     display: flex;
     flex-direction: column;
-    text-align: center; ;
+    text-align: center;
+    vertical-align: ce;
     background-color: #32EA68;
     position: relative;
     min-width: 10%;
