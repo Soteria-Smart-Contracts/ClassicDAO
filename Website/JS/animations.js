@@ -1,4 +1,4 @@
-window.onload
+ChangeTab('menuone', 'Crowdsale');
 
 document.getElementById('Crowdsale').style.display = "none";
 document.getElementById('DAO').style.display = "none";
@@ -17,7 +17,7 @@ function ChangeTab(id, newtab){
     setActive(id);
 
     document.getElementById('Welcome').style.display = "none";
-    document.getElementById('Crowdsale').style.display = "initial";
+    document.getElementById('Crowdsale').style.display = "none";
     document.getElementById('DAO').style.display = "none";
     document.getElementById('Staking').style.display = "none";
 
