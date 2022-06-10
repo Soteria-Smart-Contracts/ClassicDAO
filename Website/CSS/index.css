@@ -87,6 +87,7 @@ a.link{
 .dapp-div{
     display: flex;
     flex-direction: column;
+    background-color: #32EA68;
     
 
 }
