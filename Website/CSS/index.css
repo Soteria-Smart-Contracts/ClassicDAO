@@ -103,6 +103,11 @@ a.link{
 
 }
 
+.dapptop{
+    background-color: #494949;
+    
+}
+
 .dappcontainer{
     display: flex;
     flex-direction: row;
