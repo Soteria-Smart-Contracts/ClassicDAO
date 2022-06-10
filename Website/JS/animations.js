@@ -1,5 +1,5 @@
 
-document.getElementById('Crowdsale').style.display = "initial";
+document.getElementById('Welcome').style.display = "none";
 document.getElementById('DAO').style.display = "none";
 document.getElementById('Staking').style.display = "none";
 
