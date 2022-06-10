@@ -88,7 +88,6 @@ a.link{
     display: flex;
     flex-direction: column;
     text-align: center;
-    vertical-align: center;
     background-color: #32EA68;
     position: relative;
     min-width: 10%;
