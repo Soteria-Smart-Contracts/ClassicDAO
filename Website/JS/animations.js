@@ -1,3 +1,4 @@
+ChangeTab()
 
 document.getElementById('Crowdsale').style.display = "none";
 document.getElementById('DAO').style.display = "none";
