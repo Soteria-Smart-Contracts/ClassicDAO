@@ -14,7 +14,10 @@ body{
 
 }
 
-a.info
+a.info{
+    color: #ffffff;
+    text-decoration: none;
+}
 
 p.info{
     font-size: normal;
