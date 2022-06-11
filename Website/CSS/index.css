@@ -17,6 +17,7 @@ body{
 a.info{
     font-size: normal;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 h1{
