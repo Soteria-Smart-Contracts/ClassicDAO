@@ -91,7 +91,8 @@ a.link{
 .div-center.info{
     margin-top: 5%;
     text-align: center;
-    padding: ;
+    padding: 30px;
+    min-width: none;
     
 }
 
