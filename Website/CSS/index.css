@@ -123,7 +123,7 @@ a.link{
     display: flex;
     flex-direction: column;
     text-align: left;
-    justify-content: t
+    justify-content: top;
     background-color: #00AE33;
     position: relative;
     min-width: 410px;
