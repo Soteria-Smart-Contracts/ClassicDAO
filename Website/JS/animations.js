@@ -17,7 +17,7 @@ async function UpdateDetails(){
     await getMode();
 
     if (mode[0] == 3){
-    document.getElementById('salemode').innerText = 'Completed,';
+    document.getElementById('salemode').innerText = 'Completed, you can now withdraw CLD';
     }
 }
 
