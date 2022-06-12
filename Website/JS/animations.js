@@ -14,7 +14,7 @@ function setActive(id) {
 }
 
 function UpdateDetails(){
-    document.getElementById('salemode')
+    document.getElementById('salemode').innerText
 }
 
 function ChangeTab(id, newtab){
