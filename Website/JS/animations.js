@@ -13,8 +13,8 @@ function setActive(id) {
     document.getElementById(id).className = "Mactive"; 
 }
 
-function UpdateDetails(){
-    document.getElementById('salemode').innerText = getMode();
+async function UpdateDetails(){
+    document.getElementById('salemode').innerText = await getMode();
 }
 
 function ChangeTab(id, newtab){
