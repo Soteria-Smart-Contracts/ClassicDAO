@@ -26,6 +26,7 @@ function ChangeTab(id, newtab){
 
 function removeOverlay(){
     document.getElementById('overlay').style.display = "none";
+    document.body.style.overflow = "auto";
 }
 
 function WelcomePage(){
