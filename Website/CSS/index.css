@@ -159,7 +159,7 @@ a.link{
     display: flex;
     flex-direction: column;
     align-self: left;
-    padding-top: 40px;
+    padding-top: 100px;
 }
 
 .dappcontainer{
