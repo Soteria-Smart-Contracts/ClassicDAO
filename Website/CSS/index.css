@@ -158,8 +158,10 @@ a.link{
 
 .csinfo{
     display: flex;
+    color: black;
     flex-direction: column;
     align-self: left;
+    font-size: larger;
 }
 
 .dappcontainer{
