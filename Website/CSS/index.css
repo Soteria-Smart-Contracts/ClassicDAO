@@ -154,6 +154,12 @@ a.link{
     border-top-right-radius: 14px;
 }
 
+.csinfo{
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+}
+
 .dappcontainer{
     display: flex;
     flex-direction: row;
