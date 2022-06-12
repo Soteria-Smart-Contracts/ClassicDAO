@@ -162,7 +162,8 @@ a.link{
     width: fit-content;
     flex-direction: column;
     align-self: left;
-    font-size: larger;
+    font-size: large;
+    font-weight: ;
     margin-top: 5%;
     padding: 5%;
     padding-top: 1.5%;
