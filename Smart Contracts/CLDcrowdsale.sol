@@ -212,7 +212,7 @@ contract CLD_Crowdsale {
         return (ETC_Deposited[_address]);
     }
 
-    function GetCurrentExchangeRate() public view returns(uint256){ //TESTED - WORKS) {
+    function GetCurrentExchangeRate() public view returns(uint256){ //Untested) 
         
     }
 
