@@ -17,7 +17,7 @@ async function UpdateDetails(){
     await getMode();
 
     if (mode[0] == 3){
-    document.getElementById('salemode').innerText = 'Sale is over';
+    document.getElementById('salemode').innerText = 'Completed,';
     }
 }
 
