@@ -156,10 +156,10 @@ contract CLD_Crowdsale {
         uint256 Contract_ETC_Balance = (address(this).balance);
         
         if (Multisig == true){
-            (LiquidityAddress).transfer((Contract_ETC_Balance * 600) / 1000);
-            (TreasuryFund).transfer((Contract_ETC_Balance * 160) / 1000);
-            (Dev_1).transfer((Contract_ETC_Balance * 120) / 1000);
-            (Dev_2).transfer((Contract_ETC_Balance * 120) / 1000);
+            (LiquidityAddress).transfer((Contract_ETC_Balance * 350) / 1000);
+            (TreasuryFund).transfer((Contract_ETC_Balance * 350) / 1000);
+            (Dev_1).transfer((Contract_ETC_Balance * 150) / 1000);
+            (Dev_2).transfer((Contract_ETC_Balance * 150) / 1000);
         }
 
         return success;
