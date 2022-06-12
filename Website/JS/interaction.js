@@ -37,6 +37,6 @@ async function getID(){
 }
 
 async function getMode(){
-    let mode = await contract.methods.getMode().call();
+    let mode = await contract.methods.GetContractMode().call();
     return(mode);
 }
