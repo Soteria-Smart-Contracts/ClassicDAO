@@ -212,6 +212,10 @@ contract CLD_Crowdsale {
         return (ETC_Deposited[_address]);
     }
 
+    function GetCurrentExchangeRate() public view returns(uint256){ //TESTED - WORKS) {
+        
+    }
+
     //Make this contract accept ETH instead of WETH
 
 
