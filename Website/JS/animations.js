@@ -13,6 +13,8 @@ function setActive(id) {
     document.getElementById(id).className = "Mactive"; 
 }
 
+function UpdateDetails()
+
 function ChangeTab(id, newtab){
     setActive(id);
 
