@@ -122,7 +122,7 @@ a.link{
 .dapp-div{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     background-color: #00AE33;
     position: relative;
