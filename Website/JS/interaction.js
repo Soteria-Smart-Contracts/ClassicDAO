@@ -3,6 +3,7 @@ const contractAddress = "0x0241eef4BbC149FFA80Eb3eb550530582b9249dD";
 let account;
 let contract;
 let netID;
+let mode;
 loginWithEth();
 
 
