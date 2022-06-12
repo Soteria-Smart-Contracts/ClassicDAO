@@ -162,7 +162,7 @@ a.link{
     flex-direction: column;
     align-self: left;
     font-size: larger;
-    padding-top: 5%;
+    margin-top: 5%;
 }
 
 .dappcontainer{
