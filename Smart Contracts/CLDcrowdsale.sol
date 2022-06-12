@@ -138,7 +138,7 @@ contract CLD_Crowdsale {
         Crowdsale_Mode.Sale_Mode = 3;
         
         
-        Allocation_Exchange_Rate = (((CLD_Sale_Allocation * 100000000) / (Total_ETC_Deposited / 100000000))); //CHECK MATH
+        Allocation_Exchange_Rate = (((CLD_Sale_Allocation * 100000000) / (Total_ETC_Deposited / 100000000)));
         
         emit CrowdsaleEnded(msg.sender, Total_ETC_Deposited, block.timestamp);
         return(success);
