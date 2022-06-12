@@ -15,7 +15,10 @@ function setActive(id) {
 
 async function UpdateDetails(){
     await getMode();
-    document.getElementById('salemode').innerText = mode;
+
+    if (mode[0] == 3){
+    document.getElementById('salemode').innerText = 'Sale is over';
+    }
 }
 
 function ChangeTab(id, newtab){
