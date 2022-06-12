@@ -141,6 +141,7 @@ a.link{
 .dapptop{
     position: absolute;
     padding-top: 4%;
+    text-align: center;
     top: -2px;
     left: 0px;
     background-color: #494949;
