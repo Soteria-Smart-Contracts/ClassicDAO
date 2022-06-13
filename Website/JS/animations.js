@@ -25,8 +25,8 @@ async function UpdateDetails(){
     if (mode[0] == 3){
     document.getElementById('salemode').innerText = 'Completed';
     }
-    if (mode[0] == 3){
-        document.getElementById('salemode').innerText = 'Completed';
+    if (mode[0] == 99){
+        document.getElementById('salemode').innerText = 'Emergency Mode';
         }
 }
 
