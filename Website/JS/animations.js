@@ -19,7 +19,7 @@ function setMaxDeposit(){
 
 
 function setMaxWithdraw(){
-    document.getElementById('withdrawinput').value = balance;
+    document.getElementById('withdrawinput').value = deposited;
 }
 
 function setInterface(type){
