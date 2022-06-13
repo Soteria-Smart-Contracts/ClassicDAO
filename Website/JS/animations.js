@@ -13,6 +13,11 @@ function setActive(id) {
     document.getElementById(id).className = "Mactive"; 
 }
 
+function setMaxDeposit()
+
+
+setMaxDeposit()
+
 function setInterface(type){
     if (type == "none"){
         document.getElementById('f1').style.display = "inline-block";
