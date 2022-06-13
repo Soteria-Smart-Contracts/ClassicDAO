@@ -18,6 +18,7 @@ function setInterface(type){
         document.getElementById('f1').style.display = "initial";
         document.getElementById('f2').style.display = "initial";
         document.getElementById('interface').style.backgroundColor = "initial";
+        document.getElementById('interface').onclick = none;
     }
     if (type == "deposit"){
         document.getElementById('interface').style.backgroundColor = "black";
@@ -27,6 +28,7 @@ function setInterface(type){
     }
     if (type == "withdraw"){
         document.getElementById('interface').style.backgroundColor = "black";
+        document.getElementById('interface').onclick = setInterface("none");
         document.getElementById('f1').style.display = "none";
         document.getElementById('f2').style.display = "none";
     }
