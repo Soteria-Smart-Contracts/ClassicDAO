@@ -45,7 +45,7 @@ async function getMode(){
 
 async function getBalance(){
     let balance = await web3.eth.getBalance(account);
-    let decimalbalance = (web3.utils.fromWei(balance, 'ether')).tofixed(2));
+    let decimalbalance = ((web3.utils.fromWei(balance, 'ether')).tofixed(2));
     console.log(decimalbalance)
     return(decimalbalance)
 }
