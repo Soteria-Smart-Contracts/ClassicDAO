@@ -17,6 +17,8 @@ async function UpdateDetails(num){
     await getMode();
     await getBalance();
 
+    
+
     if (mode[0] == 1){
     document.getElementById('salemode').innerText = 'Not Started';
     }
