@@ -21,14 +21,14 @@ function setInterface(type){
         document.getElementById('functionality').onclick = null;
     }
     if (type == "deposit"){
-        document.getElementById('interface').style.backgroundColor = "black";
-        document.getElementById('interface').onclick = setInterface("none");
+        document.getElementById('functionality').style.backgroundColor = "black";
+        document.getElementById('functionality').onclick = setInterface("none");
         document.getElementById('f1').style.display = "none";
         document.getElementById('f2').style.display = "none";
     }
     if (type == "withdraw"){
-        document.getElementById('interface').style.backgroundColor = "black";
-        document.getElementById('interface').onclick = setInterface("none");
+        document.getElementById('functionality').style.backgroundColor = "black";
+        document.getElementById('functionality').onclick = setInterface("none");
         document.getElementById('f1').style.display = "none";
         document.getElementById('f2').style.display = "none";
     }
