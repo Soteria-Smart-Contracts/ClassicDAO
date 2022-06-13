@@ -270,7 +270,7 @@ a.actionname{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 .inputwrapper{
@@ -299,13 +299,6 @@ a.actionname{
     border-radius: 17px;
     font-size: larger;
     font-weight: bold;
-}
-
-.actionname{
-    color: white;
-    font-size: larger;
-    font-weight: bold;
-    margin-top: 10%;
 }
 
 .innerbutton.btm{
