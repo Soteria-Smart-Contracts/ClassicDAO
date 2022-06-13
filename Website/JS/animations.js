@@ -32,7 +32,7 @@ async function UpdateDetails(){
         document.getElementById('salemode').innerText = 'Emergency Mode';
     }
     else{
-        document.getElementById('salemode').innerText = 'Emergency Mode';
+        document.getElementById('salemode').innerText = 'ERROR';
     }
 }
 
