@@ -2,6 +2,7 @@ const ABI = window.abi;
 const contractAddress = "0x0241eef4BbC149FFA80Eb3eb550530582b9249dD";
 let account;
 let balance;
+let deposited;
 let contract;
 let netID;
 let mode;
@@ -53,6 +54,6 @@ async function getBalance(){
 }
 
 async function getETCDeposited(){
-    let deposited = await contract.methods.GetETCDeposited().call();
+    deposited = await contract.methods.GetETCDeposited().call();
     return(deposited);
 }
