@@ -183,6 +183,7 @@ a.link{
     margin-top: 3%;
     width: 100%;
     background-color: #32EA68;
+    border: black solid 3px;
     height: 17%;
     border-radius: 20px;
     box-shadow: 2px 7px 10px black;
