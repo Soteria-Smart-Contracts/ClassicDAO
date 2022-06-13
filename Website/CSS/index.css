@@ -176,7 +176,9 @@ a.link{
     display: inline-block;
 }
 
-.balances
+.balances{
+    
+}
 
 .dappcontainer{
     display: flex;
