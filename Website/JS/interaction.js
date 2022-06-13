@@ -39,6 +39,12 @@ async function loginWithEth(){
 
 
 
+async function DepositETC(){
+    
+}
+
+
+
 
 async function getID(){
     let idhex = web3.eth._provider.chainId;
