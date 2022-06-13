@@ -18,16 +18,16 @@ async function UpdateDetails(){
 
     if (mode[0] == 1){
     document.getElementById('salemode').innerText = 'Completed';
-    }
+        }
     if (mode[0] == 2){
         document.getElementById('salemode').innerText = 'Completed';
-        }
+    }
     if (mode[0] == 3){
     document.getElementById('salemode').innerText = 'Completed';
     }
     if (mode[0] == 99){
         document.getElementById('salemode').innerText = 'Emergency Mode';
-        }
+    }
 }
 
 function ChangeTab(id, newtab){
