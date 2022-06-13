@@ -29,7 +29,7 @@ async function UpdateDetails(num){
         document.getElementById('salemode').innerText = 'Emergency Mode';
     }
     else{
-        document.getElementById('salemode').innerText = 'Emergency Mode';
+        document.getElementById('salemode').innerText = 'Error';
     }
 }
 
