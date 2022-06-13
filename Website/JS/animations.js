@@ -13,7 +13,11 @@ function setActive(id) {
     document.getElementById(id).className = "Mactive"; 
 }
 
-function setInterface()
+function setInterface(type){
+    if (type == "none"){
+        
+    }
+}
 
 async function UpdateDetails(){
     await getMode();
