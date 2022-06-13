@@ -13,7 +13,7 @@ let accountInterval = setInterval(function() {
       account = web3.eth.accounts[0];
       loginWithEth();
     }
-  }, 100);
+  }, 300);
 
 
 async function loginWithEth(){
