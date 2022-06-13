@@ -181,6 +181,7 @@ a.link{
     align-self: center;
     display: inline-block;
     padding: 6px;
+    padding-top: 3px;
     text-align: left;
     margin-top: 3%;
     width: 100%;
