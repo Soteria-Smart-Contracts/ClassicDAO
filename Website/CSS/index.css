@@ -275,6 +275,7 @@ a.actionname{
 .inputwrapper{
     height: fit-content;
     margin: 0;
+    width: min-content;
 }
 
 .specialinput{
