@@ -17,8 +17,9 @@ function setInterface(type){
     if (type == "none"){
     }
     if (type == "deposit"){
-    
-    
+    }
+    if (type == "withdraw"){
+    }
 }
 
 async function UpdateDetails(){
