@@ -196,7 +196,9 @@ a.link{
     margin: 5px;
 }
 
-.inner.right{}
+.inner.right{
+    padding-left: 0%;
+}
 
 .dappcontainer{
     display: flex;
