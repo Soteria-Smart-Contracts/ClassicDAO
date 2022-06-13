@@ -44,7 +44,6 @@ async function getMode(){
 }
 
 async function getBalance(){
-    
-
+    let 
 
 }
