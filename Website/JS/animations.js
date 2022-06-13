@@ -21,8 +21,8 @@ function setInterface(type){
     }
     if (type == "deposit"){
         document.getElementById('interface').style.backgroundColor = "black";
-        document.getElementById('f1').style.display = "initial";
-        document.getElementById('f2').style.display = "initial";
+        document.getElementById('f1').style.display = "none";
+        document.getElementById('f2').style.display = "none";
     }
     if (type == "withdraw"){
         document.getElementById('interface').style.backgroundColor = "black";
