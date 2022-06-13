@@ -13,11 +13,13 @@ function setActive(id) {
     document.getElementById(id).className = "Mactive"; 
 }
 
-function setMaxDeposit()
+function setMaxDeposit(){
+    document.getElementById('depositinput').value = balance;
+}
 
 
 function setMaxWithdraw(){
-    document.getElementById('withdraw').value = balance;
+    document.getElementById('withdrawinput').value = balance;
 }
 
 function setInterface(type){
