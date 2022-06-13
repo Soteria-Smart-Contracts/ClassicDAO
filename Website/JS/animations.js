@@ -15,8 +15,10 @@ function setActive(id) {
 
 function setInterface(type){
     if (type == "none"){
-        
     }
+    if (type == "deposit"){
+    
+    
 }
 
 async function UpdateDetails(){
