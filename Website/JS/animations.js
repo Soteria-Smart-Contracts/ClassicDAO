@@ -20,7 +20,7 @@ async function UpdateDetails(num){
     document.getElementById('salemode').innerText = 'Not Started';
     }
     if (num == 2){
-        document.getElementById('salemode').innerText = 'Completed';
+        document.getElementById('salemode').innerText = 'Sale In Progress';
     }
     if (num == 3){
     document.getElementById('salemode').innerText = 'Completed';
