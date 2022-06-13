@@ -282,6 +282,8 @@ a.actionname{
     border: #1a3b15 solid 2px;
     text-align: center;
     font-size: large;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .innerbutton{
@@ -295,11 +297,6 @@ a.actionname{
     border-radius: 17px;
     font-size: larger;
     font-weight: bold;
-}
-
-.specialinput{
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 .actionname{
