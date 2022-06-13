@@ -16,7 +16,7 @@ function setActive(id) {
 function setInterface(type){
     if (type == "none"){
         document.getElementById('f1').style.display = "inline-block";
-        document.getElementById('f2').style.display = "initial";
+        document.getElementById('f2').style.display = "inline-block";
         document.getElementById('functionality').style.backgroundColor = "#494949";
     }
     if (type == "deposit"){
