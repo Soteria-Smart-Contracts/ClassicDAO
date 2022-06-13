@@ -271,6 +271,12 @@ a.actionname{
     margin-top: 5%;
 }
 
+.specialinput{
+    width: 70%;
+    height: 30px;
+    border: #1a3b15 solid 2px;
+}
+
 .innerbutton{
     display: inline-block;
     cursor: pointer;
