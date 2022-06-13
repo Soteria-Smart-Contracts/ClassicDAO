@@ -22,7 +22,7 @@ function setInterface(type){
     }
     if (type == "deposit"){
         document.getElementById('functionality').style.backgroundColor = "black";
-        document.getElementById('functionality').onclick = 'setInterface("none")';
+        document.getElementById('').setAttribute( "onClick", "javascript: Boo();" );
         document.getElementById('f1').style.display = "none";
         document.getElementById('f2').style.display = "none";
     }
