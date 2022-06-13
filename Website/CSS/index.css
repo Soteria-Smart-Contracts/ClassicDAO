@@ -247,6 +247,7 @@ a.link{
     right: 5%;
     padding: 10px;
     font-size: 24px;
+    cursor: pointer;
 }
 
 .innerbutton{
