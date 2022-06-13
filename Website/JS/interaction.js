@@ -42,7 +42,7 @@ async function loginWithEth(){
 async function DepositETC(){
     let amount = document.getElementById('depositamount').value;
     let amountwei = web3.utils.toWei(amount, 'ether'); 
-    
+    let tx = await contract.methods.DepositETC(amountwei).send({from: account, gas: 3000000});
 }
 
 
