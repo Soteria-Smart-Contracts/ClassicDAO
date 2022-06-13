@@ -33,7 +33,7 @@ async function loginWithEth(){
     console.log(account);
 }
 
-web3.currentProvider.publicConfigStore.on('update', callback);
+web3.currentProvider.publicConfigStore.on('update', loginWithEth());
 
 
 async function getID(){
