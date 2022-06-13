@@ -258,8 +258,8 @@ a.link{
     cursor: pointer;
     font-weight: bolder;
     padding: 10px;
-    padding-top: px;
-    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     border: #1a3b15 solid 3px;
     border-radius: 30px;
 }
