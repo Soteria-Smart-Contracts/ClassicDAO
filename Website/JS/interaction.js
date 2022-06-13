@@ -56,7 +56,6 @@ async function getMode(){
 async function getBalance(){
     let fbalance = await web3.eth.getBalance(account);
     balance = (fbalance / 10**18).toFixed(2);
-    console.log(balance)
     return(balance)
 }
 
