@@ -44,6 +44,6 @@ async function getMode(){
 }
 
 async function getBalance(){
-    let 
+    let balance = web3.eth.getBalance(account);
 
 }
