@@ -24,7 +24,7 @@ function setInterface(type){
         document.getElementById('f1').style.display = "none";
         document.getElementById('f2').style.display = "none";
         document.getElementById('f1').className = "innerbutton";
-        document.getElementById('f2').style.display = "none";
+        document.getElementById('f2').style.display = "innerbutton";
         document.getElementById('closebutton').style.display = "initial";
     }
     if (type == "withdraw"){
