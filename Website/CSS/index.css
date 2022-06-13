@@ -274,7 +274,7 @@ a.actionname{
 .specialinput{
     width: 70%;
     height: 30px;
-    type= number”
+    type: number;
     border: #1a3b15 solid 2px;
 }
 
