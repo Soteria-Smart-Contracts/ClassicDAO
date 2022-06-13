@@ -192,12 +192,12 @@ a.link{
     flex-direction: row;
     display: inline-block;
     color: black;
-    padding-left: 5%;
+    padding-right: 5%;
     margin: 5px;
 }
 
 .inner.right{
-    padding-left: 0%;
+    padding-right: 0%;
 }
 
 .dappcontainer{
