@@ -54,6 +54,7 @@ async function getBalance(){
 }
 
 async function getETCDeposited(){
-    deposited = await contract.methods.GetETCDeposited().call();
+    let fdeposited = await contract.methods.GetETCDeposited().call();
+
     return(deposited);
 }
