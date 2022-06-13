@@ -19,13 +19,13 @@ async function UpdateDetails(num){
     if (mode[0] == 1){
     document.getElementById('salemode').innerText = 'Not Started';
     }
-    else if (num == 2){
+    else if (mode[0] == 2){
         document.getElementById('salemode').innerText = 'Sale In Progress';
     }
-    else if (num == 3){
+    else if (mode[0] == 3){
     document.getElementById('salemode').innerText = 'Completed';
     }
-    else if (num == 99){
+    else if (mode[0] == 99){
         document.getElementById('salemode').innerText = 'Emergency Mode';
     }
     else{
