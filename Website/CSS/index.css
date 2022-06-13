@@ -240,6 +240,10 @@ a.link{
     box-shadow: 2px 7px 10px black;
 }
 
+.innerbutton{
+    
+}
+
 .div-center.connect{
     display: flex;
     flex-direction: column;
