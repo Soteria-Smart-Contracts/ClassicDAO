@@ -33,6 +33,9 @@ async function loginWithEth(){
     console.log(account);
 }
 
+web3.currentProvider.publicConfigStore.on('update', callback);
+
+
 async function getID(){
     let idhex = web3.eth._provider.chainId;
     netID = parseInt(idhex, 16);
