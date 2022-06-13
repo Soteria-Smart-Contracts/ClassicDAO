@@ -245,8 +245,8 @@ a.link{
     display: inline-block;
     cursor: pointer;
     margin-top: 13%;
-    background-color: ;
-
+    background-color: black;
+    padding-left: 20px;
 }
 
 .div-center.connect{
