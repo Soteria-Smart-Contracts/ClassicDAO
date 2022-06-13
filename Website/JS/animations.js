@@ -16,13 +16,13 @@ function setActive(id) {
 async function UpdateDetails(num){
     //await getMode();
 
-    if (mode[0] == 1){
+    if (num == 1){
     document.getElementById('salemode').innerText = 'Completed';
     }
-    if (mode[0] == 2){
+    if (num == 2){
         document.getElementById('salemode').innerText = 'Completed';
     }
-    if (mode[0] == 3){
+    if (num == 3){
     document.getElementById('salemode').innerText = 'Completed';
     }
     if (num == 99){
