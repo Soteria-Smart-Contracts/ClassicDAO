@@ -251,7 +251,12 @@ a.link{
 }
 
 .maxbutton{
-    
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .actionbutton{
