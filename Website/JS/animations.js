@@ -13,8 +13,8 @@ function setActive(id) {
     document.getElementById(id).className = "Mactive"; 
 }
 
-async function UpdateDetails(){
-    await getMode();
+async function UpdateDetails(num){
+    //await getMode();
 
     if (mode[0] == 1){
     document.getElementById('salemode').innerText = 'Completed';
