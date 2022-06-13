@@ -16,15 +16,18 @@ function setActive(id) {
 async function UpdateDetails(){
     await getMode();
 
+    if (mode[0] == 1){
+    document.getElementById('salemode').innerText = 'Completed';
+    }
+    if (mode[0] == 2){
+        document.getElementById('salemode').innerText = 'Completed';
+        }
     if (mode[0] == 3){
     document.getElementById('salemode').innerText = 'Completed';
     }
     if (mode[0] == 3){
         document.getElementById('salemode').innerText = 'Completed';
         }
-    if (mode[0] == 3){
-    document.getElementById('salemode').innerText = 'Completed';
-    }
 }
 
 function ChangeTab(id, newtab){
