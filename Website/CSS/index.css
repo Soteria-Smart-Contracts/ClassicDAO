@@ -243,7 +243,7 @@ a.link{
 
 .close{
     position: absolute;
-    top: 0px;
+    top: 30%;
     right: 0px;
     padding: 10px;
     font-size: 20px;
