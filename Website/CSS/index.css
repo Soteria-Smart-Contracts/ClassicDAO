@@ -252,10 +252,10 @@ a.link{
 
 .maxbutton{
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 5%;
     padding: 10px;
-    font-size: 24px;
+    font-size: 18px;
     cursor: pointer;
 }
 
