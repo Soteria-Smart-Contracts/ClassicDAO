@@ -17,7 +17,7 @@ function setInterface(type){
     if (type == "none"){
         document.getElementById('f1').style.display = "initial";
         document.getElementById('f2').style.display = "initial";
-        
+        document.getElementById('interface').style.display = "initial";
     }
     if (type == "deposit"){
     }
