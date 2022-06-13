@@ -15,6 +15,7 @@ function setActive(id) {
 
 function setInterface(type){
     if (type == "none"){
+        document.getElementById('f1').style.display = "none";
     }
     if (type == "deposit"){
     }
