@@ -26,6 +26,8 @@ function setInterface(type){
     }
     if (type == "withdraw"){
         document.getElementById('interface').style.backgroundColor = "black";
+        document.getElementById('f1').style.display = "none";
+        document.getElementById('f2').style.display = "none";
     }
 }
 
