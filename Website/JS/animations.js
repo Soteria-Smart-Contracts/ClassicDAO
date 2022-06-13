@@ -16,7 +16,7 @@ function setActive(id) {
 async function UpdateDetails(num){
     await getMode();
 
-    if (num == 1){
+    if (mode[0] == 1){
     document.getElementById('salemode').innerText = 'Not Started';
     }
     else if (num == 2){
