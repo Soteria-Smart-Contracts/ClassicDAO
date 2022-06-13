@@ -242,7 +242,7 @@ a.link{
 
 .innerbutton{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     display: inline-block;
     color: black;
     padding-right: 5%;
