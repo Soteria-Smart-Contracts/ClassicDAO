@@ -13,6 +13,8 @@ function setActive(id) {
     document.getElementById(id).className = "Mactive"; 
 }
 
+function setInterface()
+
 async function UpdateDetails(){
     await getMode();
     await getBalance();
