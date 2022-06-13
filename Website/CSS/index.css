@@ -254,10 +254,12 @@ a.link{
     position: absolute;
     top: 59%;
     right: 19%;
+    background-color: #32EA68;
     padding: 10px;
     font-size: 18px;
     color: black;
     cursor: pointer;
+    border-radius-top-right: 20px;
 }
 
 .actionbutton{
