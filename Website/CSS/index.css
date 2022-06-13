@@ -253,7 +253,7 @@ a.link{
 .actionbutton{
     background-color: #05af33;
     color: white;
-    position: initial;
+    position: inline-block;
     font-size: medium;
     cursor: pointer;
     font-weight: bolder;
