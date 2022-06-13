@@ -196,6 +196,8 @@ a.link{
     margin: 5px;
 }
 
+.inner.right{}
+
 .dappcontainer{
     display: flex;
     flex-direction: row;
