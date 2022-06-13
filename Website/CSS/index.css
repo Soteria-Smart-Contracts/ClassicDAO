@@ -259,6 +259,7 @@ a.link{
     font-weight: bolder;
     padding-top: 8px;
     padding-bottom: 8px;
+    padding: 4px;
     border: #1a3b15 solid 3px;
     border-radius: 30px;
 }
