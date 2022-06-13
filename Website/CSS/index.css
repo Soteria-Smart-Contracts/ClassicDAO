@@ -188,7 +188,8 @@ a.link{
 
 .balances.inner{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    
 }
 
 .dappcontainer{
