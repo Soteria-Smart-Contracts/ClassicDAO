@@ -20,12 +20,12 @@ function setInterface(type){
         document.getElementById('interface').style.backgroundColor = "initial";
     }
     if (type == "deposit"){
-        document.getElementById('interface').style.backgroundColor = "initial";
+        document.getElementById('interface').style.backgroundColor = "black";
         document.getElementById('f1').style.display = "initial";
         document.getElementById('f2').style.display = "initial";
     }
     if (type == "withdraw"){
-        document.getElementById('interface').style.backgroundColor = "initial";
+        document.getElementById('interface').style.backgroundColor = "black";
     }
 }
 
