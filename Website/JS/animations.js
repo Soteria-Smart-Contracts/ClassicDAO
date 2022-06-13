@@ -22,9 +22,9 @@ function setInterface(type){
     }
     if (type == "deposit"){
         document.getElementById('functionality').style.backgroundColor = "black";
-        document.getElementById('functionality').setAttribute("onClick", "setInterface('none')");
         document.getElementById('f1').style.display = "none";
         document.getElementById('f2').style.display = "none";
+        document.getElementById('functionality').setAttribute("onClick", "setInterface('none')");
     }
     if (type == "withdraw"){
         document.getElementById('functionality').style.backgroundColor = "black";
