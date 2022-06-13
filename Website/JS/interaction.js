@@ -1,6 +1,7 @@
 const ABI = window.abi;
 const contractAddress = "0x0241eef4BbC149FFA80Eb3eb550530582b9249dD";
 let account;
+let balance;
 let contract;
 let netID;
 let mode;
@@ -44,7 +45,7 @@ async function getMode(){
 }
 
 async function getBalance(){
-    let balance = await web3.eth.getBalance(account);
+    balance = await web3.eth.getBalance(account);
     let decimalbalance = (balance / 10**18).toFixed(2);
     console.log(decimalbalance)
     return(decimalbalance)
