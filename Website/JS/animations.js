@@ -20,8 +20,10 @@ function setInterface(type){
         document.getElementById('interface').style.backgroundColor = "initial";
     }
     if (type == "deposit"){
+        document.getElementById('interface').style.backgroundColor = "initial";
     }
     if (type == "withdraw"){
+        document.getElementById('interface').style.backgroundColor = "initial";
     }
 }
 
