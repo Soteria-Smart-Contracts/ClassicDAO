@@ -14,7 +14,7 @@ function setActive(id) {
 }
 
 async function UpdateDetails(num){
-    //await getMode();
+    await getMode();
 
     if (num == 1){
     document.getElementById('salemode').innerText = 'Not Started';
@@ -29,7 +29,7 @@ async function UpdateDetails(num){
         document.getElementById('salemode').innerText = 'Emergency Mode';
     }
     else{
-        document.getElementById('salemode').innerText = 'Error';
+        document.getElementById('salemode').innerText = 'Emergency Mode';
     }
 }
 
