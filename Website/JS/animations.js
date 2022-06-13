@@ -23,6 +23,7 @@ function setInterface(type){
         document.getElementById('functionality').style.backgroundColor = "#000000";
         document.getElementById('f1').style.display = "none";
         document.getElementById('f2').style.display = "none";
+        document.getElementById('f3').style.display = "initial";
     }
     if (type == "withdraw"){
         document.getElementById('functionality').style.backgroundColor = "black";
