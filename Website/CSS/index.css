@@ -200,6 +200,7 @@ a.link{
     margin: 5px;
     text-align: center;
     font-size: 16px;
+    line-height: 3%;
     font-weight: bold;
     padding-top: 1.25%;
 }
@@ -207,7 +208,6 @@ a.link{
 .value{
     font-size: 18px;
     font-weight: bold;
-
 }
 
 .inner.right{
