@@ -24,6 +24,7 @@ function setInterface(type){
         document.getElementById('functionality').style.backgroundColor = "#000000";
         document.getElementById('f1').style.display = "none";
         document.getElementById('f2').style.display = "none";
+        document.getElementById('').style.display = "inline-block";
         document.getElementById('closebutton').style.display = "initial";
     }
     if (type == "withdraw"){
