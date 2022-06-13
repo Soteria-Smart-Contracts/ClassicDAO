@@ -65,7 +65,7 @@
                         <div id="ideposit" class="interface" style="display:none">
                             <a class="actionname">Deposit ETC</a>
                             <br>
-                            <div><input placeholder="ETC" type="number" step=".01" class="specialinput"></input></div>
+                            <div><input placeholder="ETC" id="withdrawinput" type="number" step=".01" class="specialinput"></input></div>
                             <br>
                             <button class="actionbutton">Deposit</button>
                             <a onclick="setMaxDeposit()" class="maxbutton">MAX</a>
@@ -73,7 +73,7 @@
                         <div id="iwithdraw" class="interface"style="display:none">
                             <a class="actionname">Withdraw ETC</a>
                             <br>
-                            <div class="inputwrapper"><input id="depositinput" placeholder="ETC" type="number" step=".01" class="specialinput"></input></div>
+                            <div class="inputwrapper"><input id="withdrawinput" placeholder="ETC" type="number" step=".01" class="specialinput"></input></div>
                             <br>
                             <button class="actionbutton">Withdraw</button>
                             <a onclick="setMaxWithdraw()" class="maxbutton">MAX</a>
