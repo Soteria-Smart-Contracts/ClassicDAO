@@ -19,7 +19,7 @@ async function UpdateDetails(){
     await getETCDeposited();
 
     document.getElementById('bal').innerText = balance;
-    doc
+    document.getElementById('dep').innerText = deposited;
 
     if (mode[0] == 1){
     document.getElementById('salemode').innerText = 'Not Started';
