@@ -263,7 +263,10 @@ a.link{
     font-weight: bold;
 }
 
-.innerbutton.
+.innerbutton.btm{
+    padding-left: 20%;
+    padding-right: 20%;
+}
 
 .div-center.connect{
     display: flex;
