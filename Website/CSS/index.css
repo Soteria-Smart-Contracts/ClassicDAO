@@ -192,6 +192,7 @@ a.link{
     flex-direction: row;
     display: inline-block;
     color: black;
+    padding-left: ;
     margin: 5px;
 }
 
