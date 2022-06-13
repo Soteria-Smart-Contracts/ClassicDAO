@@ -186,6 +186,11 @@ a.link{
     border-radius: 20px;
 }
 
+.balances.inner{
+    display: flex;
+    flex-direction: column;
+}
+
 .dappcontainer{
     display: flex;
     flex-direction: row;
