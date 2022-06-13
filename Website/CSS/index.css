@@ -264,6 +264,13 @@ a.link{
     border-radius: 30px;
 }
 
+.actionname{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+}
+
 .innerbutton{
     display: inline-block;
     cursor: pointer;
