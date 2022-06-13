@@ -17,7 +17,7 @@ function setInterface(type){
     if (type == "none"){
         document.getElementById('f1').style.display = "initial";
         document.getElementById('f2').style.display = "initial";
-        document.getElementById('functionality').style.backgroundColor = "initial";
+        document.getElementById('functionality').style.backgroundColor = "#494949";
         document.getElementById('functionality').onclick = null;
     }
     if (type == "deposit"){
