@@ -18,13 +18,11 @@ function setInterface(type){
         document.getElementById('f1').style.display = "initial";
         document.getElementById('f2').style.display = "initial";
         document.getElementById('functionality').style.backgroundColor = "#494949";
-        document.getElementById('functionality').onclick = null;
     }
     if (type == "deposit"){
         document.getElementById('functionality').style.backgroundColor = "#000000";
         document.getElementById('f1').style.display = "none";
         document.getElementById('f2').style.display = "none";
-        //document.getElementById('functionality').setAttribute("onClick", "setInterface('none')");
     }
     if (type == "withdraw"){
         document.getElementById('functionality').style.backgroundColor = "black";
