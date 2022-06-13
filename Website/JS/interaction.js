@@ -42,3 +42,9 @@ async function getMode(){
     mode = modearray;
     return(mode[0]);
 }
+
+async function getBalance(){
+    
+
+
+}
