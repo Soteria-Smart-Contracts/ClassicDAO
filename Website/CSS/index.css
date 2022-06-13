@@ -250,6 +250,10 @@ a.link{
     cursor: pointer;
 }
 
+.actionbutton{
+    
+}
+
 .innerbutton{
     display: inline-block;
     cursor: pointer;
