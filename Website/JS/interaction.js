@@ -36,7 +36,6 @@ async function loginWithEth(){
     } else {
         alert("No ETHER Wallet available")
     }
-    console.log(account);
 }
 
 
