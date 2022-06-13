@@ -40,7 +40,8 @@ async function loginWithEth(){
 
 
 async function DepositETC(){
-    
+    let amount = document.getElementById('depositamount').value;
+    let amountwei = web3.utils.toWei(amount, 'ether'); 
 }
 
 
