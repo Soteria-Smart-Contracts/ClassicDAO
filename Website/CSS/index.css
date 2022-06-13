@@ -263,7 +263,11 @@ a.link{
     font-weight: bold;
 }
 
-.actionname
+.actionname{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
 
 .innerbutton.btm{
     padding-left: 18%;
