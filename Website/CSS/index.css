@@ -241,6 +241,11 @@ a.link{
     box-shadow: 2px 7px 10px black;
 }
 
+.warning{
+    color: red;
+    
+}
+
 .close{
     position: absolute;
     top: 40%;
