@@ -264,7 +264,7 @@ a.link{
     border-radius: 30px;
 }
 
-.actionname{
+a.actionname{
     font-size: large;
     font-weight: bold;
     text-align: center;
