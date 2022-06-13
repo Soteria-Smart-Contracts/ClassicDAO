@@ -13,11 +13,11 @@ function setActive(id) {
     document.getElementById(id).className = "Mactive"; 
 }
 
-async function UpdateDetails(num){
+async function UpdateDetails(){
     await getMode();
     await getBalance();
 
-    
+    document.getElementById('bal').innerText = balance;
 
     if (mode[0] == 1){
     document.getElementById('salemode').innerText = 'Not Started';
