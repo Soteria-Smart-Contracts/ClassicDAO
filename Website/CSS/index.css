@@ -259,7 +259,7 @@ a.link{
     font-size: 18px;
     color: black;
     cursor: pointer;
-    border-radius-top-right: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .actionbutton{
