@@ -241,6 +241,14 @@ a.link{
     box-shadow: 2px 7px 10px black;
 }
 
+.close{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+    font-size: 20px;
+}
+
 .innerbutton{
     display: inline-block;
     cursor: pointer;
