@@ -205,7 +205,8 @@ a.link{
 }
 
 .value{
-    
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .inner.right{
