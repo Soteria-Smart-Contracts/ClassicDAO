@@ -230,7 +230,8 @@ a.link{
     padding: 6px;
     padding-top: 3px;
     padding-bottom: 9px;
-    text-align: left;
+    text-align: center;
+    padding: ;
     margin-top: 5%;
     width: 100%;
     background-color: #494949;
@@ -242,7 +243,7 @@ a.link{
 
 .innerbutton{
     display: inline-block;
-    
+
 
 }
 
