@@ -21,10 +21,8 @@ function setInterface(type){
     }
     if (type == "deposit"){
         document.getElementById('functionality').style.backgroundColor = "#000000";
-        document.getElementById('f1').style.display = "none";
+        document.getElementById('f1').style.display = "inline";
         document.getElementById('f2').style.display = "none";
-        document.getElementById('f1').className = "innerbutton";
-        document.getElementById('f2').style.display = "innerbutton";
         document.getElementById('closebutton').style.display = "initial";
     }
     if (type == "withdraw"){
