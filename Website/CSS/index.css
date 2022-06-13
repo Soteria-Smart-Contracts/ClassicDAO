@@ -257,9 +257,9 @@ a.link{
     font-size: medium;
     cursor: pointer;
     font-weight: bolder;
-    padding-top: 5px;
-    padding-bottom: 5px;
     padding: 10px;
+    padding-top: px;
+    padding-bottom: 5px;
     border: #1a3b15 solid 3px;
     border-radius: 30px;
 }
