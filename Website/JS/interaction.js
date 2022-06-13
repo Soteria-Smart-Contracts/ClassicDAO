@@ -46,7 +46,7 @@ async function getMode(){
 
 async function getBalance(){
     let fbalance = await web3.eth.getBalance(account);
-    let decimalbalance = (balance / 10**18).toFixed(2);
+    balance = (fbalance / 10**18).toFixed(2);
     console.log(decimalbalance)
     return(decimalbalance)
 }
