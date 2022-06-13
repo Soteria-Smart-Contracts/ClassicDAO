@@ -21,7 +21,7 @@ function setInterface(type){
         document.getElementById('functionality').onclick = null;
     }
     if (type == "deposit"){
-        document.getElementById('functionality').style.backgroundColor = "black";
+        document.getElementById('functionality').style.backgroundColor = "#000000";
         document.getElementById('f1').style.display = "none";
         document.getElementById('f2').style.display = "none";
         document.getElementById('functionality').setAttribute("onClick", "setInterface('none')");
