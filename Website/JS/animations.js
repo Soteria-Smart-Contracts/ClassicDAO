@@ -16,7 +16,9 @@ function setActive(id) {
 function setMaxDeposit()
 
 
-setMaxDeposit()
+function setMaxWithdraw(){
+    
+}
 
 function setInterface(type){
     if (type == "none"){
