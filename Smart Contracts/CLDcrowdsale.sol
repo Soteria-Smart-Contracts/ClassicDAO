@@ -216,7 +216,6 @@ contract CLD_Crowdsale {
         return(((CLD_Sale_Allocation * 100000000) / (Total_ETC_Deposited / 100000000)));
     }
 
-    //Make this contract accept ETH instead of WETH
 
 
     //_______________________________________________________________________________________________________________________________________________________________            
