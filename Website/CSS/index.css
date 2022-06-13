@@ -275,6 +275,8 @@ a.actionname{
     width: 70%;
     height: 30px;
     border: #1a3b15 solid 2px;
+    text-align: center;
+    font-size: large;
 }
 
 .innerbutton{
