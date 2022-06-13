@@ -16,8 +16,10 @@ function setActive(id) {
 async function UpdateDetails(){
     await getMode();
     await getBalance();
+    await getETCDeposited();
 
     document.getElementById('bal').innerText = balance;
+    doc
 
     if (mode[0] == 1){
     document.getElementById('salemode').innerText = 'Not Started';
