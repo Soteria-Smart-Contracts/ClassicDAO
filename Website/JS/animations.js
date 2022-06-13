@@ -17,7 +17,7 @@ async function UpdateDetails(num){
     //await getMode();
 
     if (num == 1){
-    document.getElementById('salemode').innerText = 'Completed';
+    document.getElementById('salemode').innerText = 'Not Started';
     }
     if (num == 2){
         document.getElementById('salemode').innerText = 'Completed';
