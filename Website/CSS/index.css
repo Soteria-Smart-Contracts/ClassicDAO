@@ -178,6 +178,7 @@ a.link{
 
 .balances{
     align-self: center;
+    text-align: center;
     margin-top: 3%;
     width: 90%;
 }
