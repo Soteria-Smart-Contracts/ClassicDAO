@@ -560,11 +560,11 @@
 	},
 	"sources": {
 		"Smart Contracts/CLDGovernanceToken.sol": {
-			"keccak256": "0x5939f1493f570cfa022580b35cc5ef728d11842f2ecf4ff2ea22a12156251258",
+			"keccak256": "0x4e8ad40bb955c10f4b4fa61fccd341c28db0fedd8f7e2dc3e449f960cac33a1b",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://1b828927fc61ade1243031211e56a98c185323fb6250502af308f237a6433689",
-				"dweb:/ipfs/QmW1i78exBuxjaDc4RXvpGyfy3h98X6MUteniCWAtoK6ck"
+				"bzz-raw://fb4fa836d7aea866ed60a711514eb8fca91c5bbdb645cdab6f91b0be3086d7e9",
+				"dweb:/ipfs/QmRbKqjynsHf2En5RmKLmT9xyJTkkknHr2gxNEWB5qkj7Y"
 			]
 		}
 	},
