@@ -105,6 +105,7 @@ contract ClassicDAO {
             minter[NewMinter] = 0;
             }
         }
+        
         MultiSignature();
 
         emit ManageMinterEvent(_address);
