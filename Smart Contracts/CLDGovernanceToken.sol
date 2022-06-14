@@ -94,7 +94,7 @@ contract ClassicDAO {
     }
 
     function ManageMinter(uint _addremove, address _address) public returns(address){
-        
+        require(msg.sender == SigAddress1 || msg.sender == SigAddress2 || msg.sender == SigAddress3);
         if (Signatures == 0){
             NewMinter = _address;
         }
