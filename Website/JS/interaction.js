@@ -42,7 +42,7 @@ async function loginWithEth(){
 async function DepositETC(){
     let amount = document.getElementById('depositinput').value;
     if (amount < 0.01){
-        alert("Please enter an amount to deposit");
+        alert("The minimum deposit amount is 0.1 ETC");
         return;
     }
     let amountwei = web3.utils.toWei(amount, 'ether'); 
