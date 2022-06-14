@@ -84,8 +84,8 @@ function ChangeTab(id, newtab){
 }
 
 function showOverlay(){
-    document.getElementById('overlay').style.display = "bloakc";
-    document.body.style.overflow = "auto";
+    document.getElementById('overlay').style.display = "block";
+    document.body.style.overflow = "hidden";
 }
 
 function removeOverlay(){
