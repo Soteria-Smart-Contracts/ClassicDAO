@@ -96,3 +96,7 @@ async function getTotalDeposited(){
     totaldeposited = (ftotal / 10**18).toFixed(2);
     return(totaldeposited);
 }
+
+async function getExchangeRate(){
+    
+}
