@@ -92,6 +92,32 @@
 				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "Success",
+						"type": "bool"
+					}
+				],
+				"name": "MultiSigSet",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "Success",
+						"type": "bool"
+					}
+				],
+				"name": "MultiSigVerified",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
 						"indexed": true,
 						"internalType": "address",
 						"name": "from",
@@ -188,6 +214,126 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_2",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_3",
+						"type": "address"
+					}
+				],
+				"name": "MultiSigSetup",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "MultiSigVerification",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Setup",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "SigAddress1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "SigAddress2",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "SigAddress3",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Signatures",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "SweepSignatures",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "TokenCap",
 				"outputs": [
@@ -195,6 +341,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Verified",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -401,11 +560,11 @@
 	},
 	"sources": {
 		"Smart Contracts/CLDGovernanceToken.sol": {
-			"keccak256": "0x07a50e8927462767438977472ec0e0e42172b3977c44c245765f0b72a3ecc4b5",
+			"keccak256": "0x5939f1493f570cfa022580b35cc5ef728d11842f2ecf4ff2ea22a12156251258",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://616c59ea71c315819b1683eb23c705c018279123607d7ee73462a6afb3a69be8",
-				"dweb:/ipfs/QmYUf2bhFQxwcVrJ4yuJD5h7wiQ4VY53jRPTYDTu7fhC8p"
+				"bzz-raw://1b828927fc61ade1243031211e56a98c185323fb6250502af308f237a6433689",
+				"dweb:/ipfs/QmW1i78exBuxjaDc4RXvpGyfy3h98X6MUteniCWAtoK6ck"
 			]
 		}
 	},
