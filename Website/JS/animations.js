@@ -84,7 +84,7 @@ function ChangeTab(id, newtab){
 }
 
 function showOverlay(){
-    document.getElementById('overlay').style.display = "none";
+    document.getElementById('overlay').style.display = "bloakc";
     document.body.style.overflow = "auto";
 }
 
