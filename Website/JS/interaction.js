@@ -50,7 +50,17 @@ async function DepositETC(){
     console.log(tx);
 }
 
-//MAKE 
+//MAKE WITHDRAWETC FUNCTION HERE
+async function WithdrawETC(){
+    let amount = document.getElementById('withdrawinput').value;
+    if (amount < 0.1){
+        alert("The minimum withdraw amount is 0.1 ETC");
+        return;
+    }
+    let amountwei = web3.utils.toWei(amount, 'ether');
+    let tx = await contract.methods.WithdrawETC(amountwei).send({from: account, gas: 300000});
+    console.log(tx);
+}
 
 
 
