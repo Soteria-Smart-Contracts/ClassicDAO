@@ -4,6 +4,7 @@ let account;
 let balance;
 let deposited;
 let totaldeposited;
+let getExchange
 let contract;
 let netID;
 let mode;
