@@ -119,7 +119,7 @@ contract CLD_Crowdsale {
         require(Crowdsale_Mode.Sale_Mode == 1);
         require(Setup == 1);
         
-        Crowdsale_End_Unix = (block.timestamp + 600);
+        Crowdsale_End_Unix = (block.timestamp + 600); //EDIT!!!! - This is the time until the Crowdsale ends
         Crowdsale_Mode.Sale_Mode_Text = ("Sale is Open to buy CLD");
         Crowdsale_Mode.Sale_Mode = 2;
         
