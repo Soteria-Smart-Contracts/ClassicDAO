@@ -94,9 +94,6 @@ contract ClassicDAO {
     }
 
     function ManageMinter(uint _addremove, address _address) public returns(address){
-        bool Multisig;
-        Multisig = MultiSignature();
-
         if (Signatures == 0){
             NewMinter = _address;
         }
@@ -108,6 +105,9 @@ contract ClassicDAO {
             minter[NewMinter] = 0;
             }
         }
+        bool Multisig;
+        Multisig = MultiSignature();
+
         emit ManageMinterEvent(_address);
         return (_address);
     }
