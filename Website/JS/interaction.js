@@ -100,6 +100,6 @@ async function getTotalDeposited(){
 
 async function getExchangeRate(){
     let rate = await contract.methods.GetCurrentExchangeRate().call();
-    exchangerate = (rate / 10**18).toFixed(2);
+    exchangerate = (rate / 10000000000000000).toFixed(2);
     return(rate);
 }
