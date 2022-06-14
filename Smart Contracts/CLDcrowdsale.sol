@@ -63,7 +63,7 @@ contract CLD_Crowdsale {
     function DepositETC() public payable returns(bool success){ //TESTED - WORKS
         require(Crowdsale_Mode.Sale_Mode == 2);
         require(block.timestamp < Crowdsale_End_Unix);
-        require(msg.value >= 1000000000000000);
+        require(msg.value >= 100000000000000000);
         
         ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] + msg.value);
         
@@ -76,7 +76,7 @@ contract CLD_Crowdsale {
     function WithdrawETC(uint256 amount) public returns(bool success){ //UNTESTED
         require(amount <= ETC_Deposited[msg.sender]);
         require(Crowdsale_Mode.Sale_Mode != 3 && Crowdsale_Mode.Sale_Mode != 1);
-        require(amount >= 1000000000000000);
+        require(amount >= 100000000000000000);
         uint256 amount_wFee = ((amount * 95) / 100);
 
         if (Crowdsale_Mode.Sale_Mode == 99){
