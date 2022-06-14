@@ -8,33 +8,8 @@
 			{
 				"inputs": [],
 				"name": "MoveETH",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "tocheck",
-						"type": "address"
-					}
-				],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -51,7 +26,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"MoveGanacheETH.sol": "MoveGanacheETH"
+			"Smart Contracts/MoveGanacheETH.sol": "MoveGanacheETH"
 		},
 		"evmVersion": "berlin",
 		"libraries": {},
@@ -65,12 +40,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"MoveGanacheETH.sol": {
-			"keccak256": "0xc3c2e30b86e6b0060ecfaaa9ae24988e2937d589988123b0fd6d29a4bc8908c8",
+		"Smart Contracts/MoveGanacheETH.sol": {
+			"keccak256": "0x7414d6d9ab977ff9ab748a7741b3d6b838e1fc770808cfe2138dbdeb3b0ef38b",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://03257598d0d9e30b0e3ec30b8add15fe1b9bf653176df84a1ce46cf352d592c4",
-				"dweb:/ipfs/QmavXhSj5rjVkFbH5JYJGKbsuU749NwWBq5ay5H3UFiiKm"
+				"bzz-raw://44a0dd9d6f596fff7072cdef4e27719a39c877846fcb9ea637a1af8fafaf470a",
+				"dweb:/ipfs/QmaALfu72ViuXYYCbCgo7QR4zozarTFcC5XWMEmkRJW2nX"
 			]
 		}
 	},
