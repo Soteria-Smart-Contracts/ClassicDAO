@@ -128,10 +128,10 @@ a.link{
     justify-content: top;
     background-color: #00AE33;
     position: relative;
-    min-width: 24.4vw;
-    min-height: 17.85vw;
-    max-width: 10vw;
-    max-height: 10vw;
+    min-width: 410px;
+    min-height: 300px;
+    max-width: 10%;
+    max-height: 10%;
     margin-right: 15%;
     margin-top: 5%;
     padding: 30px;
