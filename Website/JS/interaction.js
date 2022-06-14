@@ -3,6 +3,7 @@ const contractAddress = "0xA22bDdC93fC49331cA857CDf86860ac21c86F318";
 let account;
 let balance;
 let deposited;
+let totaldeposited;
 let contract;
 let netID;
 let mode;
