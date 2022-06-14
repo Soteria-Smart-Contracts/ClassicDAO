@@ -83,6 +83,11 @@ function ChangeTab(id, newtab){
     document.getElementById(newtab).style.display = "initial";
 }
 
+function showOverlay(){
+    document.getElementById('overlay').style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
 function removeOverlay(){
     document.getElementById('overlay').style.display = "none";
     document.body.style.overflow = "auto";
