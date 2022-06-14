@@ -54,7 +54,7 @@ async function UpdateDetails(){
 
     document.getElementById('bal').innerText = balance;
     document.getElementById('dep').innerText = deposited;
-    document.getElementById('totaldepo').innerText = totalDeposited;
+    document.getElementById('totaldepo').innerText = totaldeposited;
 
     if (mode[0] == 1){
     document.getElementById('salemode').innerText = 'Not Started';
