@@ -52,6 +52,7 @@ async function UpdateDetails(){
     await getBalance();
     await getETCDeposited();
     await getTotalDeposited();
+    await getExchangeRate();
 
     document.getElementById('bal').innerText = balance;
     document.getElementById('dep').innerText = deposited;
