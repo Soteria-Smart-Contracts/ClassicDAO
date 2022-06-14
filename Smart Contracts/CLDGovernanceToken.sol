@@ -107,7 +107,7 @@ contract ClassicDAO {
             if (_addremove == 2){
             minter[NewMinter] = 0;
             }
-    }
+        }
         emit ManageMinterEvent(_address);
         return (_address);
     }
