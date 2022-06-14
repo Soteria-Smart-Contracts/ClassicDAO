@@ -89,3 +89,9 @@ async function getETCDeposited(){
     deposited = (fdeposited / 10**18).toFixed(2);
     return(deposited);
 }
+
+async function getTotalDeposited(){
+    let ftotal = await contract.methods.Total_ETC_Deposited().call();
+    total = (ftotal / 10**18).toFixed(2);
+    return(total);
+}
