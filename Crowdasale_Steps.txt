@@ -3,7 +3,7 @@
 Setup Multisignature
 Save your sig addresses here:
 :0x34d885Ed99fB358c51898fe41cfE4f7267b4EA9f
-:
+:0x929C1A79A2d730C4FaBf859392459500a9938924
 :
 
 2: 
