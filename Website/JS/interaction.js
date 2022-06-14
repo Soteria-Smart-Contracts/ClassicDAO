@@ -41,7 +41,7 @@ async function loginWithEth(){
 
 async function DepositETC(){
     let amount = document.getElementById('depositinput').value;
-    if (amount ){
+    if (amount < 0.01){
         alert("Please enter an amount to deposit");
         return;
     }
