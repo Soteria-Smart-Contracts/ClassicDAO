@@ -193,6 +193,10 @@ a.link{
     box-shadow: 2px 7px 10px black;
 }
 
+.balances.claim{
+    text-align: left;
+}
+
 .inner{
     display: flex;
     flex-direction: row;
