@@ -69,7 +69,8 @@ async function UpdateDetails(){
     else if (mode[0] == 3){
     document.getElementById('salemode').innerText = 'Completed';
     document.getElementById('unc').innerText = unclaimed;
-    document.getElementById('DAO').style.display = "none";
+    document.getElementById('bal1').style.display = "none";
+    document.getElementById('bal2').style.display = "none";
     }
     else if (mode[0] == 99){
         document.getElementById('salemode').innerText = 'Emergency Mode';
