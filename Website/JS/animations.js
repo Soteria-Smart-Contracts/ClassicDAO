@@ -68,7 +68,7 @@ async function UpdateDetails(){
     }
     else if (mode[0] == 3){
     document.getElementById('salemode').innerText = 'Completed';
-    document.getElementById('unc').innerText = '';
+    document.getElementById('unc').innerText = unclaimed;
     }
     else if (mode[0] == 99){
         document.getElementById('salemode').innerText = 'Emergency Mode';
