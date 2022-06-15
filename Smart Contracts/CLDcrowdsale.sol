@@ -82,6 +82,7 @@ contract CLD_Crowdsale {
         if (Crowdsale_Mode.Sale_Mode == 99){
             //No Fee Implemetantion for 99 Mode (Only allows you to withdraw everything at once)
             amount_wFee = (ETC_Deposited[msg.sender]);
+            ETC_Deposited[msg.sender] = 0;
         }
         
         ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] - amount);
