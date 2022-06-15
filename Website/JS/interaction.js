@@ -65,7 +65,10 @@ async function WithdrawETC(){
     console.log(tx);
 }
 
-async function 
+async function Claim(){
+    let tx = await contract.methods.WithdrawCLD().send({from: account, gas: 300000});
+    console.log(tx);
+}
 
 
 async function getID(){
