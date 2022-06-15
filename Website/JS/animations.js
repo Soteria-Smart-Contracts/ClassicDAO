@@ -64,7 +64,7 @@ async function UpdateDetails(){
     document.getElementById('salemode').innerText = 'Not Started';
     }
     else if (mode[0] == 2){
-        document.getElementById('salemode').innerText = 'Sale In Progress';
+    document.getElementById('salemode').innerText = 'Sale In Progress';
     }
     else if (mode[0] == 3){
     document.getElementById('salemode').innerText = 'Completed';
