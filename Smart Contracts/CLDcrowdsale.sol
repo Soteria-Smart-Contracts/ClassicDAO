@@ -86,8 +86,8 @@ contract CLD_Crowdsale {
             (payable(msg.sender)).transfer(amount_wFee);
         }
         else{
-        ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] - amount);
-        (payable(msg.sender)).transfer(amount_wFee);
+            ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] - amount);
+            (payable(msg.sender)).transfer(amount_wFee);
         }
         
         
