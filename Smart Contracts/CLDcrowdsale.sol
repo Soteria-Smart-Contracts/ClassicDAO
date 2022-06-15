@@ -83,6 +83,7 @@ contract CLD_Crowdsale {
             //No Fee Implemetantion for 99 Mode (Only allows you to withdraw everything at once)
             amount_wFee = (ETC_Deposited[msg.sender]);
             ETC_Deposited[msg.sender] = 0;
+            (payable(msg.sender)).transfer(amount_wFee);
         }
         
         ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] - amount);
