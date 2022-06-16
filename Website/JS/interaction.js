@@ -100,6 +100,7 @@ async function getTotalDeposited(){
 async function getExchangeRate(){
     await getTotalDeposited();
     if(totaldeposited == 0){
+        exchangerate = 0;
         return(0);
     }
     let rate = await contract.methods.GetCurrentExchangeRate().call();
