@@ -99,7 +99,7 @@ async function getTotalDeposited(){
 
 async function getExchangeRate(){
     await getTotalDeposited();
-    if(getTotalDeposited == 0){
+    if(totaldeposited == 0){
         return(0);
     }
     let rate = await contract.methods.GetCurrentExchangeRate().call();
