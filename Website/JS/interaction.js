@@ -28,6 +28,7 @@ async function loginWithEth(){
         contract = new window.web3.eth.Contract(ABI, contractAddress, window.web3);
         account = accountarray[0];
         removeOverlay();
+        await getETCDeposited();
         UpdateDetails();
         document.getElementById('WalletB').innerText = "Connected";
     } else {
