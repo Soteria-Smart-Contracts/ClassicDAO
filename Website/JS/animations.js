@@ -71,8 +71,7 @@ async function UpdateDetails(){
     document.getElementById('unc').innerText = unclaimed;
     document.getElementById('bal1').style.display = "none";
     document.getElementById('bal2').style.display = "inline-block";
-    document.getElementById('functionality').style.display = "none";
-    document.getElementById('functionality2').style.display = "inline-block";
+
     }
     else if (mode[0] == 99){
         document.getElementById('salemode').innerText = 'Emergency Mode';
