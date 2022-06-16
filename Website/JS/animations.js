@@ -114,6 +114,3 @@ function WelcomePage(){
 
     document.getElementById('Welcome').style.display = "initial";
 }
-
-document.getElementById('functionality').style.display = "none";
-    document.getElementById('functionality2').style.display = "inline-block";
