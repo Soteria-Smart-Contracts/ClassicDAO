@@ -14,7 +14,7 @@ function setActive(id) {
 }
 
 function setMaxDeposit(){
-    document.getElementById('depositinput').value = balance;
+    document.getElementById('depositinput').value = (balance);
 }
 
 
