@@ -98,7 +98,7 @@ async function getTotalDeposited(){
 }
 
 async function getExchangeRate(){
-    await getETCDeposited
+    await getETCDeposited();
     if(getTotalDeposited == 0){
         return(0);
     }
