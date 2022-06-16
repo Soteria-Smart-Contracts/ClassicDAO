@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.4;
 
-//CLD1 current test: 0xe63c77886ED6186934c64a95d2A354f36aCFec62
-//CLDsale current test: 0xA22bDdC93fC49331cA857CDf86860ac21c86F318
+//CLD1 current test: 
+//CLDsale current test: 
 
 contract CLD_Crowdsale {
     address payable CLD;
