@@ -114,3 +114,4 @@ function WelcomePage(){
 
     document.getElementById('Welcome').style.display = "initial";
 }
+
