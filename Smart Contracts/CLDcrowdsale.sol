@@ -5,7 +5,7 @@ pragma solidity ^0.8.4;
 //CLDsale current test: 
 
 contract CLD_Crowdsale {
-    address payable CLD;
+    address payable public CLD;
     uint256 public CLD_Sale_Allocation;
     uint256 public Total_ETC_Deposited; 
     uint256 public Allocation_Exchange_Rate = 0;
