@@ -15,8 +15,8 @@ contract CLD_Crowdsale {
     
     //DEV WALLETS (MAKE SURE TO CHANGE THESE)
     
-    address payable LiquidityAddress = payable(0x19b2a627Dd49587E021290b3eEF38ea8DE541eE5); //This address will be used to add the 35% of crowdsale funds as liquidity for wETC-CLD
-    address payable TreasuryFund = payable(0xc932b3a342658A2d3dF79E4661f29DfF6D7e93Ce); //This address will be used to add the 35% of crowdsale funds as for the Treasury Fund
+    address payable LiquidityAddress = payable(0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341); //This address will be used to add the 35% of crowdsale funds as liquidity for wETC-CLD
+    address payable TreasuryFund = payable(0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341); //This address will be used to add the 35% of crowdsale funds as for the Treasury Fund
     
     address payable Dev_1 = payable(0x35626e8B7aE2b2D4ab324a542f9B66069D7D1526); //Payout Wallet to a party who worked on ClassicDAO (CryptoGaralo) 15% of the Crowdsale Funds
     address payable Dev_2 = payable(0xc98Fe13Aa0FeC8836F8D3f9dc4712c284aA858cE); //Payout Wallet to a party who worked on ClassicDAO (Soteria-Smart-Contracts) 15% of the Crowdsale Funds   
@@ -89,7 +89,7 @@ contract CLD_Crowdsale {
             ETC_Deposited[msg.sender] = (ETC_Deposited[msg.sender] - amount);
             (payable(msg.sender)).transfer(amount_wFee);
         }
-        
+
         Total_ETC_Deposited = (Total_ETC_Deposited - amount_wFee);
         emit ETCwithdrawn(msg.sender, amount);
         return(success);
