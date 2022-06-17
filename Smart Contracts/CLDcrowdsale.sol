@@ -90,7 +90,6 @@ contract CLD_Crowdsale {
             (payable(msg.sender)).transfer(amount_wFee);
         }
         
-        
         Total_ETC_Deposited = (Total_ETC_Deposited - amount_wFee);
         emit ETCwithdrawn(msg.sender, amount);
         return(success);
