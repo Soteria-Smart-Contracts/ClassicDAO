@@ -463,7 +463,8 @@ a.actionname{
     }
 
     .dapp-div{
-        max-width: 5vw;
+        max-width: 95vw;
+        margin: 0;
     }
 
 
