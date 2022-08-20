@@ -460,13 +460,13 @@ a.actionname{
         max-width: 50%;
         flex-direction: column;
         margin: 0;
-        min-width: none;
+        min-width: none !important;
     }
 
     .dapp-div{
         max-width: 50%;
         margin: 0;
-        min-width: none; 
+        min-width: none !important; 
     }
 
 
