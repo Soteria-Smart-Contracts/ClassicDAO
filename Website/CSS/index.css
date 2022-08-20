@@ -457,12 +457,12 @@ a.actionname{
 
     .dappcontainer{
         margin-left: 0%;
-        max-width: 5vw;
+        max-width: 95vw;
         flex-direction: column;
     }
 
     .dapp-div{
-        max-width: ;
+        max-width: 5vw;
     }
 
 
