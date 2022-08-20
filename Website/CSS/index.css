@@ -452,7 +452,7 @@ a.actionname{
     }
 
     div-center.Crowdsale{
-        
+        height: fit-content;
     }
 
   }
