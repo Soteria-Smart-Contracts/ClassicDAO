@@ -456,7 +456,7 @@ a.actionname{
     }
 
     .div-center.info{
-        min-width
+        min-width: 80vw;
     }
 
     .dappcontainer{
