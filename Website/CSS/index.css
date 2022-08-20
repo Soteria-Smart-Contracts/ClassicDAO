@@ -461,6 +461,7 @@ a.actionname{
         flex-direction: column;
         margin: 0;
         min-width: 0;
+        align-items: center;
     }
 
     .dapp-div{
