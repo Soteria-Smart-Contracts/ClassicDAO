@@ -457,7 +457,7 @@ a.actionname{
 
     .dappcontainer{
         margin-left: 0%;
-        width: 95vw;
+        min-width: 95vw;
         flex-direction: column;
         margin: 0;
         min-width: 0;
