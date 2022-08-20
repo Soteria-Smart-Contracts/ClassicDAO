@@ -443,7 +443,10 @@ a.actionname{
     .logo{
         width: 10%;
     }
-    .men
+    .menu{
+        padding: 10px;
+        padding-left: 20px;
+    }
 
   }
 
