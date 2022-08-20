@@ -440,7 +440,9 @@ a.actionname{
 
 
   @media (pointer:none), (pointer:coarse) {
-    
+    .logo{
+        w
+    }
 
   }
 
