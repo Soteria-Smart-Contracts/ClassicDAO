@@ -467,6 +467,7 @@ a.actionname{
         width: 95vw;
         margin: 0;
         min-width: 80vw; 
+        padding-top: 5vh;
     }
 
     .dapptop{
