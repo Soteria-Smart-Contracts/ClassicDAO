@@ -461,13 +461,14 @@ a.actionname{
         flex-direction: column;
         margin: 0;
         min-width: 0;
+        ma
     }
 
     .dapp-div{
         width: 95vw;
         margin: 0;
         min-width: 80vw; 
-        padding-top: 5vh;
+        padding-top: 5.25vh;
     }
 
     .dapptop{
