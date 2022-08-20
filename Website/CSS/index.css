@@ -435,4 +435,13 @@ a.actionname{
     cursor: pointer;
   }
 
+
+
+
+
+  @media (pointer:none), (pointer:coarse) {
+
+
+  }
+
   
