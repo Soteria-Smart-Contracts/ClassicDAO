@@ -336,7 +336,9 @@ a.actionname{
     margin-top: 20%;
 }
 
-cs
+.cs{
+    align-items: center;
+}
 
 .div-center.connect{
     display: flex;
