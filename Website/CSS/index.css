@@ -478,6 +478,10 @@ a.actionname{
         min-width: 80vw; 
     }
 
+    .footer{
+        padding-left: 5;
+    }
+
 
   }
 
