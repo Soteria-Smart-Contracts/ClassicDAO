@@ -109,6 +109,7 @@ a.link{
     padding-right: 3%;
     background-color: #494949;
     height: fit-content;
+    padding-bottom: 0;
 }
 
 .div-center.info{
