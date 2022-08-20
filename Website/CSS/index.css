@@ -457,6 +457,7 @@ a.actionname{
 
     .div-center.info{
         min-width: 80vw;
+        margin: 0;
     }
 
     .dappcontainer{
