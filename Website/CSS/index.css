@@ -479,7 +479,8 @@ a.actionname{
     }
 
     .footer{
-        padding-left: 5;
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
 
 
