@@ -466,7 +466,7 @@ a.actionname{
     .dapp-div{
         width: 95vw;
         margin: 0;
-        min-width: 0; 
+        min-width: 95vw; 
     }
 
 
