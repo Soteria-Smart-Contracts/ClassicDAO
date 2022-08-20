@@ -336,10 +336,6 @@ a.actionname{
     margin-top: 20%;
 }
 
-.cs{
-    align-items: center;
-}
-
 .div-center.connect{
     display: flex;
     flex-direction: column;
