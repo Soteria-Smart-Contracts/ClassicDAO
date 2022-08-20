@@ -483,6 +483,7 @@ a.actionname{
     .dapptop{
         width: 95vw;
         margin: 0;
+        max-width: 80vw;
     }
 
     .footertext{
