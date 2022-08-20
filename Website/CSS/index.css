@@ -456,7 +456,8 @@ a.actionname{
     }
 
     .div-center.info{
-        min-width: 80vw;
+        min-width: 75vw;
+        max-width: 80vw;
         margin: 0;
     }
 
