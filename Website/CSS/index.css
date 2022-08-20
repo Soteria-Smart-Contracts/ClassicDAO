@@ -461,6 +461,10 @@ a.actionname{
         flex-direction: column;
     }
 
+    .dapp-div{
+        max-width: ;
+    }
+
 
   }
 
