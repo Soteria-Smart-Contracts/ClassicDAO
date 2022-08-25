@@ -52,7 +52,6 @@ async function DepositETC(){
     console.log(tx);
 }
 
-//MAKE WITHDRAWETC FUNCTION HERE
 async function WithdrawETC(){
     let amount = document.getElementById('withdrawinput').value;
     if (amount < 0.1){
