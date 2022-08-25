@@ -51,31 +51,10 @@ async function UpdateDetails(){
     await getMode();
     await getBalance();
     await getETCDeposited();
-    await getTotalDeposited();
     await getExchangeRate();
     let unclaimed = (deposited * exchangerate);
 
     document.getElementById('bal').innerText = balance;
-
-    if (mode[0] == 1){
-    document.getElementById('salemode').innerText = 'Not Started';
-    }
-    else if (mode[0] == 2){
-    document.getElementById('salemode').innerText = 'Sale In Progress';
-    }
-    else if (mode[0] == 3){
-    document.getElementById('unc').innerText = unclaimed;
-    document.getElementById('bal1').style.display = "none";
-    document.getElementById('bal2').style.display = "inline-block";
-    document.getElementById('functionality').style.display = "none";
-    document.getElementById('functionality2').style.display = "inline-block";
-    }
-    else if (mode[0] == 99){
-        document.getElementById('salemode').innerText = 'Emergency Mode';
-    }
-    else{
-        document.getElementById('salemode').innerText = 'ERROR';
-    }
 }
 
 function ChangeTab(id, newtab){
