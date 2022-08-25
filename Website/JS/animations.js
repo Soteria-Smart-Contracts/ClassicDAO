@@ -64,7 +64,6 @@ async function UpdateDetails(){
     document.getElementById('salemode').innerText = 'Sale In Progress';
     }
     else if (mode[0] == 3){
-    document.getElementById('salemode').innerText = 'Completed';
     document.getElementById('unc').innerText = unclaimed;
     document.getElementById('bal1').style.display = "none";
     document.getElementById('bal2').style.display = "inline-block";
