@@ -25,7 +25,6 @@ function setMaxWithdraw(){
 function setInterface(type){
     if (type == "none"){
         document.getElementById('f1').style.display = "inline-block";
-        document.getElementById('f2').style.display = "inline-block";
         document.getElementById('closebutton').style.display = "none";
         document.getElementById('ideposit').style.display = "none";
         document.getElementById('iwithdraw').style.display = "none";
@@ -40,7 +39,6 @@ function setInterface(type){
     if (type == "withdraw"){
         document.getElementById('functionality').style.backgroundColor = "#000000";
         document.getElementById('f1').style.display = "none";
-        document.getElementById('f2').style.display = "none";
         document.getElementById('iwithdraw').style.display = "initial";
         document.getElementById('closebutton').style.display = "initial";
     }
