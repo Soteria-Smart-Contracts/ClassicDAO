@@ -27,7 +27,6 @@ function setInterface(type){
         document.getElementById('f1').style.display = "inline-block";
         document.getElementById('closebutton').style.display = "none";
         document.getElementById('ideposit').style.display = "none";
-        document.getElementById('iwithdraw').style.display = "none";
         document.getElementById('functionality').style.backgroundColor = "#494949";
     }
     if (type == "deposit"){
