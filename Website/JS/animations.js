@@ -56,8 +56,7 @@ async function UpdateDetails(){
     let unclaimed = (deposited * exchangerate);
 
     document.getElementById('bal').innerText = balance;
-    document.getElementById('dep').innerText = deposited;
-    document.getElementById('totaldepo').innerText = totaldeposited;
+
     document.getElementById('exrate').innerText = exchangerate;
 
     if (mode[0] == 1){
