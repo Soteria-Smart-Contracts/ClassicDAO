@@ -1,5 +1,5 @@
 const ABI = window.abi;
-const contractAddress = "0x493fD82D18a17cF90a357aaD6A4c5B3D352427b0";
+const contractAddress = "0x771c8905d8A813C1C01D6f8c952ccb440511D318";
 let account;
 let balance;
 let deposited;
