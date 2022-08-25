@@ -48,11 +48,7 @@ function setInterface(type){
 }
 
 async function UpdateDetails(){
-    await getMode();
     await getBalance();
-    await getETCDeposited();
-    await getExchangeRate();
-    let unclaimed = (deposited * exchangerate);
 
     document.getElementById('bal').innerText = balance;
 }
