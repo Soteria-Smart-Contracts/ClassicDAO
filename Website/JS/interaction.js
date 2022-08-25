@@ -87,26 +87,3 @@ async function getBalance(){
     balance = (fbalance / 10**18).toFixed(2);
     return(balance)
 }
-
-async function getETCDeposited(){
-    let fdeposited = await contract.methods.GetETCdeposited(account).call();
-    deposited = (fdeposited / 10**18).toFixed(2);
-    return(deposited);
-}
-
-async function getTotalDeposited(){
-    let ftotal = await contract.methods.Total_ETC_Deposited().call();
-    totaldeposited = (ftotal / 10**18).toFixed(2);
-    return(totaldeposited);
-}
-
-async function getExchangeRate(){
-    await getTotalDeposited();
-    if(totaldeposited == 0){
-        exchangerate = 0;
-        return(0);
-    }
-    let rate = await contract.methods.GetCurrentExchangeRate().call();
-    exchangerate = (rate / 10000000000000000).toFixed(2);
-    return(rate);
-}
