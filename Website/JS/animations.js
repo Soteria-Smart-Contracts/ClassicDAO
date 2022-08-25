@@ -34,7 +34,6 @@ function setInterface(type){
     if (type == "deposit"){
         document.getElementById('functionality').style.backgroundColor = "#000000";
         document.getElementById('f1').style.display = "none";
-        document.getElementById('f2').style.display = "none";
         document.getElementById('ideposit').style.display = "initial";
         document.getElementById('closebutton').style.display = "initial";
     }
