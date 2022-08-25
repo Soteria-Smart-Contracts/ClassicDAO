@@ -52,23 +52,6 @@ async function DepositETC(){
     console.log(tx);
 }
 
-async function WithdrawETC(){
-    let amount = document.getElementById('withdrawinput').value;
-    if (amount < 0.1){
-        alert("The minimum withdraw amount is 0.1 ETC");
-        return;
-    }
-    let amountwei = web3.utils.toWei(amount, 'ether');
-    let tx = await contract.methods.WithdrawETC(amountwei).send({from: account, gas: 300000});
-    console.log(tx);
-}
-
-async function Claim(){
-    let tx = await contract.methods.WithdrawCLD().send({from: account, gas: 300000});
-    console.log(tx);
-}
-
-
 async function getID(){
     let idhex = web3.eth._provider.chainId;
     netID = parseInt(idhex, 16);
@@ -76,11 +59,6 @@ async function getID(){
     return(netID);
 }
 
-async function getMode(){
-    let modearray = await contract.methods.GetContractMode().call();
-    mode = modearray;
-    return(mode[0]);
-}
 
 async function getBalance(){
     let fbalance = await web3.eth.getBalance(account);
