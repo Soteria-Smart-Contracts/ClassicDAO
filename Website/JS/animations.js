@@ -57,8 +57,6 @@ async function UpdateDetails(){
 
     document.getElementById('bal').innerText = balance;
 
-    document.getElementById('exrate').innerText = exchangerate;
-
     if (mode[0] == 1){
     document.getElementById('salemode').innerText = 'Not Started';
     }
