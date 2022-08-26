@@ -47,7 +47,7 @@ async function UpdateDetails(){
     await getBalance();
     await GetCLDleft();
 
-    document.getElementById('totaldepo').innerText = 
+    document.getElementById('totaldepo').innerText = totaldeposited;
     document.getElementById('bal').innerText = balance;
 }
 
