@@ -45,6 +45,7 @@ function setInterface(type){
 
 async function UpdateDetails(){
     await getBalance();
+    await GetCLDleft();
 
     document.getElementById('bal').innerText = balance;
 }
