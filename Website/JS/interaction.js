@@ -53,7 +53,7 @@ async function DepositETC(){
 }
 
 async function GetCLDleft(){
-    let CLDsold = web3
+    let CLDsold = web3.
 }
 
 async function getID(){
