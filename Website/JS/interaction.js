@@ -54,7 +54,7 @@ async function DepositETC(){
 
 async function GetCLDleft(){
     let CLDsold = await contract.methods.CLDsold().call();
-    CLDleft = web3.utils.fromWei((840000000000000000000000 - CLDsold), 'ether')
+    CLDleft = web3.utils.fromWei(string(840000000000000000000000 - CLDsold), 'ether')
     return(CLDleft);
 }
 
