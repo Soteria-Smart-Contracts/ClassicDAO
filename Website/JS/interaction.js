@@ -31,7 +31,9 @@ async function loginWithEth(){
         accountarray = await web3.eth.getAccounts();
         contract = new window.web3.eth.Contract(ABI, contractAddress, window.web3);
         account = accountarray[0];
-        
+        if{
+            account 
+        }
         removeOverlay();
         UpdateDetails();
         document.getElementById('WalletB').innerText = "Connected";
