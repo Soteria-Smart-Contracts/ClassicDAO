@@ -55,6 +55,7 @@ async function DepositETC(){
 async function GetCLDleft(){
     let CLDsold = await contract.methods.CLDsold().call();
     
+    return(CLDsold - 840000)
 }
 
 async function getID(){
