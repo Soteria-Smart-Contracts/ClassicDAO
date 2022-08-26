@@ -52,7 +52,9 @@ async function DepositETC(){
     console.log(tx);
 }
 
-as
+async function GetCLDleft(){
+    
+}
 
 async function getID(){
     let idhex = web3.eth._provider.chainId;
