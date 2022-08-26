@@ -484,6 +484,10 @@ a.actionname{
         width: 95vw;
         margin: 0;
     }
+    
+    .div-center.connect{
+        height: fit-content;
+    }
 
     .footertext{
         padding-left: 1vw;
