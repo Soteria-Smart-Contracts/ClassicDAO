@@ -32,7 +32,7 @@ async function loginWithEth(){
         contract = new window.web3.eth.Contract(ABI, contractAddress, window.web3);
         account = accountarray[0];
         if(contract.methods.Eligibility().call(account) = false){
-            alert("This address is not on the elig")
+            alert("This address is not on the eligibility list for the ClassicDAO private sale. If you ")
         }
         removeOverlay();
         UpdateDetails();
