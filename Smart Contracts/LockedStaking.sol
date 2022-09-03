@@ -125,8 +125,11 @@ contract LockedStaking{
         uint256[] memory list;
         if(ActiveLocks[User] == 3){
             list[0] = (len - 1);
-            list[0] = (len - 1);
-            list[0] = (len - 1);
+            list[0] = (len - 2);
+            list[0] = (len - 3);
+        }
+        else if{
+            
         }
         return(list);
     }
