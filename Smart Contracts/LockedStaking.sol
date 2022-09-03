@@ -136,7 +136,7 @@ contract LockedStaking{
             list[0] = (len - 1);
         }
         else{
-            revert("")
+            revert("User has no locks");
         }
         return(list);
     }
