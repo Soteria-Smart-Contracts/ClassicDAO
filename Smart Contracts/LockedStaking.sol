@@ -85,6 +85,8 @@ contract LockedStaking{
         UserLocks[msg.sender][ID].DepositAmount = 0;
         UserLocks[msg.sender][ID].WithdrawAmount = 0;
         UserLocks[msg.sender][ID].Expiration = 3093517607560;
+
+        ActiveLocks[msg.sender] = ActiveLocks[msg.sender] - 1;
         
         ERC20(CLD).transfer(msg.sender, amount);
         return(success);
