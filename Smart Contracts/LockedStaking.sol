@@ -60,7 +60,7 @@ contract LockedStaking{
             require(PreSaleUser[msg.sender] == true, "Cannot use this lock type because you are not a Pre Sale participant");
         }
         uint256 NewLockID = UserLocks[msg.sender].length;
-        uint256 AmountOnWithdraw = ((amount * LockTypeMultiplier[Type]) / 1000) + amount;
+        uint256 AmountOnWithdraw = ((amount * LockTypeMultiplier[Type]) / 10000) + amount;
         uint256 Expiration = (block.timestamp + LockTypeTime[Type]);
         Lock memory NewLock = Lock(NewLockID, msg.sender, Type, amount, AmountOnWithdraw, Expiration);
 
