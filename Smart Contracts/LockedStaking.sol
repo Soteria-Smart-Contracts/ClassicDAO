@@ -135,6 +135,7 @@ contract LockedStaking{
         else if(ActiveLocks[User] == 1){
             list[0] = (len - 1);
         }
+        else
         return(list);
     }
 
