@@ -132,6 +132,7 @@ contract LockedStaking{
             list[0] = (len - 1);
             list[0] = (len - 2);
         }
+        else if()
         return(list);
     }
 
