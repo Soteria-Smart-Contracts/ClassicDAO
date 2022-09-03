@@ -124,7 +124,7 @@ contract LockedStaking{
         uint256 len = UserLocks[User].length;
         uint256[] List;
         if(ActiveLocks[User] == 3){
-
+            List.push()
         }
         return()
     }
