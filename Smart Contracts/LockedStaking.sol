@@ -122,13 +122,13 @@ contract LockedStaking{
 
     function GetActiveUserLocks(address User) public view returns(uint256[] memory List){
         uint256 len = UserLocks[User].length;
-        uint256[] list;
+        uint256[] memory list;
         if(ActiveLocks[User] == 3){
             List.push(len -1);
             List.push(len - 2);
             List.push(len - 3);
         }
-        return(List);
+        return(list);
     }
 
 }
