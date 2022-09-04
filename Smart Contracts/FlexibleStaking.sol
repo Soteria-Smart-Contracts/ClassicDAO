@@ -5,6 +5,7 @@ pragma solidity ^0.8.7;
 contract FlexibleStaking{
     //Variable and other Declarations
     address public CLD;
+    uint256 public TotalDeposits;
     bool PreSaleListCompleted = false;
     address public Operator;
 
@@ -17,7 +18,7 @@ contract FlexibleStaking{
     //Events
     event Deposited(uint256 NewBalance, address user);
     event Withdrawn(uint256 NewBalance, address user);
-    event Claimed(uint256 NewBalance, address user);
+    event Claimed(uint256 Amount, address user);
     event ReInvested(uint256 NewBalance, address user);
 
 
@@ -28,28 +29,36 @@ contract FlexibleStaking{
 
 
     //Public Functions
-    function Deposit(uint256 amount) public returns(bool success){
+    function Deposit(uint256 amount) public returns(bool success){  
+        require(amount >= 1000000000000000000, "The minimum deposit for staking is 1 CLD");
         require(ERC20(CLD).balanceOf(msg.sender) >= amount, "You do not have enough CLD to stake this amount");
         require(ERC20(CLD).allowance(msg.sender, address(this)) >= amount, "You have not given the staking contract enough allowance");
-        Update(msg.sender);
 
         if(Deposits[msg.sender] > 0){
             ReInvest();
         }
 
+        Update(msg.sender);
         ERC20(CLD).transferFrom(msg.sender, address(this), amount);
+        TotalDeposits = TotalDeposits + amount;
         Deposits[msg.sender] = (Deposits[msg.sender] + amount);
 
+        emit Deposited(Deposits[msg.sender], msg.sender);
         return(success);
     }
 
     function Withdraw(uint256 amount) public returns(bool success){
         require(Deposits[msg.sender] >= amount);
-
+        
+        if((ERC20(CLD).balanceOf(address(this)) - (GetUnclaimed(msg.sender))) >= TotalDeposits){
         Claim();
-        Deposits[msg.sender] = Deposits[msg.sender] - amount;
-        ERC20(CLD).transfer(msg.sender, amount);
+        }
 
+        Deposits[msg.sender] = Deposits[msg.sender] - amount;
+        TotalDeposits = TotalDeposits - amount;
+        ERC20(CLD).transfer(msg.sender, amount);
+        
+        emit Withdrawn(Deposits[msg.sender], msg.sender);
         return(success);
     }
 
@@ -57,9 +66,13 @@ contract FlexibleStaking{
         require(GetUnclaimed(msg.sender) > 0);
         
         uint256 Unclaimed = GetUnclaimed(msg.sender);
+        require((ERC20(CLD).balanceOf(address(this)) - Unclaimed) >= TotalDeposits, "The contract does not have enough CLD to pay profits at the moment"); //This exists as protection in the case that the contract has not been refilled with CLD in time
         Update(msg.sender);
+
         Deposits[msg.sender] = Deposits[msg.sender] + Unclaimed;
+        TotalDeposits = TotalDeposits + Unclaimed;
         
+        emit ReInvested(Deposits[msg.sender], msg.sender);
         return(success);
     }
 
@@ -68,10 +81,12 @@ contract FlexibleStaking{
         require(GetUnclaimed(msg.sender) > 0);
 
         uint256 Unclaimed = GetUnclaimed(msg.sender);
+        require((ERC20(CLD).balanceOf(address(this)) - Unclaimed) >= TotalDeposits, "The contract does not have enough CLD to pay profits at the moment"); //This exists as protection in the case that the contract has not been refilled with CLD in time
         Update(msg.sender);
 
         ERC20(CLD).transfer(msg.sender, Unclaimed);
         
+        emit Claimed(Unclaimed, msg.sender);
         return(success);
     }
 
