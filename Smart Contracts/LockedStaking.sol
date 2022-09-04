@@ -5,6 +5,7 @@ contract LockedStaking{
     //Variable Declarations
     address CLD;
     address Operator;
+    uint256 public TotalDeposits;
     bool PreSaleListCompleted = false;
 
     //Array for each person
@@ -52,6 +53,7 @@ contract LockedStaking{
 
     //Public Functions
     function CreateLock(uint8 Type, uint256 amount) public returns(bool success){
+        require(amount >= 1000000000000000000, "The minimum deposit for staking is 1 CLD");
         require(ERC20(CLD).balanceOf(msg.sender) >= amount, "You do not have enough CLD to stake this amount");
         require(ERC20(CLD).allowance(msg.sender, address(this)) >= amount, "You have not given the staking contract enough allowance");
         require((ActiveLocks[msg.sender] + 1) <= 3);
@@ -59,6 +61,7 @@ contract LockedStaking{
         if(Type == 2 || Type == 4 || Type == 6 || Type == 8){
             require(PreSaleUser[msg.sender] == true, "Cannot use this lock type because you are not a Pre Sale participant");
         }
+
         uint256 NewLockID = UserLocks[msg.sender].length;
         uint256 AmountOnWithdraw = ((amount * LockTypeMultiplier[Type]) / 10000) + amount;
         uint256 Expiration = (block.timestamp + LockTypeTime[Type]);
@@ -68,6 +71,7 @@ contract LockedStaking{
 
         ActiveLocks[msg.sender] = ActiveLocks[msg.sender] + 1;
         UserLocks[msg.sender].push(NewLock);
+        TotalDeposits = TotalDeposits + amount;
 
         return(success);
     }
@@ -78,8 +82,12 @@ contract LockedStaking{
             revert("This lock has already been claimed");
         }
         uint256 amount = UserLocks[msg.sender][ID].WithdrawAmount;
+        if(((ERC20(CLD).balanceOf(address(this)) - (UserLocks[msg.sender][ID].WithdrawAmount - UserLocks[msg.sender][ID].DepositAmount)) <= TotalDeposits)){ //This exists as protection in the case that the contract has not been refilled with CLD in time
+             amount = UserLocks[msg.sender][ID].DepositAmount; 
+        }
         require(ERC20(CLD).balanceOf(address(this)) >= amount, "The contract does not have enough CLD to claim this lock, please reach out to the Dev team");
 
+        TotalDeposits = TotalDeposits - UserLocks[msg.sender][ID].DepositAmount;
         UserLocks[msg.sender][ID].Type = 66;
         UserLocks[msg.sender][ID].User = address(0);
         UserLocks[msg.sender][ID].DepositAmount = 0;
@@ -117,28 +125,16 @@ contract LockedStaking{
     }
 
     function GetTimeLeft(address User, uint256 ID) public view returns(uint256 Seconds){
-        return((UserLocks[User][ID].Expiration - block.timestamp)); //Fix when negative
-    }
-
-    function GetActiveUserLocks(address User) public view returns(uint256[] memory List){
-        uint256 len = UserLocks[User].length;
-        uint256[] memory list;
-        if(ActiveLocks[User] == 3){
-            list[0] = (len - 1);
-            list[0] = (len - 2);
-            list[0] = (len - 3);
-        }
-        else if(ActiveLocks[User] == 2){
-            list[0] = (len - 1);
-            list[0] = (len - 2);
-        }
-        else if(ActiveLocks[User] == 1){
-            list[0] = (len - 1);
+        if(UserLocks[User][ID].Expiration > block.timestamp){
+        return((UserLocks[User][ID].Expiration - block.timestamp));
         }
         else{
-            revert("User has no locks");
+            revert("This Lock has Expired already");
         }
-        return(list);
+    }
+
+    function GetActiveUserLocks(address User) public view returns(uint256 Number){
+        return(UserLocks[User].length);
     }
 
 }
