@@ -9,7 +9,6 @@ contract FlexibleStaking{
     bool PreSaleListCompleted = false;
     address public Operator;
 
-    //Add Total Staked (for projections)
 
     mapping(address => uint256) public Deposits;
     mapping(address => uint256) public LastUpdateUnix;
