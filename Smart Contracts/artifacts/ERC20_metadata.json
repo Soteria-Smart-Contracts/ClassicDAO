@@ -170,7 +170,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Smart Contracts/LockedStaking.sol": "ERC20"
+			"Smart Contracts/FlexibleStaking.sol": "ERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -184,12 +184,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Smart Contracts/LockedStaking.sol": {
-			"keccak256": "0x9b9ebba6d64df33c9a4be841e5ecd7bd4824d5fb50334c6a0a2a29836cba5e3d",
+		"Smart Contracts/FlexibleStaking.sol": {
+			"keccak256": "0x37bea7fc9c0bca007097ce1ffc560a423cd65cf8efb72178f60b55749669d9b9",
 			"license": "UNLICENSE",
 			"urls": [
-				"bzz-raw://894eace1a0b51b2b9ef2bade7e56a490a4f611798059ec593aa7f1ad144c6be6",
-				"dweb:/ipfs/QmY4Da4KbT4UApmV3VBEc1R2g2AZNR6HZgx9VtfUqUBFXH"
+				"bzz-raw://a85f3dc98d6ac7ee796483be9d742dd0e1cfe2e9a6552deb6e8c8a9f38d8fe13",
+				"dweb:/ipfs/QmeV5oGvuVf3J1QQQHXWtDqJ8vAsJSCtygnN7BRLX3ALsU"
 			]
 		}
 	},
