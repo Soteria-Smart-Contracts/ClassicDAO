@@ -222,6 +222,7 @@ a.link{
 
 .balances.staking{
     height: 13%;
+    border: none;
 }
 
 .balances.claim{
