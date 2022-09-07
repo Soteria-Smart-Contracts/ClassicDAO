@@ -225,6 +225,10 @@ a.link{
     border: none;
 }
 
+.inner.staking{
+    font-size: ;
+}
+
 .balances.claim{
     text-align: center;
 }
