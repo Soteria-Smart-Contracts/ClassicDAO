@@ -502,7 +502,8 @@ a.actionname{
         margin: 0;
     }
     .dapptop.staking{
-        width: 80vw;
+        min-width: 80vw;
+        max-width: ;
     }
     
     .div-center.connect{
