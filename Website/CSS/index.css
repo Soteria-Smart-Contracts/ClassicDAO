@@ -424,7 +424,7 @@ a.actionname{
 
 .wallet{
     background-color: #05af33;
-    position: absolute;
+    float: right;
     font-size: medium;
     cursor: pointer;
     font-weight: bolder;
