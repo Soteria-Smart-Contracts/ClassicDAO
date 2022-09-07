@@ -501,7 +501,9 @@ a.actionname{
         width: 95vw;
         margin: 0;
     }
-    .dapptop
+    .dapptop.staking{
+        
+    }
     
     .div-center.connect{
         height: fit-content;
