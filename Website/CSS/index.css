@@ -236,6 +236,7 @@ a.link{
     color: black;
     font-size: 1.3vw;
     font-weight: bold;
+    margin-top: 2vh;
 }
 
 .value.staking{
