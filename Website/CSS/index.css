@@ -228,11 +228,10 @@ a.link{
 
 .inner.staking{
     font-size: 0.9vw;
-    padding-right: 0;
 }
 
 .value.staking{
-    font-size: 1vw;
+    font-size: 1.0vw;
 }
 
 .balances.claim{
