@@ -223,6 +223,7 @@ a.link{
 .balances.staking{
     height: 10%;
     border: none;
+    padding-right: 8%;
 }
 
 .inner.staking{
