@@ -244,7 +244,6 @@ a.link{
     flex-direction: row;
     align-items: left;
     text-align: left;
-    padding: 10%;
 }
 
 .OpBox{
@@ -252,7 +251,7 @@ a.link{
     background-color: #3c3c3c;
     width: 40%;
     height: 8vh;
-    
+    text-align: center;
 
 }
 
