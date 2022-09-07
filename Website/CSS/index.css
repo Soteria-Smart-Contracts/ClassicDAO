@@ -235,7 +235,7 @@ a.link{
 .ROI{
     color: black;
     font-size: 1.3vw;
-    font-style: bold;
+    font-weight: bold;
 }
 
 .value.staking{
