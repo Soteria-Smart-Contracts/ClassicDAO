@@ -240,12 +240,14 @@ a.link{
 }
 
 .OpContainer{
+    flex-direction: row;
     align-items: left;
     text-align: left;
     padding: 10%;
 }
 
 .OpBox{
+    fel
     border-radius: 15px;
     background-color: #3c3c3c;
     width: 40%;
