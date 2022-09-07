@@ -176,8 +176,8 @@ a.link{
 }
 
 .dapptop.staking{
-    
-    
+    min-width: 26vw;
+    max-width: 26;
 }
 
 .csinfo{
