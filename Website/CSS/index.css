@@ -158,6 +158,7 @@ a.link{
     max-width: 26vw;
     min-height: 65vh;
     max-height: 75vh;
+    text-align: center;
 }
 
 .dapptop{
@@ -232,7 +233,7 @@ a.link{
 }
 
 .ROI{
-    
+
 }
 
 .value.staking{
