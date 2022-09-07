@@ -242,6 +242,8 @@ a.link{
 .OpContainer{
     align-items: left;
     text-align: left;
+    background-color: #494949;
+    
 }
 
 .OpBox{
