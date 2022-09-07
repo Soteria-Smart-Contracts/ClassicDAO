@@ -181,8 +181,8 @@ a.link{
     width: 0;
     font-size: 25px;
     font-weight: bold;
-    min-width: 29vw;
-    max-width: 29vw;
+    min-width: 30vw;
+    max-width: 30vw;
 }
 
 .csinfo{
