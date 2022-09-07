@@ -229,7 +229,9 @@ a.link{
     font-size: 0.8vw;
 }
 
-.value.staking
+.value.staking{
+    font-size: 0.8vw;
+}
 
 .balances.claim{
     text-align: center;
