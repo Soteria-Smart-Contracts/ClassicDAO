@@ -144,7 +144,9 @@ a.link{
     border-radius: 20px;
 }
 
-.dapp-div.dark
+.dapp-div.dark{
+    background-color: ;
+}
 
 .dapptop{
     position: absolute;
