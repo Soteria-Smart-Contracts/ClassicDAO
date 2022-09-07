@@ -227,6 +227,8 @@ a.link{
 
 .inner.staking{
     font-size: 0.9vw;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
 }
 
 .value.staking{
