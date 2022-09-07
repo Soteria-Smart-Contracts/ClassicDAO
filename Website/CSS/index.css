@@ -242,12 +242,11 @@ a.link{
 .OpContainer{
     align-items: left;
     text-align: left;
-    background-color: #494949;
     padding: 10%;
-    border-radius: 15px;
 }
 
 .OpBox{
+    border-radius: 15px;
 
 
 }
