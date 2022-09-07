@@ -179,6 +179,8 @@ a.link{
 
 .dapptop.staking{
     width: 0;
+    font-size: 26px;
+    font-weight: bold;
     min-width: 26vw;
     max-width: 26vw;
 }
