@@ -150,7 +150,8 @@ a.link{
 }
 
 .dapp-div.staking{
-    
+    min-width: 410px;
+    min-height: 300px;
 }
 
 .dapptop{
