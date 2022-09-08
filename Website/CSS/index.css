@@ -247,7 +247,8 @@ a.link{
 }
 
 .OpBox{
-    display: felx;
+    display: flex;
+    flex-direction: column;
     border-radius: 15px;
     background-color: #3c3c3c;
     width: 40%;
