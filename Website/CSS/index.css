@@ -213,7 +213,7 @@ a.link{
 
 .csinfo.staking{
     display: flex;
-    
+    flex-direction: row;
 }
 
 .balances{
