@@ -219,6 +219,9 @@ a.link{
 .csinfo.staking.right{
     margin-right: .5vw;
 }
+.csinfo.staking.left{
+    margin-left: .5vw;
+}
 
 
 .balances{
