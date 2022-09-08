@@ -247,6 +247,10 @@ a.link{
     margin-top: 2vh;
 }
 
+.OpContainer.stats{
+    background-color: ;
+}
+
 .OpBox{
     display: flex;
     flex-direction: column;
