@@ -279,6 +279,8 @@ a.link{
     width: 80%;
     text-align: left;
     font-size: large;
+    border-radius: 25px;
+    height: fit-content;
 }
 
 .OpContainer.stats{
