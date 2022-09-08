@@ -249,7 +249,7 @@ a.link{
 .OpBox{
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #3c3c3c;
     width: 45%;
     height: 15vh;
