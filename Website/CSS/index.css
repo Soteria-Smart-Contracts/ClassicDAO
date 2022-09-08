@@ -398,6 +398,7 @@ a.actionname{
     padding: 0;
     display: flex;
     flex-direction: column;
+    width: 70%;
 }
 
 .innerbutton.btm{
