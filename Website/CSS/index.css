@@ -259,7 +259,9 @@ a.link{
 
 }
 
-.OpBox
+.OpBox.left{
+    margin-right: 3vw;
+}
 
 .value.staking{
     font-size: 1.0vw;
