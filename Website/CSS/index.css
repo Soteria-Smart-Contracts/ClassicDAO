@@ -248,6 +248,8 @@ a.link{
 }
 
 .OpContainer.stats{
+    display: flex;
+    flex-direction: column;
     background-color: #3c3c3c;
     border-radius: 25px;
     width: 110%;
