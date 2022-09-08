@@ -252,9 +252,10 @@ a.link{
     border-radius: 25px;
     width: 110%;
     margin-left: -2.6vh;
+    margin-bottom: ;
     height: 50%;
     text-align: center;
-    margin-top: 3vh;
+    margin-top: 4vh;
 }
 
 .OpBox{
