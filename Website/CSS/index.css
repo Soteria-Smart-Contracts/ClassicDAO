@@ -396,6 +396,8 @@ a.actionname{
 
 .innerbutton.staking{
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .innerbutton.btm{
