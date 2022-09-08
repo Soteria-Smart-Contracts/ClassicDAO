@@ -251,7 +251,7 @@ a.link{
     flex-direction: column;
     border-radius: 25px;
     background-color: #3c3c3c;
-    width: 45%;
+    width: 47%;
     height: 14vh;
     text-align: center;
     align-items: center;
@@ -259,7 +259,7 @@ a.link{
 }
 
 .OpBox.left{
-    margin-right: 3vw;
+    margin-right: 1vw;
 }
 
 .value.staking{
