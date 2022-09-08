@@ -408,7 +408,7 @@ a.actionname{
     width: 60%;
     margin: 0;
     align-self: center;
-    padding-top: 10vh;
+    padding: 0.5vh;
 }
 
 .innerbutton.btm{
