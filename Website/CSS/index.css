@@ -247,6 +247,10 @@ a.link{
     margin-top: 2vh;
 }
 
+.statsheader{
+    font
+}
+
 .OpContainer.stats{
     display: flex;
     flex-direction: column;
