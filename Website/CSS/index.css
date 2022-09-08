@@ -211,7 +211,7 @@ a.link{
     font-size: 1vw;
 }
 
-.csinfo.staking{
+.csinfo.staking.right{
     display: flex;
     flex-direction: row;
 }
