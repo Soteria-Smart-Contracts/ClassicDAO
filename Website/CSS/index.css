@@ -298,7 +298,16 @@ a.link{
     margin-top: 2vh;
 }
 
-.OpContainer.
+.OpContainer.Instances{
+    display: flex;
+    flex-direction: column;
+    background-color: #494949;
+    border-radius: 25px;
+    width: 90%;
+    height: 40%;
+    text-align: center;
+    margin-top: 2vh;
+}
 
 .OpBox{
     display: flex;
