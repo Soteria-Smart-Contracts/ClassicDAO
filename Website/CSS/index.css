@@ -280,7 +280,7 @@ a.link{
     text-align: left;
     font-size: large;
     border-radius: 25px;
-    height: fit-content;
+    padding: 5;
 }
 
 .OpContainer.stats{
