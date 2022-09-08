@@ -282,6 +282,7 @@ a.link{
     border-radius: 25px;
     padding: .5vw;
     margin-top: 1.5vh;
+    font-weight: bold;
 }
 
 .OpContainer.stats{
