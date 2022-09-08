@@ -251,7 +251,7 @@ a.link{
     background-color: #3c3c3c;
     border-radius: 25px;
     width: 110%;
-    
+    margin-left: -5px;
 }
 
 .OpBox{
