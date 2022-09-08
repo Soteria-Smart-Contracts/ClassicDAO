@@ -253,6 +253,7 @@ a.link{
     height: 8vh;
     text-align: center;
     align-items: center;
+    align-self: center;
 
 }
 
