@@ -274,7 +274,9 @@ a.link{
     font-weight: bold;
 }
 
-.Instance
+.instance{
+    background-color: ;
+}
 
 .OpContainer.stats{
     display: flex;
