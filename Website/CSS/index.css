@@ -151,7 +151,8 @@ a.link{
 
 .dapp-div.right{
     margin-right: 0%;
-    align-items: ;
+    align-items: center;
+    text-align: center;
 }
 
 .dapp-div.staking{
