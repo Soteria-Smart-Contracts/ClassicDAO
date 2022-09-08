@@ -402,6 +402,7 @@ a.actionname{
     flex-direction: column;
     width: 60%;
     margin: 0;
+    align-self: center;
 }
 
 .innerbutton.btm{
