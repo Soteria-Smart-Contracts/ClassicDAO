@@ -248,9 +248,9 @@ a.link{
 }
 
 .statsheader{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-top: 1.5vh;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .OpContainer.stats{
