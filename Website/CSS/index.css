@@ -277,7 +277,7 @@ a.link{
 .instance{
     background-color: black;
     width: 80%;
-    
+    text-align: left;
 }
 
 .OpContainer.stats{
