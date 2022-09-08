@@ -270,7 +270,9 @@ a.link{
     margin-top: 4vh;
 }
 
-.OpContainer.
+.OpContainer.Lock{
+    
+}
 
 .OpBox{
     display: flex;
