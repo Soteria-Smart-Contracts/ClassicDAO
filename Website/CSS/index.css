@@ -217,9 +217,9 @@ a.link{
 }
 
 .csinfo.staking.right{
-    display: flex;
-    flex-direction: row;
+    
 }
+
 
 .balances{
     align-self: center;
