@@ -274,6 +274,10 @@ a.link{
     font-weight: bold;
 }
 
+.statsheader.lock{
+    
+}
+
 .instance{
     background-color: black;
     width: 80%;
