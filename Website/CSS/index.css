@@ -18,6 +18,11 @@ body{
 
 }
 
+a.small{
+    font-size: small;
+    font-weight: ;
+}
+
 a.info{
     color: #3b079d;
     text-decoration: none;
