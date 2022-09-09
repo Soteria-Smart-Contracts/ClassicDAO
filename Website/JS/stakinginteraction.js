@@ -51,7 +51,7 @@ let accountInterval = setInterval(function() {
 
 async function FlexDeposit(amount){
     if(await CLDcontract.methods.allowance(account, FlexContractAddress).call() < amount){
-        CLDcontract.methods.approve(account).call();
+        CLDcontract.methods.approve(FlexContractAddress, ).call();
     }
 
 }
