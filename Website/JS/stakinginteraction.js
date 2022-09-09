@@ -31,7 +31,7 @@ let accountInterval = setInterval(function() {
  //       if(await FlexContract.methods.Eligibility(account).call() == false){
  //           alert("This address is not on the eligibility list for the ClassicDAO private sale. If you signed up for this sale but see this message, make sure you are using the correct wallet. If issues persist, please contact us on discord, twitter or telegram.")
  //           loginWithEth();
-        }
+ //       }
         removeOverlay();
         UpdateDetails();
         document.getElementById('WalletB').innerText = "Connected";
