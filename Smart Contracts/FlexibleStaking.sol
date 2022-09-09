@@ -9,6 +9,7 @@ contract FlexibleStaking{
     bool PreSaleListCompleted = false;
     address public Operator;
 
+    //Add Total Staked (for projections)
 
     mapping(address => uint256) public Deposits;
     mapping(address => uint256) public LastUpdateUnix;
@@ -77,9 +78,9 @@ contract FlexibleStaking{
 
 
     function Claim() public returns(bool success){
-        require(GetUnclaimed(msg.sender) > 0);
-
         uint256 Unclaimed = GetUnclaimed(msg.sender);
+        require(Unclaimed > 0);
+
         require((ERC20(CLD).balanceOf(address(this)) - Unclaimed) >= TotalDeposits, "The contract does not have enough CLD to pay profits at the moment"); //This exists as protection in the case that the contract has not been refilled with CLD in time
         Update(msg.sender);
 
@@ -117,10 +118,10 @@ contract FlexibleStaking{
         uint256 Time = (block.timestamp - LastUpdateUnix[user]);
         uint256 Unclaimed;
         if(PreSaleUser[user] == true){
-        Unclaimed = (((9512937 * Time) * Deposits[user]) / 10000000000000000);
+        Unclaimed = (((951293700000 * Time) * Deposits[user]) / 10000000000000000);
         }
         else{
-        Unclaimed = (((7927448 * Time) * Deposits[user]) / 10000000000000000);
+        Unclaimed = (((792744800000 * Time) * Deposits[user]) / 10000000000000000);
         }
         return(Unclaimed);
     }
