@@ -18,7 +18,8 @@ function DiplayBox(type){
 
 function CloseBox(){
     document.getElementById('ConfirmLeft').style.display = "none";
-    document.getElementById('InputLeftDeposit').style.display = "initial";
+    document.getElementById('InputLeftDeposit').style.display = "none";
+    document.getElementById('InputLeftDeposit').style.display = "none";
 }
 
 function ClearLeft(){
