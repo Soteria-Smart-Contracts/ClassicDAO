@@ -72,6 +72,7 @@ async function getCLDbal(){
 
 async function getFlexDeposited(){
     fbal = await FlexContract.methods.Deposits(account).call();
+    
 }
 
 
