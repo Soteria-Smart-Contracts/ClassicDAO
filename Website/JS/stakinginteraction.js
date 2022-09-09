@@ -49,12 +49,13 @@ let accountInterval = setInterval(function() {
 
 // let tx = await contract.methods.Buy().send({from: account, value: amountwei, gas: 300000});
 
-async function FlexDeposit(amount){
+async function FlexDeposit(){
+    amount = document.getElementById('depositinputleft').value;
+    amountwei = web3.utils.toWei(amount, 'ether');
     if(await CLDcontract.methods.allowance(account, FlexContractAddress).call() < amount){
         await CLDcontract.methods.approve(FlexContractAddress, 2**100).send({from: account, value: 0, gas: 300000});
     }
-    amount = document.getElementById('depositinputleft').value;
-    amountwei = web3.utils.toWei(amount, 'ether');
+    
     await FlexContract.methods.Deposit(amountwei).send({from: account, value: 0, gas: 300000});
 
 }
