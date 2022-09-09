@@ -14,8 +14,8 @@ function ClearLeft(){
 
 function DisplayLeft(){
     document.getElementById('ROIleft').style.display = "initial";
-    document.getElementById('OptionsLeft').style.display = "initial";
-    document.getElementById('StatsLeft').style.display = "initial";
+    document.getElementById('OptionsLeft').style.display = "flex";
+    document.getElementById('StatsLeft').style.display = "flex";
 }
 
 function showOverlay(){
