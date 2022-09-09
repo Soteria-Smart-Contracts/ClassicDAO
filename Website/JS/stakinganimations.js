@@ -19,7 +19,7 @@ function DiplayBox(type){
 function CloseBox(){
     document.getElementById('ConfirmLeft').style.display = "none";
     document.getElementById('InputLeftDeposit').style.display = "none";
-    document.getElementById('InputLeftDeposit').style.display = "none";
+    document.getElementById('InputLeftWithdraw').style.display = "none";
 }
 
 function ClearLeft(){
