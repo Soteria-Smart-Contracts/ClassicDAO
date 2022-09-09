@@ -7,6 +7,7 @@ let FlexContract;
 let FlexContractAddress = "0x1f10B50904Be03C5641535Ee42bA07b891BeB8E3";
 let accountarray;
 let CLDbal;
+let FlexBal;
 let netID;
 
 
@@ -72,7 +73,7 @@ async function getCLDbal(){
 
 async function getFlexDeposited(){
     fbal = await FlexContract.methods.Deposits(account).call();
-    
+
 }
 
 
