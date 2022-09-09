@@ -64,7 +64,7 @@ let accountInterval = setInterval(function() {
 
 
 
-
+async function getCLDbal
 
 
 async function getID(){
