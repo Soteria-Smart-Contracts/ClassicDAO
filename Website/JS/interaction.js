@@ -1,4 +1,4 @@
-const ABI = window.abi;
+const ABI = window.saleabi;
 const contractAddress = "0x3d53E224Eb7a4161003a4E0D8BE8adbC9b9424e6";
 let account;
 let balance;
