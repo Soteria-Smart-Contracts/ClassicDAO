@@ -51,10 +51,10 @@ let accountInterval = setInterval(function() {
 
 async function FlexDeposit(){
     amount = document.getElementById('depositinputleft').value;
-    amountwei = amount * 1000000;
+    amountwei = amount * 1000000000000000000;
 
     if(await CLDcontract.methods.allowance(account, FlexContractAddress).call() < amount){
-        await CLDcontract.methods.approve(FlexContractAddress, 1000000000000000000000000).send({from: account, value: 0, gas: 300000});
+        await CLDcontract.methods.approve(FlexContractAddress, 10000000000000000000).send({from: account, value: 0, gas: 300000});
     }
     
     await FlexContract.methods.Deposit(amountwei).send({from: account, value: 0, gas: 300000});
