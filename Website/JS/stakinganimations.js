@@ -16,6 +16,8 @@ function DiplayBox(type){
     }
 }
 
+function setMaxDeposit()
+
 function CloseBox(){
     document.getElementById('ConfirmLeft').style.display = "none";
     document.getElementById('InputLeftDeposit').style.display = "none";
