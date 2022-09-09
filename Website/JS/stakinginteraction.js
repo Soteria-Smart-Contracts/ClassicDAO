@@ -54,10 +54,10 @@ async function FlexDeposit(){
     amountwei = amount * 1000000000000000000;
 
     if(await CLDcontract.methods.allowance(account, FlexContractAddress).call() < amount){
-        await CLDcontract.methods.approve(FlexContractAddress, BigInt(1000000000000000000)).send({from: account, value: 0, gas: 300000});
+        await CLDcontract.methods.approve(FlexContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: 300000});
     }
     
-    await FlexContract.methods.Deposit(1).send({from: account, value: 0, gas: 300000});
+    await FlexContract.methods.Deposit(BigInt(am)).send({from: account, value: 0, gas: 300000});
 }
 
 //async function FlexWithdraw{
