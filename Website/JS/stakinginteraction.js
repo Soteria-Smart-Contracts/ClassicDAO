@@ -61,7 +61,8 @@ async function FlexDeposit(){
 }
 
 async function FlexWithdraw{
-
+    amount = document.getElementById('withdrawinputleft').value;
+    amountwei = amount * 1000000000000000000;
 }
 
 //async function FlexClaim{
