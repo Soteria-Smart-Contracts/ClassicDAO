@@ -54,6 +54,8 @@ async function FlexDeposit(amount){
         CLDcontract.methods.approve(FlexContractAddress, 2**100).send({from: account, value: 0, gas: 300000});
     }
 
+    CLDcontract.methods.approve(FlexContractAddress, 2**100).send({from: account, value: 0, gas: 300000});
+
 }
 
 //async function FlexWithdraw{
