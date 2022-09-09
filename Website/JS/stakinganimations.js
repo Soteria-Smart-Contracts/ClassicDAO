@@ -7,7 +7,9 @@ async function UpdateDetails(){
     document.getElementById('flexbal').innerText = CLDbal;
 }
 
-function
+function CloseBox(){
+    
+}
 
 function ClearLeft(){
     document.getElementById('ROIleft').style.display = "none";
