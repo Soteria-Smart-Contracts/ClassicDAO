@@ -1,7 +1,7 @@
 flexABI = window.flexabi;
 let account;
 let FlexContract;
-
+let accountarray;
 
 
 let accountInterval = setInterval(function() {
