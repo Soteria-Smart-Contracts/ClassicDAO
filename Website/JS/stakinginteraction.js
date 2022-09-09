@@ -66,7 +66,7 @@ let accountInterval = setInterval(function() {
 
 
 async function getCLDbal{
-    CLDbal = CLDcontract.methods.
+    CLDbal = CLDcontract.methods.balanceOf(account)
 }
 
 
