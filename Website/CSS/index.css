@@ -480,6 +480,10 @@ a.actionname{
     text-align: center;
 }
 
+a.actionname.staking{
+    
+}
+
 .specialinput{
     width: 70%;
     height: 35px;
