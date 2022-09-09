@@ -430,6 +430,10 @@ a.link{
     cursor: pointer;
 }
 
+.close.staking{
+    staking
+}
+
 .maxbutton{
     position: absolute;
     top:  59%;
