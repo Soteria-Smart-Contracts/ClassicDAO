@@ -12,6 +12,12 @@ function ClearLeft(){
     document.getElementById('StatsLeft').style.display = "none";
 }
 
+function ClearLeft(){
+    document.getElementById('ROIleft').style.display = "none";
+    document.getElementById('OptionsLeft').style.display = "none";
+    document.getElementById('StatsLeft').style.display = "none";
+}
+
 function showOverlay(){
     document.getElementById('overlay').style.display = "block";
     document.body.style.overflow = "hidden";
