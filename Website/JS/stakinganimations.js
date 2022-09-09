@@ -8,7 +8,7 @@ async function UpdateDetails(){
 }
 
 function CloseBox(){
-    document.getElementById('Confirmleft').style.display = "none";
+    document.getElementById('ConfirmLeft').style.display = "none";
 }
 
 function ClearLeft(){
