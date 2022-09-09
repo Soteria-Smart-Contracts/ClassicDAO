@@ -6,6 +6,8 @@ async function UpdateDetails(){
 
     document.getElementById('flexbal').innerText = CLDbal;
     document.getElementById('flexdepo').innerText = FlexBal;
+    document.getElementById('statdepo').innerText = FlexBal;
+    document.getElementById('flexdepo').innerText = FlexBal;
 }
 
 function DiplayBox(type){
