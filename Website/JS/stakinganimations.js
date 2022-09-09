@@ -1,9 +1,9 @@
 
 
-async function UpdateDetails{
+async function UpdateDetails(){
     await getCLDbal;
 
-    document.getElementById('totaldepo').innerText = CLDbal;
+    document.getElementById('flexbal').innerText = CLDbal;
 }
 
 function showOverlay(){
