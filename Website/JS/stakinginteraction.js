@@ -44,11 +44,11 @@ let accountInterval = setInterval(function() {
     }
 }
 
-//async function Deposit{
+//async function FlexDeposit{
 
 //}
 
-
+async function FlexWithdraw
 
 
 
