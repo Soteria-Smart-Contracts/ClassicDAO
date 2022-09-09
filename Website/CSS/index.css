@@ -222,6 +222,7 @@ a.link{
     cursor: pointer;
 }
 .csinfo.staking.left{
+    margin-top: .4vw;
     margin-left: .5vw;
     cursor: pointer;
 }
