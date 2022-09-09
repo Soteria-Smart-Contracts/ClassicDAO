@@ -70,7 +70,9 @@ async function getCLDbal(){
     CLDbal = (fbal / 10**18).toFixed(2);
 }
 
-async function getFlexDeposited()
+async function getFlexDeposited(){
+    fbal = await CLDcontract.methods.balanceOf(account).call();
+}
 
 
 async function getID(){
