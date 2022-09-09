@@ -185,11 +185,11 @@
 	},
 	"sources": {
 		"Smart Contracts/FlexibleStaking.sol": {
-			"keccak256": "0x37bea7fc9c0bca007097ce1ffc560a423cd65cf8efb72178f60b55749669d9b9",
+			"keccak256": "0x5d773ffa40f16a4de400f1f9e4c662a0925802e8954d6fafaeda5eebc8660f26",
 			"license": "UNLICENSE",
 			"urls": [
-				"bzz-raw://a85f3dc98d6ac7ee796483be9d742dd0e1cfe2e9a6552deb6e8c8a9f38d8fe13",
-				"dweb:/ipfs/QmeV5oGvuVf3J1QQQHXWtDqJ8vAsJSCtygnN7BRLX3ALsU"
+				"bzz-raw://5a4977016ea864020664ce85bcf22fd3d95c62e86eba4632e268c148dc1561e1",
+				"dweb:/ipfs/Qmcwx255G5QfT9MHhvJxwA8V6EK6aBxvU95tGU6RiAuUBV"
 			]
 		}
 	},
