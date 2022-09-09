@@ -3,11 +3,12 @@
 async function UpdateDetails(){
     await getCLDbal();
     await getFlexDeposited();
+    await getUnclaimed();
 
     document.getElementById('flexbal').innerText = CLDbal;
     document.getElementById('flexdepo').innerText = FlexBal;
     document.getElementById('statdepo').innerText = FlexBal;
-    document.getElementById('flexdepo').innerText = FlexBal;
+    document.getElementById('statunclaimed').innerText = Unclaimed;
 }
 
 function DiplayBox(type){
