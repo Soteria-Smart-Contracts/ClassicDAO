@@ -17,7 +17,7 @@ function DiplayBox(type){
 }
 
 function setMaxDeposit(){
-    document.getElementById('depositinputleft')
+    document.getElementById('depositinputleft').value = 
 }
 
 function CloseBox(){
