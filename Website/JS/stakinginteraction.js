@@ -70,6 +70,8 @@ async function getCLDbal(){
     CLDbal = (fbal / 10**18).toFixed(2);
 }
 
+async function get
+
 
 async function getID(){
     let idhex = web3.eth._provider.chainId;
