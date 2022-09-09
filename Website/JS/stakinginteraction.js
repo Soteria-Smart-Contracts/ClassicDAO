@@ -67,9 +67,9 @@ async function FlexWithdraw(){
     await FlexContract.methods.Withdraw(BigInt(amountwei)).send({from: account, value: 0, gas: 300000});
 }
 
-//async function FlexClaim{
-
-//}
+async function FlexClaim{
+    
+}
 
 //async function FlexReinvest{
 
