@@ -194,6 +194,7 @@ a.link{
 }
 
 .interface.staking{
+    display: block;
     margin-top: 25%;
 }
 
