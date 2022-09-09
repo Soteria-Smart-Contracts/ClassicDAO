@@ -1,4 +1,5 @@
-flexABI = window.flexabi;
+let flexABI = window.flexabi;
+let 
 let account;
 let CLDcontract;
 let CLDcontractAddress = "0x19c128C3ca3E853f3a093D946ba1c9De4Ac7b04F";
