@@ -1,6 +1,8 @@
 
 
-function UpdateDetails
+function UpdateDetails{
+    
+}
 
 function showOverlay(){
     document.getElementById('overlay').style.display = "block";
