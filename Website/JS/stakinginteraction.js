@@ -1,3 +1,4 @@
+flexABI = window.flexabi;
 
 
 let accountInterval = setInterval(function() {
