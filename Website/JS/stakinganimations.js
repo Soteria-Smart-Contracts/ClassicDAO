@@ -7,7 +7,7 @@ async function UpdateDetails(){
 }
 
 function ClearLeft(){
-    document.getElementById('').style.display = "none";
+    document.getElementById('ROIleft').style.display = "none";
 }
 
 function showOverlay(){
