@@ -52,7 +52,11 @@ let accountInterval = setInterval(function() {
 
 //}
 
-//async function FlexWithdraw{
+//async function FlexClaim{
+
+//}
+
+//async function FlexReinvest{
 
 //}
 
