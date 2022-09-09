@@ -1,6 +1,7 @@
 
 
 async function UpdateDetails{
+    await getCLDbal;
     
     document.getElementById('totaldepo').innerText = totaldeposited;
 
