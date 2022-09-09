@@ -2,6 +2,7 @@
 
 async function UpdateDetails(){
     await getCLDbal();
+    await getFlexDeposited();
 
     document.getElementById('flexbal').innerText = CLDbal;
 }
