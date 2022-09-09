@@ -71,7 +71,7 @@ async function FlexClaim(){
     await FlexContract.methods.Claim().send({from: account, value: 0, gas: 300000});
 }
 
-async function FlexReinvest{
+async function FlexReinvest(){
     await FlexContract.methods.ReInvest().send({from: account, value: 0, gas: 300000});
 }
 
