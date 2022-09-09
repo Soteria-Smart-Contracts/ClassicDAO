@@ -57,7 +57,7 @@ async function FlexDeposit(){
         await CLDcontract.methods.approve(FlexContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: 300000});
     }
     
-    await FlexContract.methods.Deposit(BigInt(am)).send({from: account, value: 0, gas: 300000});
+    await FlexContract.methods.Deposit(BigInt(amountwei)).send({from: account, value: 0, gas: 300000});
 }
 
 //async function FlexWithdraw{
