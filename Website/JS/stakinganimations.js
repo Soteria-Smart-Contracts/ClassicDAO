@@ -13,7 +13,7 @@ function DiplayBox(type){
 
     }
     if(type == 2){
-        document.getElementById('ConfirmBox').style.display = "initial";
+        document.getElementById('InputLeftWithdraw').style.display = "initial";
     }
 }
 
