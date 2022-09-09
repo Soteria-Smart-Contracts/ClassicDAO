@@ -1,4 +1,4 @@
-window.abi = [
+window.saleabi = [
         {
             "inputs": [
                 {
