@@ -380,4 +380,6 @@ window.saleabi = [
         }
 ]
 
-window.
+window.flexabi = [
+    
+]
