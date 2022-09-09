@@ -193,7 +193,9 @@ a.link{
     padding-bottom: 1%;
 }
 
-.interface.staking
+.interface.staking{
+    margin-top: 40%;
+}
 
 .ConfirmBox{
     background-color: black;
