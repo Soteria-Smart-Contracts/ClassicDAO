@@ -54,7 +54,7 @@ async function FlexDeposit(amount){
         await CLDcontract.methods.approve(FlexContractAddress, 2**100).send({from: account, value: 0, gas: 300000});
     }
 
-    await CLDcontract.methods.approve(FlexContractAddress, 2**100).send({from: account, value: 0, gas: 300000});
+    await FlexContract.methods.(FlexContractAddress, 2**100).send({from: account, value: 0, gas: 300000});
 
 }
 
