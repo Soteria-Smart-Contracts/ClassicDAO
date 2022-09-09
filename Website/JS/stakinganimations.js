@@ -9,10 +9,10 @@ async function UpdateDetails(){
 function DiplayBox(type){
     document.getElementById('ConfirmLeft').style.display = "initial";
     if(type == 1){
-        document.getElementById('InputLeftDeposit').style.display = "initial";
+        document.getElementById('InputLeftDeposit').style.display = "block";
     }
     if(type == 2){
-        document.getElementById('InputLeftWithdraw').style.display = "initial";
+        document.getElementById('InputLeftWithdraw').style.display = "block";
     }
 }
 
