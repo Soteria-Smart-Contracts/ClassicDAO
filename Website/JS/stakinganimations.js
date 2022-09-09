@@ -13,9 +13,9 @@ function ClearLeft(){
 }
 
 function DisplayLeft(){
-    document.getElementById('ROIleft').style.display = "none";
-    document.getElementById('OptionsLeft').style.display = "none";
-    document.getElementById('StatsLeft').style.display = "none";
+    document.getElementById('ROIleft').style.display = "initial";
+    document.getElementById('OptionsLeft').style.display = "initial";
+    document.getElementById('StatsLeft').style.display = "initial";
 }
 
 function showOverlay(){
