@@ -2,6 +2,7 @@ flexABI = window.flexabi;
 let account;
 let FlexContract;
 let accountarray;
+let netID;
 
 
 let accountInterval = setInterval(function() {
