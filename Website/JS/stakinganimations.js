@@ -8,7 +8,8 @@ async function UpdateDetails(){
 }
 
 function DiplayBox(type){
-    document.getElementById('ConfirmLeft').style.display = "none";
+    document.getElementById('ConfirmBox').style.display = "initial";
+    
 }
 
 function CloseBox(){
