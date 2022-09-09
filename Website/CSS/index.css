@@ -193,7 +193,10 @@ a.link{
     padding-bottom: 1%;
 }
 
-.Infobox
+.Infobox{
+    background-color: black;
+    
+}
 
 .csinfo{
     display: flex;
