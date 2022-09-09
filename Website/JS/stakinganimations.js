@@ -1,8 +1,9 @@
 
 
 async function UpdateDetails{
-    document.getElementById('totaldepo').innerText = totaldeposited;
     
+    document.getElementById('totaldepo').innerText = totaldeposited;
+
 }
 
 function showOverlay(){
