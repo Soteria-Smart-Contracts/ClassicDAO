@@ -66,7 +66,7 @@ let accountInterval = setInterval(function() {
 
 
 async function getCLDbal(){
-    fbal = CLDcontract.methods.balanceOf(account).call();
+    fbal = await CLDcontract.methods.balanceOf(account).call();
     CLDbal = (fbal / 10**18).toFixed(2);
 }
 
