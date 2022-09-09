@@ -76,7 +76,10 @@ async function getFlexDeposited(){
     FlexBal = (fbal / 10**18).toFixed(2);
 }
 
-async function getUnclaimed()
+async function getUnclaimed(){
+    fbal = await FlexContract.methods.Deposits(account).call();
+    FlexBal = (fbal / 10**18).toFixed(2);
+}
 
 
 async function getID(){
