@@ -7,7 +7,7 @@ async function UpdateDetails(){
 }
 
 function DiplayBox(type){
-    document.getElementById('ConfirmBox').style.display = "initial";
+    document.getElementById('ConfirmLeft').style.display = "initial";
     if(type == 1){
         document.getElementById('InputLeftDeposit').style.display = "initial";
     }
