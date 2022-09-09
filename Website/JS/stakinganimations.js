@@ -1,4 +1,5 @@
 
+ClearLeft();
 
 async function UpdateDetails(){
     await getCLDbal();
