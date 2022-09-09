@@ -2,7 +2,7 @@ let flexABI = window.flexabi;
 let CLDabi = window.CLDabi;
 let account;
 let CLDcontract;
-let CLDcontractAddress = "0x19c128C3ca3E853f3a093D946ba1c9De4Ac7b04F";
+let CLDcontractAddress = "0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c";
 let FlexContract;
 let FlexContractAddress = "0x19c128C3ca3E853f3a093D946ba1c9De4Ac7b04F";
 let accountarray;
