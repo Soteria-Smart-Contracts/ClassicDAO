@@ -9,7 +9,12 @@ async function UpdateDetails(){
 
 function DiplayBox(type){
     document.getElementById('ConfirmBox').style.display = "initial";
-    if(type == 1)
+    if(type == 1){
+
+    }
+    if(type == 2){
+        
+    }
 }
 
 function CloseBox(){
