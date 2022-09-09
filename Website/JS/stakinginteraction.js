@@ -63,6 +63,8 @@ async function FlexDeposit(){
 async function FlexWithdraw{
     amount = document.getElementById('withdrawinputleft').value;
     amountwei = amount * 1000000000000000000;
+
+    await FlexContract.methods.Withdraw(BigInt(amountwei)).send({from: account, value: 0, gas: 300000});
 }
 
 //async function FlexClaim{
