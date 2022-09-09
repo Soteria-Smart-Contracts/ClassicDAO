@@ -12,7 +12,7 @@ function ClearLeft(){
     document.getElementById('StatsLeft').style.display = "none";
 }
 
-function ClearLeft(){
+function DisplayLeft(){
     document.getElementById('ROIleft').style.display = "none";
     document.getElementById('OptionsLeft').style.display = "none";
     document.getElementById('StatsLeft').style.display = "none";
