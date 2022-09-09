@@ -8,6 +8,8 @@ async function UpdateDetails(){
 
 function ClearLeft(){
     document.getElementById('ROIleft').style.display = "none";
+    document.getElementById('ROIleft').style.display = "none";
+    document.getElementById('ROIleft').style.display = "none";
 }
 
 function showOverlay(){
