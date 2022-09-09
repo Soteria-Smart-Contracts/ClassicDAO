@@ -5,7 +5,7 @@ async function UpdateDetails(){
     await getFlexDeposited();
 
     document.getElementById('flexbal').innerText = CLDbal;
-    document.getElementById('flexdepo').innerText = CLDbal;
+    document.getElementById('flexdepo').innerText = FlexBal;
 }
 
 function DiplayBox(type){
