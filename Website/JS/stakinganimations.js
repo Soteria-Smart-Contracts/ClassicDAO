@@ -6,7 +6,9 @@ async function UpdateDetails(){
     document.getElementById('flexbal').innerText = CLDbal;
 }
 
-function ClearLeft
+function ClearLeft(){
+    
+}
 
 function showOverlay(){
     document.getElementById('overlay').style.display = "block";
