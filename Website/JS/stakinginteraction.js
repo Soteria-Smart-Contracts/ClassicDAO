@@ -53,6 +53,7 @@ async function FlexDeposit(amount){
     if(await CLDcontract.methods.allowance(account, FlexContractAddress).call() < amount){
         await CLDcontract.methods.approve(FlexContractAddress, 2**100).send({from: account, value: 0, gas: 300000});
     }
+    amount = 
     amountwei = amount * 1000000000000000000;
     await FlexContract.methods.Deposit(amountwei).send({from: account, value: 0, gas: 300000});
 
