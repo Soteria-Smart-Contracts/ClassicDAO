@@ -76,6 +76,8 @@ async function getFlexDeposited(){
     FlexBal = (fbal / 10**18).toFixed(2);
 }
 
+async function getUnclaimed()
+
 
 async function getID(){
     let idhex = web3.eth._provider.chainId;
