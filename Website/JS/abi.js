@@ -379,3 +379,5 @@ window.saleabi = [
             "type": "function"
         }
 ]
+
+window.
