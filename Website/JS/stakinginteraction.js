@@ -1,6 +1,7 @@
 flexABI = window.flexabi;
 let account;
 let FlexContract;
+let FlexContractAddress = 
 let accountarray;
 let netID;
 
