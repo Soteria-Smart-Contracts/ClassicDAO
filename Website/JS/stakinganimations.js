@@ -7,6 +7,8 @@ async function UpdateDetails(){
     document.getElementById('flexbal').innerText = CLDbal;
 }
 
+function Diplay
+
 function CloseBox(){
     document.getElementById('ConfirmLeft').style.display = "none";
 }
