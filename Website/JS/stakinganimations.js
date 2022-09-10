@@ -4,6 +4,7 @@ async function UpdateDetails(){
     await getCLDbal();
     await getFlexDeposited();
     await getUnclaimed();
+    await getEstimated();
 
     document.getElementById('flexbal').innerText = CLDbal;
     document.getElementById('flexdepo').innerText = FlexBal;
