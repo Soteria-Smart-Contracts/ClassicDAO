@@ -192,7 +192,9 @@ a.link{
     border: solid 2px white;
     padding: 5px;
     font-size: larger;
+    color: black;
     margin-left: 1%;
+    padding-left: ;
 }
 
 .dapptop.staking{
