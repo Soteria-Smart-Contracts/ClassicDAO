@@ -100,4 +100,6 @@ async function getID(){
     return(netID);
 }
 
-async function getEstimated
+async function getEstimated(){
+    
+}
