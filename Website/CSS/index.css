@@ -186,7 +186,7 @@ a.link{
 }
 
 .disclaimer{
-    background-color: red;
+    background-color: rgb(255, 111, 0);
     border-radius: 25px;
     border: solid 2px white;
     padding: 5px;
