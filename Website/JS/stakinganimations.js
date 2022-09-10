@@ -10,7 +10,7 @@ async function UpdateDetails(){
     document.getElementById('flexdepo').innerText = FlexBal;
     document.getElementById('statdepo').innerText = FlexBal;
     document.getElementById('statunclaimed').innerText = Unclaimed;
-    document.getElementById('estimated').innerText = Estimated;
+    document.getElementById('Estimated').innerText = Estimated;
 }
 
 function DiplayBox(type){
