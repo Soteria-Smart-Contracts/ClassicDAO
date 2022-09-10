@@ -185,6 +185,10 @@ a.link{
     border-top-right-radius: 14px;
 }
 
+.disclaimer{
+    align-self: center;
+}
+
 .dapptop.staking{
     width: 100%;
     font-size: 25px;
