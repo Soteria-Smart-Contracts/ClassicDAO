@@ -9,6 +9,7 @@ let accountarray;
 let CLDbal;
 let FlexBal;
 let Unclaimed;
+let Estimated
 let netID;
 
 
