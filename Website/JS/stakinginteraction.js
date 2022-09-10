@@ -102,5 +102,5 @@ async function getID(){
 }
 
 async function getEstimated(){
-    FlexBal 
+    Estimated = FlexBal 
 }
