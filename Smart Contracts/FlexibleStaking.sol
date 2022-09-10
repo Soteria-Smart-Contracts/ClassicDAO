@@ -118,10 +118,10 @@ contract FlexibleStaking{
         uint256 Time = (block.timestamp - LastUpdateUnix[user]);
         uint256 Unclaimed;
         if(PreSaleUser[user] == true){
-        Unclaimed = (((951293700000 * Time) * Deposits[user]) / 10000000000000000);
+        Unclaimed = (((9512937 * Time) * Deposits[user]) / 1000000000000000);
         }
         else{
-        Unclaimed = (((792744800000 * Time) * Deposits[user]) / 10000000000000000);
+        Unclaimed = (((7927448 * Time) * Deposits[user]) / 1000000000000000);
         }
         return(Unclaimed);
     }
