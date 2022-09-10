@@ -23,6 +23,7 @@ function DiplayBox(type){
     }
 }
 
+
 function setMaxDeposit(){
     document.getElementById('depositinputleft').value = CLDbal;
 }
