@@ -188,7 +188,7 @@ a.link{
 .disclaimer{
     background-color: #151515;
     border-radius: 25px;
-    border: 2px white;
+    border: solid 2px white;
     padding: 5px;
     font-size: larger;
 }
