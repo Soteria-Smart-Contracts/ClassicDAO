@@ -24,7 +24,7 @@ function DiplayBox(type){
 }
 
 function setMaxDeposit(){
-    document.getElementById('depositinputleft').value = (CLDbal - 0.001);
+    document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
 }
 
 function CloseBox(){
