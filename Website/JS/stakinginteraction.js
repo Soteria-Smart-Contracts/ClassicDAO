@@ -80,12 +80,12 @@ async function FlexReinvest(){
 
 async function getCLDbal(){
     fbal = await CLDcontract.methods.balanceOf(account).call();
-    CLDbal = (fbal / 10**18).toFixed(2);
+    CLDbal = (fbal / 10**18);
 }
 
 async function getFlexDeposited(){
     fbal = await FlexContract.methods.Deposits(account).call();
-    FlexBal = (fbal / 10**18).toFixed(2);
+    FlexBal = (fbal / 10**18);
 }
 
 async function getUnclaimed(){
