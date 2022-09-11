@@ -28,7 +28,7 @@ function setMaxDeposit(){
 }
 
 function setMaxWithdraw(){
-    document.getElementById('withdrawinputleft').value = (CLDbal - 0.01).toFixed(2);
+    document.getElementById('withdrawinputleft').value = (FlexBal - 0.01).toFixed(2);
 }
 
 function CloseBox(){
