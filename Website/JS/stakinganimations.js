@@ -6,9 +6,9 @@ async function UpdateDetails(){
     await getUnclaimed();
     await getEstimated();
 
-    document.getElementById('flexbal').innerText = (CLDbal).tofixed(2);
-    document.getElementById('flexdepo').innerText = (FlexBal).tofixed(2);
-    document.getElementById('statdepo').innerText = (FlexBal).tofixed(2);
+    document.getElementById('flexbal').innerText = CLDbal;
+    document.getElementById('flexdepo').innerText = FlexBal;
+    document.getElementById('statdepo').innerText = FlexBal;
     document.getElementById('statunclaimed').innerText = Unclaimed;
     document.getElementById('expected').innerText = Estimated;
 }
