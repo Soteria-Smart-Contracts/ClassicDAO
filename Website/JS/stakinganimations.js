@@ -6,9 +6,9 @@ async function UpdateDetails(){
     await getUnclaimed();
     await getEstimated();
 
-    document.getElementById('flexbal').innerText = (bigInt(CLDbal)).tofixed(2);
-    document.getElementById('flexdepo').innerText = (bigInt(FlexBal)).tofixed(2);
-    document.getElementById('statdepo').innerText = (bigInt(FlexBal)).tofixed(2);
+    document.getElementById('flexbal').innerText = (CLDbal).tofixed(2);
+    document.getElementById('flexdepo').innerText = (FlexBal).tofixed(2);
+    document.getElementById('statdepo').innerText = (FlexBal).tofixed(2);
     document.getElementById('statunclaimed').innerText = Unclaimed;
     document.getElementById('expected').innerText = Estimated;
 }
@@ -24,7 +24,7 @@ function DiplayBox(type){
 }
 
 function setMaxDeposit(){
-    document.getElementById('depositinputleft').value = CLDbal;
+    document.getElementById('depositinputleft').value = (CLDbal - 0.01);
 }
 
 function CloseBox(){
