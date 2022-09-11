@@ -8,7 +8,7 @@ async function UpdateDetails(){
 
     document.getElementById('flexbal').innerText = (CLDbal);
     document.getElementById('flexdepo').innerText = (FlexBal);
-    document.getElementById('statdepo').innerText = (FlexBal;
+    document.getElementById('statdepo').innerText = (FlexBal);
     document.getElementById('statunclaimed').innerText = Unclaimed;
     document.getElementById('expected').innerText = Estimated;
 }
