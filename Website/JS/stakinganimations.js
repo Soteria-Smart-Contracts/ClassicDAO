@@ -27,6 +27,8 @@ function setMaxDeposit(){
     document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
 }
 
+function setMaxWithdraw
+
 function CloseBox(){
     document.getElementById('ConfirmLeft').style.display = "none";
     document.getElementById('InputLeftDeposit').style.display = "none";
