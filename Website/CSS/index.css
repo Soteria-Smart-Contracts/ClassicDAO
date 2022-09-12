@@ -240,13 +240,13 @@ a.link{
 
 .csinfo.staking{
     font-size: 1vw;
-    width
 }
 
 .csinfo.staking.right{
     margin-right: 1vw;
     margin-top: 2vh;
     cursor: pointer;
+    width: 5vw;
 }
 .csinfo.staking.left{
     margin-top: 2vh;
