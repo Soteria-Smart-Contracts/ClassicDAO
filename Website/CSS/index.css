@@ -244,11 +244,11 @@ a.link{
 
 .csinfo.staking.right{
     margin-right: .5vw;
-    margin-top: .6vh;
+    margin-top: 2vh;
     cursor: pointer;
 }
 .csinfo.staking.left{
-    margin-top: .4vh;
+    margin-top: 2vh;
     margin-left: .5vw;
     cursor: pointer;
 }
