@@ -96,6 +96,10 @@ async function getUnclaimed(){
     Unclaimed = (fbal / 10**18).toFixed(5);
 }
 
+async function getActiveLocks(){
+
+}
+
 
 
 async function getID(){
