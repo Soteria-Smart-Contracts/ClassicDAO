@@ -59,8 +59,7 @@ function ClearLeft(){
 
 function ClearRight(){
     document.getElementById('Instances').style.display = "none";
-    document.getElementById('OptionsLeft').style.display = "none";
-    document.getElementById('StatsLeft').style.display = "none";
+    document.getElementById('Lock').style.display = "none";
 }
 
 function DisplayLeft(){
