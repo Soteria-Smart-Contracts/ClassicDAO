@@ -68,6 +68,12 @@ function DisplayLeft(){
     document.getElementById('StatsLeft').style.display = "flex";
 }
 
+function DisplayRight(){
+    document.getElementById('ROIleft').style.display = "initial";
+    document.getElementById('OptionsLeft').style.display = "flex";
+    document.getElementById('StatsLeft').style.display = "flex";
+}
+
 function showOverlay(){
     document.getElementById('overlay').style.display = "block";
     document.body.style.overflow = "hidden";
