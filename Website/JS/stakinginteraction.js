@@ -98,7 +98,7 @@ async function getUnclaimed(){
 }
 
 async function getActiveLocks(){
-    
+    ActiveLocks = await LockContract.methods.ActiveLocks
 }
 
 
