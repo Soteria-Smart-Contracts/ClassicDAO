@@ -85,8 +85,7 @@ contract LockedStaking{
         if(((ERC20(CLD).balanceOf(address(this)) - (UserLocks[msg.sender][ID].WithdrawAmount - UserLocks[msg.sender][ID].DepositAmount)) <= TotalDeposits)){ //This exists as protection in the case that the contract has not been refilled with CLD in time
              amount = UserLocks[msg.sender][ID].DepositAmount; 
         }
-        require(ERC20(CLD).balanceOf(address(this)) >= amount, "The contract does not have enough CLD to claim this lock, please reach out to the Dev team");
-
+        
         TotalDeposits = TotalDeposits - UserLocks[msg.sender][ID].DepositAmount;
         UserLocks[msg.sender][ID].Type = 66;
         UserLocks[msg.sender][ID].User = address(0);
