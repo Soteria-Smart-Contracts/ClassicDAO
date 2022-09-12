@@ -98,7 +98,8 @@ async function getUnclaimed(){
 }
 
 async function getActiveLocks(){
-    ActiveLocks = await LockContract.methods.ActiveLocks(account).call();
+    //ActiveLocks = await LockContract.methods.ActiveLocks(account).call();
+    ActiveLocks = 0;
 }
 
 
