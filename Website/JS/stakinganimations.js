@@ -31,6 +31,12 @@ function DiplayBoxRight(type){
     if(type == 2){
         
     }
+    if(type == 2){
+        
+    }
+    if(type == 2){
+        
+    }
 }
 
 function setMaxDepositLeft(){
