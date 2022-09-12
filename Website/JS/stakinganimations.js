@@ -70,7 +70,7 @@ function DisplayLeft(){
 
 function DisplayRight(){
     document.getElementById('Lock').style.display = "initial";
-    document.getElementById('Instances').style.display = "flex";
+    document.getElementById('Instances').style.display = "initial";
 }
 
 function showOverlay(){
