@@ -31,10 +31,10 @@ function DiplayBoxRight(type){
     if(type == 2){
         
     }
-    if(type == 2){
+    if(type == 3){
         
     }
-    if(type == 2){
+    if(type == 4){
         
     }
 }
