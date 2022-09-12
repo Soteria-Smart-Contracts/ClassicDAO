@@ -31,7 +31,7 @@ function setMaxWithdrawLeft(){
     document.getElementById('withdrawinputleft').value = (FlexBal - 0.01).toFixed(2);
 }
 
-function CloseBox(){
+function CloseBoxLeft(){
     document.getElementById('ConfirmLeft').style.display = "none";
     document.getElementById('InputLeftDeposit').style.display = "none";
     document.getElementById('InputLeftWithdraw').style.display = "none";
