@@ -13,7 +13,7 @@ async function UpdateDetails(){
     document.getElementById('expected').innerText = Estimated;
 }
 
-function DiplayBox(type){
+function DiplayBoxLeft(type){
     document.getElementById('ConfirmLeft').style.display = "initial";
     if(type == 1){
         document.getElementById('InputLeftDeposit').style.display = "block";
