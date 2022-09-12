@@ -26,10 +26,10 @@ function DiplayBoxLeft(type){
 function DiplayBoxRight(type){
     document.getElementById('ConfirmRight').style.display = "initial";
     if(type == 1){
-        document.getElementById('InputLeftDeposit').style.display = "block";
+        
     }
     if(type == 2){
-        document.getElementById('InputLeftWithdraw').style.display = "block";
+        
     }
 }
 
