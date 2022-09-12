@@ -23,11 +23,11 @@ function DiplayBoxLeft(type){
     }
 }
 
-function setMaxDeposit(){
+function setMaxDepositLeft(){
     document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
 }
 
-function setMaxWithdraw(){
+function setMaxWithdrawLeft(){
     document.getElementById('withdrawinputleft').value = (FlexBal - 0.01).toFixed(2);
 }
 
