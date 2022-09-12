@@ -7,6 +7,7 @@ async function UpdateDetails(){
     await getEstimated();
 
     document.getElementById('flexbal').innerText = CLDbal;
+    document.getElementById('Lockbal').innerText = CLDbal;
     document.getElementById('flexdepo').innerText = FlexBal;
     document.getElementById('statdepo').innerText = FlexBal;
     document.getElementById('statunclaimed').innerText = Unclaimed;
