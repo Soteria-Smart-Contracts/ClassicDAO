@@ -69,9 +69,8 @@ function DisplayLeft(){
 }
 
 function DisplayRight(){
-    document.getElementById('Instances').style.display = "initial";
-    document.getElementById('Lock').style.display = "flex";
-    document.getElementById('StatsLeft').style.display = "flex";
+    document.getElementById('Lock').style.display = "initial";
+    document.getElementById('Instances').style.display = "flex";
 }
 
 function showOverlay(){
