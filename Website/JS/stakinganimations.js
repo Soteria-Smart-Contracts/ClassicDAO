@@ -24,7 +24,7 @@ function DiplayBoxLeft(type){
 }
 
 function DiplayBoxRight(type){
-    document.getElementById('ConfirmLeft').style.display = "initial";
+    document.getElementById('ConfirmRight').style.display = "initial";
     if(type == 1){
         document.getElementById('InputLeftDeposit').style.display = "block";
     }
