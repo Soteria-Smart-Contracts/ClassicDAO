@@ -48,9 +48,13 @@ function CloseBoxLeft(){
 }
 
 function CloseBoxRight(){
-    document.getElementById('ConfirmLeft').style.display = "none";
-    document.getElementById('InputLeftDeposit').style.display = "none";
-    document.getElementById('InputLeftWithdraw').style.display = "none";
+    document.getElementById('ConfirmRight').style.display = "none";
+}
+
+function ClearLeft(){
+    document.getElementById('ROIleft').style.display = "none";
+    document.getElementById('OptionsLeft').style.display = "none";
+    document.getElementById('StatsLeft').style.display = "none";
 }
 
 function ClearLeft(){
