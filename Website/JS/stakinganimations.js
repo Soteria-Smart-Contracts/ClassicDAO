@@ -23,6 +23,16 @@ function DiplayBoxLeft(type){
     }
 }
 
+function DiplayBoxRight(type){
+    document.getElementById('ConfirmLeft').style.display = "initial";
+    if(type == 1){
+        document.getElementById('InputLeftDeposit').style.display = "block";
+    }
+    if(type == 2){
+        document.getElementById('InputLeftWithdraw').style.display = "block";
+    }
+}
+
 function setMaxDepositLeft(){
     document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
 }
