@@ -58,7 +58,7 @@ function ClearLeft(){
 }
 
 function ClearRight(){
-    document.getElementById('ROIleft').style.display = "none";
+    document.getElementById('Instances').style.display = "none";
     document.getElementById('OptionsLeft').style.display = "none";
     document.getElementById('StatsLeft').style.display = "none";
 }
