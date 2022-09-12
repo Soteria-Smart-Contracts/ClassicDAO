@@ -35,6 +35,7 @@ let accountInterval = setInterval(function() {
         }
         accountarray = await web3.eth.getAccounts();
         FlexContract = new window.web3.eth.Contract(flexABI, FlexContractAddress, window.web3);
+        LockContract = new window.web3.eth.Contract(LockABI, FlexContractAddress, window.web3);
         CLDcontract = new window.web3.eth.Contract(CLDabi, CLDcontractAddress, window.web3);
         account = accountarray[0];
  //       if(await FlexContract.methods.Eligibility(account).call() == false){
