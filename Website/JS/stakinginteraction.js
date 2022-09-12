@@ -12,6 +12,7 @@ let CLDbal;
 let FlexBal;
 let Unclaimed;
 let Estimated;
+let ActiveLocks;
 let netID;
 
 
@@ -97,7 +98,7 @@ async function getUnclaimed(){
 }
 
 async function getActiveLocks(){
-
+    
 }
 
 
