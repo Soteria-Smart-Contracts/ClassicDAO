@@ -991,4 +991,5 @@ window.flexabi = [
     }
 ]
 
-window.
+window.LockABI = 
+}
