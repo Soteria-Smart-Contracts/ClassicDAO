@@ -64,7 +64,7 @@ function ClearRight(){
 
 function DisplayLeft(){
     document.getElementById('Lock').style.display = "initial";
-    document.getElementById('Instances').style.display = "intia";
+    document.getElementById('Instances').style.display = "initial";
 
 }
 
