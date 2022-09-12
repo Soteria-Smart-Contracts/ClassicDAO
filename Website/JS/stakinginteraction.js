@@ -1,6 +1,6 @@
 let flexABI = window.flexabi;
 let CLDabi = window.CLDabi;
-let LockABI
+let LockABI = window.LockABI
 let account;
 let CLDcontract;
 let CLDcontractAddress = "0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c";
