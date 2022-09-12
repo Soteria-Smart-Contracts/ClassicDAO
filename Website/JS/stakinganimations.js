@@ -8,7 +8,7 @@ async function UpdateDetails(){
 
     document.getElementById('flexbal').innerText = CLDbal;
     document.getElementById('Lockbal').innerText = CLDbal;
-    document.getElementById('LockActive').innerText = ();
+    document.getElementById('LockActive').innerText = ("0" + "/3");
     document.getElementById('flexdepo').innerText = FlexBal;
     document.getElementById('statdepo').innerText = FlexBal;
     document.getElementById('statunclaimed').innerText = Unclaimed;
