@@ -63,9 +63,9 @@ function ClearRight(){
 }
 
 function DisplayLeft(){
-    document.getElementById('ROIleft').style.display = "initial";
-    document.getElementById('OptionsLeft').style.display = "flex";
-    document.getElementById('StatsLeft').style.display = "flex";
+    document.getElementById('Lock').style.display = "initial";
+    document.getElementById('Instances').style.display = "intia";
+
 }
 
 function DisplayRight(){
