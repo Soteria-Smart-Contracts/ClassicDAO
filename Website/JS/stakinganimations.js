@@ -16,7 +16,9 @@ async function UpdateDetails(){
     document.getElementById('statunclaimed').innerText = Unclaimed;
     document.getElementById('expected').innerText = Estimated;
 
-    if()
+    if(PreSaleUser == true){
+        
+    }
 }
 
 function DiplayBoxLeft(type){
