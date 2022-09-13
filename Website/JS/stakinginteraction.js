@@ -110,6 +110,8 @@ async function getActiveLocks(){
     ActiveLocks = await LockContract.methods.ActiveLocks(account).call();
 }
 
+async function CreateLock()
+
 
 
 async function getID(){
