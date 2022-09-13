@@ -16,7 +16,10 @@ async function UpdateDetails(){
     document.getElementById('statunclaimed').innerText = Unclaimed;
     document.getElementById('expected').innerText = Estimated;
 
-    document.getElementById('CR1').innerText = string(((document.getElementById('One').value) / 100) * 100.25);
+    document.getElementById('CR1').innerText = string(((document.getElementById('One').value) / 100) * 102.5);
+    document.getElementById('CR2').innerText = string(((document.getElementById('One').value) / 100) * 102.5);
+    document.getElementById('CR1').innerText = string(((document.getElementById('One').value) / 100) * 102.5);
+    document.getElementById('CR1').innerText = string(((document.getElementById('One').value) / 100) * 102.5);
 
     if(PreSaleUser == true){
         document.getElementById('30dp').innerText = "3";
