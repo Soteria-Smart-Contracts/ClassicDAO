@@ -53,6 +53,10 @@ let accountInterval = setInterval(function() {
     }
 }
 
+async function CheckPresaleUser(){
+    
+}
+
 
 async function FlexDeposit(){
     amount = document.getElementById('depositinputleft').value;
