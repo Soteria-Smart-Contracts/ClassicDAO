@@ -111,7 +111,7 @@ async function getActiveLocks(){
 }
 
 async function CreateLock(amount, type){
-    if
+    if(amount > CLDbal)
     if(PreSaleUser = true){
         type = type + 1;
     }
