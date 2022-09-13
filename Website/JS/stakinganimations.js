@@ -20,7 +20,7 @@ async function UpdateDetails(){
         document.getElementById('30dp').innerText = "3";
         document.getElementById('90dp').innerText = "11";
         document.getElementById('180dp').innerText = "25";
-
+        document.getElementById('365dp').innerText = "2";
     }
 }
 
