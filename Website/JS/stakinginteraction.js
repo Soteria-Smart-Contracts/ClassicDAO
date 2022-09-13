@@ -114,7 +114,7 @@ async function CreateLock(type){
     if(type == 1){
         let amount = document.getElementById('One').value;
     }
-    else
+    
     if(await CLDcontract.methods.allowance(account, LockContractAddress).call() < amount){
         await CLDcontract.methods.approve(FlexContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: 300000});
     }
