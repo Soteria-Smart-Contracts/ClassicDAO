@@ -74,7 +74,11 @@ function CloseBoxLeft(){
 
 function CloseBoxRight(){
     document.getElementById('ConfirmRight').style.display = "none";
-    
+    document.getElementById('Input30').style.display = "block";
+    document.getElementById('Input90').style.display = "block";
+    document.getElementById('Input30').style.display = "block";
+    document.getElementById('Input30').style.display = "block";
+
 }
 
 function ClearLeft(){
