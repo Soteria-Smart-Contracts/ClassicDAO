@@ -18,8 +18,8 @@ async function UpdateDetails(){
 
     document.getElementById('CR1').innerText = string(((document.getElementById('One').value) / 100) * 102.5);
     document.getElementById('CR2').innerText = string(((document.getElementById('One').value) / 100) * 102.5);
-    document.getElementById('CR1').innerText = string(((document.getElementById('One').value) / 100) * 102.5);
-    document.getElementById('CR1').innerText = string(((document.getElementById('One').value) / 100) * 102.5);
+    document.getElementById('CR3').innerText = string(((document.getElementById('One').value) / 100) * 102.5);
+    document.getElementById('CR4').innerText = string(((document.getElementById('One').value) / 100) * 102.5);
 
     if(PreSaleUser == true){
         document.getElementById('30dp').innerText = "3";
