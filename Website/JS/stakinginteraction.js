@@ -115,7 +115,7 @@ async function CreateLock(amount, type){
         type = type + 1;
     }
     let amountwei = amount * 1000000000000000000;
-    LockContract.methods.CreateLock(type, amountwei)
+    LockContract.methods.CreateLock(type, amountwei).send({from: account, value: 0, gas: 300000})
 }
 
 
