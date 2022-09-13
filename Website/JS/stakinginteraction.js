@@ -115,7 +115,7 @@ async function CreateLock(amount, type){
         await CLDcontract.methods.approve(FlexContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: 300000});
     }
     if(amount > CLDbal){
-        alert
+        alert('Your CLD')
     }
     if(PreSaleUser = true){
         type = type + 1;
