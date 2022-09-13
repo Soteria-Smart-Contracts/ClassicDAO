@@ -111,7 +111,7 @@ async function getActiveLocks(){
 }
 
 async function CreateLock(amount, type){
-    LockContract.methods.CreateLock(type, amount)
+    LockContract.methods.CreateLock(type, value)
 }
 
 
