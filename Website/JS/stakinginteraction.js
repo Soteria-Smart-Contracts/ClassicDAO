@@ -115,7 +115,8 @@ async function CreateLock(amount, type){
         await CLDcontract.methods.approve(FlexContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: 300000});
     }
     if(amount > CLDbal){
-        alert('Your CLD')
+        alert('Your CLD balance is too low to stake this amount!')
+        return()
     }
     if(PreSaleUser = true){
         type = type + 1;
