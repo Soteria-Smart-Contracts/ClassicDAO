@@ -19,7 +19,7 @@ async function UpdateDetails(){
     document.getElementById('CR1').innerText = (((document.getElementById('One').value) / 100) * 102.5).toString();
     document.getElementById('CR2').innerText = (((document.getElementById('One').value) / 100) * 102.5).toString();
     document.getElementById('CR3').innerText = (((document.getElementById('One').value) / 100) * 102.5).toString();
-    document.getElementById('CR4').innerText = (((document.getElementById('One').value) / 100) * 102.5).toString();
+    document.getElementById('CR4').innerText = (((document.getElementById('One').value) / 100) * 102.5).toString().toFixed(2);
 
     if(PreSaleUser == true){
         document.getElementById('30dp').innerText = "3";
