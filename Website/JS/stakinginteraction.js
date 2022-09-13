@@ -52,7 +52,6 @@ let accountInterval = setInterval(function() {
     }
 }
 
-// let tx = await contract.methods.Buy().send({from: account, value: amountwei, gas: 300000});
 
 async function FlexDeposit(){
     amount = document.getElementById('depositinputleft').value;
