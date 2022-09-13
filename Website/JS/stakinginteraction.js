@@ -116,7 +116,7 @@ async function CreateLock(amount, type){
     }
     if(amount > CLDbal){
         alert('Your CLD balance is too low to stake this amount!')
-        return()
+        return;
     }
     if(PreSaleUser = true){
         type = type + 1;
