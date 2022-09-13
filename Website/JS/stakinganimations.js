@@ -37,7 +37,7 @@ function DiplayBoxLeft(type){
 function DiplayBoxRight(type){
     document.getElementById('ConfirmRight').style.display = "initial";
     if(type == 1){
-        document.getElementById('Input30').style.display = "initial";
+        document.getElementById('Input30').style.display = "block";
     }
     if(type == 2){
         
