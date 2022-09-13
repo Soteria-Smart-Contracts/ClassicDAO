@@ -118,7 +118,13 @@ async function CreateLock(type){
     if(type == 3){
         let amount = document.getElementById('Two').value;
     }
-    if
+    if(type == 3){
+        let amount = document.getElementById('Two').value;
+    }
+    if(type == 3){
+        let amount = document.getElementById('Two').value;
+    }
+    
     if(await CLDcontract.methods.allowance(account, LockContractAddress).call() < amount){
         await CLDcontract.methods.approve(FlexContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: 300000});
     }
