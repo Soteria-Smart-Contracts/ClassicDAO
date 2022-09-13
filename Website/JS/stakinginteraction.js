@@ -119,10 +119,10 @@ async function CreateLock(type){
         let amount = document.getElementById('Two').value;
     }
     if(type == 5){
-        let amount = document.getElementById('Two').value;
+        let amount = document.getElementById('Three').value;
     }
     if(type == 7){
-        let amount = document.getElementById('Two').value;
+        let amount = document.getElementById('Four').value;
     }
     
     if(await CLDcontract.methods.allowance(account, LockContractAddress).call() < amount){
