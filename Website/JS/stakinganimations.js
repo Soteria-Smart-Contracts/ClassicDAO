@@ -16,7 +16,7 @@ async function UpdateDetails(){
     document.getElementById('statunclaimed').innerText = Unclaimed;
     document.getElementById('expected').innerText = Estimated;
 
-    document.getElementById('CR1').innerText = string((document.getElementById('One').value));
+    document.getElementById('CR1').innerText = string(((document.getElementById('One').value) / 100) *);
 
     if(PreSaleUser == true){
         document.getElementById('30dp').innerText = "3";
