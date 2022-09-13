@@ -42,6 +42,8 @@ function DiplayBoxRight(type){
     }
 }
 
+function DisplayInstance(t)
+
 function setMaxDepositLeft(){
     document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
 }
