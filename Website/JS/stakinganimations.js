@@ -43,7 +43,7 @@ function DiplayBoxRight(type){
 }
 
 function DisplayInstance(number){
-    document.getElementById('ConfirmRight').style.display = "initial";
+    document.getElementById('ViewLock').style.display = "initial";
 }
 
 function setMaxDepositLeft(){
