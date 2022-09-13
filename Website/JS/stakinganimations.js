@@ -74,10 +74,10 @@ function CloseBoxLeft(){
 
 function CloseBoxRight(){
     document.getElementById('ConfirmRight').style.display = "none";
-    document.getElementById('Input30').style.display = "block";
+    document.getElementById('Input30').style.display = "none";
     document.getElementById('Input90').style.display = "block";
-    document.getElementById('Input30').style.display = "block";
-    document.getElementById('Input30').style.display = "block";
+    document.getElementById('Input180').style.display = "block";
+    document.getElementById('Input365').style.display = "block";
 
 }
 
