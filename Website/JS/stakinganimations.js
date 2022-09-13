@@ -46,7 +46,9 @@ function DisplayInstance(number){
     document.getElementById('ViewLock').style.display = "initial";
 }
 
-function View
+function CloseViewBox(){
+    
+}
 
 function setMaxDepositLeft(){
     document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
