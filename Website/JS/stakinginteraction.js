@@ -114,7 +114,7 @@ async function CreateLock(amount, type){
     if(PreSaleUser = true){
         type = type + 1;
     }
-    let value = 
+    let amountwei = amountwei = amount * 1000000000000000000;
     LockContract.methods.CreateLock(type, value)
 }
 
