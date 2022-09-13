@@ -6,7 +6,7 @@ async function UpdateDetails(){
     await getUnclaimed();
     await getEstimated();
     await getActiveLocks();
-    await 
+    await CheckPresaleUser();
 
     document.getElementById('flexbal').innerText = CLDbal;
     document.getElementById('Lockbal').innerText = CLDbal;
@@ -15,6 +15,8 @@ async function UpdateDetails(){
     document.getElementById('statdepo').innerText = FlexBal;
     document.getElementById('statunclaimed').innerText = Unclaimed;
     document.getElementById('expected').innerText = Estimated;
+
+    if()
 }
 
 function DiplayBoxLeft(type){
