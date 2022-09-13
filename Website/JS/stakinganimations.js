@@ -47,7 +47,7 @@ function DisplayInstance(number){
 }
 
 function CloseViewBox(){
-    
+    document.getElementById('ViewLock').style.display = "none";
 }
 
 function setMaxDepositLeft(){
