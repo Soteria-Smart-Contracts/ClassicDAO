@@ -17,9 +17,9 @@ async function UpdateDetails(){
     document.getElementById('expected').innerText = Estimated;
 
     document.getElementById('CR1').innerText = ((((document.getElementById('One').value) / 100) * 102.5).toFixed(2)).toString();
-    document.getElementById('CR2').innerText = ((((document.getElementById('Two').value) / 100) * 108.75)).toString();
-    document.getElementById('CR3').innerText = ((((document.getElementById('Three').value) / 100) * 120)).toString();
-    document.getElementById('CR4').innerText = ((((document.getElementById('Four').value) / 100) * 150)).toString();
+    document.getElementById('CR2').innerText = ((((document.getElementById('Two').value) / 100) * 108.75).toFixed(2)).toString();
+    document.getElementById('CR3').innerText = ((((document.getElementById('Three').value) / 100) * 120).toFixed(2)).toString();
+    document.getElementById('CR4').innerText = ((((document.getElementById('Four').value) / 100) * 150).toFixed(2)).toString();
 
     if(PreSaleUser == true){
         document.getElementById('30dp').innerText = "3";
