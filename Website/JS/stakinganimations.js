@@ -27,6 +27,8 @@ async function UpdateDetails(){
         document.getElementById('180dp').innerText = "25";
         document.getElementById('365dp').innerText = "63";
         document.getElementById('ROIleft').innerText = "Fixed " + "30%" + " return in CLD per annum";
+        
+        
     }
 }
 
