@@ -43,10 +43,10 @@ function DiplayBoxRight(type){
         document.getElementById('Input90').style.display = "block";
     }
     if(type == 3){
-        document.getElementById('Input30').style.display = "block";
+        document.getElementById('Input180').style.display = "block";
     }
     if(type == 4){
-        document.getElementById('Input30').style.display = "block";
+        document.getElementById('Input365').style.display = "block";
     }
 }
 
