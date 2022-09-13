@@ -151,9 +151,9 @@ async function getID(){
 
 async function getEstimated(){
     if(PreSaleUser == true){
-
+        Estimated = ((FlexBal / 100) * 1)
     }
     else{
-    Estimated = ((FlexBal / 100) * 125)
+        Estimated = ((FlexBal / 100) * 125)
     }
 }
