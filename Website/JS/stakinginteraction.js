@@ -118,10 +118,10 @@ async function CreateLock(type){
     if(type == 3){
         let amount = document.getElementById('Two').value;
     }
-    if(type == 3){
+    if(type == 5){
         let amount = document.getElementById('Two').value;
     }
-    if(type == 3){
+    if(type == 7){
         let amount = document.getElementById('Two').value;
     }
     
