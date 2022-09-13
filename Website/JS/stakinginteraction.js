@@ -54,7 +54,7 @@ let accountInterval = setInterval(function() {
 }
 
 async function CheckPresaleUser(){
-    if(FlexContract.methods.PreSaleUser(account))
+    if(await FlexContract.methods.PreSaleUser(account).call() )
 }
 
 
