@@ -59,6 +59,7 @@ async function CheckPresaleUser(){
     }
 }
 
+//Flex Staking functions
 
 async function FlexDeposit(){
     amount = document.getElementById('depositinputleft').value;
@@ -102,6 +103,8 @@ async function getUnclaimed(){
     fbal = await FlexContract.methods.GetUnclaimed(account).call();
     Unclaimed = (fbal / 10**18).toFixed(5);
 }
+
+//Locked Staking functions
 
 async function getActiveLocks(){
     //ActiveLocks = await LockContract.methods.ActiveLocks(account).call();
