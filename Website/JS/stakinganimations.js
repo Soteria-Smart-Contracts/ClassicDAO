@@ -40,13 +40,13 @@ function DiplayBoxRight(type){
         document.getElementById('Input30').style.display = "block";
     }
     if(type == 2){
-        
+        document.getElementById('Input90').style.display = "block";
     }
     if(type == 3){
-        
+        document.getElementById('Input30').style.display = "block";
     }
     if(type == 4){
-        
+        document.getElementById('Input30').style.display = "block";
     }
 }
 
