@@ -16,12 +16,12 @@ async function UpdateDetails(){
     document.getElementById('statunclaimed').innerText = Unclaimed;
     document.getElementById('expected').innerText = Estimated;
 
-    if(PreSaleUser == false){
+    if(PreSaleUser == true){
         document.getElementById('30dp').innerText = "3";
         document.getElementById('90dp').innerText = "11";
         document.getElementById('180dp').innerText = "25";
         document.getElementById('365dp').innerText = "63";
-        document.getElementById('ROIleft').innerText = "Fixed " + "30%" + "return in CLD per annum";
+        document.getElementById('ROIleft').innerText = "Fixed " + "30%" + " return in CLD per annum";
     }
 }
 
