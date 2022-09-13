@@ -17,7 +17,7 @@ async function UpdateDetails(){
     document.getElementById('expected').innerText = Estimated;
 
     if(PreSaleUser == true){
-        
+        document.getElementById('30dp').innerText = CLDbal;
     }
 }
 
