@@ -114,6 +114,7 @@ async function CreateLock(amount, type){
     if(PreSaleUser = true){
         type = type + 1;
     }
+    let value = 
     LockContract.methods.CreateLock(type, value)
 }
 
