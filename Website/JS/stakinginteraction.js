@@ -111,14 +111,12 @@ async function getActiveLocks(){
 }
 
 async function CreateLock(amount, type){
+    if
     if(PreSaleUser = true){
         type = type + 1;
     }
     let amountwei = amount * 1000000000000000000;
 
-    if{
-        
-    }
     LockContract.methods.CreateLock(type, amountwei).send({from: account, value: 0, gas: 300000});
 }
 
