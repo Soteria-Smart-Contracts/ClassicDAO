@@ -74,6 +74,7 @@ function CloseBoxLeft(){
 
 function CloseBoxRight(){
     document.getElementById('ConfirmRight').style.display = "none";
+    
 }
 
 function ClearLeft(){
