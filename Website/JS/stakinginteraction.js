@@ -150,6 +150,6 @@ async function getID(){
 }
 
 async function getEstimated(){
-    if
+    if()
     Estimated = ((FlexBal / 100) * 125)
 }
