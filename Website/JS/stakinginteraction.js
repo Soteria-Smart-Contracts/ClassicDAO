@@ -14,6 +14,7 @@ let Unclaimed;
 let Estimated;
 let ActiveLocks;
 let netID;
+let 
 
 
 let accountInterval = setInterval(function() {
