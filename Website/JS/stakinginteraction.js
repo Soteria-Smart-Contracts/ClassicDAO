@@ -128,8 +128,8 @@ async function LoadLocks(){
     if(ActiveLockNum == 3){
         IDs = [(LocksLen - 1), (LocksLen - 2), (LocksLen - 3)]
         GetLock(1, IDs[1]);
-        GetLock(1, IDs[1]);
-        GetLock(1, IDs[1]);
+        GetLock(2, IDs[2]);
+        GetLock(3, IDs[3]);
     }
 }
 
