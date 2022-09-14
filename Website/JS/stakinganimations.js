@@ -61,9 +61,9 @@ async function SetInstances(){
         document.getElementById("slot" + (index).toString()).innerText = string;
 
         document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
-        document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
-        document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
-        document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
+        document.getElementById('AD').innerText = (dleft).toString() + " Days Left";
+        document.getElementById('AC').innerText = (dleft).toString() + " Days Left";
+        document.getElementById('CE').innerText = (dleft).toString() + " Days Left";
 
         index++;
     }
