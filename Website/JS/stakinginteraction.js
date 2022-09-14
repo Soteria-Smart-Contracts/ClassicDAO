@@ -119,7 +119,8 @@ async function LoadLocks(){
         return;
     }
     if(ActiveLockNum == 1){
-        IDs = [(LocksLen - 1)]
+        IDs = [(LocksLen - 1)];
+        c
         GetLock(1, IDs[1]);
     }
     if(ActiveLockNum == 2){
