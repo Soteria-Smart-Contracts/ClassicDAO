@@ -131,7 +131,9 @@ async function LoadLocks(){
     }
 }
 
-async fucntion GetLock()
+async function GetLock(){
+    
+}
 
 async function CreateLock(type){
     let amount = 0;
