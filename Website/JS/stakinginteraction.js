@@ -124,7 +124,7 @@ async function LoadLocks(){
     }
     if(ActiveLockNum == 2){
         IDs[1] = LocksLen - 1;
-        IDs[2] = Locks
+        IDs[2] = LocksLen - 2;
         await GetLock(1, IDs[1]);
         await GetLock(2, IDs[2]);
     }
