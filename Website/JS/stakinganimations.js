@@ -17,7 +17,7 @@ async function UpdateDetails(){
     document.getElementById('statunclaimed').innerText = Unclaimed;
     document.getElementById('expected').innerText = Estimated;
 
-    SetInstances();
+  //  SetInstances();
 
 
     if(PreSaleUser == true){
