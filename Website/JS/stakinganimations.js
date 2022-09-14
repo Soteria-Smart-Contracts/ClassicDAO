@@ -6,6 +6,7 @@ async function UpdateDetails(){
     await getUnclaimed();
     await getEstimated();
     await getActiveLocks();
+    await LoadLocks();
     await CheckPresaleUser();
 
     document.getElementById('flexbal').innerText = CLDbal;
