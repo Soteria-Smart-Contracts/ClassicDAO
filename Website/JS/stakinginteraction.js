@@ -114,16 +114,16 @@ async function getActiveLocks(){
 }
 
 async function LoadLocks(){
-    if(ActiveLocks == 0){
+    if(ActiveLockNum == 0){
         return;
     }
-    if(ActiveLocks == 1){
+    if(ActiveLockNum == 1){
         
     }
-    if(ActiveLocks == 2){
+    if(ActiveLockNum == 2){
         
     }
-    if(ActiveLocks == 3){
+    if(ActiveLockNum == 3){
         
     }
 }
