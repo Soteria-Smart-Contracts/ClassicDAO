@@ -70,6 +70,8 @@ async function SetInstances(){
     }
 }
 
+async function DisplayIns
+
 function DiplayBoxRight(type){
     document.getElementById('ConfirmRight').style.display = "initial";
     if(type == 1){
