@@ -20,7 +20,7 @@ async function UpdateDetails(){
     SetInstances();
 
     if(ActiveLockNum = 3){
-        document.getElementById('expected').display = Estimated;
+        document.getElementById('expected').style.display = "none";
     }
 
 
