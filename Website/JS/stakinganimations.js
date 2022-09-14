@@ -47,6 +47,8 @@ function DiplayBoxLeft(type){
     }
 }
 
+function Set
+
 function DiplayBoxRight(type){
     document.getElementById('ConfirmRight').style.display = "initial";
     if(type == 1){
