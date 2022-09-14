@@ -124,7 +124,7 @@ async function LoadLocks(){
         IDs = [(LocksLen - 1), (LocksLen - 2)]
     }
     if(ActiveLockNum == 3){
-        
+        IDs = [(LocksLen - 1), (LocksLen - 2)]
     }
 }
 
