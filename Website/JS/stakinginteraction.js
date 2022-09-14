@@ -119,20 +119,16 @@ async function LoadLocks(){
         return;
     }
     if(ActiveLockNum == 1){
-        IDs[1] = (LocksLen - 1);
-        console.log(IDs[1])
+        IDs.push(LocksLen - 1);
         await GetLock(1, IDs[1]);
     }
     if(ActiveLockNum == 2){
-        IDs[1] = (LocksLen - 1);
-        IDs[2] = (LocksLen - 2);
+        IDs.push(LocksLen - 1, LocksLen - 2);
         await GetLock(1, IDs[1]);
         await GetLock(2, IDs[2]);
     }
     if(ActiveLockNum == 3){
-        IDs[1] = (LocksLen - 1);
-        IDs[2] = (LocksLen - 2);
-        IDs[3] = (LocksLen - 3);
+        IDs.push(LocksLen - 1, LocksLen - 2, LocksLen - 3);
         await GetLock(1, IDs[1]);
         await GetLock(2, IDs[2]);
         await GetLock(3, IDs[3]);
@@ -167,7 +163,7 @@ async function CreateLock(type){
         await CLDcontract.methods.approve(FlexContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: 300000});
     }
     
-    if(PreSaleUser == true){
+    if(PreSaleUser = true){
         type = type + 1;
     }
     let amountwei = amount * 1000000000000000000;
