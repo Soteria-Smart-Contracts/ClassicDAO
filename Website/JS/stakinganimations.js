@@ -76,7 +76,7 @@ async function DisplayInstance(number){
     dleft = await GetDaysLeft(number);
     amount = ((Locks[number].DepositAmount / 10**18).toFixed(2)).toString();
     amountclaim = ((Locks[number].WithdrawAmount / 10**18).toFixed(2)).toString();
-    earned = (parseFloat(amountclaim) - parseFloat(amount))
+    earned = ((parseFloat(amountclaim) - parseFloat(amount)).toFixed(2)
 
     document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
     document.getElementById('AD').innerText = amount + " CLD";
