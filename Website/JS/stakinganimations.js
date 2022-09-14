@@ -66,7 +66,7 @@ async function SetInstances(){
 }
 
 async function DisplayInstance(number){
-    if(number >= ActiveLockNum){
+    if(number > ActiveLockNum){
         DisplayRight();
         return;
     }
