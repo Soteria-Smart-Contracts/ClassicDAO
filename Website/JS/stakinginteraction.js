@@ -136,7 +136,9 @@ async function LoadLocks(){
 }
 
 async function GetDaysLeft{
-    
+    return(
+        await 
+    )
 }
 
 async function GetLock(toset, id){
