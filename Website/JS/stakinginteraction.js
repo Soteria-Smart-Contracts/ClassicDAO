@@ -163,7 +163,7 @@ async function CreateLock(type){
         await CLDcontract.methods.approve(FlexContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: 300000});
     }
     
-    if(PreSaleUser = true){
+    if(PreSaleUser == true){
         type = type + 1;
     }
     let amountwei = amount * 1000000000000000000;
