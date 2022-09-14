@@ -135,7 +135,7 @@ async function LoadLocks(){
 }
 
 async function GetLock(toset, id){
-    LockContract.methods.UserLocks(account, (id).toint).call();
+    LockContract.methods.UserLocks(account, (id).to).call();
     Locks[toset]
 }
 
