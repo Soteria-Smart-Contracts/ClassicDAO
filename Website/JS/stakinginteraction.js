@@ -118,7 +118,7 @@ async function LoadLocks(){
         return;
     }
     if(ActiveLockNum == 1){
-        
+        IDs = []
     }
     if(ActiveLockNum == 2){
         
