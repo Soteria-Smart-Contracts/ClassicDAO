@@ -70,7 +70,7 @@ async function DisplayInstance(number){
     CurrentInstanceID = IDs[number];
 
     if(number >= ActiveLockNum){
-        
+        return;
     }
 
     dleft = await GetDaysLeft(number);
