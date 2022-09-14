@@ -120,8 +120,7 @@ async function LoadLocks(){
     }
     if(ActiveLockNum == 1){
         ID = LocksLen - 1;
-        IDs.push(ID);
-        console.log(IDs[1]);
+        console.log(ID);
         GetLock(1, ID);
     }
     if(ActiveLockNum == 2){
@@ -138,7 +137,7 @@ async function LoadLocks(){
 }
 
 async function GetLock(toset, id){
-    Locks[toset] = await LockContract.methods.UserLocks(account, id).call();
+    await LockContract.methods.UserLocks(account, id).call();
 }
 
 async function CreateLock(type){
