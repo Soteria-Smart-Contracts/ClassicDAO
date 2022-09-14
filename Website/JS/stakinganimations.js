@@ -47,7 +47,9 @@ function DiplayBoxLeft(type){
     }
 }
 
-function Set
+function SetInstances{
+    
+}
 
 function DiplayBoxRight(type){
     document.getElementById('ConfirmRight').style.display = "initial";
