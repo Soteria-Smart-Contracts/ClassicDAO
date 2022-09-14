@@ -80,9 +80,8 @@ async function DisplayInstance(number){
     earned = ((parseFloat(amountclaim) - parseFloat(amount)).toFixed(2)).toString();
 
     document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
-    document.getElementById('AD').innerText = amount + " CLD";
-    document.getElementById('AC').innerText = amountclaim + " CLD";
-    document.getElementById('CE').innerText = earned + " CLD";
+    document.getElementById('AD').innerText = amount;
+    document.getElementById('AC').innerText = amountc;
 
     if(dleft == 0){
         document.getElementById('ClaimB').style.display = "inline-block";
