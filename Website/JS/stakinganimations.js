@@ -78,6 +78,8 @@ async function DisplayInstance(number){
     document.getElementById('AD').innerText = amount + " CLD";
     document.getElementById('AC').innerText = amountclaim + " CLD";
     document.getElementById('CE').innerText = earned + " CLD";
+
+    if()
 }
 
 function DiplayBoxRight(type){
