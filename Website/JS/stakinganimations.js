@@ -52,6 +52,7 @@ function DiplayBoxLeft(type){
 function SetInstances(){
     index = 1;
     while(index <= ActiveLockNum){
+        
         document.getElementById("slot" + (index).toString()).innerText = "test";
         index++;
     }
