@@ -70,7 +70,7 @@ async function SetInstances(){
     }
 }
 
-function DisplayInstance(number){
+async function DisplayInstance(number){
     document.getElementById('ViewLock').style.display = "initial";
 
     dleft = await GetDaysLeft(index);
