@@ -13,7 +13,7 @@ let FlexBal;
 let Unclaimed;
 let Estimated;
 let ActiveLockNum;
-let Locks = [];
+let Locks = [Lock1, Lock2, Lock3];
 let LocksLen;
 let netID;
 let PreSaleUser = false;
