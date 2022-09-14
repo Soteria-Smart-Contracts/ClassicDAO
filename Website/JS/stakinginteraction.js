@@ -123,7 +123,8 @@ async function LoadLocks(){
         await GetLock(1, IDs[1]);
     }
     if(ActiveLockNum == 2){
-        IDs[1] = Locks;
+        IDs[1] = LocksLen - 1;
+        IDs[2] = Locks
         await GetLock(1, IDs[1]);
         await GetLock(2, IDs[2]);
     }
