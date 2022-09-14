@@ -110,6 +110,10 @@ async function getActiveLocks(){
     ActiveLocks = await LockContract.methods.ActiveLocks(account).call();
 }
 
+async function LoadLocks(){
+    if
+}
+
 async function CreateLock(type){
     let amount = 0;
     if(type == 1){
