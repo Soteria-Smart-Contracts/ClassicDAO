@@ -115,15 +115,15 @@ function setMaxDepositLeft(){
 
 function setMaxDepositRight(ID){
     if(ID == 1){
+        document.getElementById('One').value = (CLDbal - 0.01).toFixed(2);
+    }
+    if(ID == 2){
+        document.getElementById('Two').value = (CLDbal - 0.01).toFixed(2);
+    }
+    if(ID == 3){
         document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
     }
-    if(ID == 1){
-        document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
-    }
-    if(ID == 1){
-        document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
-    }
-    if(ID == 1){
+    if(ID == 4){
         document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
     }
 }
