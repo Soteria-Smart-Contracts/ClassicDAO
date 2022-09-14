@@ -118,7 +118,7 @@ async function LoadLocks(){
         return;
     }
     if(ActiveLockNum == 1){
-        IDs = [(LocksLen - 1)]
+        let IDs = [(LocksLen - 1)]
         Locks[1].ID = IDs[1];
         Locks[1].DepositAmount = await LockContract.methods.UserLocks(account, IDs[1]).call();
     }
