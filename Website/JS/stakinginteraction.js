@@ -137,7 +137,7 @@ async function LoadLocks(){
 
 async function GetDaysLeft{
     return(
-        await 
+        await LockContract.methods.
     )
 }
 
