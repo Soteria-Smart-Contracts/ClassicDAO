@@ -72,6 +72,16 @@ async function SetInstances(){
 
 function DisplayInstance(number){
     document.getElementById('ViewLock').style.display = "initial";
+
+    dleft = await GetDaysLeft(index);
+        amount = ((Locks[index].DepositAmount / 10**18).toFixed(2)).toString();
+        string = amount + " CLD | " + (dleft).toString() + " Days Left";
+        document.getElementById("slot" + (index).toString()).innerText = string;
+
+        document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
+        document.getElementById('AD').innerText = amount + " CLD";
+        document.getElementById('AC').innerText = (dleft).toString() + " Days Left";
+        document.getElementById('CE').innerText = (dleft).toString() + " Days Left";
 }
 
 function DiplayBoxRight(type){
