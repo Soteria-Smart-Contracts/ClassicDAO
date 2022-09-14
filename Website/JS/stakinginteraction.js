@@ -176,7 +176,7 @@ async function CreateLock(type){
 }
 
 async function ClaimLock(ID){
-    await LockContract.methods.CreateLock(type, BigInt(amountwei)).send({from: account, value: 0, gas: 300000})
+    await LockContract.methods.ClaimLock(ID)).send({from: account, value: 0, gas: 300000})
 }
 
 
