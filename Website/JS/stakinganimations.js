@@ -49,7 +49,9 @@ function DiplayBoxLeft(type){
 
 function SetInstances{
     index = 0;
-    while(index < )
+    while(index < ActiveLockNum){
+        index++
+    }
 }
 
 function DiplayBoxRight(type){
