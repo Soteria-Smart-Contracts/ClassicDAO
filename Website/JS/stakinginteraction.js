@@ -129,9 +129,9 @@ async function LoadLocks(){
     }
     if(ActiveLockNum == 3){
         IDs.push(LocksLen - 1, LocksLen - 2, LocksLen - 3);
-        GetLock(1, IDs[1]);
-        GetLock(2, IDs[2]);
-        GetLock(3, IDs[3]);
+        await GetLock(1, IDs[1]);
+        await GetLock(2, IDs[2]);
+        await GetLock(3, IDs[3]);
     }
 }
 
