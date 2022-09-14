@@ -19,9 +19,11 @@ async function UpdateDetails(){
 
     SetInstances();
 
-    if
+    if(ActiveLockNum = 3){
+        
+    }
 
-    
+
     if(PreSaleUser == true){
         document.getElementById('30dp').innerText = "3";
         document.getElementById('90dp').innerText = "11";
