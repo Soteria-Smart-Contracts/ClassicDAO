@@ -67,6 +67,7 @@ async function SetInstances(){
 
 async function DisplayInstance(number){
     document.getElementById('ViewLock').style.display = "initial";
+    CurrentInstance = number;
 
     dleft = await GetDaysLeft(number);
     amount = ((Locks[number].DepositAmount / 10**18).toFixed(2)).toString();
