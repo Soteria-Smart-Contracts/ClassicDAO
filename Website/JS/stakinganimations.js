@@ -50,7 +50,8 @@ function DiplayBoxLeft(type){
 function SetInstances{
     index = 0;
     while(index < ActiveLockNum){
-        index++
+        
+        index++;
     }
 }
 
