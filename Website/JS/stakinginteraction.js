@@ -120,6 +120,7 @@ async function LoadLocks(){
     if(ActiveLockNum == 1){
         let IDs = [(LocksLen - 1)]
         GetLock(1, IDs[1]);
+    }
     if(ActiveLockNum == 2){
         IDs = [(LocksLen - 1), (LocksLen - 2)]
         GetLock(1, IDs[1]);
@@ -131,7 +132,7 @@ async function LoadLocks(){
         GetLock(2, IDs[2]);
         GetLock(3, IDs[3]);
     }
-}}
+}
 
 async function GetLock(toset, id){
     LockContract.methods.UserLocks(account, 0).call();
