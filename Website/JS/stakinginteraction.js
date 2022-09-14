@@ -135,9 +135,9 @@ async function LoadLocks(){
     }
 }
 
-async function GetDaysLeft{
+async function GetDaysLeft(ID){
     return(
-        await LockContract.methods.GetDaysLeft
+        await LockContract.methods.GetDaysLeft()
     )
 }
 
