@@ -114,7 +114,15 @@ async function LoadLocks(){
     if(ActiveLocks == 0){
         0
     }
-    if()
+    if(ActiveLocks == 1){
+        
+    }
+    if(ActiveLocks == 2){
+        
+    }
+    if(ActiveLocks == 3){
+        
+    }
 }
 
 async function CreateLock(type){
