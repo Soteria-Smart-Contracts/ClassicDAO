@@ -70,7 +70,9 @@ async function SetInstances(){
     }
 }
 
-async function DisplayIns
+function DisplayInstance(number){
+    document.getElementById('ViewLock').style.display = "initial";
+}
 
 function DiplayBoxRight(type){
     document.getElementById('ConfirmRight').style.display = "initial";
@@ -88,9 +90,6 @@ function DiplayBoxRight(type){
     }
 }
 
-function DisplayInstance(number){
-    document.getElementById('ViewLock').style.display = "initial";
-}
 
 function CloseViewBox(){
     document.getElementById('ViewLock').style.display = "none";
