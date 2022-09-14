@@ -109,7 +109,7 @@ async function getUnclaimed(){
 //Locked Staking functions
 
 async function getActiveLocks(){
-    ActiveLocks = await LockContract.methods.ActiveLocks(account).call();
+    ActiveLockNum = await LockContract.methods.ActiveLocks(account).call();
     LocksLen = await LockContract.methods.GetActiveUserLocks(account).call();
 }
 
