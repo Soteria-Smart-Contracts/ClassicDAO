@@ -53,6 +53,7 @@ function DiplayBoxLeft(type){
     }
 }
 
+
 async function SetInstances(){
     index = 1;
     while(index <= ActiveLockNum){
