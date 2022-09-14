@@ -19,7 +19,9 @@ async function UpdateDetails(){
 
     SetInstances();
 
+    if
 
+    
     if(PreSaleUser == true){
         document.getElementById('30dp').innerText = "3";
         document.getElementById('90dp').innerText = "11";
@@ -56,7 +58,7 @@ async function SetInstances(){
         string = ((Locks[index].DepositAmount / 10**18).toFixed(2)).toString() + " CLD | " + (dleft).toString() + " Days Left";
         document.getElementById("slot" + (index).toString()).innerText = string;
 
-        
+
         index++;
     }
 }
