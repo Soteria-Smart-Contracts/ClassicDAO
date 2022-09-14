@@ -74,7 +74,7 @@ async function DisplayInstance(number){
     document.getElementById('ViewLock').style.display = "initial";
 
     dleft = await GetDaysLeft(index);
-    amount = ((Locks[index].DepositAmount / 10**18).toFixed(2)).toString();
+    amount = ((Locks[number].DepositAmount / 10**18).toFixed(2)).toString();
 
     document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
     document.getElementById('AD').innerText = amount + " CLD";
