@@ -79,7 +79,7 @@ async function DisplayInstance(number){
     document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
     document.getElementById('AD').innerText = amount + " CLD";
     document.getElementById('AC').innerText = (dleft).toString() + " Days Left";
-        document.getElementById('CE').innerText = (dleft).toString() + " Days Left";
+    document.getElementById('CE').innerText = (dleft).toString() + " Days Left";
 }
 
 function DiplayBoxRight(type){
