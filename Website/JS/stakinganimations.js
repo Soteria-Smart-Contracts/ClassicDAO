@@ -69,6 +69,8 @@ async function DisplayInstance(number){
     document.getElementById('ViewLock').style.display = "initial";
     CurrentInstanceID = IDs[number];
 
+    i
+
     dleft = await GetDaysLeft(number);
     amount = ((Locks[number].DepositAmount / 10**18).toFixed(2)).toString();
     amountclaim = ((Locks[number].WithdrawAmount / 10**18).toFixed(2)).toString();
