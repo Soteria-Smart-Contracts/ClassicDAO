@@ -80,7 +80,7 @@ async function DisplayInstance(number){
     document.getElementById('CE').innerText = earned + " CLD";
 
     if(dleft == 0){
-        
+        document.getElementById('InputLeftDeposit').style.display = "block";
     }
 }
 
