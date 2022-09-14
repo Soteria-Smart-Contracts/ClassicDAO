@@ -316,6 +316,7 @@ a.link{
     padding-left: 1vw;
     margin-top: 1.5vh;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .OpContainer.stats{
