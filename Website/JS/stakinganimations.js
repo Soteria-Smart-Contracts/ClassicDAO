@@ -49,13 +49,12 @@ function DiplayBoxLeft(type){
 
 function SetInstances(){
     index = 1;
-    while(index > ActiveLockNum){
+    while(index < ActiveLockNum){
         document.getElementById("slot" + (index).toString()).innerText = test;
         index++;
     }
 }
 
-document.getElementById("slot" + (1).toString()).innerText = "test";
 function DiplayBoxRight(type){
     document.getElementById('ConfirmRight').style.display = "initial";
     if(type == 1){
