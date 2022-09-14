@@ -55,7 +55,7 @@ function SetInstances(){
     }
 }
 
-document.getElementById("slot" + (index).toString()).innerText = test;
+document.getElementById("slot" + (1).toString()).innerText = test;
 function DiplayBoxRight(type){
     document.getElementById('ConfirmRight').style.display = "initial";
     if(type == 1){
