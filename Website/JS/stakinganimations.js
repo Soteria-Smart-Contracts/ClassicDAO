@@ -121,10 +121,10 @@ function setMaxDepositRight(ID){
         document.getElementById('Two').value = (CLDbal - 0.01).toFixed(2);
     }
     if(ID == 3){
-        document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
+        document.getElementById('Three').value = (CLDbal - 0.01).toFixed(2);
     }
     if(ID == 4){
-        document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
+        document.getElementById('Four').value = (CLDbal - 0.01).toFixed(2);
     }
 }
 
