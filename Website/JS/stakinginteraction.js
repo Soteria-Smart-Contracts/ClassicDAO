@@ -119,8 +119,8 @@ async function LoadLocks(){
         return;
     }
     if(ActiveLockNum == 1){
-        ID = Locks
-        IDs = [(LocksLen - 1)];
+        ID = LocksLen - 1;
+        cons
         console.log(IDs[1]);
         GetLock(1, IDs[1]);
     }
