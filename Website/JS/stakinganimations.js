@@ -67,6 +67,7 @@ async function SetInstances(){
 
 async function DisplayInstance(number){
     if(number >= ActiveLockNum){
+        
         return;
     }
     document.getElementById('ViewLock').style.display = "initial";
