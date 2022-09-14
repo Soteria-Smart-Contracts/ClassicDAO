@@ -81,7 +81,8 @@ async function DisplayInstance(number){
 
     document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
     document.getElementById('AD').innerText = amount;
-    document.getElementById('AC').innerText = amountc;
+    document.getElementById('AC').innerText = amountclaim;
+    document.getElementById('CE').innerText = earned;
 
     if(dleft == 0){
         document.getElementById('ClaimB').style.display = "inline-block";
