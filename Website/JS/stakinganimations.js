@@ -52,7 +52,8 @@ function DiplayBoxLeft(type){
 function SetInstances(){
     index = 1;
     while(index <= ActiveLockNum){
-        dleft = GetDaysLeft(index);
+        req = GetDaysLeft(index);
+        dleft = req;
         string = ((Locks[index].DepositAmount / 10**18).toFixed(2)).toString() + " CLD |" + (dleft).toString() + " Days Left";
         document.getElementById("slot" + (index).toString()).innerText = string;
         index++;
