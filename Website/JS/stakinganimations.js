@@ -60,7 +60,8 @@ async function SetInstances(){
         string = ((Locks[index].DepositAmount / 10**18).toFixed(2)).toString() + " CLD | " + (dleft).toString() + " Days Left";
         document.getElementById("slot" + (index).toString()).innerText = string;
 
-        document.getElementById('DL').innerText = (dleft).toString() + " Days Left"
+        document.getElementById('DL').innerText = (dleft).toString() + " Days Left";
+        
 
         index++;
     }
