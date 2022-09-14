@@ -135,7 +135,7 @@ async function LoadLocks(){
 
 async function GetLock(toset, id){
     LockContract.methods.UserLocks(account, 0).call();
-}
+}}
 
 async function CreateLock(type){
     let amount = 0;
