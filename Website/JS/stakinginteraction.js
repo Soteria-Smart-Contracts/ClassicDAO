@@ -123,12 +123,12 @@ async function LoadLocks(){
         GetLock(1, IDs[1]);
     }
     if(ActiveLockNum == 2){
-        IDs.push(LocksLen - 1, LocksLen - 1);
+        IDs.push(LocksLen - 1, LocksLen - 2);
         GetLock(1, IDs[1]);
         GetLock(2, IDs[2]);
     }
     if(ActiveLockNum == 3){
-        let ID = LocksLen - 1;
+        IDs.push(LocksLen - 1, LocksLen - 2, Lock);
         GetLock(1, IDs[1]);
         GetLock(2, IDs[2]);
         GetLock(3, IDs[3]);
