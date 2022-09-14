@@ -131,11 +131,11 @@ async function LoadLocks(){
         GetLock(2, IDs[2]);
         GetLock(3, IDs[3]);
     }
-}
+}}
 
 async function GetLock(toset, id){
     LockContract.methods.UserLocks(account, 0).call();
-}}
+}
 
 async function CreateLock(type){
     let amount = 0;
