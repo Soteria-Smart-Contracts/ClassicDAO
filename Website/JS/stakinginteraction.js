@@ -112,7 +112,7 @@ async function getActiveLocks(){
 
 async function LoadLocks(){
     if(ActiveLocks == 0){
-        0
+        return;
     }
     if(ActiveLocks == 1){
         
