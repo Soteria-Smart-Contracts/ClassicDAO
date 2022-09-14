@@ -112,7 +112,6 @@ async function getActiveLocks(){
 
 async function LoadLocks(){
     if(ActiveLocks == 0){
-        console.log("No locks")
         return;
     }
     if(ActiveLocks == 1){
