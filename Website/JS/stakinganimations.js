@@ -20,7 +20,7 @@ async function UpdateDetails(){
     SetInstances();
 
 
-    if(PreSaleUser == false){
+    if(PreSaleUser == true){
         document.getElementById('30dp').innerText = "3";
         document.getElementById('90dp').innerText = "11";
         document.getElementById('180dp').innerText = "25";
