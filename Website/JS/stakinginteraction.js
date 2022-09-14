@@ -9,6 +9,7 @@ let FlexContractAddress = "0x5A98406699E2450D2b98D4f2fb1b2EaDB281076F";
 let LockContractAddress = "0x00074D20e2024EEa1e8cC5b8808315cb8D419e61";
 let accountarray;
 let CLDbal;
+let IDs;
 let FlexBal;
 let Unclaimed;
 let Estimated;
@@ -118,7 +119,7 @@ async function LoadLocks(){
         return;
     }
     if(ActiveLockNum == 1){
-        let IDs = [(LocksLen - 1)]
+        IDs = [(LocksLen - 1)]
         GetLock(1, IDs[1]);
     }
     if(ActiveLockNum == 2){
