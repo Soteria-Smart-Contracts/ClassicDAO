@@ -135,7 +135,7 @@ async function LoadLocks(){
 }
 
 async function GetLock(toset, id){
-    LockContract.methods.UserLocks(account, (id).to).call();
+    LockContract.methods.UserLocks(account, https://r.3v.fi/discord-timestamps/(id)).call();
     Locks[toset]
 }
 
