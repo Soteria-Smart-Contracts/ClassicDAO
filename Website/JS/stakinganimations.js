@@ -79,8 +79,8 @@ async function DisplayInstance(number){
     document.getElementById('AC').innerText = amountclaim + " CLD";
     document.getElementById('CE').innerText = earned + " CLD";
 
-    if(dleft == 0){
-        document.getElementById('InputLeftDeposit').style.display = "block";
+    if(dleft !== 0){
+        document.getElementById('ClaimB').style.display = "block";
     }
 }
 
