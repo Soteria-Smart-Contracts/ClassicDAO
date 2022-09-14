@@ -114,8 +114,18 @@ function setMaxDepositLeft(){
 }
 
 function setMaxDepositRight(ID){
-    if(ID == 1){}
-    document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
+    if(ID == 1){
+        document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
+    }
+    if(ID == 1){
+        document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
+    }
+    if(ID == 1){
+        document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
+    }
+    if(ID == 1){
+        document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
+    }
 }
 
 function setMaxWithdrawLeft(){
