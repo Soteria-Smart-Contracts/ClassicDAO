@@ -12,7 +12,7 @@ let CLDbal;
 let FlexBal;
 let Unclaimed;
 let Estimated;
-let ActiveLocks;
+let ActiveLockNum;
 let Locks
 let LocksLen;
 let netID;
