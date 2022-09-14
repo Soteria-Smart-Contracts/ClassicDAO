@@ -19,7 +19,7 @@ async function UpdateDetails(){
 
     SetInstances();
 
-    if(ActiveLockNum = 3){
+    if(ActiveLockNum == 3){
         document.getElementById('Lock').style.display = "none";
     }
 
