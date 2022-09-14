@@ -52,7 +52,7 @@ function DiplayBoxLeft(type){
 function SetInstances(){
     index = 1;
     while(index <= ActiveLockNum){
-        string = (Locks[index].DepositAmount / 10**18);
+        string = ((Locks[index].DepositAmount / 10**18)).toString();
         document.getElementById("slot" + (index).toString()).innerText = string;
         index++;
     }
