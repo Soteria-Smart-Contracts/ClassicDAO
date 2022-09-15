@@ -163,7 +163,7 @@ async function CreateLock(type){
     if(type == 7){
         amount = document.getElementById('Four').value;
     }
-    
+    let amountwei = amount * 1000000000000000000;
     if(await CLDcontract.methods.allowance(account, LockContractAddress).call() < amount){
         await CLDcontract.methods.approve(FlexContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: 300000});
     }
@@ -171,7 +171,6 @@ async function CreateLock(type){
     if(PreSaleUser == true){
         type = type + 1;
     }
-    let amountwei = amount * 1000000000000000000;
 
     await LockContract.methods.CreateLock(type, BigInt(amountwei)).send({from: account, value: 0, gas: 300000});
 }
