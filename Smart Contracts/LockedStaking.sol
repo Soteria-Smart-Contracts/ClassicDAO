@@ -18,14 +18,14 @@ contract LockedStaking{
     constructor(address _CLD){
         CLD = _CLD; 
         Operator = msg.sender;
-        LockTypeTime[1] = 60;//30 Days 2592000
-        LockTypeTime[2] = 60;
-        LockTypeTime[3] = 60;//90 Days 7776000
-        LockTypeTime[4] = 60;
-        LockTypeTime[5] = 60;//180 Days 15552000
-        LockTypeTime[6] = 60;
-        LockTypeTime[7] = 60;//365 days (1Y) 31536000
-        LockTypeTime[8] = 60;
+        LockTypeTime[1] = 2592000;//30 Days 2592000
+        LockTypeTime[2] = 2592000;
+        LockTypeTime[3] = 7776000;//90 Days 7776000
+        LockTypeTime[4] = 7776000;
+        LockTypeTime[5] = 15552000;//180 Days 15552000
+        LockTypeTime[6] = 15552000;
+        LockTypeTime[7] = 31536000;//365 days (1Y) 31536000
+        LockTypeTime[8] = 31536000;
         LockTypeMultiplier[1] = 250;
         LockTypeMultiplier[2] = 320;
         LockTypeMultiplier[3] = 875;
@@ -85,7 +85,7 @@ contract LockedStaking{
         if(((ERC20(CLD).balanceOf(address(this)) - (UserLocks[msg.sender][ID].WithdrawAmount - UserLocks[msg.sender][ID].DepositAmount)) <= TotalDeposits)){ //This exists as protection in the case that the contract has not been refilled with CLD in time
              amount = UserLocks[msg.sender][ID].DepositAmount; 
         }
-        
+
         TotalDeposits = TotalDeposits - UserLocks[msg.sender][ID].DepositAmount;
         UserLocks[msg.sender][ID].Type = 66;
         UserLocks[msg.sender][ID].User = address(0);
