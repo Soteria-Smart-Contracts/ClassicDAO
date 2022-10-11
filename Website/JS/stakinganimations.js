@@ -86,7 +86,7 @@ async function DisplayInstance(number){
 
     if(dleft == 0){
         document.getElementById('ClaimB').style.display = "inline-block";
-        document.getElementById('DL').innerText = Completed;
+        document.getElementById('DL').innerText = "Ready to Claim";
     }
 }
 
