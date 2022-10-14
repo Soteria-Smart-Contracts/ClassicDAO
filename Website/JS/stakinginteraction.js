@@ -151,7 +151,8 @@ async function GetLock(toset, id){
         id--;
         Lock = await LockContract.methods.UserLocks(account, id).call();
         if(Lock[2] == 66){
-        
+            id--;
+            
         }
     }
     Locks[toset] = Lock;
