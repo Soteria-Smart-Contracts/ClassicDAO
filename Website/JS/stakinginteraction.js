@@ -150,7 +150,9 @@ async function GetLock(toset, id){
     if (Lock[2] == 66){
         let NextCheck = (id - 1);
         Lock = await LockContract.methods.UserLocks(account, NextCheck).call();
-        if(Lock[2])
+        if(Lock[2] == 66){
+            
+        }
     }
     Locks[toset] = Lock;
 }
