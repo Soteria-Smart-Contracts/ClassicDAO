@@ -151,7 +151,7 @@ async function GetLock(toset, id){
         id++;
         Lock = await LockContract.methods.UserLocks(account, id).call();
     }
-    Locks[toset] = await LockContract.methods.UserLocks(account, id).call();
+    Locks[toset] = Lock;
 }
 
 async function CreateLock(type){
