@@ -148,7 +148,7 @@ async function GetDaysLeft(ID){
 async function GetLock(toset, id){
     let Lock = await LockContract.methods.UserLocks(account, id).call();
     if (Lock[2] == 66){
-        let NextCheck = int(id + 1);
+        let NextCheck = (id + 1).parseInt;
         Lock = await LockContract.methods.UserLocks(account, NextCheck).call();
     }
     Locks[toset] = Lock;
