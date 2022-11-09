@@ -685,6 +685,10 @@ a.actionname.staking{
         height: fit-content;
     }
 
+    .innerbutton.staking{
+        font-size: ;
+    }
+
     .dappcontainer.staking{
         margin-left: 0;
     }
