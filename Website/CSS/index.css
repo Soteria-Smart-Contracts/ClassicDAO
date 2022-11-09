@@ -687,6 +687,10 @@ a.actionname.staking{
         margin-top: 1vh;
     }
 
+    .ROI{
+        font-size: 3;
+    }
+
     .dapp-div.staking{
         min-height: 57vh;
     }
