@@ -705,7 +705,8 @@ a.actionname.staking{
     }
 
     .instance{
-        font-size: 4vw;
+        font-size: 3.5vw;
+        padding: 3;
     }
 
     .csinfo.staking{
