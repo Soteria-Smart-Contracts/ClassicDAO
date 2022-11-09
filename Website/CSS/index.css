@@ -687,6 +687,7 @@ a.actionname.staking{
 
     .OpBox{
         height: fit-content;
+        padding-bottom: 1vh;
     }
 
     .innerbutton.staking{
