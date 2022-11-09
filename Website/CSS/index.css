@@ -690,6 +690,10 @@ a.actionname.staking{
         font-size: 3vw;
     }
 
+    .balances.staking{
+        margin-top: 4;
+    }
+
     .statsheader{
         font-size: 3.5vw;
     }
