@@ -691,7 +691,9 @@ a.actionname.staking{
         padding-bottom: 2vh;
     }
 
-    .OpContainer.OpContainer.Lock
+    .OpContainer.Lock{
+        
+    }
     
     .dapptop.staking{
         font-size: 5vw;
