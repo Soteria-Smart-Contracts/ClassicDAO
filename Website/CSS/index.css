@@ -689,7 +689,7 @@ a.actionname.staking{
     
     .dapptop.staking{
         font-size: 5vw;
-        mi
+        min-height: 30px;
     }
 
     .ROI{
