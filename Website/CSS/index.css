@@ -690,6 +690,10 @@ a.actionname.staking{
         font-size: 3vw;
     }
 
+    .statsheader{
+        font-size: 3vw;
+    }
+
     .OpBox{
         height: fit-content;
         padding-bottom: 1.6vh;
