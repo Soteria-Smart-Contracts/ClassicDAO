@@ -680,7 +680,9 @@ a.actionname.staking{
         align-items: center;
     }
 
-    .
+    .OpContainer.stats{
+        margin-left: -1.6;
+    }
 
     .dappcontainer.staking{
         margin-left: 0;
