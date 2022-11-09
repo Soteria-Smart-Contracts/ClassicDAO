@@ -680,6 +680,10 @@ a.actionname.staking{
         align-items: center;
     }
 
+    .dappcontainer.staking{
+        
+    }
+
     .dapp-div{
         width: 95vw;
         margin: 0;
