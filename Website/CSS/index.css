@@ -685,6 +685,10 @@ a.actionname.staking{
         height: 20vh;
     }
 
+    .csinfo.staking{
+        font-size: ;
+    }
+
     .OpBox{
         height: fit-content;
         padding-bottom: 1.6vh;
