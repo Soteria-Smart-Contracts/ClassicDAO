@@ -699,6 +699,10 @@ a.actionname.staking{
     .dapp-div.staking{
         min-height: 57vh;
     }
+    
+    .value.staking{
+        font-size: 2.5vw;
+    }
 
     .csinfo.staking{
         font-size: 3vw;
