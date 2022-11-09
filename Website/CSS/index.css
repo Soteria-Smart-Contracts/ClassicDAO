@@ -685,6 +685,10 @@ a.actionname.staking{
         height: fit-content;
     }
 
+    .OpBox{
+        height: fit-content;
+    }
+
     .innerbutton.staking{
         font-size: 3.5vw;
     }
