@@ -684,7 +684,10 @@ a.actionname.staking{
         margin-left: -3.6vw;
         height: 20vh;
         background-color: transparent;
+        margin-top: 1vh;
     }
+
+    .dapp-div.staking {
 
     .csinfo.staking{
         font-size: 3vw;
