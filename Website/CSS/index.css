@@ -682,7 +682,7 @@ a.actionname.staking{
 
     .OpContainer.stats{
         margin-left: -3.6vw;
-        height: fit-content;
+        height: 20vh;
     }
 
     .OpBox{
