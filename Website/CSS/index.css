@@ -687,7 +687,9 @@ a.actionname.staking{
         margin-top: 1vh;
     }
 
-    .dapp-div.staking {
+    .dapp-div.staking{
+        
+    }
 
     .csinfo.staking{
         font-size: 3vw;
