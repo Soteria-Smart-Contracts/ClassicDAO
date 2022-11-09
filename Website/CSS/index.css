@@ -689,7 +689,7 @@ a.actionname.staking{
     }
 
     .dapp-div.staking{
-        
+        max-width: 65vw;
     }
 
     .dapptop{
