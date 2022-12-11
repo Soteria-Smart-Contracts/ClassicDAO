@@ -10,6 +10,7 @@ let CLDbal;
 let FlexBal;
 let Unclaimed;
 let netID;
+let LoggedIn;
 
 
 let accountInterval = setInterval(function() {
