@@ -37,6 +37,7 @@ let accountInterval = setInterval(function() {
             await ethereum.request({ method: 'eth_requestAccounts' });
             window.web3 = await new Web3(ethereum);
             LoggedIn = true;
+            removeOverlay();
         }
         await getID();
         if (netID != 61){
@@ -54,7 +55,6 @@ let accountInterval = setInterval(function() {
  //           alert("This address is not on the eligibility list for the ClassicDAO private sale. If you signed up for this sale but see this message, make sure you are using the correct wallet. If issues persist, please contact us on discord, twitter or telegram.")
  //           loginWithEth();
  //       }
-        removeOverlay();
         UpdateDetails();
         document.getElementById('WalletB').innerText = "Connected";
     } else {
