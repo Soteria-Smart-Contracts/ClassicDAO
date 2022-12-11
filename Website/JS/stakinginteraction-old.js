@@ -10,7 +10,7 @@ let CLDbal;
 let FlexBal;
 let Unclaimed;
 let netID;
-let LoggedIn;
+let LoggedIn = false;
 
 
 let accountInterval = setInterval(function() {
@@ -23,7 +23,7 @@ let accountInterval = setInterval(function() {
 
   async function loginWithEth(){
     if(window.ethereum){
-        if(LoggedIn )
+        if(LoggedIn = false){}
         await ethereum.request({ method: 'eth_requestAccounts' });
         window.web3 = await new Web3(ethereum);
         await getID();
