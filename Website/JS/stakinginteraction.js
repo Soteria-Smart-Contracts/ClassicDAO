@@ -19,6 +19,8 @@ let LocksLen;
 let netID;
 let CurrentInstanceID;
 let PreSaleUser = false;
+let LoggedIn = false;
+
 
 
 let accountInterval = setInterval(function() {
