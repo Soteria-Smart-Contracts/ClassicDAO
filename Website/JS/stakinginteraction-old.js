@@ -26,7 +26,7 @@ let accountInterval = setInterval(function() {
         if(LoggedIn = false){
             await ethereum.request({ method: 'eth_requestAccounts' });
             window.web3 = await new Web3(ethereum);
-            LoggedIn
+            LoggedIn = true;
         }
         await getID();
         if (netID != 61){
