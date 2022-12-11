@@ -33,7 +33,7 @@ let accountInterval = setInterval(function() {
 
   async function loginWithEth(){
     if(window.ethereum){
-        if(LoggedIn = false){
+        if(LoggedIn = true){
             await ethereum.request({ method: 'eth_requestAccounts' });
             window.web3 = await new Web3(ethereum);
             LoggedIn = true;
