@@ -44,7 +44,8 @@ async function UpdateDetails(){
     }
 }
 
-async function UpdateUnclaimed{
+async function UpdateUnclaimed(){
+    await getUnclaimed();
     document.getElementById('statunclaimed').innerText = Unclaimed;
 }
 
