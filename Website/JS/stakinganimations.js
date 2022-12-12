@@ -47,6 +47,7 @@ async function UpdateDetails(){
 async function UpdateUnclaimed(){
     await getUnclaimed();
     document.getElementById('statunclaimed').innerText = Unclaimed;
+    console.log("Unclaimed Updated")
 }
 
 function DiplayBoxLeft(type){
