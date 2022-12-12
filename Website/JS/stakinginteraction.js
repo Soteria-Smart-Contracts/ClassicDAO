@@ -40,6 +40,7 @@ let accountInterval = setInterval(function() {
             FlexContract = new window.web3.eth.Contract(flexABI, FlexContractAddress, window.web3);
             LockContract = new window.web3.eth.Contract(LockABI, LockContractAddress, window.web3);
             CLDcontract = new window.web3.eth.Contract(CLDabi, CLDcontractAddress, window.web3);
+            UpdateDetails();
         }
         await getID();                                                                                              
         if (netID != 61){
