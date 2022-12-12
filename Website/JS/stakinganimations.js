@@ -44,6 +44,8 @@ async function UpdateDetails(){
     }
 }
 
+async func
+
 function DiplayBoxLeft(type){
     document.getElementById('ConfirmLeft').style.display = "initial";
     if(type == 1){
