@@ -27,6 +27,7 @@ let LoggedIn = false;
 let accountInterval = setInterval(function() {
     if (web3.eth.accounts[0] !== account) {
       loginWithEth();
+      UpdateUnclaimed();
     }
   }, 300);
 
