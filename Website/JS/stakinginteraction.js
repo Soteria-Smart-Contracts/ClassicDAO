@@ -54,7 +54,7 @@ let accountInterval = setInterval(function() {
         accountarray = await web3.eth.getAccounts();
         oldaccount = account;
         account = accountarray[0];
-        if(oldaccount = )
+        if(oldaccount != account){}
         UpdateDetails();
         document.getElementById('WalletB').innerText = "Connected";
     } else {
