@@ -84,7 +84,7 @@ async function DisplayInstance(number){
     document.getElementById('AC').innerText = amountclaim;
     document.getElementById('CE').innerText = earned;
 
-    if(parseInt(Locks[number][5]) < Date.now()){
+    if(parseInt(Locks[number][5]) < Math.floor(Date.now() / 1000)){
         document.getElementById('ClaimB').style.display = "inline-block";
         document.getElementById('DL').innerText = "Ready to Claim";
     }
