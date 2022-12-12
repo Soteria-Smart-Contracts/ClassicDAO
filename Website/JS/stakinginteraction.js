@@ -53,6 +53,7 @@ let accountInterval = setInterval(function() {
             removeOverlay();
         }
         accountarray = await web3.eth.getAccounts();
+        console.log(account)
         oldaccount = account;
         account = accountarray[0];
         if(oldaccount != account){
