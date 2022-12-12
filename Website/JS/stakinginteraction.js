@@ -50,11 +50,6 @@ let accountInterval = setInterval(function() {
             showOverlay();
             return("Failed to connect")
         }
-        accountarray = await web3.eth.getAccounts();
-        FlexContract = new window.web3.eth.Contract(flexABI, FlexContractAddress, window.web3);
-        LockContract = new window.web3.eth.Contract(LockABI, LockContractAddress, window.web3);
-        CLDcontract = new window.web3.eth.Contract(CLDabi, CLDcontractAddress, window.web3);
-        account = accountarray[0];
         removeOverlay();
         UpdateDetails();
         document.getElementById('WalletB').innerText = "Connected";
