@@ -54,11 +54,11 @@ let accountInterval = setInterval(function() {
         accountarray = await web3.eth.getAccounts();
         oldaccount = account;
         account = accountarray[0];
-        UpdateUnclaimed();
         if(oldaccount != account){
             UpdateDetails();
         }
         document.getElementById('WalletB').innerText = "Connected";
+        UpdateUnclaimed();
     } else {
         alert("No ETHER Wallet available")
     }
