@@ -18,6 +18,7 @@ let LocksLen;
 let netID;
 let CurrentInstanceID;
 let account = "0x0000000000000000000000000000000000000000";
+let oldaccount;
 let PreSaleUser = false;
 let LoggedIn = false;
 
