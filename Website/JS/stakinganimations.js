@@ -8,6 +8,7 @@ async function UpdateDetails(){
     await getActiveLocks();
     await LoadLocks();
     await CheckPresaleUser();
+    console.log("Details Updated")
 
     document.getElementById('flexbal').innerText = CLDbal;
     document.getElementById('Lockbal').innerText = CLDbal;
