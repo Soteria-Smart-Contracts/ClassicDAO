@@ -48,6 +48,9 @@ let accountInterval = setInterval(function() {
             showOverlay();
             return("Failed to connect")
         }
+        else{
+            removeOverlay();
+        }
         accountarray = await web3.eth.getAccounts();
         account = accountarray[0];
         removeOverlay();
