@@ -53,8 +53,6 @@ let accountInterval = setInterval(function() {
         }
         accountarray = await web3.eth.getAccounts();
         account = accountarray[0];
-        removeOverlay();
-        UpdateDetails();
         document.getElementById('WalletB').innerText = "Connected";
     } else {
         alert("No ETHER Wallet available")
