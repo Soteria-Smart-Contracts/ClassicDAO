@@ -52,6 +52,7 @@ let accountInterval = setInterval(function() {
             removeOverlay();
         }
         accountarray = await web3.eth.getAccounts();
+        olda
         account = accountarray[0];
         UpdateDetails();
         document.getElementById('WalletB').innerText = "Connected";
