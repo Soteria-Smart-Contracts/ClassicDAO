@@ -189,8 +189,6 @@ async function ClaimLock(){
     await LockContract.methods.ClaimLock(CurrentInstanceID).send({from: account, value: 0, gas: 300000})
 }
 
-async function GetLockE
-
 async function getID(){
     let idhex = web3.eth._provider.chainId;
     netID = parseInt(idhex, 16);
