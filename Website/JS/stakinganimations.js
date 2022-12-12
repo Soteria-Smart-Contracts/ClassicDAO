@@ -44,7 +44,9 @@ async function UpdateDetails(){
     }
 }
 
-async function 
+async function UpdateUnclaimed{
+    document.getElementById('statunclaimed').innerText = Unclaimed;
+}
 
 function DiplayBoxLeft(type){
     document.getElementById('ConfirmLeft').style.display = "initial";
