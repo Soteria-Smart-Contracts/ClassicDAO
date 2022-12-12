@@ -167,7 +167,7 @@ function DisplayLeft(){
 }
 
 function DisplayRight(){
-    if(ActiveLockNum)
+    if(ActiveLockNum < 3){}
     document.getElementById('Lock').style.display = "initial";
     document.getElementById('Instances').style.display = "flex";
 }
