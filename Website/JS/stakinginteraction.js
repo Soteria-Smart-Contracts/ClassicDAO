@@ -18,6 +18,7 @@ let Locks = [{ID:"", DepositAmount:""},{},{}];
 let LocksLen;
 let netID;
 let CurrentInstanceID;
+let account = 
 let PreSaleUser = false;
 let LoggedIn = false;
 
