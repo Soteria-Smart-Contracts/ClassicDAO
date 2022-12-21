@@ -175,6 +175,7 @@ async function CreateLock(type){
 
 async function ClaimLock(){
     await LockContract.methods.ClaimLock(CurrentInstanceID).send({from: account, value: 0, gas: 300000})
+    UpdateDetails();
 }
 
 async function getID(){
