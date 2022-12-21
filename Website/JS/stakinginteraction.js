@@ -124,27 +124,7 @@ async function getActiveLocks(){
 
 async function LoadLocks(){
     let CurrentLock;
-    if(ActiveLockNum == 0){
-        return;
-    }
-    if(ActiveLockNum == 1){
-        IDs[1] = LocksLen - 1;
-        await GetLock(1, IDs[1]);
-    }
-    if(ActiveLockNum == 2){
-        IDs[1] = LocksLen - 2;
-        IDs[2] = LocksLen - 1;
-        await GetLock(1, IDs[1]);
-        await GetLock(2, IDs[2]);
-    }
-    if(ActiveLockNum == 3){
-        IDs[1] = LocksLen - 3;
-        IDs[2] = LocksLen - 2;
-        IDs[3] = LocksLen - 1;
-        await GetLock(1, IDs[1]);
-        await GetLock(2, IDs[2]);
-        await GetLock(3, IDs[3]);
-    }
+    while 
 }
 
 async function GetDaysLeft(ID){
