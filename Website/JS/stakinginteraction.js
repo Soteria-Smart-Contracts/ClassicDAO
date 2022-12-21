@@ -136,6 +136,7 @@ async function LoadLocks(){
             ActiveLocksFound++;
         }
         Index--;
+        console.log(ActiveLocksFound);
     }
 }
 
