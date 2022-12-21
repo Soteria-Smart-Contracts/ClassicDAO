@@ -123,7 +123,7 @@ async function getActiveLocks(){
 }
 
 async function LoadLocks(){
-    let CurrentLock;
+    let Index = ActiveLockNum;
     while 
 }
 
