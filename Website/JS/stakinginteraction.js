@@ -128,6 +128,7 @@ async function LoadLocks(){
     let ActiveLocksFound = 0;
     while(ActiveLocksFound <= ActiveLockNum){
         LockCheck = await LockContract.methods.UserLocks(account, id).call();
+        
     }
 }
 
