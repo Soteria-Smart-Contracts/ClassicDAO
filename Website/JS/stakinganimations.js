@@ -114,6 +114,7 @@ function DiplayBoxRight(type){
 
 
 function CloseViewBox(){
+    document.getElementById('ClaimB').style.display = "none"
     document.getElementById('ViewLock').style.display = "none";
 }
 
