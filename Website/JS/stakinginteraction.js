@@ -2,7 +2,6 @@ let flexABI = window.flexabi;
 let CLDabi = window.CLDabi;
 let LockABI = window.LockABI;
 let CLDcontract;
-let Index;
 let CLDcontractAddress = "0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c";
 let FlexContract;
 let FlexContractAddress = "0x5A98406699E2450D2b98D4f2fb1b2EaDB281076F";
@@ -127,7 +126,7 @@ async function LoadLocks(){
     let LockCheck;
     console.log("THisworks")
     let CurrentToSet = 1;
-    Index = LocksLen - 1;
+    let Index = LocksLen - 1;
     let ActiveLocksFound = 0;
     while(ActiveLocksFound <= ActiveLockNum){
         LockCheck = await LockContract.methods.UserLocks(account, Index).call();
