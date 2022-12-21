@@ -132,6 +132,7 @@ async function LoadLocks(){
         if(LockCheck[2] != 66){
             Locks[CurrentToSet] = LockCheck;
             CurrentToSet + 1;
+            ActiveLocksFound++;
         }
     }
 }
