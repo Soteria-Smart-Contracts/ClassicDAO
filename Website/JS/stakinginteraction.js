@@ -125,7 +125,7 @@ async function getActiveLocks(){
 async function LoadLocks(){
     let Index = LocksLen;
     let ActiveLocksFound = 0;
-    while 
+    while(ActiveLocksFound < A)
 }
 
 async function GetDaysLeft(ID){
