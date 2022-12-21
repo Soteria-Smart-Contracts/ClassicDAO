@@ -144,19 +144,6 @@ async function GetDaysLeft(ID){
     return(dleft);
 }
 
-async function GetLock(toset, id){
-    let Lock = await LockContract.methods.UserLocks(account, id).call();
-    if (Lock[2] == 66){
-        id--;
-        Lock = await LockContract.methods.UserLocks(account, id).call();
-        if(Lock[2] == 66){
-            id--;
-            Lock = await LockContract.methods.UserLocks(account, id).call();
-        }
-    }
-    Locks[toset] = Lock;
-}
-
 async function CreateLock(type){
     let amount = 0;
     if(type == 1){
