@@ -126,7 +126,7 @@ async function LoadLocks(){
     let LockCheck;
     console.log("THisworks")
     let CurrentToSet = 1;
-    let Index = LocksLen;
+    let Index = LocksLen - 1;
     let ActiveLocksFound = 0;
     while(ActiveLocksFound <= ActiveLockNum){
         LockCheck = await LockContract.methods.UserLocks(account, Index).call();
