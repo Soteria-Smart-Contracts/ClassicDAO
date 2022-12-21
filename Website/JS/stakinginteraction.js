@@ -133,7 +133,7 @@ async function LoadLocks(){
             Locks[CurrentToSet] = LockCheck;
             CurrentToSet++;
             ActiveLocksFound++;
-            
+
         }
     }
 }
