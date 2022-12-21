@@ -139,8 +139,8 @@ async function LoadLocks(){
 }
 
 async function GetDaysLeft(ID){
-    dleft = await LockContract.methods.GetDaysLeft(Locks[ID][1], (Locks[ID].ID)).call()}
-    catch(error){dleft = 0}
+    try {dleft = await LockContract.methods.GetDaysLeft(Locks[ID][1], (Locks[ID].ID)).call()}
+    catch{dleft = 0}
     return(dleft);
 }
 
