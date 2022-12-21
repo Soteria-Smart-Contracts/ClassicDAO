@@ -124,8 +124,8 @@ async function getActiveLocks(){
 
 async function LoadLocks(){
     let LockCheck;
-    console.log("THisworks")
     let CurrentToSet = 1;
+    console.log(("Locks"))
     let Index = LocksLen - 1;
     let ActiveLocksFound = 0;
     while(ActiveLocksFound <= ActiveLockNum){
