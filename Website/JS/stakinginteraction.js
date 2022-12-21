@@ -123,6 +123,7 @@ async function getActiveLocks(){
 }
 
 async function LoadLocks(){
+    let CurrentLock;
     if(ActiveLockNum == 0){
         return;
     }
