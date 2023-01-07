@@ -50,7 +50,7 @@ async function UpdateUnclaimed(){
 }
 
 async function GetHENS(){
-    await try{ hens.js.getNameOfOwner(account)}
+    await hens.js.getNameOfOwner(account)}
     catch{ }
 }
 
