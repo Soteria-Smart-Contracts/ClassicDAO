@@ -45,9 +45,9 @@ function setInterface(type){
 async function UpdateDetails(){
     await getBalance();
     await GetCLDleft();
-    try {HensUserBool = await hens.js.getNameOfOwner(account)
+    try {HensUserName = await hens.js.getNameOfOwner(account)
     } catch{
-        HensUserBool = "Connected"
+        HensUserName = "Connected"
     }
 
     document.getElementById('totaldepo').innerText = totaldeposited;
