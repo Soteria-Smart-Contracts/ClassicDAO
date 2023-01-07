@@ -50,7 +50,7 @@ async function UpdateUnclaimed(){
 }
 
 async function GetHENS(){
-    try {console.log(await hens.js.getNameOfOwner(account))}
+    try {await hens.js.getNameOfOwner(account)}
     catch(err){console.log("No Account Found")}
 }
 
