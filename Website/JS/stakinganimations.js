@@ -50,7 +50,7 @@ async function UpdateUnclaimed(){
 }
 
 async function GetHENS(){
-    
+    awahens.js.
 }
 
 function DiplayBoxLeft(type){
