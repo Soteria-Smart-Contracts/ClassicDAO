@@ -46,6 +46,7 @@ function setInterface(type){
 async function UpdateDetails(){
     await getBalance();
     await GetCLDleft();
+    await hens
 
     document.getElementById('totaldepo').innerText = totaldeposited;
     document.getElementById('bal').innerText = balance;
