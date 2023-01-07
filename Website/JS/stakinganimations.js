@@ -1,4 +1,4 @@
-let HENS
+let HENSname;
 
 async function UpdateDetails(){
     await getCLDbal();
