@@ -47,7 +47,7 @@ async function UpdateDetails(){
     await GetCLDleft();
     try{ await hens.js.getNameOfOwner(account)
     } catch{
-        HensUserBool
+        HensUserBool = "Connected"
     }
 
     document.getElementById('totaldepo').innerText = totaldeposited;
