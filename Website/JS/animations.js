@@ -3,7 +3,7 @@ document.getElementById('DAO').style.display = "none";
 document.getElementById('Staking').style.display = "none";
 document.body.style.overflow = "hidden";
 let HensUserBool = false;
-let HensUserName = ;
+let HensUserName = "Connected";
 
 
 function setActive(id) {
