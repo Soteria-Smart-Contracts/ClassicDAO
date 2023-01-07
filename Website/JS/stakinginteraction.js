@@ -57,7 +57,7 @@ let accountInterval = setInterval(function() {
         if(oldaccount != account){
             UpdateDetails();
         }
-        document.getElementById('WalletB').innerText = "Connected";
+        document.getElementById('WalletB').innerText = HENSname;
         UpdateUnclaimed();
     } else {
         alert("No ETHER Wallet available")
