@@ -2,7 +2,6 @@ document.getElementById('Welcome').style.display = "none";
 document.getElementById('DAO').style.display = "none";
 document.getElementById('Staking').style.display = "none";
 document.body.style.overflow = "hidden";
-let HensUserName = "Connected";
 
 
 function setActive(id) {
@@ -45,8 +44,6 @@ function setInterface(type){
 async function UpdateDetails(){
     await getBalance();
     await GetCLDleft();
-    HensUserName = "Connected";
-//    HensUserName = await hens.js.getNameOfOwner(account)
 
     document.getElementById('totaldepo').innerText = totaldeposited;
     document.getElementById('bal').innerText = balance;
