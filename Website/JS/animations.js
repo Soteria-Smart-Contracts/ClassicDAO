@@ -2,7 +2,8 @@ document.getElementById('Welcome').style.display = "none";
 document.getElementById('DAO').style.display = "none";
 document.getElementById('Staking').style.display = "none";
 document.body.style.overflow = "hidden";
-
+let HensUserBool = false;
+let HensUserName;
 
 
 function setActive(id) {
