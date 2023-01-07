@@ -51,7 +51,7 @@ async function UpdateUnclaimed(){
 
 async function GetHENS(){
     try {console.log(await hens.js.getNameOfOwner(account))}
-    catch{console.log("No Account Found")}
+    catch(err){console.log("No Account Found")}
 }
 
 function DiplayBoxLeft(type){
