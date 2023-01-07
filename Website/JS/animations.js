@@ -45,7 +45,7 @@ function setInterface(type){
 async function UpdateDetails(){
     await getBalance();
     await GetCLDleft();
-    try{ await hens.js.getNameOfOwner(account)
+    try {HensUserBool = await hens.js.getNameOfOwner(account)
     } catch{
         HensUserBool = "Connected"
     }
