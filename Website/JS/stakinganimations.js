@@ -52,7 +52,7 @@ async function UpdateUnclaimed(){
 
 async function GetHENS(){
     HENSname = await hens.js.getNameOfOwner(account)
-    if(HENSname = ''){
+    if(HENSname == ''){
         HENSname = "Connected"
     }
 
