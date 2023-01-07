@@ -52,7 +52,7 @@ async function UpdateUnclaimed(){
 async function GetHENS(){
     HENSname = "Connected"
     await hens.js.getNameOfOwner(account);
-    console
+    console.log("If there is an error above, its normal")
 
 }
 
