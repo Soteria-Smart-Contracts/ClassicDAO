@@ -49,7 +49,9 @@ async function UpdateUnclaimed(){
     document.getElementById('statunclaimed').innerText = Unclaimed;
 }
 
-async function Awai
+async function GetHENS(){
+    
+}
 
 function DiplayBoxLeft(type){
     document.getElementById('ConfirmLeft').style.display = "initial";
