@@ -1,4 +1,4 @@
-
+let HENS
 
 async function UpdateDetails(){
     await getCLDbal();
@@ -50,8 +50,9 @@ async function UpdateUnclaimed(){
 }
 
 async function GetHENS(){
-        await hens.js.getNameOfOwner(account)
-        
+
+    await hens.js.getNameOfOwner(account)
+
 }
 
 function DiplayBoxLeft(type){
