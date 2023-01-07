@@ -47,7 +47,9 @@ async function UpdateDetails(){
     await getBalance();
     await GetCLDleft();
     try{ await hens.js.getNameOfOwner(account)
-    } catch
+    } catch{
+        
+    }
 
     document.getElementById('totaldepo').innerText = totaldeposited;
     document.getElementById('bal').innerText = balance;
