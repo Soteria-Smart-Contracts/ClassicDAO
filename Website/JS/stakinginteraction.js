@@ -55,7 +55,7 @@ let accountInterval = setInterval(function() {
         oldaccount = account;
         account = accountarray[0];
         if(oldaccount != account){
-            UpdateDetails();
+            await UpdateDetails();
         }
         document.getElementById('WalletB').innerText = HENSname;
         UpdateUnclaimed();
