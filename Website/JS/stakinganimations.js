@@ -52,7 +52,7 @@ async function UpdateUnclaimed(){
 
 async function GetHENS(){
     HENSname = "Connected"
-    HENSname = await hens.js.getNameOfOwner(account);
+    try{HENSname = await hens.js.getNameOfOwner(account);}
     console.log("If there is an error above, its normal and not a problem, try catch does not work for Metamask errors")
 }
 
