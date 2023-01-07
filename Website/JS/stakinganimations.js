@@ -50,7 +50,7 @@ async function UpdateUnclaimed(){
 }
 
 async function GetHENS(){
-    await try{ hens.js.
+    await try{ hens.js.getNameOfOwner(account)
 }
 
 function DiplayBoxLeft(type){
