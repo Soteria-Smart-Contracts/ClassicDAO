@@ -26,6 +26,8 @@ async function UpdateDetails(){
     }
 }
 
+async function GetEstimatedReturn
+
 async function UpdateUnclaimed(){
     await getUnclaimed();
     document.getElementById('statunclaimed').innerText = Unclaimed;
