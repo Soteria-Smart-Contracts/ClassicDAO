@@ -81,6 +81,7 @@ async function FlexDeposit(){
     }
     
     await FlexContract.methods.Deposit(BigInt(amountwei)).send({from: account, value: 0, gas: 300000});
+    await UpdateDetails();
 }
 
 async function FlexWithdraw(){
@@ -93,10 +94,12 @@ async function FlexWithdraw(){
 
 async function FlexClaim(){
     await FlexContract.methods.Claim().send({from: account, value: 0, gas: 300000});
+    await UpdateDetails();
 }
 
 async function FlexReinvest(){
     await FlexContract.methods.ReInvest().send({from: account, value: 0, gas: 300000});
+    await UpdateDetails();
 }
 
 
