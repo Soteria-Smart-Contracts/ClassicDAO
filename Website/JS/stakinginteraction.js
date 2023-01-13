@@ -94,6 +94,7 @@ async function FlexWithdraw(){
 
 async function FlexClaim(){
     await FlexContract.methods.Claim().send({from: account, value: 0, gas: 300000});
+    await FlexContract.methods.Claim().send({from: account, value: 0, gas: 300000});
     await UpdateDetails();
 }
 
