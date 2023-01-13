@@ -186,8 +186,7 @@ async function CreateLock(type){
 }
 
 async function ClaimLock(){
-    gas = await LockContract.methods.CreateLock(type, BigInt(amountwei)).estimateGas({from: account});
-
+    gas = await LockContract.methods.ClaimLock(CurrentInstanceID).estimateGas({from: account});
     await LockContract.methods.ClaimLock(CurrentInstanceID).send({from: account, value: 0, gas: 300000})
     UpdateDetails();
 }
