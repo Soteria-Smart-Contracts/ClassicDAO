@@ -181,11 +181,13 @@ async function CreateLock(type){
     }
 
     gas = await LockContract.methods.CreateLock(type, BigInt(amountwei)).estimateGas({from: account});
-    await LockContract.methods.CreateLock(type, BigInt(amountwei)).send({from: account, value: 0, gas: 300000});
+    await LockContract.methods.CreateLock(type, BigInt(amountwei)).send({from: account, value: 0, gas: gas});
     await UpdateDetails();
 }
 
 async function ClaimLock(){
+    gas = await LockContract.methods.CreateLock(type, BigInt(amountwei)).estimateGas({from: account});
+
     await LockContract.methods.ClaimLock(CurrentInstanceID).send({from: account, value: 0, gas: 300000})
     UpdateDetails();
 }
