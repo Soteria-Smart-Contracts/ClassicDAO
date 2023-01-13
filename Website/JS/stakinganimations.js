@@ -74,6 +74,10 @@ function DiplayBoxLeft(type){
 async function SetInstances(){
     index = 1;
 
+    document.getElementById("slot" + (1).toString()).innerText = string;
+    document.getElementById("slot" + (2).toString()).innerText = string;
+    document.getElementById("slot" + (3).toString()).innerText = string;
+
     while(index <= ActiveLockNum){
         dleft = await GetDaysLeft(index);
         amount = ((Locks[index].DepositAmount / 10**18).toFixed(2)).toString();
