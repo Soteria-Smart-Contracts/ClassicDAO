@@ -24,7 +24,9 @@ async function UpdateDetails(){
     if(ActiveLockNum < 3){
         document.getElementById('Lock').style.display = "flex";
     }
-    else if
+    else if(ActiveLockNum = 3){
+        document.getElementById('Lock').style.display = "none";
+    }
 }
 
 async function GetEstimatedReturn(){
