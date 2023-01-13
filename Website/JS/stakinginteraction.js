@@ -89,7 +89,7 @@ async function FlexWithdraw(){
     amountwei = amount * 1000000000000000000;
 
     gas = await FlexContract.methods.Withdraw(BigInt(amountwei)).estimateGas({from: account});
-    await FlexContract.methods.Withdraw(BigInt(amountwei)).send({from: account, value: 0, gas: 300000});
+    await FlexContract.methods.Withdraw(BigInt(amountwei)).send({from: account, value: 0, gas: gas});
     await UpdateDetails();
 }
 
