@@ -73,7 +73,9 @@ function DiplayBoxLeft(type){
 
 async function SetInstances(){
     index = 1;
-    document.getElementById("slot" + (index).toString()).innerText = string;
+    document.getElementById("slot" + (1).toString()).innerText = string;
+    document.getElementById("slot" + (1).toString()).innerText = string;
+
 
     while(index <= ActiveLockNum){
         dleft = await GetDaysLeft(index);
