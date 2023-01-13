@@ -180,7 +180,7 @@ async function CreateLock(type){
         type = type + 1;
     }
 
-    await gas = await LockContract.methods.CreateLock(type, BigInt(amountwei)).estimateGas({from: account});
+    gas = await LockContract.methods.CreateLock(type, BigInt(amountwei)).estimateGas({from: account});
     await LockContract.methods.CreateLock(type, BigInt(amountwei)).send({from: account, value: 0, gas: 300000});
     await UpdateDetails();
 }
