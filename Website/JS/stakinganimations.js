@@ -15,9 +15,6 @@ async function UpdateDetails(){
     document.getElementById('Lockbal').innerText = CLDbal;
     document.getElementById('LockActive').innerText = (ActiveLockNum + " / 3");
     document.getElementById('flexdepo').innerText = FlexBal;
-    document.getElementById('statdepo').innerText = FlexBal;
-    document.getElementById('statunclaimed').innerText = Unclaimed;
-    document.getElementById('expected').innerText = Estimated;
 
     SetInstances();
 
