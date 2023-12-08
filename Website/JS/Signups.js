@@ -118,7 +118,12 @@ async function SignUp(){
     await SignupContract.methods.signUp().send({from: account, gas: gas});
 }
 
-async 
+async function CheckSignUp(){
+    let signedup = await SignupContract.methods.isSignedUp(account).call();
+    if (signedup == true){
+        document.getElementById('SignUpB').innerText = "Signed Up";
+    }
+}
 
 function removeOverlay(){
     document.getElementById('overlay').style.display = "none";
