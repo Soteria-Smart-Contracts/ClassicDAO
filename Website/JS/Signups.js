@@ -1,3 +1,7 @@
+Sign
+
+
+
 async function loginWithEth(){
     if(window.ethereum){
         if(LoggedIn == false){
