@@ -113,6 +113,8 @@ async function getID(){
     return(netID);
 }
 
+async function SignUp(){
+
 function removeOverlay(){
     document.getElementById('overlay').style.display = "none";
     document.body.style.overflow = "auto";
