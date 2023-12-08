@@ -121,7 +121,8 @@ async function SignUp(){
 async function CheckSignUp(){
     let signedup = await SignupContract.methods.isSignedUp(account).call();
     if (signedup == true){
-        document.getElementById('SignUpB').innerText = "Signed Up";
+        document.getElementById('SignUpB').innerText = "Already signed up!";
+        
     }
 }
 
