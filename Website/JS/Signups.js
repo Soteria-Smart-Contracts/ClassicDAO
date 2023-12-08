@@ -1,5 +1,4 @@
-Sign
-
+SignupAddress = "0x3e2e2c7c4b4c4e1d6c4e5c4e5c4e5c4e5c4e5c4e";
 
 
 async function loginWithEth(){
