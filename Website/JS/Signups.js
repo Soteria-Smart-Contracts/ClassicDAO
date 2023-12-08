@@ -4,9 +4,7 @@ async function loginWithEth(){
             await ethereum.request({ method: 'eth_requestAccounts' });
             this.web3 = await new Web3(ethereum);
             LoggedIn = true;
-            FlexContract = new window.web3.eth.Contract(flexABI, FlexContractAddress, window.web3);
-            LockContract = new window.web3.eth.Contract(LockABI, LockContractAddress, window.web3);
-            CLDcontract = new window.web3.eth.Contract(CLDabi, CLDcontractAddress, window.web3);
+            SignupContract = new window.web3.eth.Contract(flexABI, FlexContractAddress, window.web3);
         }
         await getID();                                                                                              
         if (netID != 61){
