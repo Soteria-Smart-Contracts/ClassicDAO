@@ -628,7 +628,9 @@ a.actionname.staking{
 }
 
 .NiceButton{
-    
+    background-color: #05af33;
+    font-size: medium;
+
 }
 
 .wallet.middle{
