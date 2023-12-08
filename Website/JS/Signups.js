@@ -118,6 +118,8 @@ async function SignUp(){
     await SignupContract.methods.signUp().send({from: account, gas: gas});
 }
 
+async 
+
 function removeOverlay(){
     document.getElementById('overlay').style.display = "none";
     document.body.style.overflow = "auto";
