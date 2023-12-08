@@ -117,6 +117,7 @@ async function getID(){
 async function SignUp(){
     let gas = await SignupContract.methods.signUp().estimateGas({from: account});
     await SignupContract.methods.signUp().send({from: account, gas: gas});
+    location.reload();
 }
 
 async function CheckSignUp(){
