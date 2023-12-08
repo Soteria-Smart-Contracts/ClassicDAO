@@ -1,5 +1,6 @@
 let LoggedIn = false;
-let 
+let netID = 0;
+let account;
 
 loginWithEth();
 
