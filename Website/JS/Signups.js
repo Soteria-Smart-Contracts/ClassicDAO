@@ -1,5 +1,5 @@
-SignupAddress = "0x3e2e2c7c4b4c4e1d6c4e5c4e5c4e5c4e5c4e5c4e";
-
+let SignupAddress = "0x7cb26f4DC1D293670c1B2eEC16942f1bF259416C";
+let 
 
 async function loginWithEth(){
     if(window.ethereum){
