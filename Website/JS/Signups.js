@@ -1,4 +1,5 @@
 let LoggedIn = false;
+let 
 
 loginWithEth();
 
