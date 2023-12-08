@@ -107,3 +107,10 @@ async function loginWithEth(){
         alert("No ETHER Wallet available")
     }
 }
+
+async function getID(){
+    let idhex = web3.eth._provider.chainId;
+    netID = parseInt(idhex, 16);
+
+    return(netID);
+}
