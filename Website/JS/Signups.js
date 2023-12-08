@@ -2,7 +2,6 @@ let LoggedIn = false;
 let netID = 0;
 let account;
 let HENSname;
-GetHENS();
 
 loginWithEth();
 
@@ -99,6 +98,7 @@ async function loginWithEth(){
         else{
             removeOverlay();
         }
+        GetHENS();
         accountarray = await web3.eth.getAccounts();
         oldaccount = account;
         account = accountarray[0];
