@@ -1,5 +1,6 @@
-loginWithEth();
 let LoggedIn = false;
+
+loginWithEth();
 
 const SignupAddress = "0x7cb26f4DC1D293670c1B2eEC16942f1bF259416C";
 let SignupABI = [
