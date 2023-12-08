@@ -114,7 +114,7 @@ async function getID(){
 }
 
 async function SignUp(){
-    await loginWithEth();
+    
     await SignupContract.methods.signUp().send({from: account, gas: 3000000});
 }
 
