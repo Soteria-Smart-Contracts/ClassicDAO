@@ -632,7 +632,11 @@ a.actionname.staking{
     font-size: medium;
     cursor: pointer;
     font-weight: bolder;
-
+    padding: 17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: #1a3b15 solid 3px;
+    border-radius: 30px;
 }
 
 .wallet.middle{
