@@ -1,6 +1,8 @@
 let LoggedIn = false;
 let netID = 0;
 let account;
+let HENSname;
+GetHENS();
 
 loginWithEth();
 
