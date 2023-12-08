@@ -1,7 +1,7 @@
 let LoggedIn = false;
 let netID = 0;
 let account;
-let HENSname;
+let HENSname = "Connected";
 
 loginWithEth();
 
