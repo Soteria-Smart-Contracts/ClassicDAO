@@ -101,7 +101,7 @@ async function loginWithEth(){
         accountarray = await web3.eth.getAccounts();
         oldaccount = account;
         account = accountarray[0];
-        document.getElementById('WalletB').innerText = "Conected";
+        document.getElementById('WalletB').innerText = "Connected";
         UpdateUnclaimed();
     } else {
         alert("No ETHER Wallet available")
@@ -118,13 +118,4 @@ async function getID(){
 function removeOverlay(){
     document.getElementById('overlay').style.display = "none";
     document.body.style.overflow = "auto";
-}
-
-async function GetHENS(){
-    HENSname = await hens.js.getNameOfOwner(account)
-    if(HENSname == ''){
-        HENSname = "Connected"
-    }
-
-    console.log("If there is an error above, its normal and not a problem, try catch does not work for Metamask errors")
 }
