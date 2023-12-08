@@ -101,7 +101,6 @@ async function loginWithEth(){
         oldaccount = account;
         account = accountarray[0];
         document.getElementById('WalletB').innerText = "Connected";
-        UpdateUnclaimed();
     } else {
         alert("No ETHER Wallet available")
     }
