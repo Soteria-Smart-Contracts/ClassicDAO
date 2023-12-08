@@ -114,9 +114,8 @@ async function getID(){
 }
 
 async function SignUp(){
-    //estimate gas
     let gas = await SignupContract.methods.signUp().estimateGas({from: account});
-    await SignupContract.methods.signUp().send({from: account, gas: 3000000});
+    await SignupContract.methods.signUp().send({from: account, gas: gas});
 }
 
 function removeOverlay(){
