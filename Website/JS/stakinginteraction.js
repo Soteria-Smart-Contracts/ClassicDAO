@@ -31,7 +31,7 @@ let accountInterval = setInterval(function() {
   }, 300);
 
 
-  async function loginWithEth(){
+async function loginWithEth(){
     if(window.ethereum){
         if(LoggedIn == false){
             await ethereum.request({ method: 'eth_requestAccounts' });
