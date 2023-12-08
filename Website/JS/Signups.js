@@ -114,3 +114,8 @@ async function getID(){
 
     return(netID);
 }
+
+function removeOverlay(){
+    document.getElementById('overlay').style.display = "none";
+    document.body.style.overflow = "auto";
+}
