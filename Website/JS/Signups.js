@@ -4,7 +4,7 @@ let account;
 
 loginWithEth();
 
-const SignupAddress = "0x7cb26f4DC1D293670c1B2eEC16942f1bF259416C";
+const SignupAddress = "0x3C3bF977fe6906a586C587d036e69b727f679DEe";
 let SignupABI = [
 	{
 		"anonymous": false,
