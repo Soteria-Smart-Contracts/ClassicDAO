@@ -100,9 +100,6 @@ async function loginWithEth(){
         accountarray = await web3.eth.getAccounts();
         oldaccount = account;
         account = accountarray[0];
-        if(oldaccount != account){
-            await UpdateDetails();
-        }
         document.getElementById('WalletB').innerText = HENSname;
         UpdateUnclaimed();
     } else {
