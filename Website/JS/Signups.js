@@ -98,11 +98,10 @@ async function loginWithEth(){
         else{
             removeOverlay();
         }
-        GetHENS();
         accountarray = await web3.eth.getAccounts();
         oldaccount = account;
         account = accountarray[0];
-        document.getElementById('WalletB').innerText = HENSname;
+        document.getElementById('WalletB').innerText = "Conected";
         UpdateUnclaimed();
     } else {
         alert("No ETHER Wallet available")
