@@ -123,7 +123,7 @@ async function CheckSignUp(){
     if (signedup == true){
         document.getElementById('SignUpB').innerText = "Already signed up!";
         //IsSignedUp html id set to "Signed Up!"
-        document.getElementById('IsSignedUp').innerText = true;
+        document.getElementById('IsSignedUp').innerText = "Signed Up!";
     }
 }
 
