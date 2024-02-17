@@ -31,13 +31,40 @@
                     <a>(Signups are on ETC mainnet)</a>
                     <br>
                     
-                    <a id="SignUpB" class="NiceButton">Sign Ups Closed!</a> <!-- Added button -->
+                    <div id="Countdown" style="text-align: center;"></div> <!-- Countdown placeholder -->
 
                     <br>
-                    <h3 style="color: #06d53d; ">Signup status: <a id="IsSignedUp">Not Signed up!</a></h3>
-                    
+                    <h3 style="color: #06d53d;">Signup status: <a id="IsSignedUp">Not Signed up!</a></h3>
+                </div>
 
-            <h4 style="text-align: center; color: white;">As part of our mission to bring Ethereum Classic the best possible DAO experience, we will be testing our version one protocol and frontend on the Mordor testnet begining December 15! Participants will be able to join the test as it is ongoing, but for those who are looking to provide us with comprehensive feeback, we reccomend you sign up ahead of time to save time and allow us to gauge interest!</h3>
+                <script>
+                    // Set the countdown date to February 29, 2024
+                    var countdownDate = new Date("February 29, 2024 00:00:00").getTime();
+
+                    // Update the countdown every second
+                    var countdownInterval = setInterval(function() {
+                        // Get the current date and time
+                        var now = new Date().getTime();
+
+                        // Calculate the remaining time
+                        var timeRemaining = countdownDate - now;
+
+                        // Calculate days, hours, minutes, and seconds
+                        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                        // Display the countdown
+                        document.getElementById("Countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                        // If the countdown is finished, display a message
+                        if (timeRemaining < 0) {
+                            clearInterval(countdownInterval);
+                            document.getElementById("Countdown").innerHTML = "Countdown expired";
+                        }
+                    }, 1000);
+                </script>
         </div>
         <br><br>
 
