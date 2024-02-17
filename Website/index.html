@@ -17,6 +17,8 @@
 <body>
  <nav>
 
+    <div id="countdown"></div>
+
     
     
     <div id="overlay" class="overlay">
@@ -36,4 +38,32 @@
         <a class="footertext" target=”_blank” href="https://docdro.id/Le8sKd3">Whitepaper</a> | <a class="footertext" target=”_blank” href="https://twitter.com/ClassicDao">Twitter</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/address/0x3C3bF977fe6906a586C587d036e69b727f679DEe">Signup Contract</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/token/0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c/token-holders">CLD Contract</a>
     </div>
 </footer>
+<script>
+    // Set the date and time for the countdown
+    var countDownDate = new Date("February 29, 2024 15:00:00").getTime();
+
+    // Update the countdown every 1 second
+    var countdown = setInterval(function() {
+        // Get the current date and time
+        var now = new Date().getTime();
+
+        // Calculate the time remaining
+        var timeRemaining = countDownDate - now;
+
+        // Calculate days, hours, minutes, and seconds
+        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        // Display the countdown
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the countdown is finished, display a message
+        if (timeRemaining < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "Countdown is over!";
+        }
+    }, 1000);
+</script>
 </html>
