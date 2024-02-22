@@ -230,205 +230,71 @@
 
 
   <div class="body" style="flex-grow: 1; background-color: #000;">
-    <h1 style="font-size: 72px; font-family: GTWalsheim, bold; color: #fff; align-self: center; text-align: center;">Current Proposal</h1>
+    <div style="display: flex; margin: 0 150px; height: 100%;  flex-direction: column; align-items: center;">
+    <h1 style="font-size: 72px; font-family: GTWalsheim, bold; color: #fff; align-self: center; text-align: center;">Proposals of all time</h1>
      
-    <div style="display: flex; justify-content: space-between; margin: 0 150px;">
+    
 
-      <div style="flex: 3; margin-right: 10px;">
-      <div class="proposalMain" style="border: 2px solid #fff; padding: 40px; border-radius: 16px;">
-        <h1 style="font-size: 36px; margin-top: 0px; margin-bottom: 20px; font-family: GTWalsheim, bold; color: #fff;">Ratification Poll for MIP Amendment Subproposals - Article 1 Edits (MIP102c2-SP17)</h1>
-        <p style="font-size: 17px; color: #6e6e6e;">Description</p>
-        <p style="font-size: 20px; margin-top: 20px; font-family: GTWalsheim, bold; color: #fff;">PSM-GUSD-A Debt Ceiling to zero and removing from AutoLineSetting PSM-GUSD-A Debt Ceiling to zero and removing from AutoLineSetting PSM-GUSD-A Debt Ceiling to zero and removing from AutoLine  Coinbase Custody (RWA014-A) Debt Ceiling increase, WBTC-A, WBTC-B, and WBTC-C Stability Fee changes, SBE parameter changes, RWA Foundation Dao Resolution, Andromeda Legal Expenses, Cancel Vesting Streams for Steakhouse and TechOps, Set up Ecosystem Facilitator Vesting Streams and Spark proxy-spell</p>
-      </div>
-
-      <div class="proposalResults" style="border: 2px solid #fff; padding: 40px; border-radius: 16px; margin-top: 20px;">
-        <h1 style="font-size: 36px; margin-top: 0px; margin-bottom: 20px; font-family: GTWalsheim, bold; color: #fff;">Current results</h1>
-      
-        <div style="display: flex; justify-content: space-between;">
-        <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff;">Yes</span>
-        <span style="font-size: 20px; font-family: GTWalsheim, bold; color: #fff;">30%</span>
+    <div style="display: flex; margin-top: 40px; width: 80%;">
+        <input placeholder="Search..." class="rangeIncentive" id="newNickname" style="margin-right: 10px; flex: 5; box-sizing: border-box; padding-left: 40px; font-size: 20px; height: 50px; background-color: rgb(0, 0, 0); border: 2px solid white; border-radius: 10px; color: white; background-size: 20px; background-image: url('public/external/icons8-search.svg'); background-repeat: no-repeat; background-position: 10px center;">
+    <div class="menu-container-search" style="position: relative; display: inline-block; width: fit-content;">
+        <button class="view_button" id="search_button" style="height: 50px; margin-top: 0; flex: 1;">All Proposals</button>
+        <div class="dropdown-menu-search" style="display: none; background-color: white; color: black; position: absolute; left: 0; padding: 10px; margin-top: 5px; width: 100%; border-radius: 10px; box-sizing: border-box;">
+            <a onclick="updateButton(this)" style="text-decoration: none; color: black; display: flex; justify-content: center; align-items: center; font-size: 18px; height: 30px; margin-bottom: 10px; margin-top: 5px;">&#10004; All Proposals</a>
+            <a onclick="updateButton(this)" style="text-decoration: none; color: black; display: flex; justify-content: center; align-items: center; font-size: 18px; height: 30px; margin-bottom: 10px; margin-top: 5px;">Past Proposals</a>
+            <a onclick="updateButton(this)" style="text-decoration: none; color: black; display: flex; justify-content: center; align-items: center; font-size: 18px; height: 30px; margin-bottom: 5px; margin-top: 10px;">Future Proposals</a>
         </div>
-        <div class="progress-bar">
-          <div class="progress-bar-fill" style="width: 30%;"></div>
-        </div>
-        <span style="font-size: 20px; font-family: GTWalsheim, bold; color: #fff;">123624353241 CLD</span>
-
-        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
-          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff;">No</span>
-          <span style="font-size: 20px; font-family: GTWalsheim, bold; color: #fff;">70%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress-bar-fill red" style="width: 70%;"></div>
-          </div>
-          <span style="font-size: 20px; font-family: GTWalsheim, bold; color: #fff;">123624353241 CLD</span>
-
-      </div>
     </div>
-    
 
+    <script>
+    function updateButton(element) {
+        document.getElementById('search_button').innerText = element.innerText.replace('✔ ', '');
 
-      <div style="flex: 1; margin-left: 10px;">
-      <div class="proposalDetails">
-      <div style="border: 2px solid #fff; padding: 40px; border-radius: 16px;">
-        <h1 style="font-size: 28px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">Proposal details</h1>
-    
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
-          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; width: 150px;">Author</span>
-    
-          <div style="display: flex; align-items: center;">
-            <img src="public/external/tq_54scrkwlyz-jmz-200h.png" alt="Icon" style="width: 40px; height: 40px; margin-left: 10px;">
-            <span style="font-size: 22px; color: #fff; font-family: GTWalsheim, regular; margin-left: 20px;">0xB5...9831</span>
-          </div>
-        </div>
-    
-    
+        var options = document.querySelectorAll('.dropdown-menu-search a');
+        options.forEach(function(option) {
+            option.innerText = option.innerText.replace('✔ ', '');
+        });
 
-        <div style="display: flex; align-items:normal; justify-content: space-between; margin-top: 20px;">
-          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; width: 150px;">Published</span>
-          <span style="font-size: 22px; color: #fff; font-family: GTWalsheim, regular; margin-left: 20px;">Feb 17, 2024 02:52</span>
-        </div>
-    
-        <div style="display: flex; align-items: normal; justify-content: space-between; margin-top: 20px;">
-          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; width: 150px;">Voting ends</span>
-          <span style="font-size: 22px; color: #fff; font-family: GTWalsheim, regular; margin-left: 20px;">Feb 17, 2024 02:52</span>
-        </div>
-    
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
-          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; width: 150px;">Proposal ID</span>
-          <span style="font-size: 22px; color: #fff; font-family: GTWalsheim, regular; margin-left: 20px;">2309646343</span>
-        </div>
-    
-    
-      </div>
-      </div>
-    
-      <style>
-        .button-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
-
-        .view_button {
-          min-width: calc(50% - 10px); 
-          max-width: 100%;
-          flex: 1;
-          box-sizing: border-box;
-          margin-top: 20px;
-        }
-        .view_button:nth-child(even) {
-          margin-left: 20px;
-        }
-
-      </style>
-
-      <div class="proposalVote" style="margin-top: 20px;">
-        <div style="border: 2px solid #fff; padding: 40px; border-radius: 16px;">
-          <h1 style="font-size: 28px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">Should this proposal be approved?</h1>
-
-          <div class="button-container">
-            <button class="view_button" id="vote_button_yes" >Yes</button>
-            <button class="view_button" id="vote_button_no" style="background-color: red;">No</button>
-            <button class="view_button" id="vote_button_maybe" style="display: none;">Maybe</button>
-            <button class="view_button" id="vote_button4" style="display: none;">Don't Know</button>
-            <button class="view_button" id="vote_button5" style="display: none;">Abstain</button>
-          </div>
-
-        </div>
-      </div>
-
-      </div>
-
-      
+        element.innerText = '✔ ' + element.innerText;
+    }
+    </script>
 
     </div>
-    
-    <div style="display: flex; justify-content: flex-end; margin: 0 150px; margin-top: 60px;">
-      <a href="PastAndUpcomingProposals.html" style="text-decoration: none; color: inherit; outline: none;">
-    <button id="upcomingProposals" class="buttonConnect" style="height: 50px; width: 175px; font-size: 18px;">Propsal Queue</button>
-  </a>
-  </div>
+    <div style="margin-top:10vh; width: 80%; box-sizing: border-box;">
+        <div style="display: flex; justify-content: space-between; padding: 20px; color: #fff; box-sizing: border-box;">
+            <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Title</div>
+            <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">ID</div>
+            <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Type</div>
+            <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Timeline</div>
+            <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;"></div>
+        </div>
+        <div style="border:1.81818px solid rgb(255, 255, 255);border-radius:8px;background:rgb(0, 0, 0);box-sizing: border-box;">
+            <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
+                <div style="flex: 1;">Create new des...</div>
+                <div style="flex: 1;">3241345241234</div>
+                <div style="flex: 1;">
+                    <button style="width: auto; background-color: #16ECD3; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>Active</button>
+                </div>
+                <div style="flex: 1;">12/27 17:00 ~ 01/06 17:00</div>
+                <div style="flex: 1; display: flex; justify-content: flex-end;">
+                    <a href="CurrentVoting.html" style="text-decoration: none; color: inherit; outline: none;">
+                    <button class="view_more_button">View more</button>             
+                    </a>
+                </div>
+            </div>
+            <div style="height:60px; box-sizing: border-box;">
+                <div style="display:flex;align-items:center;justify-content:center;width: 100%;height:60px;box-sizing: border-box;">
+                    <div style="height:60px; box-sizing: border-box; display: flex; justify-content: center; align-items: center; color: #fff;">
+                        <p>Page 1 of 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
   </div>
 
-
-
-
-  <style>
-    .slider {
-      width: 100%;
-    }
-  
-    .slider-marks {
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      width: 100%;
-      padding: 0 10px;
-    }
-
-    .rangeIncentive::-webkit-inner-spin-button,
-    .rangeIncentive::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-
-    .rangeIncentive {
-      -moz-appearance: textfield;
-    }
-  </style>
-
-<div style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;" id="overlay">
-  <div style=" color: #fff; width: 80%; max-width: 600px; border: 2px solid #fff; border-radius: 16px; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #000; padding: 40px; z-index: 3; cursor: auto;" class="popup">
-    <h2 style="margin-top: 0; margin-bottom: 0; text-align: center;">You are holding XXXXX CLD tokens</h2>
-    <p style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0; text-align: center;">Choose a token amount to incentivize</p>
-    <!-- <div style="position: absolute; right: 20px; top: 20px; cursor: pointer;" id="close-button">X</div> -->
-    <div style="width: 100%; position: relative; margin-top: 20px;">
-      <input type="range" min="0" max="100" value="0" class="slider" id="rangeIncentive">
-      <div class="slider-marks">
-        <span style="margin-left: -5px;">0</span>
-        <span style="margin-right: -2px;">25</span>
-        <span style="margin-right: -4px;">50</span>
-        <span style="margin-right: -14px;">75</span>
-        <span style="margin-right: 10px;">100</span>
-      </div>
-    </div>
-    <input type="number" min="0"  placeholder="Enter a amount of tokens" class="rangeIncentive" id="amountInput" style="padding-left: 10px; width: 100%; font-size: 20px; height: 35px; margin-top: 50px; background-color: rgb(0,0,0); border: 2px solid white; border-radius: 10px; color: white;">
-     
-    <p style="font-size: 16px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0; text-align: center;">Minimal amount for voting is XXX CLD</p>
-
-    <div style="display: flex; justify-content: space-between; margin-top: 30px;">
-      <button id="close-button" class="buttonConnect" style="height: 50px; width: 150px; font-size: 18px;">Cancel</button>
-      <button id="Submit-button" class="buttonConnect" style="height: 50px; width: 150px; font-size: 18px; margin-right: -5px;">Submit</button>
-      </div>
-    </div>
-</div>
-
-
-<script>
- var slider = document.getElementById("rangeIncentive");
-  var amountInput = document.getElementById("amountInput");
-
-  slider.oninput = function() {
-    amountInput.value = this.value;
-  }
-
-  document.querySelectorAll('.view_button').forEach(button => {
-    button.addEventListener('click', () => {
-      document.getElementById('overlay').style.display = 'block';
-    });
-  });
-
-  document.getElementById('close-button').addEventListener('click', () => {
-    document.getElementById('overlay').style.display = 'none';
-  });
-
-  document.getElementById('overlay').addEventListener('click', (event) => {
-    if(event.target === event.currentTarget) {
-      document.getElementById('overlay').style.display = 'none';
-    }
-  });
-</script>
 
 
 
@@ -473,7 +339,7 @@
 
 
 
-  <script>
+<script>
     function getDistanceFromElement(event, element) {
         var rect = element.getBoundingClientRect();
         var dx = Math.max(rect.left - event.clientX, 0, event.clientX - rect.right);
@@ -500,6 +366,18 @@
 
     document.querySelector('.menu-container-vote').addEventListener('mouseout', function(event) {
         var dropdown = document.querySelector('.dropdown-menu-vote');
+        if (getDistanceFromElement(event, dropdown) > 5) { 
+            dropdown.style.display = 'none';
+        }
+    });
+
+    document.querySelector('.menu-container-search').addEventListener('mouseover', function() {
+        var dropdown = document.querySelector('.dropdown-menu-search');
+        dropdown.style.display = 'block';
+    });
+
+    document.querySelector('.menu-container-search').addEventListener('mouseout', function(event) {
+        var dropdown = document.querySelector('.dropdown-menu-search');
         if (getDistanceFromElement(event, dropdown) > 5) { 
             dropdown.style.display = 'none';
         }
