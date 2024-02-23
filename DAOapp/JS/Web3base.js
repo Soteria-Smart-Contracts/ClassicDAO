@@ -49,7 +49,7 @@ async function GetHENS(){
     console.log("If there is an error above, its normal and not a problem, try catch does not work for Metamask errors")
 
     //see if the current page is the profile page which is /profile.html or /profile, if it is display the HENS name at the nickname id
-    if(window.location.pathname.includes('/profile')) {
+    if(window.location.pathname.includes('/Profile')) {
         document.getElementById("nickname").innerHTML = HENSname;
     }
 
