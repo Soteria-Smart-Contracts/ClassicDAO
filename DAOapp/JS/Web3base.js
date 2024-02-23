@@ -33,4 +33,11 @@ async function getID(){
     return(netID);
 }
 
-//trim the users address to the first 5 and last 5 characters then display it at 
+//trim the users address to the first 5 and last 5 characters then display it at buttonConnect id
+function displayAddress(){
+    if(LoggedIn == true){
+        let address = account;
+        let shortAddress = address.substring(0, 5) + '...' + address.substring(address.length - 5, address.length);
+        document.getElementById("buttonConnect").innerHTML = shortAddress;
+    }
+}
