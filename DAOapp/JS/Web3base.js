@@ -32,3 +32,5 @@ async function getID(){
     netID = await web3.eth.getChainId();
     return(netID);
 }
+
+//trim the users address to the first 5 and last 5 characters then display it at 
