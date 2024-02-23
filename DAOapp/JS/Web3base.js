@@ -58,6 +58,7 @@ async function GetHENS(){
     if(window.location.pathname.includes('/Profile')) {
         document.getElementById("nickname").innerHTML = HENSname;
         //set the address id element to the short users address found in buttonConnect
+        
         document.getElementById("address").innerHTML = document.getElementById("buttonConnect").innerHTML;
     }
 
