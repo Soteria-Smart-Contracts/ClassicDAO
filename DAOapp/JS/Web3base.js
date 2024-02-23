@@ -45,6 +45,7 @@ function displayAddress(){
 }
 
 async function GetHENS(){
+    HENSname = account;
     HENSname = await hens.js.getNameOfOwner(account)
     console.log("If there is an error above, its normal and not a problem, try catch does not work for Metamask errors")
 
