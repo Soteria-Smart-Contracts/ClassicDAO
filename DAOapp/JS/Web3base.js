@@ -40,9 +40,8 @@ async function getID(){
 function displayAddress(){
     if(LoggedIn == true){
         let address = account;
-        if (HENSname === account) {
-            let shortAddress = address.substring(0, 7) + '...' + address.substring(address.length - 3, address.length);
-            document.getElementById("buttonConnect").innerHTML = shortAddress;
+        let shortAddress = address.substring(0, 7) + '...' + address.substring(address.length - 3, address.length);
+        document.getElementById("buttonConnect").innerHTML = shortAddress;
         } else {
             document.getElementById("buttonConnect").innerHTML = HENSname;
         }
