@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'GTWalsheim';
-    src: url('./fonts/GT\ WALSHEIM\ REGULAR-NORMAL-400-100.TTF');
+    src: url('/fonts/GT\ WALSHEIM\ REGULAR-NORMAL-400-100.TTF');
 }
 
 @font-face {
     font-family: 'GTWalsheim2';
-    src: url('fonts/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf');
+    src: url('./fonts/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf');
 }
 
 .view_button, .plus, .view_button2 {
