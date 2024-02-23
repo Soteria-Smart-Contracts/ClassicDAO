@@ -49,7 +49,7 @@ async function GetHENS(){
     HENSname = await hens.js.getNameOfOwner(account)
     console.log("If there is an error above, its normal and not a problem, try catch does not work for Metamask errors")
 
-    //if the hens name is not 
+    //if the hens name is not account, display the hens name at the 
 
     //see if the current page is the profile page which is /profile.html or /profile, if it is display the HENS name at the nickname id
     if(window.location.pathname.includes('/Profile')) {
