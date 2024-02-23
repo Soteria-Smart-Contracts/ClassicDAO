@@ -45,13 +45,11 @@ function displayAddress(){
 }
 
 async function GetHENS(){
-    //see if the current page is the profile page which is /profile.html or /profile, if it is display the HENS name at the nickname id
-    
-
     HENSname = await hens.js.getNameOfOwner(account)
     if(HENSname == ''){
         HENSname = "Connected"
     }
+    
 
     console.log("If there is an error above, its normal and not a problem, try catch does not work for Metamask errors")
 }
