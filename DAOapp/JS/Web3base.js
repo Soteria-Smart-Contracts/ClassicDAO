@@ -45,7 +45,7 @@ function displayAddress(){
 }
 
 async function GetHENS(){
-    //see if the current page is the profile page which is profile.html or 
+    //see if the current page is the profile page which is /profile.html or /profile
     HENSname = await hens.js.getNameOfOwner(account)
     if(HENSname == ''){
         HENSname = "Connected"
