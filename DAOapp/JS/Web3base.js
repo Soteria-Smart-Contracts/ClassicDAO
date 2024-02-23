@@ -52,8 +52,9 @@ async function GetHENS(){
 
     if(HENSname != account){
         document.getElementById("buttonConnect").innerHTML = HENSname;
-        shortAddress = account.substring(0, 7) + '...' + account.substring(account.length - 3, account.length);
     }
+
+    shortAddress = account.substring(0, 7) + '...' + account.substring(account.length - 3, account.length);
 
     //see if the current page is the profile page which is /profile.html or /profile, if it is display the HENS name at the nickname id
     if(window.location.pathname.includes('/Profile')) {
