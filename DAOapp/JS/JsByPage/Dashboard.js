@@ -7,6 +7,6 @@ async function runCodeWhenLoggedIn() {
     console.log(CurrentProposalInfo);
 }
 
-
+async function Load
 
 runCodeWhenLoggedIn();
