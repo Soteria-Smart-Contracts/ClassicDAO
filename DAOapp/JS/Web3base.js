@@ -36,7 +36,7 @@ async function getID(){
     return(netID);
 }
 
-async function LoadCurrentProposal(){
+async function GetCurrentProposal(){
     let OngoingProposal = await DAOvoting.methods.CurrentOngoingVote().call();
     OngoingProposalID = parseInt(OngoingProposal.toString());
     OngoingProposal = [];
@@ -45,7 +45,7 @@ async function LoadCurrentProposal(){
     OngoingProposal.push(await DAOcore.methods.ProposalInfos(OngoingProposalID).call());
     OngoingProposal.push(await DAOvoting.methods.VotingInstances(OngoingProposalID).call());
 
-    console.log(OngoingProposal);
+    return OngoingProposal;
 }
 
 async function GetHENS(){
