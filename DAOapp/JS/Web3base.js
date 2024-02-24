@@ -1,5 +1,4 @@
 const contractAddress = "0xf5c9e57e177B4F5CCfCb13b18e4154774E917401";
-const ABI = window.abi;
 let HENSname;
 let account;
 let netID;
@@ -19,7 +18,7 @@ async function loginWithEth(){
             return("Failed to connect")
         }
         accountarray = await web3.eth.getAccounts();
-        contract = new window.web3.eth.Contract(ABI, contractAddress);
+        contract = new window.web3.eth.Contract(window.CoreABI, contractAddress);
         account = accountarray[0];
         console.log('Logged In')
         LoggedIn = true;
