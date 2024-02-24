@@ -37,7 +37,7 @@ async function getID(){
 }
 
 //testing code remove later
-LoadCurrentProposal();
+
 
 //testing code remove later
 
