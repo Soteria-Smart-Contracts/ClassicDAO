@@ -36,6 +36,11 @@ async function getID(){
     return(netID);
 }
 
+//testing code remove later
+LoadCurrentProposal();
+
+//testing code remove later
+
 async function LoadCurrentProposal(){
     let OngoingID = await DAOvoting.methods.CurrentOngoingVote().call();
 
