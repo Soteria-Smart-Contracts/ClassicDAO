@@ -1,4 +1,4 @@
-const contractAddress = "0xf5c9e57e177B4F5CCfCb13b18e4154774E917401";
+const contractAddress = "0xb92b8E1CEcCbDc12bc324aaeBA616BA0103513F9";
 let HENSname;
 let account;
 let netID;
