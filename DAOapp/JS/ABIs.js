@@ -486,3 +486,5 @@ window.CoreABI = [
 		"type": "receive"
 	}
 ];
+
+window.
