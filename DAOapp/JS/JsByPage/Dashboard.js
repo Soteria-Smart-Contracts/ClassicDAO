@@ -1,3 +1,3 @@
 loginWithEth();
 
-CurrentProposalInfo = GetCurrentProposal();
+CurrentProposalInfo = await GetCurrentProposal();
