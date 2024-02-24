@@ -8,7 +8,7 @@ async function runCodeWhenLoggedIn() {
 }
 
 async function LoadDashboard() {
-    document.getElementById("HeaderProposalID").innerText 
+    document.getElementById("HeaderProposalID").innerText = CurrentProposalInfo[0].ID;
 }
 
 runCodeWhenLoggedIn();
