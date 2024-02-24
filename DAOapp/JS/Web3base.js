@@ -39,7 +39,7 @@ async function getID(){
 async function LoadCurrentProposal(){
     let OngoingID = await DAOvoting.methods.CurrentOngoingVote().call();
 
-    
+        
 
     console.log(OngoingID);
 }
