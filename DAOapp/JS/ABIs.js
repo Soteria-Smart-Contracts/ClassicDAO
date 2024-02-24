@@ -487,4 +487,4 @@ window.CoreABI = [
 	}
 ];
 
-window.
+window.VotingABI = 
