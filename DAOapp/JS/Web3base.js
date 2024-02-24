@@ -63,5 +63,4 @@ async function GetHENS(){
         
         document.getElementById("address").innerHTML = shortAddress;
     }
-
 }
