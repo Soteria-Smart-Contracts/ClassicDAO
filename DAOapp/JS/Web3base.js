@@ -41,7 +41,7 @@ async function LoadCurrentProposal(){
 
     OngoingID = OngoingID.toString();
 
-    
+    OngoingID = OngoingID + OngoingID;
 
     console.log(OngoingID);
 }
