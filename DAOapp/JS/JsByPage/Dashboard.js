@@ -4,11 +4,12 @@ async function runCodeWhenLoggedIn() {
     }
 
     CurrentProposalInfo = await GetCurrentProposal();
+    LoadDashboard();
     console.log(CurrentProposalInfo);
 }
 
 async function LoadDashboard() {
-    document.getElementById("HeaderProposalID").innerText = CurrentProposalInfo[0].ID;
+    document.getElementById("HeaderProposalID").innerText = CurrentProposalInfo[2].ID;
 }
 
 runCodeWhenLoggedIn();
