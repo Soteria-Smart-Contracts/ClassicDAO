@@ -8,7 +8,7 @@ async function runCodeWhenLoggedIn() {
 }
 
 async function LoadDashboard() {
-    document
+    document.getElementById("")
 }
 
 runCodeWhenLoggedIn();
