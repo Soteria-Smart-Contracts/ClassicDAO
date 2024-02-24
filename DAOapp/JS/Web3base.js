@@ -37,7 +37,7 @@ async function getID(){
 }
 
 async function LoadCurrentProposal(){
-    
+    let 
 }
 
 async function GetHENS(){
