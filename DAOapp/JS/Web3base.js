@@ -1,4 +1,4 @@
-const contractAddress = "0xb92b8E1CEcCbDc12bc324aaeBA616BA0103513F9";
+const CoreAddress = "0xb92b8E1CEcCbDc12bc324aaeBA616BA0103513F9";
 let HENSname;
 let account;
 let netID;
@@ -18,7 +18,7 @@ async function loginWithEth(){
             return("Failed to connect")
         }
         accountarray = await web3.eth.getAccounts();
-        DAOcore = new window.web3.eth.Contract(window.CoreABI, contractAddress);
+        DAOcore = new window.web3.eth.Contract(window.CoreABI, CoreAddress);
         account = accountarray[0];
         console.log('Logged In')
         LoggedIn = true;
