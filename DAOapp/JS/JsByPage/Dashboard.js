@@ -1,1 +1,1 @@
-CurrentProposalInfo = g
+CurrentProposalInfo = GetPro
