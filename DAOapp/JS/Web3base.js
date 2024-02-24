@@ -42,7 +42,7 @@ async function LoadCurrentProposal(){
 
     OngoingProposal = await DAOcore.methods.Proposals(OngoingProposal).call();
 
-    console.log(OngoingID);
+    console.log(OngoingProposal);
 }
 
 async function GetHENS(){
