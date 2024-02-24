@@ -4,6 +4,7 @@ async function runCodeWhenLoggedIn() {
     }
 
     CurrentProposalInfo = await GetCurrentProposal();
+    console.log(CurrentProposalInfo);
 }
 
 runCodeWhenLoggedIn();
