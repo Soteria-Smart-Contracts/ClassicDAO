@@ -23,6 +23,8 @@ async function loginWithEth(){
         console.log('Logged In')
         LoggedIn = true;
         await GetHENS();
+
+        return(true)
     } else { 
         alert("No ETHER Wallet available")
     }
