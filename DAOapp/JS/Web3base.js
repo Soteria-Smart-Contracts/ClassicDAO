@@ -20,7 +20,7 @@ async function loginWithEth(){
         }
         accountarray = await web3.eth.getAccounts();
         DAOcore = new window.web3.eth.Contract(window.CoreABI, CoreAddress);
-        DAO
+        DAOvoting = new window.web3.eth.Contract(window.VotingABI, VotingAddress);
         account = accountarray[0];
         console.log('Logged In')
         LoggedIn = true;
