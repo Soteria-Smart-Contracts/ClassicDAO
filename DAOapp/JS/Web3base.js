@@ -44,6 +44,8 @@ async function LoadCurrentProposal(){
 
     OngoingProposal.push(await DAOcore.methods.ProposalInfos(OngoingProposalID).call());
 
+    OngoingProposal.push(await DAOcore.methods.ProposalVotes(OngoingProposalID).call());
+
     console.log(OngoingProposal);
 }
 
