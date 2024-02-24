@@ -1,4 +1,6 @@
 
 
 
-CurrentProposalInfo = await GetCurrentProposal();
+if (LoggedIn) {
+    CurrentProposalInfo = await GetCurrentProposal();
+}
