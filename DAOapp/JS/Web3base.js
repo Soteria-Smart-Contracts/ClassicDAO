@@ -42,7 +42,7 @@ async function LoadCurrentProposal(){
 
     OngoingProposal = await DAOcore.methods.Proposals(OngoingProposal).call();
 
-    OngoingProposal.push(await DAOvoting.methods.GetProposalVotes(OngoingProposal[0]).call());
+    OngoingProposal.push(await DAOcore.methods.GetProposalVotes(OngoingProposal[0]).call());
 
     console.log(OngoingProposal);
 }
