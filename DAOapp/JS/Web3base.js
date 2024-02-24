@@ -23,7 +23,6 @@ async function loginWithEth(){
         account = accountarray[0];
         console.log('Logged In')
         LoggedIn = true;
-        displayAddress();
         await GetHENS();
     } else { 
         alert("No ETHER Wallet available")
@@ -45,6 +44,9 @@ async function GetHENS(){
     shortAddress = account.substring(0, 7) + '...' + account.substring(account.length - 3, account.length);
     if(typeof HENSname !== 'undefined'){
         document.getElementById("buttonConnect").innerHTML = HENSname;
+    }
+    else{
+        document.getElementById("buttonConnect").innerHTML = shortAddress;
     }
 
     //see if the current page is the profile page which is /profile.html or /profile, if it is display the HENS name at the nickname id
