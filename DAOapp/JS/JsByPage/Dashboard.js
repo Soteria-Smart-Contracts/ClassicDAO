@@ -1,1 +1,1 @@
-CurrentProposalInfo = GetPro
+CurrentProposalInfo = GetCurrentProposal();
