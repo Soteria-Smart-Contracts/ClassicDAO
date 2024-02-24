@@ -34,7 +34,6 @@ async function getID(){
     return(netID);
 }
 
-
 async function GetHENS(){
     HENSname = account;
     HENSname = await hens.js.getNameOfOwner(account)
