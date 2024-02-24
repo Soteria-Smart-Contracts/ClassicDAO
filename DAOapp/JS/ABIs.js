@@ -1,4 +1,4 @@
-window.abi = [
+window.CoreABI = [
 	{
 		"inputs": [],
 		"stateMutability": "nonpayable",
