@@ -50,6 +50,7 @@ async function GetHENS(){
     HENSname = await hens.js.getNameOfOwner(account)
     console.log("If there is an error above, its normal and not a problem, try catch does not work for Metamask errors")
 
+    shortAddress = account.substring(0, 7) + '...' + account.substring(account.length - 3, account.length);
     if(HENSname != account){
         document.getElementById("buttonConnect").innerHTML = HENSname;
     }
