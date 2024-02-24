@@ -41,7 +41,7 @@ async function LoadCurrentProposal(){
 
     OngoingID = parseInt(OngoingID.toString());
 
-    console.log(OngoingID);
+    console.log(OngoingID + OngoingID);
 }
 
 async function GetHENS(){
