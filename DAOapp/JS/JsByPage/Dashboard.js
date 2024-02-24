@@ -9,7 +9,7 @@ async function runCodeWhenLoggedIn() {
 }
 
 async function LoadDashboard() {
-    document.getElementById("HeaderProposalID").innerText = (CurrentProposalInfo[2].ProposalID;
+    document.getElementById("HeaderProposalID").innerText = (CurrentProposalInfo[2].ProposalID).tostring();
 }
 
 runCodeWhenLoggedIn();
