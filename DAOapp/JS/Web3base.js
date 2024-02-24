@@ -37,7 +37,7 @@ async function getID(){
 }
 
 async function LoadCurrentProposal(){
-    let OngoingID = await DAOvo
+    let OngoingID = await DAOvoting.methods.o
 }
 
 async function GetHENS(){
