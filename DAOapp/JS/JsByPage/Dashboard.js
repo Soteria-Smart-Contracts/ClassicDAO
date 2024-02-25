@@ -14,7 +14,7 @@ async function LoadDashboard() {
     document.getElementById("HeaderProposer").innerText = (CurrentProposalInfo[0].Proposer).substring(0, 7) + '...' + (CurrentProposalInfo[0].Proposer).substring(account.length - 3, CurrentProposalInfo[0].Proposer);
     //HeaderMemo found as memo in 2nd array of CurrentProposalInfo
     document.getElementById("HeaderMemo").innerText = CurrentProposalInfo[1].Memo;
-    //
+    //HeaderTimeLeft id found in 
 }
 
 runCodeWhenLoggedIn();
