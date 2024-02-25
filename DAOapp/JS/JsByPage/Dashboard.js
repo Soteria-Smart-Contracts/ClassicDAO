@@ -28,5 +28,5 @@ function timeLeft(unixTime) {
     let hours = Math.floor(timeLeft / (60 * 60));
     timeLeft -= hours * 60 * 60;
     let minutes = Math.floor(timeLeft / 60);
-    return days + " days " + hours + " hours " + minutes + " minutes";
+    return days + " days " + hours + " hours";
 }
