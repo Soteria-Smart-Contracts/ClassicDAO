@@ -73,6 +73,7 @@ async function GetHENS(){
 }
 
 function timeLeft(unixTime) {
+    parseInt(OngoingProposal.toString())
     let timeLeft = unixTime - Math.floor(Date.now() / 1000);
     let days = Math.floor(timeLeft / (24 * 60 * 60));
     timeLeft -= days * 24 * 60 * 60;
