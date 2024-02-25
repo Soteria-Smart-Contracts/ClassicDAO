@@ -71,3 +71,13 @@ async function GetHENS(){
         document.getElementById("address").innerHTML = shortAddress;
     }
 }
+
+function timeLeft(unixTime) {
+    let timeLeft = unixTime - Math.floor(Date.now() / 1000);
+    let days = Math.floor(timeLeft / (24 * 60 * 60));
+    timeLeft -= days * 24 * 60 * 60;
+    let hours = Math.floor(timeLeft / (60 * 60));
+    timeLeft -= hours * 60 * 60;
+    let minutes = Math.floor(timeLeft / 60);
+    return days + " days " + hours + " hours";
+}
