@@ -1,4 +1,3 @@
-import { timeLeft } from './path/to/timeLeft'; // Add the import statement for the timeLeft function
 async function runCodeWhenLoggedIn() {
     while (!LoggedIn) {
         await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
