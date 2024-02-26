@@ -197,7 +197,7 @@
                 <div class="menu-container-vote" style="position: relative; display: inline-block;">
                   <button id="votingButton" class="button">Voting</button>
                   <div class="dropdown-menu-vote" style="display: none; background-color: white; color: black; position: absolute; right: 0; padding: 10px; margin-top: 5px; width: max-content; border-radius: 10px;">
-                    <a href="CurrentVoting.html" style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">Current</a>
+                    <a href="CurrentVote.html" style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">Current</a>
                     <a href="PastAndUpcomingProposals.html" style="text-decoration: none; color: black; display: block; margin-bottom: 5px; margin-bottom: 10px;">All</a>
                    </div>
                 </div>
@@ -231,7 +231,7 @@
 
 
   <div class="body" style="flex-grow: 1; background-color: #000;">
-    <h1 style="font-size: 72px; font-family: GTWalsheim, bold; color: #fff; align-self: center; text-align: center;">Current Proposal</h1>
+    <h1 style="font-size: 72px; font-family: GTWalsheim, bold; color: #fff; align-self: center; text-align: center;">Sales</h1>
      
     <div style="display: flex; justify-content: space-between; margin: 0 150px;">
 
@@ -243,25 +243,34 @@
       </div>
 
       <div class="proposalResults" style="border: 2px solid #fff; padding: 40px; border-radius: 16px; margin-top: 20px;">
-        <h1 style="font-size: 36px; margin-top: 0px; margin-bottom: 20px; font-family: GTWalsheim, bold; color: #fff;">Current results</h1>
+        <h1 style="font-size: 36px; margin-top: 0px; margin-bottom: 20px; font-family: GTWalsheim, bold; color: #fff;">Additional information</h1>
       
-        <div style="display: flex; justify-content: space-between;">
-        <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff;">Yes</span>
-        <span style="font-size: 20px; font-family: GTWalsheim, bold; color: #fff;">30%</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress-bar-fill" style="width: 30%;"></div>
-        </div>
-        <span style="font-size: 20px; font-family: GTWalsheim, bold; color: #fff;">123624353241 CLD</span>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
+          <span style="font-size: 26px; font-family: GTWalsheim, bold; color: #fff; flex: 1; text-align: left;">Total ETC Deposited</span>
 
-        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
-          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff;">No</span>
-          <span style="font-size: 20px; font-family: GTWalsheim, bold; color: #fff;">70%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress-bar-fill red" style="width: 70%;"></div>
-          </div>
-          <span style="font-size: 20px; font-family: GTWalsheim, bold; color: #fff;">123624353241 CLD</span>
+          <div style="display: flex; align-items: center;">
+            <img src="public/external/etherium.svg" alt="Icon" style="width: 36px; height: 36px; margin-left: 10px;">
+            <span style="font-size: 26px; color: #fff; font-family: GTWalsheim, regular; margin-left: 10px; flex: 1; text-align: right;">1,000,000</span>
+            </div>
+          
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
+          <span style="font-size: 26px; font-family: GTWalsheim, bold; color: #fff; flex: 1; text-align: left;">Total CLD available in this sale</span>
+
+          <div style="display: flex; align-items: center;">
+            <img src="public/external/cldblue.ico" alt="Icon" style="width: 36px; height: 36px; margin-left: 10px;">
+            <span style="font-size: 26px; color: #fff; font-family: GTWalsheim, regular; margin-left: 10px; flex: 1; text-align: right;">1,000,000</span>
+            </div>
+          
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
+          <span style="font-size: 26px; font-family: GTWalsheim, bold; color: #fff; flex: 1; text-align: left;">Current CLD/ETC Exchange Rate</span>
+
+          <span style="font-size: 26px; color: #fff; font-family: GTWalsheim, regular; flex: 1; text-align: right;">52%</span>
+        </div>
+
 
       </div>
     </div>
@@ -271,7 +280,7 @@
       <div style="flex: 1; margin-left: 10px;">
       <div class="proposalDetails">
       <div style="border: 2px solid #fff; padding: 40px; border-radius: 16px;">
-        <h1 style="font-size: 28px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">Proposal details</h1>
+        <h1 style="font-size: 28px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">Sale details</h1>
     
         <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
           <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; width: 150px;">Author</span>
@@ -284,18 +293,18 @@
     
     
 
-        <div style="display: flex; align-items:normal; justify-content: space-between; margin-top: 20px;">
-          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; width: 150px;">Published</span>
-          <span style="font-size: 22px; color: #fff; font-family: GTWalsheim, regular; margin-left: 20px;">Feb 17, 2024 02:52</span>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff;">Time left to participate</span>
+          <span style="font-size: 22px; color: #fff; font-family: GTWalsheim, regular; text-align: right; flex: 1;">1 day, 12 hours</span>
         </div>
-    
-        <div style="display: flex; align-items: normal; justify-content: space-between; margin-top: 20px;">
-          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; width: 150px;">Voting ends</span>
-          <span style="font-size: 22px; color: #fff; font-family: GTWalsheim, regular; margin-left: 20px;">Feb 17, 2024 02:52</span>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; width: 150px;">Total participants</span>
+            <span style="font-size: 22px; color: #fff; font-family: GTWalsheim, regular;">63412</span>
         </div>
     
         <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
-          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; width: 150px;">Proposal ID</span>
+          <span style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; width: 150px;">Sale ID</span>
           <span style="font-size: 22px; color: #fff; font-family: GTWalsheim, regular; margin-left: 20px;">2309646343</span>
         </div>
     
@@ -325,14 +334,20 @@
 
       <div class="proposalVote" style="margin-top: 20px;">
         <div style="border: 2px solid #fff; padding: 40px; border-radius: 16px;">
-          <h1 style="font-size: 28px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">Should this proposal be approved?</h1>
+          <h1 style="font-size: 28px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">User information</h1>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
+            <span style="font-size: 26px; font-family: GTWalsheim, bold; color: #fff; flex: 1; text-align: left;">Deposited ETC</span>
+
+            <div style="display: flex; align-items: center;">
+              <img src="public/external/etherium.svg" alt="Icon" style="width: 36px; height: 36px; margin-left: 10px;">
+              <span style="font-size: 26px; color: #fff; font-family: GTWalsheim, regular; margin-left: 10px; flex: 1; text-align: right;">1,000</span>
+              </div>
+            
+          </div>
 
           <div class="button-container">
-            <button class="view_button" id="vote_button_yes" >Yes</button>
-            <button class="view_button" id="vote_button_no" style="background-color: red;">No</button>
-            <button class="view_button" id="vote_button_maybe" style="display: none;">Maybe</button>
-            <button class="view_button" id="vote_button4" style="display: none;">Don't Know</button>
-            <button class="view_button" id="vote_button5" style="display: none;">Abstain</button>
+            <button class="view_button" id="vote_button_yes" >Deposit</button>
           </div>
 
         </div>
@@ -346,7 +361,7 @@
     
     <div style="display: flex; justify-content: flex-end; margin: 0 150px; margin-top: 60px;">
       <a href="PastAndUpcomingProposals.html" style="text-decoration: none; color: inherit; outline: none;">
-    <button id="upcomingProposals" class="buttonConnect" style="height: 50px; width: 175px; font-size: 18px;">Propsal Queue</button>
+    <button id="upcomingProposals" class="buttonConnect" style="height: 50px; width: 175px; font-size: 18px;">Sales Queue</button>
   </a>
   </div>
 
@@ -381,8 +396,8 @@
 
 <div style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;" id="overlay">
   <div style=" color: #fff; width: 80%; max-width: 600px; border: 2px solid #fff; border-radius: 16px; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #000; padding: 40px; z-index: 3; cursor: auto;" class="popup">
-    <h2 style="margin-top: 0; margin-bottom: 0; text-align: center;">You are holding XXXXX CLD tokens</h2>
-    <p style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0; text-align: center;">Choose a token amount to incentivize</p>
+    <h2 style="margin-top: 0; margin-bottom: 0; text-align: center;">How much ETC would you like to deposit?</h2>
+    <p style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0; text-align: center;">Choose a token amount to deposit</p>
     <!-- <div style="position: absolute; right: 20px; top: 20px; cursor: pointer;" id="close-button">X</div> -->
     <div style="width: 100%; position: relative; margin-top: 20px;">
       <input type="range" min="0" max="100" value="0" class="slider" id="rangeIncentive">
@@ -396,7 +411,7 @@
     </div>
     <input type="number" min="0"  placeholder="Enter a amount of tokens" class="rangeIncentive" id="amountInput" style="padding-left: 10px; width: 100%; font-size: 20px; height: 35px; margin-top: 50px; background-color: rgb(0,0,0); border: 2px solid white; border-radius: 10px; color: white;">
      
-    <p style="font-size: 16px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0; text-align: center;">Minimal amount for voting is XXX CLD</p>
+    <p style="font-size: 16px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0; text-align: center;">Minimal amount for deposit is XXX ETC</p>
 
     <div style="display: flex; justify-content: space-between; margin-top: 30px;">
       <button id="close-button" class="buttonConnect" style="height: 50px; width: 150px; font-size: 18px;">Cancel</button>
@@ -505,6 +520,8 @@
             dropdown.style.display = 'none';
         }
     });
+
+    
 </script>
 <script src="JS/hens.js"></script>
 <script src="JS/ABIs.js"></script>
