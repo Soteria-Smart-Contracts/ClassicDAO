@@ -1,5 +1,3 @@
-import { unixfs } from '@helia/unixfs'
-import { createHelia } from 'helia'
 
 async function addFileToNode() {
     const helia = await createHelia()
