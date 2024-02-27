@@ -193,9 +193,6 @@
               </div>
 
               <div class="tabs" style="display: flex; margin-left: 20px; gap: 10px; ">
-                <a href="Profile.html" id="proposingButton" style="text-decoration: none; color: inherit; outline: none;">
-                <button  class="button">Proposing</button>
-                 </a>
                 <div class="menu-container-vote" style="position: relative; display: inline-block;">
                   <button id="votingButton" class="button">Voting</button>
                   <div class="dropdown-menu-vote" style="display: none; background-color: white; color: black; position: absolute; right: 0; padding: 10px; margin-top: 5px; width: max-content; border-radius: 10px;">
@@ -213,7 +210,9 @@
           </div>
 
           <div class="connect-and-hamburger" style="display: flex; justify-content: space-between; align-items: center;">
-            <button id="buttonConnect" class="buttonConnect">Connect</button>
+            <a href="Profile.html" style="text-decoration: none;">
+                <button id="buttonConnect" onclick="loginWithEth()" class="buttonConnect">Connect</button>
+            </a>
             <div class="menu-container" style="position: relative; display: inline-block;">
               <button class="hamburger" style="align-items: center;">
                   <img src="public/external/iconmenu1804-38fa.svg" alt="Menu" style="width: 22px; height: 22px; margin-bottom: -3px;">
