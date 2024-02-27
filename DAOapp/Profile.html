@@ -295,6 +295,26 @@
         var newNickname = document.getElementById('newNickname');
         var saveButton = document.getElementById('saveButton');
         var CreateProposal = document.getElementById('CreateProposal');
+        var editNickname = document.getElementById('editNickname');
+
+        var isEditing = false;
+
+        editNickname.addEventListener('click', function() {
+            if (isEditing) {
+                // Hide the nickname editor and reset the margin-top of the CreateProposal button
+                saveButton.style.display = 'none';
+                newNickname.style.display = 'none';
+                CreateProposal.style.marginTop = '50px';
+            } else {
+                // Show the nickname editor and reduce the margin-top of the CreateProposal button
+                saveButton.style.display = 'block';
+                newNickname.style.display = 'block';
+                CreateProposal.style.marginTop = '20px';
+            }
+
+            // Flip the isEditing flag
+            isEditing = !isEditing;
+        });
     </script>
 
         </div>
