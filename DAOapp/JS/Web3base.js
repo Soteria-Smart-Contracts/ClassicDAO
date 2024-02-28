@@ -98,5 +98,6 @@ function timeLeft(unixTime) {
 
 function ToDateAndTime(unixTime) {
     let date = new Date(unixTime * 1000);
-    return date.toLocaleString();
+    let options = { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+    return date.toLocaleString('en-US', options);
 }
