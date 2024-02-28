@@ -5,7 +5,9 @@ let account;
 let netID;
 let LoggedIn = false;
 
-
+if (localStorage.getItem("ClassicDAOLogin") === "true") {
+    await loginWithEth();
+}
 
 async function loginWithEth(){
     if(LoggedIn == false){
