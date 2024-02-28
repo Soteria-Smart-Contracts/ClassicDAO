@@ -24,6 +24,7 @@ async function loginWithEth(){
             LoggedIn = true;
             document.getElementById("ButtonLink").href = "Profile.html";
             await GetHENS();
+            await RemoveOverlay();
             return(true)
         } 
         else { 
