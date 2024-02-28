@@ -28,7 +28,7 @@ async function loginWithEth(){
             await GetHENS();
             await RemoveOverlay();
 
-document.cookie = "ClassicDAOLogin=true";
+            localStorage.setItem("ClassicDAOLogin", "true");
             
             return(true)
         } 
