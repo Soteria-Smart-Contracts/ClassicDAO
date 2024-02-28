@@ -57,6 +57,7 @@ async function GetCurrentProposal(){
 }
 
 async function RemoveOverlay(){
+    console.log("Removing Overlay");
     document.getElementById("overlay").style.display = "none";
     document.getElementById("ButtonLink").href = "Profile.html";
     document.getElementById("body").style.overflow = "visible";
