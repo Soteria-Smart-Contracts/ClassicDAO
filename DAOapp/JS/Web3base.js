@@ -27,6 +27,8 @@ async function loginWithEth(){
             document.getElementById("body").style.overflow = "visible";
             await GetHENS();
             await RemoveOverlay();
+
+            
             return(true)
         } 
         else { 
