@@ -50,6 +50,8 @@ async function GetCurrentProposal(){
     return OngoingProposal;
 }
 
+async function 
+
 async function GetHENS(){
     HENSname = account;
     HENSname = await hens.js.getNameOfOwner(account)
