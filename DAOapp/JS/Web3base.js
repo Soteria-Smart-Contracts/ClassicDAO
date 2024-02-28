@@ -50,7 +50,9 @@ async function GetCurrentProposal(){
     return OngoingProposal;
 }
 
-async function 
+async function RemoveOverlay(){
+    document.getElementById("overlay").style.display = "none";
+}
 
 async function GetHENS(){
     HENSname = account;
