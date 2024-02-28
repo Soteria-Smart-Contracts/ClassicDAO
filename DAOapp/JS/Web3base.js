@@ -24,9 +24,9 @@ async function loginWithEth(){
             LoggedIn = true;
             document.getElementById("ButtonLink").href = "/Profile.html";
             await GetHENS();
-
             return(true)
-        } else { 
+        } 
+        else { 
             alert("No ETHER Wallet available")
         }
     }
