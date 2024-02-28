@@ -26,8 +26,6 @@ async function loginWithEth(){
             account = accountarray[0];
             console.log('Logged In')
             LoggedIn = true;
-            document.getElementById("ButtonLink").href = "Profile.html";
-            document.getElementById("body").style.overflow = "visible";
             await GetHENS();
             await RemoveOverlay();
 
@@ -60,6 +58,8 @@ async function GetCurrentProposal(){
 
 async function RemoveOverlay(){
     document.getElementById("overlay").style.display = "none";
+    document.getElementById("ButtonLink").href = "Profile.html";
+    document.getElementById("body").style.overflow = "visible";
 }
 
 async function GetHENS(){
