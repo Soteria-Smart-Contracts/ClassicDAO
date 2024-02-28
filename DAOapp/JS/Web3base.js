@@ -5,6 +5,8 @@ let account;
 let netID;
 let LoggedIn = false;
 
+
+
 async function loginWithEth(){
     if(LoggedIn == false){
         if(window.ethereum){
