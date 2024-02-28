@@ -23,7 +23,7 @@ async function loginWithEth(){
             console.log('Logged In')
             LoggedIn = true;
             document.getElementById("ButtonLink").href = "Profile.html";
-            
+            document.getElementById("body").style.overflow = "visible";
             await GetHENS();
             await RemoveOverlay();
             return(true)
