@@ -95,3 +95,8 @@ function timeLeft(unixTime) {
     let minutes = Math.floor(timeLeft / 60);
     return days + " days " + hours + " hours";
 }
+
+function ToDateAndTime(unixTime) {
+    let date = new Date(unixTime * 1000);
+    return date.toLocaleString();
+}
