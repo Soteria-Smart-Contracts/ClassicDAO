@@ -15,7 +15,7 @@ async function LoadDashboard() {
     //HeaderMemo found as memo in 2nd array of CurrentProposalInfo
     document.getElementById("ProposalMemo").innerText = CurrentProposalInfo[1].Memo;
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
-    document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
+    document.getElementById("VoteEnds").innerText = ToDateAndTime(CurrentProposalInfo[2].VoteEnds);
 }
 
 runCodeWhenLoggedIn();
