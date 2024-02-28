@@ -22,7 +22,7 @@ async function loginWithEth(){
             account = accountarray[0];
             console.log('Logged In')
             LoggedIn = true;
-            document.getElementById("ButtonLink").href = "/Profile.html";
+            document.getElementById("ButtonLink").href = "Profile.html";
             await GetHENS();
             return(true)
         } 
