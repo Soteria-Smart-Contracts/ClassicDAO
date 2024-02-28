@@ -22,6 +22,7 @@ async function loginWithEth(){
         account = accountarray[0];
         console.log('Logged In')
         LoggedIn = true;
+        
         await GetHENS();
 
         return(true)
