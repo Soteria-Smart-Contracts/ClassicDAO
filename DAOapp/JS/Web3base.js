@@ -5,6 +5,9 @@ let account;
 let netID;
 let LoggedIn = false;
 
+if (window.ethereum && window.ethereum.selectedAddress) {
+    loginWithEth();
+}
 
 
 async function loginWithEth(){
