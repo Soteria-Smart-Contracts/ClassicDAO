@@ -17,7 +17,7 @@ async function LoadDashboard() {
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
     document.getElementById("VoteEnds").innerText = ToDateAndTime(CurrentProposalInfo[2].VoteEnds);
 
-    //there are y
+    //there are yea and nay bars, the width of the bars are the percentage of the total votes, cal
 }
 
 runCodeWhenLoggedIn();
