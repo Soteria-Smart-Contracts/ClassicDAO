@@ -17,7 +17,7 @@ async function LoadDashboard() {
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
     document.getElementById("VoteEnds").innerText = ToDateAndTime(CurrentProposalInfo[2].VoteEnds);
 
-    //there are yea and nay bars, the width of the bars are the percentage of the total votes, calculate the percentage of the total votes for each and set the width of the bars to that percentage. IDs are yeabar and naybar
+    //there are yea and nay bars, the width of the bars are the percentage of the total votes, calculate the percentage of the total votes for each and set the width of the bars to that percentage. IDs are yeabar and naybar. do the calculations and the updating in the sam
     let totalVotes = parseInt(CurrentProposalInfo[2].VotesFor) + parseInt(CurrentProposalInfo[2].VotesAgainst);
     let yeaPercent = (parseInt(CurrentProposalInfo[2].VotesFor) / totalVotes) * 100;
     let nayPercent = (parseInt(CurrentProposalInfo[2].VotesAgainst) / totalVotes) * 100;
