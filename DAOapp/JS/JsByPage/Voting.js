@@ -26,9 +26,8 @@ async function LoadDashboard() {
 
     //there are yea and nay bars, the width of the bars are the percentage of the total votes, calculate the percentage of the total votes for each and set the width of the bars to that percentage. IDs are yeabar and naybar. do the calculations and the updating in the same line
     //start by getting all yae votes and nay votes, convert them from bigint wei to float using fromWei, then calculate the percentage of the total votes for each, then set the width of the bars to that percentage
-    document.getElementById("yeabar").style.width = (parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].YEAvotes, 'ether')) / (parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].YEAvote, 'ether')) + parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].NAYvotes, 'ether'))) * 100).toString() + "%";
-    document.getElementById("naybar").style.width = (parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].NAYvotes, 'ether')) / (parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].YEAvotes, 'ether')) + parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].NAYvotes, 'ether'))) * 100).toString() + "%";
-    
+    YEAvotes = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].YEAvotes));
+        
 
     //set the number of votes for and against in the yeavotes and nayvotes ids
     document.getElementById("yeavotes").innerText = CurrentProposalInfo[2].YEAvotes;
