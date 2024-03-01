@@ -28,7 +28,9 @@ async function LoadDashboard() {
     //start by getting all yae votes and nay votes, convert them from bigint wei to float using fromWei, then calculate the percentage of the total votes for each, then set the width of the bars to that percentage
     YEAvotes = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].YEAvotes, 'ether'));
     NAYvotes = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].NAYvotes, 'ether'));
-    console.log(YEAvotes, NAYvotes);    
+    TotalVotes = YEAvotes + NAYvotes;
+    document.getElementById("yeabar").style.width = (YEAvotes / TotalVotes) * 100 + "%";
+    document.getElementById("naybar").style.width = (NAYvotes / TotalVotes) * 100 + "%";  
 
     //set the number of votes for and against in the yeavotes and nayvotes ids
     document.getElementById("yeavotes").innerText = CurrentProposalInfo[2].YEAvotes;
