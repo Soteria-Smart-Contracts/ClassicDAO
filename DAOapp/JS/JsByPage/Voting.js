@@ -27,10 +27,6 @@ async function LoadDashboard() {
     //there are yea and nay bars, the width of the bars are the percentage of the total votes, calculate the percentage of the total votes for each and set the width of the bars to that percentage. IDs are yeabar and naybar. do the calculations and the updating in the same line
     //start by getting all yae votes and nay votes, convert them from bigint wei to float, then add them together to get the total votes
     
-    let totalVotes = parseInt(CurrentProposalInfo[2].YEAvotes) + parseInt(CurrentProposalInfo[2].NAYvotes);
-    console.log("Total Votes: " + totalVotes);
-    document.getElementById("yeabar").style.width = (parseInt(CurrentProposalInfo[2].VotesFor) / totalVotes) * 100 + "%";
-    document.getElementById("naybar").style.width = (parseInt(CurrentProposalInfo[2].VotesAgainst) / totalVotes) * 100 + "%";
 
     //set the number of votes for and against in the yeavotes and nayvotes ids
     document.getElementById("yeavotes").innerText = CurrentProposalInfo[2].YEAvotes;
