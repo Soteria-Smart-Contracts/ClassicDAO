@@ -17,10 +17,14 @@ async function LoadDashboard() {
     document.getElementById("desc").innerText = (CurrentProposalInfo[1].Memo).split("//")[1];
 
     //if the vote start time is greater than the current time, the vote has not started yet, so disable the vote buttons at votebuttons id and write Proposal is in Debate Period in id votebuttonstext
+    if (CurrentProposalInfo[2].VoteStarts > Math.floor(Date.now() / 1000)) {
+        document.getElementById("votebuttons").style.display = "none";
+        document.getElementById("votebuttonstext").innerText = "Proposal is in Debate Period";
+    }
 
 
 
-    
+
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
     document.getElementById("VoteEnds").innerText = ToDateAndTime(CurrentProposalInfo[2].VoteEnds);
 
