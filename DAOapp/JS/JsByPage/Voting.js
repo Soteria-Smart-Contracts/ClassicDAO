@@ -18,6 +18,7 @@ async function LoadDashboard() {
 
     //if the vote start time is greater than the current time, the vote has not started yet, so disable the vote buttons at votebuttons id and write Proposal is in Debate Period in id votebuttonstext
     if (CurrentProposalInfo[2].VoteStarts > Math.floor(Date.now() / 1000)) {
+        document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerText = "Proposal is in Debate Period";
     }
 
