@@ -22,7 +22,7 @@ async function LoadDashboard() {
     let yeaPercent = (parseInt(CurrentProposalInfo[2].VotesFor) / totalVotes) * 100;
     let nayPercent = (parseInt(CurrentProposalInfo[2].VotesAgainst) / totalVotes) * 100;
     document.getElementById("yeabar").style.width = yeaPercent + "%";
-    
+    document.getElementById("naybar").style.width = nayPercent + "%";
 }
 
 runCodeWhenLoggedIn();
