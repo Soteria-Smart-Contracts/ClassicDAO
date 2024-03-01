@@ -16,7 +16,7 @@ async function LoadDashboard() {
     document.getElementById("ProposalMemo").innerText = (CurrentProposalInfo[1].Memo).split("//")[0];
     document.getElementById("desc").innerText = (CurrentProposalInfo[1].Memo).split("//")[1];
 
-
+    //if the vote start
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
     document.getElementById("VoteEnds").innerText = ToDateAndTime(CurrentProposalInfo[2].VoteEnds);
 
