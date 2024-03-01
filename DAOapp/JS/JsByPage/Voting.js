@@ -32,6 +32,9 @@ async function LoadDashboard() {
     document.getElementById("yeabar").style.width = (YEAvotes / TotalVotes) * 100 + "%";
     document.getElementById("naybar").style.width = (NAYvotes / TotalVotes) * 100 + "%";  
 
+    //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
+    
+
     //set the number of votes for and against in the yeavotes and nayvotes ids
     document.getElementById("yeavotes").innerText = YEAvotes.toFixed(2);
     document.getElementById("nayvotes").innerText = NAYvotes.toFixed(2);
