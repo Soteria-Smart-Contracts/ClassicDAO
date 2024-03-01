@@ -8,4 +8,4 @@ setInterval(function() {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     
     document.getElementById("genesiscountdown").innerHTML = hours + " hours ";
-}
+});
