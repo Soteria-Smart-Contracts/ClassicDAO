@@ -1,5 +1,5 @@
-const CoreAddress = "0xb92b8E1CEcCbDc12bc324aaeBA616BA0103513F9";
-const VotingAddress = "0x596c8CDe8E9ed77D1449ACbA3906D5a7b1EAf467";
+const CoreAddress = "0xd4170cDeb046B7203d3Db1367698Ab387Be4ad5F";
+const VotingAddress = "0x1c3364661A40815315E0318B065BF0BeE4564788";
 let HENSname;
 let account;
 let netID;
