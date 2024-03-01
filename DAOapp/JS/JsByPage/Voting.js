@@ -12,7 +12,7 @@ async function LoadDashboard() {
     document.getElementById("id").innerText = (CurrentProposalInfo[2].ProposalID).toString();
     //HeaderProposer id
     document.getElementById("proposer").innerText = (CurrentProposalInfo[0].Proposer).substring(0, 7) + '...' + (CurrentProposalInfo[0].Proposer).substring(account.length - 3, CurrentProposalInfo[0].Proposer);
-    //HeaderMemo found as memo in 2nd array of CurrentProposalInfo. the memo and the desc
+    //HeaderMemo found as memo in 2nd array of CurrentProposalInfo. the memo and the description ar combined in the same field in the contract, so the memo is the first part of the description
     document.getElementById("ProposalMemo").innerText = CurrentProposalInfo[1].Memo;
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
     document.getElementById("VoteEnds").innerText = ToDateAndTime(CurrentProposalInfo[2].VoteEnds);
