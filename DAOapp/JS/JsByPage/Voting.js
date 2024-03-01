@@ -33,8 +33,8 @@ async function LoadDashboard() {
     document.getElementById("naybar").style.width = (NAYvotes / TotalVotes) * 100 + "%";  
 
     //set the number of votes for and against in the yeavotes and nayvotes ids
-    document.getElementById("yeavotes").innerText = YEAvotes;
-    document.getElementById("nayvotes").innerText = CurrentProposalInfo[2].NAYvotes;
+    document.getElementById("yeavotes").innerText = YEAvotes.toFixed(2);
+    document.getElementById("nayvotes").innerText = CurrentProposalInfo[2].NAYvotes
 }
 
 runCodeWhenLoggedIn();
