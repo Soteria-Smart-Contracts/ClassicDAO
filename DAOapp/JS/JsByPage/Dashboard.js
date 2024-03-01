@@ -13,7 +13,8 @@ async function LoadDashboard() {
     //HeaderProposer id
     document.getElementById("HeaderProposer").innerText = (CurrentProposalInfo[0].Proposer).substring(0, 7) + '...' + (CurrentProposalInfo[0].Proposer).substring(account.length - 3, CurrentProposalInfo[0].Proposer);
     //HeaderMemo found as memo in 2nd array of CurrentProposalInfo
-    document.getElementById("HeaderMemo").innerText = CurrentProposalInfo[1].Memo;
+    document.getElementById("ProposalMemo").innerText = (CurrentProposalInfo[1].Memo).split("//")[0];
+    document.getElementById("desc").innerText = (CurrentProposalInfo[1].Memo).split("//")[1];
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
     document.getElementById("HeaderTimeLeft").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
 }
