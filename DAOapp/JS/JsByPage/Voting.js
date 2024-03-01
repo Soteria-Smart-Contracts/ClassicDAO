@@ -13,7 +13,7 @@ async function LoadDashboard() {
     //HeaderProposer id
     document.getElementById("proposer").innerText = (CurrentProposalInfo[0].Proposer).substring(0, 7) + '...' + (CurrentProposalInfo[0].Proposer).substring(account.length - 3, CurrentProposalInfo[0].Proposer);
     //HeaderMemo found as memo in 2nd array of CurrentProposalInfo (under .Memo). the memo and the description are combined in the same field in the contract, so the the memo is the first part of the description, the description is the second part of the description. they are devided by a comma, so split the description by "//".
-    document.getElementById("ProposalMemo").innerText = CurrentProposalInfo[1].Memo;
+    document.getElementById("memo").innerText = (CurrentProposalInfo[0].Memo).split("//")[0];
 
 
 
