@@ -1,6 +1,6 @@
 
 
-//set a countdown to genesiscountdown id, the unix start time is: 1709335406
+//set a countdown to genesiscountdown id, the unix start time is: 1709335406, in the format of X hours
 setInterval(function() {
     var countDownDate = 1709335406 * 1000;
     var now = new Date().getTime();
