@@ -31,7 +31,7 @@ async function LoadDashboard() {
 
     //set the number of votes for and against in the yeavotes and nayvotes ids
     document.getElementById("yeavotes").innerText = CurrentProposalInfo[2].YEAvotes;
-    document.getElementById("nayvotes").innerText = CurrentProposalInfo[2].VotesAgainst;
+    document.getElementById("nayvotes").innerText = CurrentProposalInfo[2].NAYvotes;
 }
 
 runCodeWhenLoggedIn();
