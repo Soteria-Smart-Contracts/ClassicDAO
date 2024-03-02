@@ -56,6 +56,8 @@ async function CheckApproveVotingCLDContitional(){
     }
 }
 
+//set votingdi
+
 //
 
 runCodeWhenLoggedIn();
