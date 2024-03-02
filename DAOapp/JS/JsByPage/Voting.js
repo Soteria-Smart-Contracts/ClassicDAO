@@ -43,6 +43,8 @@ async function LoadDashboard() {
 
     CLDtokenholdings = await CLDtoken.methods.balanceOf(account).call();
     document.getElementById("CLDtokenholdings").innerText = Number(web3.utils.fromWei(CLDtokenholdings, 'ether')).toFixed(2);
+    //set max on rangeIncentive id to the number of tokens the user has
+    
 }
 
 async function CheckApproveVotingCLDContitional(){
