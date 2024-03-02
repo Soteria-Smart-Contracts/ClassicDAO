@@ -86,7 +86,7 @@ async function LoadDashboard() {
         span.style.backgroundColor = "white";
         userDisplay = await CheckHENS(VoterList[i].Voter);
         //set the link to the users blockscout page at https://etc.blockscout.com/address/USERADDRESS on a new tab
-        span.innerHTML = "<a target= href='https://etc.blockscout.com/address/" + VoterList[i].Voter + "' style='color: black; text-decoration: none;'>" + userDisplay + "</a> | " + VoterList[i].Amount + " CLD";
+        span.innerHTML = "<a target='_blank' href='https://etc.blockscout.com/address/" + VoterList[i].Voter + "' style='color: black; text-decoration: none;'>" + userDisplay + "</a> | " + VoterList[i].Amount + " CLD";
         div.appendChild(span);
         document.getElementById("VoterList").appendChild(div);
     }
