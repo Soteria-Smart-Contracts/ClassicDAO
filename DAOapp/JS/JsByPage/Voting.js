@@ -74,6 +74,9 @@ async function CheckApproveVotingCLDContitional(){
         await CLDtoken.methods.approve(VotingAddress, BigInt(11579208923731619542357098500868790785326998466564056403945758400791312963993)).send({from: account, value: 0, gas: gas});
         approved = true;
     }
+    else{
+        approved = false;
+    }
 }
 
 //set votingchoicedisplay id to the voting choice input true or false
