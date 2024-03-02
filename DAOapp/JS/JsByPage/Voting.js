@@ -85,7 +85,8 @@ async function LoadDashboard() {
         span.style.width = "auto";
         span.style.backgroundColor = "white";
         userDisplay = await CheckHENS(VoterList[i].Voter);
-        //set the link
+        //set the link to the users blockscout page at https://etc.blockscout.com/address/USERADDRESS
+        
         span.innerText = userDisplay + " | " + VoterList[i].Amount + " CLD";
         div.appendChild(span);
         document.getElementById("VoterList").appendChild(div);
