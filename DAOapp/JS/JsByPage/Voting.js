@@ -1,4 +1,4 @@
-
+let votechoice;
 
 async function runCodeWhenLoggedIn() {
     while (!LoggedIn) {
