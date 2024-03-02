@@ -10,7 +10,10 @@ if (localStorage.getItem("ClassicDAOLogin") === "true") {
     loginWithEth();
 }
 
-//detect address change, loginwi
+//detect address change, loginwitheth if the address changes
+window.ethereum.on('accountsChanged', function (accounts) {
+    loginWithEth();
+});
 
 async function loginWithEth(){
     if(LoggedIn == false){
