@@ -1,4 +1,5 @@
 let votechoice;
+let approved;
 
 async function runCodeWhenLoggedIn() {
     while (!LoggedIn) {
