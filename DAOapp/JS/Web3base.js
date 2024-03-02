@@ -99,7 +99,7 @@ async function GetHENS(){
 
 async function CheckHENS(address){
     AddressETCNS = await hens.js.getNameOfOwner(address);
-    return HENSname;
+    return AddressETCNS;
 }
 
 function timeLeft(unixTime) {
