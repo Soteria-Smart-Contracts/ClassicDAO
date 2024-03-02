@@ -98,7 +98,7 @@ async function GetHENS(){
 }
 
 async function CheckHENS(address){
-    HENSname = await hens.js.getNameOfOwner(address);
+    AddressETCNS = await hens.js.getNameOfOwner(address);
     return HENSname;
 }
 
