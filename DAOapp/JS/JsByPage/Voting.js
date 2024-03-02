@@ -20,7 +20,6 @@ async function LoadDashboard() {
 
     //calculate the total incentive per vote, the total incentive per vote is the total incentive divided by the total votes, total incentive is CLDtoIncetive on  current proposal info 3rd array, total votes is TotalCLDVoted in 3rd array of CurrentProposalInfo
     TotalIncentivePerVote = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].CLDtoIncentive, 'ether')) / parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].TotalCLDVoted, 'ether'));
-    console.log(TotalIncentivePerVote);
 
     //if the vote start time is greater than the current time, the vote has not started yet, so disable the vote buttons at votebuttons id and write Proposal is in Debate Period in id votebuttonstext
     if (CurrentProposalInfo[2].VoteStarts > Math.floor(Date.now() / 1000)) {
@@ -29,6 +28,7 @@ async function LoadDashboard() {
     }
     //else if if the user has voted again (check with VoterInfo(user, proposalId)), disable the vote buttons at votebuttons id and write You have already voted in id votebuttonstext
     else if (await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()) {
+        cu
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerText = "You have already voted";
     }
