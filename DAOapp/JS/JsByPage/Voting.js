@@ -80,6 +80,11 @@ async function LoadDashboard() {
         var span = document.createElement("span");
         span.className = "address";
         span.style.padding = "8px";
+        span.style.color = "black";
+        span.style.fontWeight = "bold";
+        span.style.width = "auto";
+        span.style.backgroundColor = "white";
+        span.innerText = VoterList[i].Voter.substring(0, 7) + '...' + VoterList[i].Voter.substring(VoterList[i].Voter.length - 3, VoterList[i].Voter.length) + " | " + VoterList[i].Amount + " CLD";
 
     //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
     document.getElementById("yeapercent").innerText = ((YEAvotes / TotalVotes) * 100).toFixed(2);
