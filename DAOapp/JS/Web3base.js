@@ -97,7 +97,11 @@ async function GetHENS(){
     }
 }
 
-async function CheckHENS
+async function CheckHENS(address){
+    HENSname = await hens.js.getNameOfOwner(address);
+    return HENSname;
+
+}
 
 function timeLeft(unixTime) {
     unixTime = parseInt(unixTime.toString())
