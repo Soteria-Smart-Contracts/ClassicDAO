@@ -11,6 +11,14 @@ if (localStorage.getItem("ClassicDAOLogin") === "true") {
 }
 
 //detect address change using interval loop, loginwitheth if the address changes
+setInterval(async function(){
+    if (LoggedIn == true){
+        if (account != window.web3.eth.getAccounts()[0]){
+            account = window.web3.eth.getAccounts()[0];
+            await GetHENS();
+        }
+    }
+}, 1000);
 
 async function loginWithEth(){
     if(LoggedIn == false){
