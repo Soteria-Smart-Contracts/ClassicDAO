@@ -50,6 +50,7 @@ async function LoadDashboard() {
     NAYvotes = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].NAYvotes, 'ether'));
     TotalVotes = YEAvotes + NAYvotes;
     Quorum = web3.utils.fromWei(((BigInt(await DAOvoting.methods.Quorum().call()))).toString());
+    QuorumProgress = (TotalVotes / Quorum) * 100;
     document.getElementById("yeabar").style.width = (YEAvotes / TotalVotes) * 100 + "%";
     document.getElementById("naybar").style.width = (NAYvotes / TotalVotes) * 100 + "%";  
     document.getElementById("quorumbar").style.width = Quorum;
