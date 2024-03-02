@@ -430,6 +430,8 @@
     button.addEventListener('click', () => {
       if(approved){
         document.getElementById('voteoverlay').style.display = 'block';
+      } else {
+        alert('You need to approve the contract to spend your tokens');
       }
     });
   });
