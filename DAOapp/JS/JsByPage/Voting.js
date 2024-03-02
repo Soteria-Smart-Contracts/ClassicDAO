@@ -76,7 +76,7 @@ async function SetVoteChoiceDisplay(choice){
 async function SubmitVote(){
     let gasEstimate = await DAOvoting.methods.castVote(CurrentProposalInfo[2].ProposalID, votechoice, web3.utils.toWei(document.getElementById("amountInput").value, 'ether')).estimateGas({ from: account });
     await DAOvoting.methods.castVote(CurrentProposalInfo[2].ProposalID, votechoice, web3.utils.toWei(document.getElementById("amountInput").value, 'ether')).send({ from: account, gas: gasEstimate });
-    //refres
+    location.reload();
 }
 
 
