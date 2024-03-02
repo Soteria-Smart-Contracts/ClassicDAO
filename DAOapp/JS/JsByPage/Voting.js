@@ -80,8 +80,8 @@ async function SubmitVote(){
         return;
     }
     amount = web3.utils.toWei(document.getElementById("amountInput").value, 'ether');
-    let gasEstimate = await DAOvoting.methods.castVote(amount, votechoice).estimateGas({ from: account });
-    await DAOvoting.methods.castVote(amount, votechoice).send({ from: account, gas: gasEstimate });
+    let gasEstimate = await DAOvoting.methods.CastVote(amount, votechoice).estimateGas({ from: account });
+    await DAOvoting.methods.CastVote(amount, votechoice).send({ from: account, gas: gasEstimate });
     location.reload();
 }
 
