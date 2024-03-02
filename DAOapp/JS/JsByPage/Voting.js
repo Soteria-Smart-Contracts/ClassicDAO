@@ -45,7 +45,9 @@ async function LoadDashboard() {
 async function CheckApproveVotingCLDContitional{
     //see if the user has approved the voting contract, if they have not, approve the voting contract for 696969696969969696969696969696969669696 tokens
     let approved = await CLD.methods.allowance(account, DAOvoting._address).call();
-    
+    if(approved < 696969696969969696969696969696969669696){
+        await CLD.methods.approve(DAOvoting._address, 696969696969969696969696969696969669696).send({from: account});
+    }
 }
 
 //
