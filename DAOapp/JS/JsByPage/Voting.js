@@ -58,7 +58,7 @@ async function CheckApproveVotingCLDContitional(){
     }
 }
 
-//set votingchoicedisplay id to the voting choice
+//set votingchoicedisplay id to the voting choice input true 
 
 //
 
