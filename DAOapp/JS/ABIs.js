@@ -1331,4 +1331,4 @@ window.VotingABI = [
 	}
 ];
 
-window.CLDabi
+window.CLDABI = [
