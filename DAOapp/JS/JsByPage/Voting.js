@@ -69,6 +69,8 @@ async function LoadDashboard() {
         VoterList.push({ "Voter": Voters[i], "Amount": parseFloat(web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, Voters[i]).call()).VotesLocked, 'ether')).toFixed(2) });
         console.log(VoterList[i]);
     }
+    VoterList.sort((a, b) => (a.Amount < b.Amount) ? 1 : -1);
+    
 
     //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
     document.getElementById("yeapercent").innerText = ((YEAvotes / TotalVotes) * 100).toFixed(2);
