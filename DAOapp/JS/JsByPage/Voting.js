@@ -18,7 +18,8 @@ async function LoadDashboard() {
     document.getElementById("ProposalMemo").innerText = (CurrentProposalInfo[1].Memo).split("//")[0];
     document.getElementById("desc").innerText = (CurrentProposalInfo[1].Memo).split("//")[1];
 
-    //calculate the total incentive per vote, the total incentive per vote is the total incentive divided by the total votes, total incentive is CLDtoIncetive on  current proposal info 3rd array, total votes is 
+    //calculate the total incentive per vote, the total incentive per vote is the total incentive divided by the total votes, total incentive is CLDtoIncetive on  current proposal info 3rd array, total votes is TotalCLDVoted in 3rd array of CurrentProposalInfo
+    
 
     //if the vote start time is greater than the current time, the vote has not started yet, so disable the vote buttons at votebuttons id and write Proposal is in Debate Period in id votebuttonstext
     if (CurrentProposalInfo[2].VoteStarts > Math.floor(Date.now() / 1000)) {
