@@ -52,7 +52,7 @@ async function LoadDashboard() {
     Quorum = web3.utils.fromWei(((BigInt(await DAOvoting.methods.Quorum().call()))).toString());
     document.getElementById("yeabar").style.width = (YEAvotes / TotalVotes) * 100 + "%";
     document.getElementById("naybar").style.width = (NAYvotes / TotalVotes) * 100 + "%";  
-    document.getElementById("Quorum").sty = Quorum;
+    document.getElementById("Quorum").style = Quorum;
 
     //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
     document.getElementById("yeapercent").innerText = ((YEAvotes / TotalVotes) * 100).toFixed(2);
