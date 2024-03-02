@@ -15,8 +15,7 @@ setInterval(async function(){
     if (LoggedIn == true){
         accountarray = await web3.eth.getAccounts();
         if(accountarray[0] != account){
-            account = accountarray[0];
-            await GetHENS();
+            location.reload();
         }
     }
 }, 1000);
