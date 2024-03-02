@@ -76,7 +76,10 @@ async function LoadDashboard() {
     //</div> push a div like this for each voter in the voterlist to the id voterlist
     for (i = 0; i < VoterList.length; i++) {
         var div = document.createElement("div");
-        
+        div.style.marginTop = "22px";
+        var span = document.createElement("span");
+        span.className = "address";
+        span.style.padding = "8px";
 
     //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
     document.getElementById("yeapercent").innerText = ((YEAvotes / TotalVotes) * 100).toFixed(2);
