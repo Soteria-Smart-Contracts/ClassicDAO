@@ -61,6 +61,15 @@ async function CheckApproveVotingCLDContitional(){
 //set votingchoicedisplay id to the voting choice input true or false
 function SetVoteChoiceDisplay(choice){
     //if the choice is true, set the votingchoicedisplay id to " Yea", else set it to " Nay"
+    if(choice){
+        document.getElementById("votingchoicedisplay").innerText = " Yea";
+    }
+    else{
+        document.getElementById("votingchoicedisplay").innerText = " Nay";
+    }
+
+    //set votechoice to the choice
+    votechoice = choice;
 
 }
 
