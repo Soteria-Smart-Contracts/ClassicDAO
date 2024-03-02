@@ -72,7 +72,7 @@ async function SetVoteChoiceDisplay(choice){
     votechoice = choice ? 0 : 1;
 }
 
-//submit vote witht the castVote function in the voting contract, the input is the votechoice, 0 for yea, 1 for nay, amount speficfied in id amountInput which you may n
+//submit vote witht the castVote function in the voting contract, the input is the votechoice, 0 for yea, 1 for nay, amount speficfied in id amountInput which you may need to convert to wei
 
 
 //
