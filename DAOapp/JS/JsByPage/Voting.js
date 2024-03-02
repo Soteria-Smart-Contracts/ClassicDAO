@@ -72,8 +72,8 @@ async function LoadDashboard() {
     VoterList.sort((a, b) => (a.Amount < b.Amount) ? 1 : -1);
 
     //<div style="margin-top: 22px;">
-    <span class="address" style="padding: 8px; color: black; font-weight: bold; width: auto; background-color: white;">0xc932b...3Ce | 100000 CLD</span>
-    </div>
+    //<span class="address" style="padding: 8px; color: black; font-weight: bold; width: auto; background-color: white;">0xc932b...3Ce | 100000 CLD</span>
+    //</div> push 
 
     //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
     document.getElementById("yeapercent").innerText = ((YEAvotes / TotalVotes) * 100).toFixed(2);
