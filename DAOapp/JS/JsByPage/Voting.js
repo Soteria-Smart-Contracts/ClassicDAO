@@ -71,6 +71,7 @@ async function LoadDashboard() {
     }
     VoterList.sort((a, b) => parseFloat(b.Amount) - parseFloat(a.Amount));
 
+    //https://etc.blockscout.com/address/
     //<div style="margin-top: 22px;">
     //<span class="address" style="padding: 8px; color: black; font-weight: bold; width: auto; background-color: white;">0xc932b...3Ce | 100000 CLD</span>
     //</div> push a div like this for each voter in the voterlist to the id voterlist
