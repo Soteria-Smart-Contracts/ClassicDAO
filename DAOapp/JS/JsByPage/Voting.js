@@ -61,7 +61,7 @@ async function LoadDashboard() {
     document.getElementById("quorumbar").style.width = QuorumProgress + "%";
 
     Voters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
-    document.getElementById("TotalVoters").innerText = Voters;
+    document.getElementById("TotalVoters").innerText = Voters.length;
 
     //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
     document.getElementById("yeapercent").innerText = ((YEAvotes / TotalVotes) * 100).toFixed(2);
