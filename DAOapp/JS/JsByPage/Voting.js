@@ -42,12 +42,12 @@ async function LoadDashboard() {
     document.getElementById("nayvotes").innerText = NAYvotes.toFixed(2);
 }
 
-async function CheckApproveVotingCLDContitional{
+async function CheckApproveVotingCLDContitional(){
     //see if the user has approved the voting contract, if they have not, approve the voting contract for 696969696969969696969696969696969669696 tokens
     let approved = await CLD.methods.allowance(account, DAOvoting._address).call();
     if(approved < 696969696969969696969696969696969669696){
         let gasEstimate = await CLD.methods.approve(DAOvoting._address, 696969696969969696969696969696969669696).estimateGas({ from: account });
-        
+        await CLD.methods.approve(DAOvoting._address, 696969696969969696969696969696969669696).send({ from: account, gas: gasEstimate });
     }
 }
 
