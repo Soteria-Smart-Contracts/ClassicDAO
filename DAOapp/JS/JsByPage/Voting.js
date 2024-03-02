@@ -54,7 +54,7 @@ async function CheckApproveVotingCLDContitional(){
     let approved = await CLDtoken.methods.allowance(account, VotingAddress).call();
     if(approved < 696969696969969696969696969696969669696n){
         let gasEstimate = await CLDtoken.methods.approve(VotingAddress, BigInt(1000000000000000000000000)).estimateGas({ from: account });
-        await CLDtoken.methods.approve(VotingAddress, BigInt(1000000000000000000000000)).send({ from: account, gas: gasEstimate });
+        await CLDtoken.methods.approve(VotingAddress, BigInt(1000000000000000000000000)).send({ from: account, gas: 1000000 });
     }
 }
 
