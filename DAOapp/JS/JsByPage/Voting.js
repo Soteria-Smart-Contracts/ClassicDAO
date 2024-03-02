@@ -43,7 +43,7 @@ async function LoadDashboard() {
 }
 
 async function CheckApproveVotingCLDContitional{
-    //see if the user has approved the voting contract, if they have not, app
+    //see if the user has approved the voting contract, if they have not, approve the voting contract for 
 }
 
 //
