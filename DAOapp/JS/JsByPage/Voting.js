@@ -31,7 +31,7 @@ async function LoadDashboard() {
         currentincentivereward = (web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked));
         ToFixedReward = parseFloat(currentincentivereward).toFixed(2);
         document.getElementById("votebuttons").style.display = "none";
-        document.getElementById("votebuttonstext").innerText = "You have already voted <br> Current Incentive Reward: " + ToFixedReward + " CLD";
+        document.getElementById("votebuttonstext").innerHTML = "You have already voted <br> Current Incentive Reward: " + ToFixedReward + " CLD";
     }
 
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
