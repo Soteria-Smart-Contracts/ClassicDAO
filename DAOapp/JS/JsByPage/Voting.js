@@ -54,7 +54,7 @@ async function LoadDashboard() {
     if(QuorumProgress > 100){
         QuorumProgress = 100;
     }
-    document.getElementById("Quorum").innerText = QuorumProgress + "%";
+    document.getElementById("Quorum").innerText = Quorum;
     document.getElementById("yeabar").style.width = (YEAvotes / TotalVotes) * 100 + "%";
     document.getElementById("naybar").style.width = (NAYvotes / TotalVotes) * 100 + "%";  
     document.getElementById("quorumbar").style.width = QuorumProgress + "%";
