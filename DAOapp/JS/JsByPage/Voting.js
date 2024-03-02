@@ -28,7 +28,7 @@ async function LoadDashboard() {
         document.getElementById("votebuttonstext").innerText = "Proposal is in Debate Period";
     }
     //else if if the user has voted again (check with VoterInfo(user, proposalId)), disable the vote buttons at votebuttons id and write You have already voted in id votebuttonstext
-    else if (await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()) {
+    else if (Uservotedbool) {
         currentincentivereward = (web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked)) * TotalIncentivePerVote;
         ToFixedReward = parseFloat(currentincentivereward).toFixed(2);
         document.getElementById("votebuttons").style.display = "none";
