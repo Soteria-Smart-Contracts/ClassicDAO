@@ -85,7 +85,12 @@ async function LoadDashboard() {
         span.style.width = "auto";
         span.style.backgroundColor = "white";
         userDisplay = await CheckHENS(VoterList[i].Voter);
-        span.innerText = VoterList[i].Voter.substring(0, 7) + '...' + VoterList[i].Voter.substring(VoterList[i].Voter.length - 3, VoterList[i].Voter.length) + " | " + VoterList[i].Amount + " CLD";
+        span.innerText = userDisplay + " | " + VoterList[i].Amount + " CLD";
+        div.appendChild(span);
+        
+
+
+
 
     //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
     document.getElementById("yeapercent").innerText = ((YEAvotes / TotalVotes) * 100).toFixed(2);
