@@ -23,9 +23,7 @@ async function LoadDashboard() {
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerText = "Proposal is in Debate Period";
     }
-    else if(){
-
-    }
+    //else if if the user has voted again (check with VoterInfo(user, proposalId))
 
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
     document.getElementById("VoteEnds").innerText = ToDateAndTime(CurrentProposalInfo[2].VoteEnds);
