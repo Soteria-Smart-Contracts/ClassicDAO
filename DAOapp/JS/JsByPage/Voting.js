@@ -24,7 +24,7 @@ async function LoadDashboard() {
         document.getElementById("votebuttonstext").innerText = "Proposal is in Debate Period";
     }
     //else if if the user has voted again (check with VoterInfo(user, proposalId)), disable the vote buttons at votebuttons id and write You have already voted in id votebuttonstext
-    else if (await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalI, accountD).call()) {
+    else if (await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()) {
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerText = "You have already voted";
     }
