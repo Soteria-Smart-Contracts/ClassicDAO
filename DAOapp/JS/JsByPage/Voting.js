@@ -68,10 +68,7 @@ function SetVoteChoiceDisplay(choice){
         document.getElementById("votingchoicedisplay").innerText = " Nay";
     }
 
-    //set votechoice to the choice
-    //if choice is true set votechoice to 0, else set votechoice to 1
-    
-
+    votechoice = choice ? 0 : 1;
 }
 
 //
