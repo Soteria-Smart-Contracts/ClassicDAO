@@ -69,7 +69,8 @@ function SetVoteChoiceDisplay(choice){
     }
 
     //set votechoice to the choice
-    votechoice = choice;
+    //if choice is true set votechoice to 0, else set votechoice to 1
+    
 
 }
 
