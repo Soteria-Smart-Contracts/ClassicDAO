@@ -87,7 +87,7 @@ async function LoadDashboard() {
         userDisplay = await CheckHENS(VoterList[i].Voter);
         span.innerText = userDisplay + " | " + VoterList[i].Amount + " CLD";
         div.appendChild(span);
-        
+        document.getElementById("voterlist").appendChild(div);
 
 
 
