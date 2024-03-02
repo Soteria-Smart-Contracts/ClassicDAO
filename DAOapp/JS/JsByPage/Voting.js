@@ -69,7 +69,7 @@ async function LoadDashboard() {
 async function CheckApproveVotingCLDContitional(){
     //see if the user has approved the voting contract, if they have not, approve the voting contract for 696969696969969696969696969696969669696 tokens
     let approved = await CLDtoken.methods.allowance(account, VotingAddress).call();
-    if(approved < 11579208923731619542357098500868790785326998466564056403945758400791312963993){
+    if(approved < 115792089237316195423570985008687907853269984665640564039457584007913129){
         gas = await CLDtoken.methods.approve(VotingAddress, BigInt(11579208923731619542357098500868790785326998466564056403945758400791312963993)).estimateGas({from: account});
         await CLDtoken.methods.approve(VotingAddress, BigInt(11579208923731619542357098500868790785326998466564056403945758400791312963993)).send({from: account, value: 0, gas: gas});
         approved = true;
