@@ -30,7 +30,7 @@ async function LoadDashboard() {
     else if (await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()) {
         currentincentivereward = parseFloat(web3.utils.fromWei(await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call().then(function (result) { return result[1]; }), 'ether'));
         document.getElementById("votebuttons").style.display = "none";
-        document.getElementById("votebuttonstext").innerText = "You have already voted";
+        document.getElementById("votebuttonstext").innerText = "You have already voted <br> Current Incentive Reward: " + currentincentivereward.toFixed(2) + " CLD";
     }
 
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
