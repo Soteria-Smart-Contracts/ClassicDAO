@@ -99,6 +99,7 @@ async function GetHENS(){
 
 async function CheckHENS(address){
     let HENSname = await hens.js.getNameOfOwner(address);
+    console.log("If there is an error above, its normal and not a problem, try catch does not work for Metamask errors")
     let shortAddress = address.substring(0, 7) + '...' + address.substring(address.length - 3, address.length);
     
     if(HENSname != ''){
