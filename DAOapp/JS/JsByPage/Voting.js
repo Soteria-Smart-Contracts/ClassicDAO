@@ -22,7 +22,8 @@ async function LoadDashboard() {
     TotalIncentive = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].CLDtoIncentive, 'ether')).toFixed(2);
     TotalIncentivePerVote = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].CLDtoIncentive, 'ether')) / parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].TotalCLDVoted, 'ether'));
     Uservotedbool = (await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked > 0;
-    //set the total incentive id to the total incentive per vote
+    //set the total incentive id to the total incentive
+    document.getElementById("TotalIncentive").innerText = TotalIncentive;
     
 
     //if the vote start time is greater than the current time, the vote has not started yet, so disable the vote buttons at votebuttons id and write Proposal is in Debate Period in id votebuttonstext
