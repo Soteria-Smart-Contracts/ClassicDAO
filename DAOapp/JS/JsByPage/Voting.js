@@ -60,8 +60,8 @@ async function CheckApproveVotingCLDContitional(){
 
 //set votingchoicedisplay id to the voting choice input true or false
 function SetVoteChoiceDisplay(choice){
-    //if the choice is true, set the votingchoicedisplay id to "Yea", else set it to "Nay"
-    
+    //if the choice is true, set the votingchoicedisplay id to " Yea", else set it to " Nay"
+
 }
 
 //
