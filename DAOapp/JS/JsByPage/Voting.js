@@ -28,7 +28,7 @@ async function LoadDashboard() {
     }
     //else if if the user has voted again (check with VoterInfo(user, proposalId)), disable the vote buttons at votebuttons id and write You have already voted in id votebuttonstext
     else if (await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()) {
-        currentincentivereward = (web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked));
+        currentincentivereward = (web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked)) / ;
         ToFixedReward = parseFloat(currentincentivereward).toFixed(2);
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerHTML = "You have already voted <br> Current Incentive Reward: " + ToFixedReward + " CLD";
