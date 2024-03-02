@@ -72,6 +72,7 @@ async function CheckApproveVotingCLDContitional(){
     if(approved < 11579208923731619542357098500868790785326998466564056403945758400791312963993){
         gas = await CLDtoken.methods.approve(VotingAddress, BigInt(11579208923731619542357098500868790785326998466564056403945758400791312963993)).estimateGas({from: account});
         await CLDtoken.methods.approve(VotingAddress, BigInt(11579208923731619542357098500868790785326998466564056403945758400791312963993)).send({from: account, value: 0, gas: gas});
+        approved = true;
     }
 }
 
