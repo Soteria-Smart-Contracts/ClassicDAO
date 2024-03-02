@@ -97,6 +97,8 @@ async function GetHENS(){
     }
 }
 
+async function CheckHENS
+
 function timeLeft(unixTime) {
     unixTime = parseInt(unixTime.toString())
     let timeLeft = unixTime - Math.floor(Date.now() / 1000);
