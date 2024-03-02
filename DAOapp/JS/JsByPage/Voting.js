@@ -37,7 +37,7 @@ async function LoadDashboard() {
         currentincentivereward = (web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked)) * TotalIncentivePerVote;
         ToFixedReward = parseFloat(currentincentivereward).toFixed(2);
         document.getElementById("votebuttons").style.display = "none";
-        document.getElementById("votebuttonstext").innerHTML = "You have already voted <br><br> Current Incentive Reward: " + ToFixedReward + " CLD";
+        document.getElementById("votebuttonstext").innerHTML = "You have already voted <br><br>Your Current Incentive Reward: " + ToFixedReward + " CLD";
         console.log("You have already voted");
     }
 
