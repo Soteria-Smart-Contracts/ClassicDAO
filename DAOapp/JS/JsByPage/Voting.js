@@ -23,7 +23,10 @@ async function LoadDashboard() {
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerText = "Proposal is in Debate Period";
     }
-    //else if if the user has voted again (check with VoterInfo(user, proposalId))
+    //else if if the user has voted again (check with VoterInfo(user, proposalId)), disable the vote buttons at votebuttons id and write You have already voted in id votebuttonstext
+    else if (await DAOvoting.methods.VoterInfo(account, CurrentProposalInfo[2].ProposalID).call()) {
+        document.getElementById("votebuttons").style.display = "none";
+        
 
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
     document.getElementById("VoteEnds").innerText = ToDateAndTime(CurrentProposalInfo[2].VoteEnds);
