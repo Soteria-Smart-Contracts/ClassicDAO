@@ -7,5 +7,5 @@ setInterval(function() {
     var distance = countDownDate - now;
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     
-    document.getElementById("genesiscountdown").innerHTML = "in" + hours + " hours ";
+    document.getElementById("genesiscountdown").innerHTML = "in " + hours + " hours ";
 });
