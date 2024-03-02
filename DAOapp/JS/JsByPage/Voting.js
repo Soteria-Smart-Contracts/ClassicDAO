@@ -63,7 +63,10 @@ async function LoadDashboard() {
     Voters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
     document.getElementById("TotalVoters").innerText = Voters.length;
 
-    //create a list of objects with each object containing the voter and the a
+    //create a list of objects with each object containing the voter and the amount of CLD they voted, then sort the list by the amount of CLD they voted
+    VoterList = [];
+    for (i = 0; i < Voters.length; i++) {
+        VoterList.push({ "Voter": Voters[i], "Amount": parseFloat(web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, Voters[i]).call()).VotesLocked, 'ether')) });
 
     //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
     document.getElementById("yeapercent").innerText = ((YEAvotes / TotalVotes) * 100).toFixed(2);
