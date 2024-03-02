@@ -4,7 +4,7 @@ async function runCodeWhenLoggedIn() {
     }
 
     CurrentProposalInfo = await GetCurrentProposal();
-    //LoadDashboard();
+    LoadDashboard();
     console.log(CurrentProposalInfo);
 }
 
