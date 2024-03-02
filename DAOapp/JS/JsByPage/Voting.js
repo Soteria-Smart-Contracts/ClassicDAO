@@ -69,7 +69,7 @@ async function LoadDashboard() {
         VoterList.push({ "Voter": Voters[i], "Amount": parseFloat(web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, Voters[i]).call()).VotesLocked, 'ether')).toFixed(2) });
         console.log(VoterList[i]);
     }
-    VoterList.sort((a, b) => (a.Amount < b.Amount) ? 1 : -1);
+    VoterList.sort((a, b) => parseFloat(b.Amount) - parseFloat(a.Amount));
 
     //<div style="margin-top: 22px;">
     //<span class="address" style="padding: 8px; color: black; font-weight: bold; width: auto; background-color: white;">0xc932b...3Ce | 100000 CLD</span>
