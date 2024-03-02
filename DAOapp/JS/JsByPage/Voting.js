@@ -79,6 +79,7 @@ async function SubmitVote(){
         alert("You must vote with at least 0.01 CLD");
         return;
     }
+    amount = web3.utils.toWei(document.getElementById("amountInput").value, 'ether');
     let gasEstimate = await DAOvoting.methods.castVote(web3.utils.toWei(document.getElementById("amountInput").value, 'ether'), votechoice).estimateGas({ from: account });
     await DAOvoting.methods.castVote(web3.utils.toWei(document.getElementById("amountInput").value, 'ether'), votechoice).send({ from: account, gas: gasEstimate });
     location.reload();
