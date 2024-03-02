@@ -54,7 +54,7 @@ async function CheckApproveVotingCLDContitional(){
     let approved = await CCLDtokenLD.methods.allowance(account, VotingAddress).call();
     if(approved < 696969696969969696969696969696969669696){
         let gasEstimate = await CLD.methods.approve(VotingAddress, 696969696969969696969696969696969669696).estimateGas({ from: account });
-        await CLD.methods.approve(DAOvoting._address, 696969696969969696969696969696969669696).send({ from: account, gas: gasEstimate });
+        await CLD.methods.approve(VotingAddress, 696969696969969696969696969696969669696).send({ from: account, gas: gasEstimate });
     }
 }
 
