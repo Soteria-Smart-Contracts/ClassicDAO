@@ -77,6 +77,7 @@ async function CheckApproveVotingCLDContitional(){
     }
     else{
         approved = true;
+        console.log("Already approved");
     }
 }
 
