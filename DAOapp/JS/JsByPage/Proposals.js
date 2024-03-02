@@ -10,9 +10,10 @@ setInterval(function() {
         document.getElementById("PropStatus").innerHTML = "Voting";
         document.getElementById("genesiscountdown").innerHTML = "Ongoing";
     }
-    else
-    var distance = countDownDate - now;
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    
-    document.getElementById("genesiscountdown").innerHTML = "in " + hours + " hours ";
+    else{
+        var distance = countDownDate - now;
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        
+        document.getElementById("genesiscountdown").innerHTML = "in " + hours + " hours ";
+    }
 });
