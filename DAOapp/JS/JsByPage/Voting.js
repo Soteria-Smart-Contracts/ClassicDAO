@@ -73,6 +73,11 @@ async function SetVoteChoiceDisplay(choice){
 }
 
 //submit vote witht the castVote function in the voting contract, the input is the votechoice, 0 for yea, 1 for nay, amount speficfied in id amountInput which you may need to convert to wei
+async function SubmitVote(){
+    let gasEstimate = await DAOvoting.methods.castVote(CurrentProposalInfo[2].ProposalID, votechoice, web3.utils.toWei(document.getElementById("amountInput").value, 'ether')).estimateGas({ from: account });
+    await DAOvoting.methods.castVote(CurrentProposalInfo[2].ProposalID, votechoice, web3.utils.toWei(document.getElementById("amountInput").value, 'ether')).send({ from: account, gas: gasEstimate });
+    LoadDashboard();
+}
 
 
 //
