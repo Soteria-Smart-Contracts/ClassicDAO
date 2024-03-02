@@ -98,9 +98,16 @@ async function GetHENS(){
 }
 
 async function CheckHENS(address){
-    AddressETCNS = address
-    AddressETCNS = await hens.js.getNameOfOwner(address);
-    return AddressETCNS;
+    let AddressETCNS = address;
+    let HENSname = await hens.js.getNameOfOwner(address);
+    let shortAddress = address.substring(0, 7) + '...' + address.substring(address.length - 3, address.length);
+    
+    if(HENSname !== ''){
+        return HENSname;
+    }
+    else{
+        return shortAddress;
+    }
 }
 
 function timeLeft(unixTime) {
