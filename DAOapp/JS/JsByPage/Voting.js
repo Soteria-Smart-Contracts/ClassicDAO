@@ -40,6 +40,8 @@ async function LoadDashboard() {
     //set the number of votes for and against in the yeavotes and nayvotes ids
     document.getElementById("yeavotes").innerText = YEAvotes.toFixed(2);
     document.getElementById("nayvotes").innerText = NAYvotes.toFixed(2);
+
+    CLDtokenholdings = await CLD.methods.balanceOf(account).call();
 }
 
 async function CheckApproveVotingCLDContitional(){
