@@ -33,6 +33,7 @@ async function LoadDashboard() {
         ToFixedReward = parseFloat(currentincentivereward).toFixed(2);
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerHTML = "You have already voted <br><br> Current Incentive Reward: " + ToFixedReward + " CLD";
+        console.log("You have already voted");
     }
 
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
