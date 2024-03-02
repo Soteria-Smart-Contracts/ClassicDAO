@@ -53,8 +53,8 @@ async function CheckApproveVotingCLDContitional(){
     //see if the user has approved the voting contract, if they have not, approve the voting contract for 696969696969969696969696969696969669696 tokens
     let approved = await CLDtoken.methods.allowance(account, VotingAddress).call();
     if(approved < 696969696969969696969696969696969669696){
-        let gasEstimate = await CLD.methods.approve(VotingAddress, 696969696969969696969696969696969669696).estimateGas({ from: account });
-        await CLD.methods.approve(VotingAddress, 696969696969969696969696969696969669696).send({ from: account, gas: gasEstimate });
+        let gasEstimate = await CLDtoken.methods.approve(VotingAddress, 696969696969969696969696969696969669696).estimateGas({ from: account });
+        await CLDtoken.methods.approve(VotingAddress, 696969696969969696969696969696969669696).send({ from: account, gas: gasEstimate });
     }
 }
 
