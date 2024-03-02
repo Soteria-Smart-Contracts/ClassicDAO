@@ -63,6 +63,8 @@ async function LoadDashboard() {
     Voters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
     document.getElementById("TotalVoters").innerText = Voters.length;
 
+    //create a list of objects with each object containing the voter and t
+
     //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
     document.getElementById("yeapercent").innerText = ((YEAvotes / TotalVotes) * 100).toFixed(2);
     document.getElementById("naypercent").innerText = ((NAYvotes / TotalVotes) * 100).toFixed(2);
