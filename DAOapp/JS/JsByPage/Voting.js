@@ -77,7 +77,7 @@ async function CheckApproveVotingCLDContitional(){
     }
     else{
         approved = true;
-        console.log("Already approved");
+        document.getElementById('voteoverlay').style.display = 'block';
     }
 }
 
