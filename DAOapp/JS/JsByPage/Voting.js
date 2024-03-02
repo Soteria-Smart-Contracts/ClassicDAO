@@ -75,7 +75,7 @@ async function CheckApproveVotingCLDContitional(){
         approved = true;
     }
     else{
-        approved = false;
+        approved = true;
     }
 }
 
