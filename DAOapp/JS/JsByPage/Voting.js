@@ -72,6 +72,8 @@ async function SetVoteChoiceDisplay(choice){
     votechoice = choice ? 0 : 1;
 }
 
+
+
 //
 
 runCodeWhenLoggedIn();
