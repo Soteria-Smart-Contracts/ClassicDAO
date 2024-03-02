@@ -58,7 +58,10 @@ async function CheckApproveVotingCLDContitional(){
     }
 }
 
-//set votingchoicedisplay id to the voting choice input true 
+//set votingchoicedisplay id to the voting choice input true or false
+function SetVoteChoiceDisplay(choice){
+    document.getElementById("votingchoicedisplay").innerText = votechoice;
+}
 
 //
 
