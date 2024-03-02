@@ -1330,3 +1330,5 @@ window.VotingABI = [
 		"type": "function"
 	}
 ];
+
+window.CLDabi
