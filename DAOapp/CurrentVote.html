@@ -367,14 +367,20 @@
         <div style="border: 2px solid #fff; padding: 40px; border-radius: 16px;">
           <h1 id="votebuttonstext" style="font-size: 28px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">Do you approve or disapprove of this proposal?</h1>
 
-          <div class="button-container" id="votebuttons" style="display: flex;">
-            <button class="view_button" id="vote_button_yes" onclick="SetVoteChoiceDisplay(true)">Yea</button>
-            <button class="view_button" id="vote_button_no" style="background-color: red;" onclick="SetVoteChoiceDisplay(false)">Nay</button>
-            <button class="view_button" id="vote_button_maybe" style="display: none;">Maybe</button>
-            <button class="view_button" id="vote_button4" style="display: none;">Don't Know</button>
-            <button class="view_button" id="vote_button5" style="display: none;">Abstain</button>
-          </div>
-
+          <ul id="voteList" style="list-style-type: none; padding: 0;">
+            <li>
+              <span class="address">0x1234567890</span>
+              <span class="voteAmount">100</span>
+            </li>
+            <li>
+              <span class="address">0xabcdef1234</span>
+              <span class="voteAmount">50</span>
+            </li>
+            <li>
+              <span class="address">0x9876543210</span>
+              <span class="voteAmount">75</span>
+            </li>
+          </ul>
         </div>
       </div>
       
