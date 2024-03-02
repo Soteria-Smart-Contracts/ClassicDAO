@@ -42,7 +42,9 @@ async function LoadDashboard() {
     document.getElementById("nayvotes").innerText = NAYvotes.toFixed(2);
 }
 
-async function CheckApproveVotingCLD
+async function CheckApproveVotingCLDContitional{
+    
+}
 
 //
 
