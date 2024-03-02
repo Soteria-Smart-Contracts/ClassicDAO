@@ -42,6 +42,7 @@ async function LoadDashboard() {
     document.getElementById("nayvotes").innerText = NAYvotes.toFixed(2);
 
     CLDtokenholdings = await CLD.methods.balanceOf(account).call();
+    document.getElementById("CLDtokenholdings").innerText = web3.utils.fromWei(CLDtokenholdings, 'ether');
 }
 
 async function CheckApproveVotingCLDContitional(){
