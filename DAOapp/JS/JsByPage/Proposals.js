@@ -5,7 +5,7 @@ setInterval(function() {
     var countDownDate = 1709381409 * 1000;
     var now = new Date().getTime();
 
-    //if the countdown is over, display a 
+    //if the countdown is over, display Voting on id PropStatus
     var distance = countDownDate - now;
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     
