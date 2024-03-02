@@ -60,7 +60,7 @@ async function CheckApproveVotingCLDContitional(){
 
 //set votingchoicedisplay id to the voting choice input true or false
 function SetVoteChoiceDisplay(choice){
-    document.getElementById("votingchoicedisplay").innerText = votechoice;
+    //if the choice is true, set the votingchoicedisplay id to "For", else set it to "Against"
 }
 
 //
