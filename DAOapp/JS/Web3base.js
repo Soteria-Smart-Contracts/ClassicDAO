@@ -98,6 +98,7 @@ async function GetHENS(){
 }
 
 async function CheckHENS(address){
+    AddressETCNS = address;
     AddressETCNS = await hens.js.getNameOfOwner(address);
     return AddressETCNS;
 }
