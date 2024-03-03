@@ -56,7 +56,7 @@ async function GetVotedProposals(){
             <div style="flex: 1;">${VotedProposals[i]}</div>
             <div style="flex: 1;">${VotedProposals[i]}</div>
             <div style="flex: 1;">
-                <button style="width: auto; background-color: #16ECD3; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>${ProposalStatusText}</button>
+                <button style="width: auto; background-color: #16ECD3; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>${ProposalStatus}</button>
             </div>
             <div style="flex: 1;">${TimeLeft}</div>
             <div style="flex: 1; display: flex; justify-content: flex-end;">
