@@ -21,7 +21,12 @@ async function runCodeWhenLoggedIn() {
     GetVotedProposals();
 }
 
-//get proposal details and votting ins
+//get proposal details and votting instance by id
+async function GetProposalInfo(ProposalID){
+    let Proposal = await DAOcore.methods.Proposals(ProposalID).call();
+    let ProposalStatus = await DAOvoting.methods.VotingInstances(ProposalID).call();
+    return [Proposal, ProposalInfo, ProposalStatus];
+}
 
 async function GetVotedProposals(){
     let VotedProposals = [];
