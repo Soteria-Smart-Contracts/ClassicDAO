@@ -33,7 +33,6 @@ async function GetVotedProposals(){
     for(let i = 0; i < 10; i++){
             let Proposal = await DAOvoting.methods.UserUnreturnedVotes(account, i).call();
             VotedProposals.push(Proposal);
-            console.log(Proposal);
         }
 
     VotedProposalsList.innerHTML = "";
