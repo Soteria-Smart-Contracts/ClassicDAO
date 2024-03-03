@@ -1,1 +1,1 @@
-push a list 
+//push a list of all the users voted 
