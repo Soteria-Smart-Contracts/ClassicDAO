@@ -24,7 +24,9 @@ async function GetVotedProposals(){
         VoteEnds = ProposalInfo.VoteEnds;
         //if the vote ends is lower than the current time, the proposal has ended, so set the status to Ended, and set the time left to Over
         IsOver = VoteEnds < Math.floor(Date.now() / 1000);
-        Status = "Active";
+        if(IsOver){
+            ProposalStatus = 1;
+        }
         //if vote ends is not 0, the proposal has either st
         let ProposalStatusText = "Active";
         if(ProposalStatus[0] == 1){
