@@ -24,7 +24,7 @@ async function GetVotedProposals(){
         let ProposalStatus = await DAOvoting.methods.VotingInstances(VotedProposals[i]).call();
         ProposalStatus = ProposalStatus.Status;
         VoteEnds = ProposalInfo[1].VoteEnds;
-        
+        //if vote ends is not 0, the pro
         let ProposalStatusText = "Active";
         if(ProposalStatus[0] == 1){
             ProposalStatusText = "Ended";
