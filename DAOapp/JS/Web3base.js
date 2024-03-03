@@ -119,6 +119,9 @@ function timeLeft(unixTime) {
     timeLeft -= hours * 60 * 60;
     let minutes = Math.floor(timeLeft / 60);
     //if theare no days, return hours and minutes
+    if (days == 0) {
+        return hours + " hours " + minutes + " minutes";
+    }
     return days + " days " + hours + " hours";
 }
 
