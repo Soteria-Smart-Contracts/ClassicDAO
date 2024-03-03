@@ -106,6 +106,7 @@ async function LoadVoterList() {
     document.getElementById("TotalVoters").innerText = Voters.length;
     document.getElementById("VoterList").innerHTML = "";
     var div = document.createElement("div");
+    div.innerHTML = "
 
     VoterList = [];
     for (i = 0; i < Voters.length; i++) {
