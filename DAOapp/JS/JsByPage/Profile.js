@@ -29,7 +29,7 @@ async function GetVotedProposals(){
             TimeLeft = "Over";
         }
         else{
-            
+            ProposalStatus = "Voting"
             TimeLeft = timeLeft(VoteEnds);
         }
         //if vote ends is not 0, the proposal has either st
