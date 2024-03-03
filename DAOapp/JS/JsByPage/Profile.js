@@ -19,6 +19,8 @@ async function runCodeWhenLoggedIn() {
     }
 
     GetVotedProposals();
+    console.log("Logged in");
+    LoggedIn = true;
 }
 
 //get proposal details and votting instance by id
