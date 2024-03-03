@@ -112,9 +112,8 @@ async function LoadVoterList() {
 
 //detect changes in the voter list
 async function DetectVoterListChange() {
-    while (true) {
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
-        NewVoters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
+    await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
+    NewVoters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
         if (NewVoters.length != Voters.length) {
             LoadVoterList();
         }
