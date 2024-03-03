@@ -14,7 +14,7 @@ async function runCodeWhenLoggedIn() {
 
 setInterval(function () {
     document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
-    DetectVoterListChange()
+    DetectVoterListChange();
 }, 1000);
 
 async function LoadDashboard() {
