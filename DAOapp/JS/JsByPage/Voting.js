@@ -61,30 +61,7 @@ async function LoadDashboard() {
     document.getElementById("naybar").style.width = (NAYvotes / TotalVotes) * 100 + "%";  
     document.getElementById("quorumbar").style.width = QuorumProgress + "%";
 
-    Voters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
-    document.getElementById("TotalVoters").innerText = Voters.length;
-
-    VoterList = [];
-    for (i = 0; i < Voters.length; i++) {
-        VoterList.push({ "Voter": Voters[i], "Amount": parseFloat(web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, Voters[i]).call()).VotesLocked, 'ether')).toFixed(2) });
-    }
-    VoterList.sort((a, b) => parseFloat(b.Amount) - parseFloat(a.Amount));
-
-    for (i = 0; i < VoterList.length; i++) {
-        var div = document.createElement("div");
-        div.style.marginTop = "22px";
-        var span = document.createElement("span");
-        span.className = "address";
-        span.style.padding = "8px";
-        span.style.color = "black";
-        span.style.fontWeight = "bold";
-        span.style.width = "auto";
-        span.style.backgroundColor = "white";
-        userDisplay = await CheckHENS(VoterList[i].Voter);
-        span.innerHTML = "<a target='_blank' href='https://etc.blockscout.com/address/" + VoterList[i].Voter + "' style='color: black; text-decoration: none;'>" + userDisplay + "</a> | " + VoterList[i].Amount + " CLD";
-        div.appendChild(span);
-        document.getElementById("VoterList").appendChild(div);
-    }
+    LoadVoterList();
 
     //yeapercent and naypercent ids are the percentage of the total votes for each, set the text to the percentage of the total votes for each
     document.getElementById("yeapercent").innerText = ((YEAvotes / TotalVotes) * 100).toFixed(2);
