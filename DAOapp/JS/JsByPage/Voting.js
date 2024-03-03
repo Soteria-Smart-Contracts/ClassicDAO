@@ -104,6 +104,7 @@ async function LoadDashboard() {
 async function LoadVoterList() {
     Voters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
     document.getElementById("TotalVoters").innerText = Voters.length;
+    
     VoterList = [];
     for (i = 0; i < Voters.length; i++) {
         VoterList.push({ "Voter": Voters[i], "Amount": parseFloat(web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, Voters[i]).call()).VotesLocked, 'ether')).toFixed(2) });
