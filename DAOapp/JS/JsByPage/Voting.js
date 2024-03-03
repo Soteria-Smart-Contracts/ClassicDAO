@@ -147,7 +147,7 @@ async function SubmitVote(){
     location.reload();
 }
 
-
+//create a function that takes an input 
 
 
 //
