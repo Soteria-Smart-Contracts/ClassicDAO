@@ -63,7 +63,6 @@ async function LoadDashboard() {
     Voters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
     document.getElementById("TotalVoters").innerText = Voters.length;
 
-    //create a list of objects with each object containing the voter and the amount of CLD they voted, then sort the list by the amount of CLD they voted
     VoterList = [];
     for (i = 0; i < Voters.length; i++) {
         VoterList.push({ "Voter": Voters[i], "Amount": parseFloat(web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, Voters[i]).call()).VotesLocked, 'ether')).toFixed(2) });
@@ -71,9 +70,6 @@ async function LoadDashboard() {
     }
     VoterList.sort((a, b) => parseFloat(b.Amount) - parseFloat(a.Amount));
 
-    //<div style="margin-top: 22px;">
-    //<span class="address" style="padding: 8px; color: black; font-weight: bold; width: auto; background-color: white;">0xc932b...3Ce | 100000 CLD</span>
-    //</div> push a div like this for each voter in the voterlist to the id voterlist
     for (i = 0; i < VoterList.length; i++) {
         var div = document.createElement("div");
         div.style.marginTop = "22px";
@@ -85,7 +81,6 @@ async function LoadDashboard() {
         span.style.width = "auto";
         span.style.backgroundColor = "white";
         userDisplay = await CheckHENS(VoterList[i].Voter);
-        //set the link to the users blockscout page at https://etc.blockscout.com/address/USERADDRESS on a new tab
         span.innerHTML = "<a target='_blank' href='https://etc.blockscout.com/address/" + VoterList[i].Voter + "' style='color: black; text-decoration: none;'>" + userDisplay + "</a> | " + VoterList[i].Amount + " CLD";
         div.appendChild(span);
         document.getElementById("VoterList").appendChild(div);
