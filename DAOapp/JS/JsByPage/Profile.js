@@ -26,8 +26,10 @@ async function GetVotedProposals(){
         IsOver = VoteEnds < Math.floor(Date.now() / 1000);
         if(IsOver){
             ProposalStatus = Over;
+            TimeLeft = "Over";
         }
         else{
+            
             TimeLeft = timeLeft(VoteEnds);
         }
         //if vote ends is not 0, the proposal has either st
