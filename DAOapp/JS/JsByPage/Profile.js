@@ -22,7 +22,9 @@ async function runCodeWhenLoggedIn() {
 }
 
 async function GetVotedProposals(){
-    let VotedProposals = []]
+    let VotedProposals = [];
+    //loop through the first 10 proposals and push them to the VotedProposals array
+    for(let i = 0; i < 10; i++){
     let VotedProposalsList = document.getElementById("UserVotedProposalsList");
     VotedProposalsList.innerHTML = "";
     for(let i = 0; i < VotedProposals.length; i++){
