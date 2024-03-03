@@ -15,6 +15,8 @@ async function GetProposalInfo(ProposalID){
     return(ProposalStatus);
 }
 
+
+
 async function GetVotedProposals(){
     let VotedProposals = [];
     //loop through the first 10 proposals and push them to the VotedProposals array
