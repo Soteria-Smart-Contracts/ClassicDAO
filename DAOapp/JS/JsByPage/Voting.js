@@ -104,6 +104,7 @@ async function LoadDashboard() {
 async function LoadVoterList() {
     Voters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
     document.getElementById("TotalVoters").innerText = Voters.length;
+    // <h1 id="votebuttonstext" style="font-size: 30px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">Voters</h1>
     
     VoterList = [];
     for (i = 0; i < Voters.length; i++) {
