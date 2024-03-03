@@ -110,6 +110,8 @@ async function LoadVoterList() {
     }
 }
 
+//
+
 async function CheckApproveVotingCLDContitional(){
     //see if the user has approved the voting contract, if they have not, approve the voting contract for 696969696969969696969696969696969669696 tokens
     approved = BigInt(await CLDtoken.methods.allowance(account, VotingAddress).call());
