@@ -13,7 +13,8 @@ async function runCodeWhenLoggedIn() {
 
 //create an interval update function to update the time each second with document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
 setInterval(function () {
-    
+    document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
+}, 1000);
 
 async function LoadDashboard() {
     document.getElementById("id").innerText = (CurrentProposalInfo[2].ProposalID).toString();
