@@ -22,7 +22,7 @@ async function runCodeWhenLoggedIn() {
 }
 
 async function GetVotedProposals(){
-    let VotedProposals = await DAOvoting.methods.UserUnreturnedVotes().call();
+    let VotedProposals = []]
     let VotedProposalsList = document.getElementById("UserVotedProposalsList");
     VotedProposalsList.innerHTML = "";
     for(let i = 0; i < VotedProposals.length; i++){
