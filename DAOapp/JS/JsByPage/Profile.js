@@ -13,15 +13,12 @@
     </a>
 </div>
 </div */}
-//await logged in then GetVotedProposals();
 async function runCodeWhenLoggedIn() {
     while (!LoggedIn) {
         await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
     }
 
-    CurrentProposalInfo = await GetCurrentProposal();
-    LoadDashboard();
-    console.log(CurrentProposalInfo);
+    GetVotedProposals();
 }
 
 async function GetVotedProposals(){
