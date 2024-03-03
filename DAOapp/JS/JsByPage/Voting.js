@@ -108,7 +108,9 @@ async function LoadVoterList() {
     for (i = 0; i < Voters.length; i++) {
         VoterList.push({ "Voter": Voters[i], "Amount": parseFloat(web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, Voters[i]).call()).VotesLocked, 'ether')).toFixed(2) });
     }
-    
+    VoterList.sort((a, b) => parseFloat(b.Amount) - parseFloat(a.Amount));
+    document.getElementById("VoterList").innerHTML = "";
+    for (i = 0; i < VoterList.length; i++) {
 
 async function CheckApproveVotingCLDContitional(){
     //see if the user has approved the voting contract, if they have not, approve the voting contract for 696969696969969696969696969696969669696 tokens
