@@ -100,6 +100,8 @@ async function LoadDashboard() {
     document.getElementById("rangeIncentive").max = Number(web3.utils.fromWei(CLDtokenholdings, 'ether')).toFixed(2) - 0.0001;
 }
 
+//create a load voter li
+
 async function CheckApproveVotingCLDContitional(){
     //see if the user has approved the voting contract, if they have not, approve the voting contract for 696969696969969696969696969696969669696 tokens
     approved = BigInt(await CLDtoken.methods.allowance(account, VotingAddress).call());
