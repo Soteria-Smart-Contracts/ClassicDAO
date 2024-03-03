@@ -35,7 +35,7 @@ async function GetVotedProposals(){
             VotedProposals.push(Proposal);
         }
 
-    VotedProposalsList.innerHTML = "";
+    UserVotedProposalsList.innerHTML = "";
     for(let i = 0; i < VotedProposals.length; i++){
         VotingInstances = await GetProposalInfo(VotedProposals[i]);
         VoteEnds = VotingInstances.VoteEnds;
