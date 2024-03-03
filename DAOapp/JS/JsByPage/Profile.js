@@ -15,8 +15,11 @@ async function GetProposalInfo(ProposalID){
     return(ProposalStatus);
 }
 
-async function GetProposalIDfromUnreturnedVotes(){
-    
+async function GetProposalIDfromUnreturnedVotes(index){
+    let ProposalID = await DAOvoting.methods.UserUnreturnedVotes(account, index).call();
+    return(ProposalID);
+}
+
 
 async function GetVotedProposals(){
     let VotedProposals = [];
