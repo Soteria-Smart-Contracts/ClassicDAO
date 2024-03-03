@@ -15,7 +15,7 @@
 </div */}
 async function runCodeWhenLoggedIn() {
     while (!LoggedIn) {
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
+        new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
     }
 
     GetVotedProposals();
@@ -31,7 +31,7 @@ async function GetVotedProposals(){
     }
 
     VotedProposalsList.innerHTML = "";
-    
+
     for(let i = 0; i < VotedProposals.length; i++){
         let Proposal = await DAOcore.methods.Proposals(VotedProposals[i]).call();
         let ProposalStatus = await DAOvoting.methods.VotingInstances(VotedProposals[i]).call();
