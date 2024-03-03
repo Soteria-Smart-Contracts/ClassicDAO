@@ -13,7 +13,8 @@
     </a>
 </div>
 </div */}
-//await logged in thenGetVotedProposals();
+//await logged in then GetVotedProposals();
+
 
 async function GetVotedProposals(){
     let VotedProposals = await DAOvoting.methods.UserUnreturnedVotes(account).call();
