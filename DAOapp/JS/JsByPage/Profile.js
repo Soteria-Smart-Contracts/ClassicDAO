@@ -21,7 +21,7 @@ async function GetVotedProposals(){
     for(let i = 0; i < 10; i++){
             let Proposal;
             try {
-                let Proposal = await DAOvoting.methods.UserUnreturnedVotes(account, i).call();
+                Proposal = await DAOvoting.methods.UserUnreturnedVotes(account, i).call();
             } catch (error) {
                 console.error(error);
                 break;
