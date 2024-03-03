@@ -11,6 +11,8 @@ async function runCodeWhenLoggedIn() {
     console.log(CurrentProposalInfo);
 }
 
+
+
 async function LoadDashboard() {
     document.getElementById("id").innerText = (CurrentProposalInfo[2].ProposalID).toString();
     //HeaderProposer id
