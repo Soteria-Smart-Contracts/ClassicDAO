@@ -54,3 +54,4 @@ async function GetVotedProposals(){
         document.getElementById("UserVotedProposalsList").innerHTML += ProposalHTML;
     }
 }
+runCodeWhenLoggedIn();
