@@ -39,16 +39,15 @@ async function GetVotedProposals(){
 
     VotedProposalsList.innerHTML = "";
     for(let i = 0; i < VotedProposals.length; i++){
-        (ProposalInfo, VotingInstances) = await GetProposalInfo(VotedProposals[i]);
+        let [ProposalInfo, VotingInstances] = await GetProposalInfo(VotedProposals[i]);
         VoteEnds = ProposalInfo.VoteEnds;
         //if the vote ends is lower than the current time, the proposal has ended, so set the status to Ended, and set the time left to Over
         IsOver = VoteEnds < Math.floor(Date.now() / 1000);
-        if(IsOver){
-            ProposalStatus = Over;
+        if (IsOver) {
+            ProposalStatus = "Over";
             TimeLeft = "Over";
-        }
-        else{
-            ProposalStatus = "Voting"
+        } else {
+            ProposalStatus = "Voting";
             TimeLeft = timeLeft(VoteEnds);
         }
         let ProposalHTML = `
