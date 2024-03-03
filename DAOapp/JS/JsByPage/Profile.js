@@ -15,7 +15,8 @@ async function GetProposalInfo(ProposalID){
     return(ProposalStatus);
 }
 
-
+async function GetProposalIDfromUnreturnedVotes(){
+    
 
 async function GetVotedProposals(){
     let VotedProposals = [];
