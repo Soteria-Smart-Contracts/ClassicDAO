@@ -22,7 +22,7 @@ async function GetVotedProposals(){
         let Proposal = await DAOcore.methods.Proposals(VotedProposals[i]).call();
         let ProposalStatus = await DAOvoting.methods.VotingInstances(VotedProposals[i]).call();
         VoteEnds = ProposalInfo.VoteEnds;
-        //if the vote ends
+        //if the vote ends is lower than the current time, the proposal has ended
         TimeLeft = timeLeft(VoteEnds);
         //if vote ends is not 0, the proposal has either st
         let ProposalStatusText = "Active";
