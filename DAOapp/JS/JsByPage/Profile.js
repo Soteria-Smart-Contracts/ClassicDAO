@@ -25,6 +25,11 @@ async function GetVotedProposals(){
     let VotedProposals = [];
     //loop through the first 10 proposals and push them to the VotedProposals array
     for(let i = 0; i < 10; i++){
+        let Proposal = await DAOvoting.methods.UserUnreturnedVotes(account, i).call();
+        if(Proposal != 0){
+            VotedProposals.push(Proposal);
+        }
+    }
     let VotedProposalsList = document.getElementById("UserVotedProposalsList");
     VotedProposalsList.innerHTML = "";
     for(let i = 0; i < VotedProposals.length; i++){
