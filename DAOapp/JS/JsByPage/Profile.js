@@ -29,7 +29,7 @@ async function GetVotedProposals(){
             try {
                 Proposal = GetProposalIDfromUnreturnedVotes(i);
             } catch (error) {
-                console.error(error);
+                console.log("Error above is")
                 break;
             }
             VotedProposals.push(Proposal);
