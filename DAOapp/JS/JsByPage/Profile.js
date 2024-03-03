@@ -59,6 +59,6 @@ async function GetVotedProposals(){
             </div>
         </div>
         `;
-        VotedProposalsList.innerHTML += ProposalHTML;
+        
     }
 }
