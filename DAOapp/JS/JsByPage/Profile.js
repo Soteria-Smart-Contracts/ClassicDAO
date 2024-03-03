@@ -1,1 +1,1 @@
-//push a list of all the users voted 
+//push a list of all the users voted proposals to the page by calling 
