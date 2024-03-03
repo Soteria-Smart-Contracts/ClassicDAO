@@ -15,7 +15,7 @@
 </div */}
 async function runCodeWhenLoggedIn() {
     while (!LoggedIn) {
-        new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
     }
 
     GetVotedProposals();
