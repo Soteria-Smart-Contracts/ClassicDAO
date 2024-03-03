@@ -52,7 +52,6 @@ async function GetVotedProposals(){
             TimeLeft = timeLeft(VoteEnds);
         }
         //if vote ends is not 0, the proposal has either st
-        let ProposalStatusText = "Active";
         if(ProposalStatus[0] == 1){
             ProposalStatusText = "Ended";
         }
