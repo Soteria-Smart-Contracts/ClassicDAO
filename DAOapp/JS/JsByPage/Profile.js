@@ -1,1 +1,1 @@
-//push a list of all the users voted proposals to the page by calling 
+//push a list of all the users voted proposals to the page by calling the UserUnreturnedVotes 
