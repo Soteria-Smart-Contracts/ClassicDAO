@@ -40,10 +40,6 @@ async function LoadDashboard() {
         document.getElementById("votebuttonstext").innerHTML = "You have already voted <br><br>Your Current Incentive Reward: " + ToFixedReward + " CLD";
         console.log("You have already voted");
     }
-
-    //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours), trigger a loop to update the time every 
-    document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
-
     //there are yea and nay bars, the width of the bars are the percentage of the total votes, calculate the percentage of the total votes for each and set the width of the bars to that percentage. IDs are yeabar and naybar. do the calculations and the updating in the same line
     //start by getting all yae votes and nay votes, convert them from bigint wei to float using fromWei, then calculate the percentage of the total votes for each, then set the width of the bars to that percentage
     YEAvotes = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].YEAvotes, 'ether'));
