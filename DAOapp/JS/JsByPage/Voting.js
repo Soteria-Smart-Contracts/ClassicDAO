@@ -101,7 +101,11 @@ async function LoadDashboard() {
 }
 
 //create a load voter list function that will load the voter list, so that we only need to call the function to load the voter list, then another fucntion to detect changes in the voter list, so that we can call the load voter list function when the voter list changes
-
+//load the voter list
+async function LoadVoterList() {
+    Voters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
+    document.getElementById("TotalVoters").innerText = Voters.length;
+    
 
 async function CheckApproveVotingCLDContitional(){
     //see if the user has approved the voting contract, if they have not, approve the voting contract for 696969696969969696969696969696969669696 tokens
