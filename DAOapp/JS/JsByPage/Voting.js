@@ -14,6 +14,7 @@ async function runCodeWhenLoggedIn() {
 
 setInterval(function () {
     document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
+    DetectVoterListChange()
 }, 1000);
 
 async function LoadDashboard() {
@@ -112,7 +113,6 @@ async function LoadVoterList() {
 
 //detect changes in the voter list
 async function DetectVoterListChange() {
-    await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
     NewVoters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
     if (NewVoters.length != Voters.length) {
         LoadVoterList();
