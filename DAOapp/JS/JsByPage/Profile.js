@@ -21,6 +21,8 @@ async function runCodeWhenLoggedIn() {
     GetVotedProposals();
 }
 
+//get pro
+
 async function GetVotedProposals(){
     let VotedProposals = [];
     //loop through the first 10 proposals and push them to the VotedProposals array
