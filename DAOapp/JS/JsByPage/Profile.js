@@ -21,7 +21,7 @@ async function runCodeWhenLoggedIn() {
     GetVotedProposals();
 }
 
-//get pro
+//get proposal details and votting ins
 
 async function GetVotedProposals(){
     let VotedProposals = [];
