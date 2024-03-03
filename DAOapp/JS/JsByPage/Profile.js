@@ -29,9 +29,9 @@ async function GetVotedProposals(){
             VotedProposals.push(Proposal);
         }
     }
-    
-    let VotedProposalsList = document.getElementById("UserVotedProposalsList");
+
     VotedProposalsList.innerHTML = "";
+    
     for(let i = 0; i < VotedProposals.length; i++){
         let Proposal = await DAOcore.methods.Proposals(VotedProposals[i]).call();
         let ProposalStatus = await DAOvoting.methods.VotingInstances(VotedProposals[i]).call();
