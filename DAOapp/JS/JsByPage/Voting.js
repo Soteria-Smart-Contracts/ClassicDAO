@@ -108,14 +108,13 @@ async function LoadVoterList() {
     var div = document.createElement("div");
     div.innerHTML = '<h1 id="votebuttonstext" style="font-size: 30px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">Voters</h1>';
     document.getElementById("VoterList").appendChild(div);
-    
+
 
     VoterList = [];
     for (i = 0; i < Voters.length; i++) {
         VoterList.push({ "Voter": Voters[i], "Amount": parseFloat(web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, Voters[i]).call()).VotesLocked, 'ether')).toFixed(2) });
     }
     VoterList.sort((a, b) => parseFloat(b.Amount) - parseFloat(a.Amount));
-    document.getElementById("VoterList").innerHTML = "";
     for (i = 0; i < VoterList.length; i++) {
         var div = document.createElement("div");
         div.style.marginTop = "22px";
