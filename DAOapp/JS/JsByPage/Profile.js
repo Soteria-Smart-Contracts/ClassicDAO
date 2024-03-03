@@ -23,9 +23,8 @@ async function runCodeWhenLoggedIn() {
 
 //get proposal details and votting instance by id
 async function GetProposalInfo(ProposalID){
-    let Proposal = await DAOcore.methods.Proposals(ProposalID).call();
     let ProposalStatus = await DAOvoting.methods.VotingInstances(ProposalID).call();
-    return(Proposal, ProposalStatus);
+    return(ProposalStatus);
 }
 
 async function GetVotedProposals(){
@@ -38,7 +37,7 @@ async function GetVotedProposals(){
 
     VotedProposalsList.innerHTML = "";
     for(let i = 0; i < VotedProposals.length; i++){
-        let [ProposalInfo, VotingInstances] = await GetProposalInfo(VotedProposals[i]);
+        VotingInstances = await GetProposalInfo(VotedProposals[i]);
         VoteEnds = VotingInstances.VoteEnds;
         //if the vote ends is lower than the current time, the proposal has ended, so set the status to Ended, and set the time left to Over
         IsOver = VoteEnds < Math.floor(Date.now() / 1000);
