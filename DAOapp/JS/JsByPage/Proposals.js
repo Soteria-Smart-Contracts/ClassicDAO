@@ -32,26 +32,26 @@
 runCodeWhenLoggedIn();
 let CLDtoIncentive = [];
 
-//simple proposal types are a subset of simple proposals, with the following types: 
-enum SimpleProposalTypes{
-    NotApplicable,
-    AssetSend,
-    AssetRegister,
-    ChangeRegisteredAssetLimit,
-    TreasuryReplacement,
-    VotingReplacement,
-    SaleFactoryReplacement,
-    CoreReplacement,
-    StartPublicSale,
-    ChangeProposalCost,
-    ChangeSaleRetractFee,
-    ChangeSaleMinimumDeposit,
-    ChangeSaleDefaultSaleLength,
-    ChangeSaleMaxSalePercent,
-    ChangeDefaultQuorum,
-    ChangeVotingLength,
-    ChangeVotingCuts
-}
+//simple proposal types are a subset of simple proposals, with the following types, starting from 0 to 16, the types are as follows: 
+// enum SimpleProposalTypes{
+//     NotApplicable,
+//     AssetSend,
+//     AssetRegister,
+//     ChangeRegisteredAssetLimit,
+//     TreasuryReplacement,
+//     VotingReplacement,
+//     SaleFactoryReplacement,
+//     CoreReplacement,
+//     StartPublicSale,
+//     ChangeProposalCost,
+//     ChangeSaleRetractFee,
+//     ChangeSaleMinimumDeposit,
+//     ChangeSaleDefaultSaleLength,
+//     ChangeSaleMaxSalePercent,
+//     ChangeDefaultQuorum,
+//     ChangeVotingLength,
+//     ChangeVotingCuts
+// }
 
 
 async function runCodeWhenLoggedIn() {
