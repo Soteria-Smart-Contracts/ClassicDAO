@@ -55,7 +55,7 @@ async function GetVotedProposals(){
         ID = VotedProposals[i];
         //check if the ongoing proposal ID is the same as the proposal ID, if it is, set the status to Awaiting next proposal
         if (VotedProposals[i] == OngoingProposalID) {
-            ProposalStatus = "Awaiting next proposal";
+            ProposalStatus = "Over";
             TimeLeft = "Awaiting next proposal";
             NextProposalStarted = "disabled";
         } else {
