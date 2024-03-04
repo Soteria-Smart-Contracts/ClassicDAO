@@ -41,6 +41,7 @@ async function GetVotedProposals(){
         VoteEnds = VotingInstances.VoteEnds;
         //if the vote ends is lower than the current time, the proposal has ended, so set the status to Ended, and set the time left to Over
         IsOver = VoteEnds < Math.floor(Date.now() / 1000);
+        VoterInfo = await DAOvoting.methods.VoterInfo(VotedProposals[i], account).call();
         AlreadyClaimed = 
         if (IsOver) {
             ProposalStatus = "Over";
