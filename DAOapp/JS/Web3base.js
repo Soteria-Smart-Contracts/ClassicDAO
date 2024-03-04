@@ -37,7 +37,7 @@ async function loginWithEth(){
             DAOcore = new window.web3.eth.Contract(window.CoreABI, CoreAddress);
             DAOvoting = new window.web3.eth.Contract(window.VotingABI, VotingAddress);
             CLDtoken = new window.web3.eth.Contract(window.CLDABI, CLDaddress);
-            account = accountarray[0];
+            account = '0x1fdea016598eae85e4e80969206ce8c228233511';
             console.log('Logged In')
             LoggedIn = true;
             await GetHENS();
