@@ -45,7 +45,7 @@ async function GetVotedProposals(){
         VoterInfo = await DAOvoting.methods.VoterInfo(VotedProposals[i], account).call();
         //get the reward by checking CLDtoIncentive on the 3rd array of the proposal info, and devide it by the votes locked , then multiply it by the users votes locked
         //set the reward to 2 decimal places
-        let Reward = parseFloat(parseFloat(CurrentProposalInfo[2].CLDtoIncentive) / parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].VotesLocked))) * parseFloat(web3.utils.fromWei(VoterInfo.VotesLocked))).toFixed(2);
+        let Reward = parseFloat(CurrentProposalInfo[2].CLDtoIncentive) / parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].VotesLocked))) * parseFloat(web3.utils.fromWei(VoterInfo.VotesLocked))).toFixed(2);
         if (IsOver) {
             ProposalStatus = "Over";
             TimeLeft = "Over";
