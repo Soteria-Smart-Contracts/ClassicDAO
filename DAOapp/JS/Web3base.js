@@ -98,7 +98,8 @@ async function GetHENS(){
         //set the address id element to the short users address found in buttonConnect
         
         document.getElementById("address").innerHTML = shortAddress;
-        //get the cld balance of the user and add a br tag to address id element and then add the balance in
+        //get the cld balance of the user and add a br tag to address id element and then add the balance in the format of Balance: 0.00 CLD
+        
     }
 }
 
