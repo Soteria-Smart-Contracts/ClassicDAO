@@ -13,7 +13,11 @@ async function runCodeWhenLoggedIn() {
 }
 
 setInterval(function () {
-    document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
+    if (Math.floor(Date.now() / 1000) > CurrentProposalInfo[2].VoteEnds) {
+        document.getElementById("VoteEnds").innerText = "Over";
+    } else {
+        document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
+    }
     DetectVoterListChange();
 }, 1000);
 
