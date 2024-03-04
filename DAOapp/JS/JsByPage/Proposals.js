@@ -53,7 +53,7 @@ let CLDtoIncentive = [];
 //     ChangeVotingCuts
 // }
 
-//create a function to 
+//create a function that takes in a 
 
 
 async function runCodeWhenLoggedIn() {
