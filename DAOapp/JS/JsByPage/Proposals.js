@@ -51,6 +51,12 @@ async function LoadProposals() {
                 <a href="CurrentVote.html" style="text-decoration: none; color: inherit; outline: none;">
                 <button class="
                 view_more_button" style="background-color: #16ECD3;">View more</button>
-                
+                </a>
+            </div>
+        </div>
+        `;
+        ProposalQueueList.innerHTML += ProposalHTML;
+
+        //
 }
     
