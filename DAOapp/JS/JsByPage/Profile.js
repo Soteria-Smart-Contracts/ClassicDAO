@@ -43,7 +43,6 @@ async function GetVotedProposals(){
         IsOver = VoteEnds < Math.floor(Date.now() / 1000);
         VoterInfo = await DAOvoting.methods.VoterInfo(VotedProposals[i], account).call();
         AlreadyClaimed = VoterInfo.CLDReturned ? "disabled" : "";
-        console.log(AlreadyClaimed);
         if (IsOver) {
             ProposalStatus = "Over";
             TimeLeft = "Over";
