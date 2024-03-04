@@ -44,7 +44,7 @@ async function GetVotedProposals(){
         if (IsOver) {
             ProposalStatus = "Over";
             TimeLeft = "Over";
-            IsOver = "none";
+            IsOver = "flex";
         } else {
             ProposalStatus = "Voting";
             TimeLeft = timeLeft(VoteEnds);
@@ -59,7 +59,7 @@ async function GetVotedProposals(){
             <div style="flex: 1;">${TimeLeft}</div>
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <a href="CurrentVoting.html" style="text-decoration: none; color: inherit; outline: none;">
-                <button class="view_more_button" style="display: ${Over};">Return Votes</button>             
+                <button class="view_more_button" style="display: ${IsOver};">Return Votes</button>             
                 </a>
             </div>
         </div>
