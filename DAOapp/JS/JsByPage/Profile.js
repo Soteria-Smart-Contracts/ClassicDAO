@@ -73,6 +73,7 @@ async function GetVotedProposals(){
 runCodeWhenLoggedIn();
 
 async function ClaimInstance(ProposalID){
-    //ReturnTokens ON T
+    //ReturnTokens ON THE DAOvoting contract, estimate the gas and send the transaction
+    
     console.log(ProposalID);
 }
