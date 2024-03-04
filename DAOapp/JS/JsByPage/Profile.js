@@ -57,7 +57,7 @@ async function GetVotedProposals(){
         if (VotedProposals[i] == OngoingProposalID) {
             ProposalStatus = "Over";
             TimeLeft = "Awaiting next proposal";
-            AmountButton = VoterInfo.VotesLocked;
+            AmountButton = web3.utils.VoterInfo.VotesLocked;
             Onclick = "";
         } else {
             NextProposalStarted = "";
