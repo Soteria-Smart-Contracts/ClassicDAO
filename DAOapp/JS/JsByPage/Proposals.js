@@ -123,6 +123,7 @@ async function LoadProposals() {
         let VotingInstance = await DAOvoting.methods.VotingInstances(Number(CLDtoIncentive[i][0])).call();
         let ProposalInfo = await DAOcore.methods.ProposalInfos(Number(CLDtoIncentive[i][0])).call();
         let Status = "Queued Up";
+        console.log(VotingInstance);
         //if the votestart is higher than the current time, the proposal is still in grace period, so set the status to Grace Period
         if (VotingInstance.VoteStart > Math.floor(Date.now() / 1000)) {
             Status = "Grace Period";
@@ -133,7 +134,7 @@ async function LoadProposals() {
         }
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; padding: 20px; color: #fff; box-sizing: border-box; padding-left: 0px;">
-            <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${VotingInstances.Propo}</div>
+            <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${VotingInstances.ProposalID}</div>
             <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${await ProposalTypeToString(ProposalInfo.SimpleType)}</div>
             <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether')} CLD</div>
             <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${ProposalQueue[i]}</div>
