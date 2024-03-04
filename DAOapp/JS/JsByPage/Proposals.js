@@ -54,6 +54,7 @@ let CLDtoIncentive = [];
 // }
 
 async function ProposalTypeToString(type) {
+    type = Number(type);
     switch (type) {
         case 0:
             return "Not Applicable";
