@@ -30,6 +30,8 @@
     // </div>
 
 runCodeWhenLoggedIn();
+let CLDtoIncentive = [];
+
 
 async function runCodeWhenLoggedIn() {
     while (!LoggedIn) {
@@ -46,7 +48,6 @@ async function LoadProposals() {
     let ProposalQueue = await DAOvoting.methods.GetVotingQueue().call();
     let ProposalQueueList = document.getElementById("ProposalQueueList");
     //sort the voting queue by the CLDtoIncentive, the highest CLDtoIncentive will be first, start by getting the CLDtoIncentive of all proposals in the queue
-    let CLDtoIncentive = [];
     for (let i = 0; i < ProposalQueue.length; i++) {
         CLDtoIncentive.push(await DAOvoting.methods.VotingInstances(ProposalQueue[i]).call());
     }
