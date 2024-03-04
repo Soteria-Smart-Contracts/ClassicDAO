@@ -42,6 +42,7 @@ async function GetVotedProposals(){
         //if the vote ends is lower than the current time, the proposal has ended, so set the status to Ended, and set the time left to Over
         IsOver = VoteEnds < Math.floor(Date.now() / 1000);
         VoterInfo = await DAOvoting.methods.VoterInfo(VotedProposals[i], account).call();
+        Next = VoterInfo.CLDReturned ? "disabled" : "";
         if (IsOver) {
             ProposalStatus = "Over";
             TimeLeft = "Over";
@@ -51,6 +52,7 @@ async function GetVotedProposals(){
             TimeLeft = timeLeft(VoteEnds);
             IsOver = "none";
         }
+        ID = VotedProposals[i];
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
             <div style="flex: 1;">${VotedProposals[i]}</div>
@@ -60,7 +62,7 @@ async function GetVotedProposals(){
             <div style="flex: 1;">${TimeLeft}</div>
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <a onclick="ClaimInstance(${ID})" style="text-decoration: none; color: inherit; outline: none;">
-                <button class="view_more_button" style="display: ${IsOver};">Return Votes</button>             
+                <button class="view_more_button" ${AlreadyClaimed} style="display: ${IsOver};">Return Votes</button>             
                 </a>
             </div>
         </div>
