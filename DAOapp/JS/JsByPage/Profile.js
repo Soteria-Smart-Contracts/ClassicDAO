@@ -73,6 +73,7 @@ async function GetVotedProposals(){
             VoteInQuestion = await DAOvoting.methods.VotingInstances(VotedProposals[i]).call();
             console.log(VoteInQuestion.IncentivePerVote,VoterVotesLocked);
             Reward = (web3.utils.fromWei(VoteInQuestion.IncentivePerVote, 'ether') * VoterVotesLocked).toFixed(2) + " CLD";
+            console.log(Reward);
             NextProposalStarted = "";
             AmountButton = "Claim";
             Onclick = "ClaimInstance(" + VotedProposals[i] + ")";
