@@ -58,7 +58,7 @@ async function getID(){
 }
 
 async function GetCurrentProposal(){
-    OngoingProposal = await DAOvoting.methods.CurrentOngoingVote().call();
+    OngoingProposalID = await DAOvoting.methods.CurrentOngoingVote().call();
     OngoingProposalID = parseInt(OngoingProposal.toString());
     OngoingProposal = [];
     
