@@ -46,7 +46,7 @@ async function GetVotedProposals(){
         //get the reward by checking CLDtoIncentive on the 3rd array of the proposal info, and devide it by the votes locked , then multiply it by the users votes locked
         //set the reward to 2 decimal places
         console.log(VoterInfo);
-        let Reward = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].CLDtoIncentive)).toFixed(2) / parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].VotesLocked)).toFixed(2) * parseFloat(web3.utils.fromWei(VoterInfo.VotesLocked)).toFixed(2);
+        let Reward = parseFloat(await web3.utils.fromWei(CurrentProposalInfo[2].CLDtoIncentive)).toFixed(2) / parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].VotesLocked)).toFixed(2) * parseFloat(web3.utils.fromWei(VoterInfo.VotesLocked)).toFixed(2);
         if (IsOver) {
             ProposalStatus = "Over";
             TimeLeft = "Over";
@@ -61,7 +61,7 @@ async function GetVotedProposals(){
         if (VotedProposals[i] == OngoingProposalID) {
             ProposalStatus = "Over";
             TimeLeft = "Awaiting next proposal";
-            AmountButton = parseFloat(web3.utils.fromWei(VoterInfo.VotesLocked)).toFixed(2) + " CLD";
+            AmountButton = parseFloat(await web3.utils.fromWei(VoterInfo.VotesLocked)).toFixed(2) + " CLD";
             Onclick = "";
         } else {
             NextProposalStarted = "";
