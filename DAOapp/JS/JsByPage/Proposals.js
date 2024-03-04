@@ -65,7 +65,21 @@ async function LoadProposals() {
         }
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; padding: 20px; color: #fff; box-sizing: border-box;">
-        
+            <div style="flex: 1;">${i + 1}</div>
+            <div style="flex: 1;">${ProposalInfo.Memo}</div>
+            <div style="flex: 1;">${web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether')} CLD</div>
+            <div style="flex: 1;">${ProposalQueue[i]}</div>
+            <div style="flex: 1;">
+                <button style="width: auto; background-color: #2908df; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" id="PropStatus" disabled>${Status}</button>
+            </div>
+            <div style="flex: 1;">
+                <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>${ProposalType}</button>
+            </div>
+            <div style="flex: 1; display: flex; justify-content: flex-end;">
+                <a href="CurrentVote.html" style="text-decoration: none; color: inherit; outline: none;">
+                <button class="view_more_button" style="background-color: #16ECD3;">View more</button>             
+                </a>
+        </div>
         `;
         ProposalQueueList.innerHTML += ProposalHTML;
     }
