@@ -32,7 +32,7 @@
 runCodeWhenLoggedIn();
 let CLDtoIncentive = [];
 
-//simple proposal types
+//simple proposal types are a subset of simple 
 
 
 async function runCodeWhenLoggedIn() {
