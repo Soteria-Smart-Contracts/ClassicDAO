@@ -24,8 +24,7 @@ async function runCodeWhenLoggedIn() {
         console.log("Waiting for login");
     }
 
-    CurrentProposalInfo = await GetCurrentProposal();
-    GetVotedProposals();
+    LoadProposals();
     console.log("Logged in");
 }
 
