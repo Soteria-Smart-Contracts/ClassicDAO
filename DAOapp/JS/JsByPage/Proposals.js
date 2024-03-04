@@ -44,7 +44,7 @@ async function LoadProposals() {
     });
     console.log(CLDtoIncentive);
     ProposalQueueList.innerHTML = "";
-    for (let i = 0; i < ProposalQueue.length; i++) {
+    for (let i = 0; i < AllInstances.length; i++) {
         let VotingInstance = await DAOvoting.methods.VotingInstances(ProposalQueue[i]).call();
         let ProposalInfo = await DAOcore.methods.ProposalInfo(ProposalQueue[i]).call();
         let Status = "Awaiting Voting";
