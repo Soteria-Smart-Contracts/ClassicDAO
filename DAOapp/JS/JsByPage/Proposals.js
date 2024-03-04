@@ -17,3 +17,4 @@ setInterval(function() {
         document.getElementById("genesiscountdown").innerHTML = "in " + hours + " hours ";
     }
 });
+
