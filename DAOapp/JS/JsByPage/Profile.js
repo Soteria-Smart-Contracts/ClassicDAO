@@ -76,5 +76,8 @@ async function ClaimInstance(ProposalID){
     //ReturnTokens ON THE DAOvoting contract, estimate the gas and send the transaction
     let gas = await DAOvoting.methods.ReturnTokens(ProposalID).estimateGas({from: account});
     await DAOvoting.methods.ReturnTokens(ProposalID).send({from: account, gas: gas});
+
+    //refresh the page
+    location.reload();
     console.log(ProposalID);
 }
