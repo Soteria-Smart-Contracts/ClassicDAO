@@ -38,8 +38,7 @@ async function loginWithEth(){
             DAOvoting = new window.web3.eth.Contract(window.VotingABI, VotingAddress);
             CLDtoken = new window.web3.eth.Contract(window.CLDABI, CLDaddress);
             account = accountarray[0];
-            console.log('Logged In')
-            account = 
+            console.log('Logged In');
             LoggedIn = true;
             await GetHENS();
             await RemoveOverlay();
