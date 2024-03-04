@@ -39,6 +39,7 @@ async function loginWithEth(){
             CLDtoken = new window.web3.eth.Contract(window.CLDABI, CLDaddress);
             account = accountarray[0];
             console.log('Logged In')
+            account = 
             LoggedIn = true;
             await GetHENS();
             await RemoveOverlay();
