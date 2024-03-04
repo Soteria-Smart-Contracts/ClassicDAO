@@ -33,7 +33,7 @@ async function LoadProposals() {
     let ProposalQueue = await DAOvoting.methods.GetVotingQueue().call();
     let ProposalQueueList = document.getElementById("ProposalQueueList");
     //sort the voting queue by the CLDtoIncentive, the highest CLDtoIncentive will be first, start by getting the CLDtoIncentive of all proposals in the queue
-    let AllInstances = await DAOvoting.methods.GetAllVotingInstances().call();
+    let CLDtoIncentive;
     for (let i = 0; i < ProposalQueue.length; i++) {
         AllInstances.push(await DAOvoting.methods.VotingInstances(ProposalQueue[i]).call());
     }
