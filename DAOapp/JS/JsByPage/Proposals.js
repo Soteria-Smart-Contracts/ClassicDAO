@@ -70,7 +70,7 @@ async function LoadProposals() {
             <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether')} CLD</div>
             <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${ProposalQueue[i]}</div>
             <div style="flex: 1; text-align: center; align-items: center;">
-                <button style="width: auto; background-color: #2908df; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 15px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" id="PropStatus" disabled>${Status}</button>
+                <button style="width: auto; background-color: #ffffff; color: #ffffff; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 15px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" id="PropStatus" disabled>${Status}</button>
             </div>
             <div style="flex: 1; text-align: center; align-items: center;">
                 <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 15px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>${ProposalType}</button>
