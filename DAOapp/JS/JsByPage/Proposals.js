@@ -67,7 +67,7 @@ async function LoadProposals() {
         </div>
         `;
         ProposalQueueList.innerHTML += ProposalHTML;
-
+    }
         
 }
     
