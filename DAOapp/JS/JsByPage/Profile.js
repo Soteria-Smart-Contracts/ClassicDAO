@@ -64,9 +64,7 @@ async function GetVotedProposals(){
             AmountButton = "Claim";
             Onclick = "ClaimInstance(" + VotedProposals[i] + ")";
         }
-        //get the reward by checking IncentivePerVote in the CurrentProposalInfo array 3rd index, AND Multiply it by the amount of votes the user has locked in the proposal
-        //set the reward to 2 decimal places
-        
+
 
 
         let ProposalHTML = `
