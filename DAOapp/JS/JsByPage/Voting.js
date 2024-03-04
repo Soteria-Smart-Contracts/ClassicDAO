@@ -10,12 +10,16 @@ async function runCodeWhenLoggedIn() {
     CurrentProposalInfo = await GetCurrentProposal();
     LoadDashboard();
     console.log(CurrentProposalInfo);
-
-
-    
-    
-
 }
+
+setInterval(function () {
+    if (Math.floor(Date.now() / 1000) > CurrentProposalInfo[2].VoteEnds) {
+        document.getElementById("VoteEnds").innerText = "Over";
+    } else {
+        document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
+    }
+    DetectVoterListChange();
+}, 1000);
 
 async function LoadDashboard() {
     document.getElementById("id").innerText = (CurrentProposalInfo[2].ProposalID).toString();
@@ -166,7 +170,7 @@ async function SubmitVote(){
     //loop and wait for the vote to be submitted, then reload the page
     while (true) {
         await new Promise(resolve => setTimeout(resolve, 1000));
-        if ((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).CLDReturned) {
+        if ((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).CLDReturned > 0) {
             location.reload();
         }
     }
