@@ -48,6 +48,7 @@ async function GetVotedProposals(){
         CLDtoIncentive = web3.utils.fromWei(CurrentProposalInfo[2].CLDtoIncentive, 'ether');
         VotesLocked = web3.utils.fromWei(CurrentProposalInfo[2].TotalCLDVoted, 'ether');
         VoterVotesLocked = web3.utils.fromWei(VoterInfo.VotesLocked, 'ether');
+        console.log(VoterVotesLocked)
         Reward = (CLDtoIncentive / VotesLocked * VoterVotesLocked).toFixed(2) + " CLD";
         if(IsOver){
             ProposalStatus = "Over";
