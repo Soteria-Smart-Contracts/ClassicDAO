@@ -47,10 +47,7 @@ async function LoadProposals() {
     for (let i = 0; i < CLDtoIncentive.length; i++) {
         let VotingInstance = await DAOvoting.methods.VotingInstances(ProposalQueue[i]).call();
         let ProposalInfo = await DAOcore.methods.ProposalInfos(ProposalQueue[i]).call();
-        let Status = "Awaiting Voting";
-        if (VotingInstance.Status == 1) {
-            Status = "Ended";
-        }
+        let Status = "Queued Up";
         let ProposalType = "Simple";
         if (ProposalInfo.ProposalType == 1) {
             ProposalType = "Eros";
