@@ -61,6 +61,7 @@ async function GetVotedProposals(){
             AmountButton = VoterInfo.VotesLocked;
         } else {
             NextProposalStarted = "";
+            AmountButton = "Claim";
         }
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
