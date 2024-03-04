@@ -79,9 +79,6 @@ async function GetVotedProposals(){
         </div>
         `;
         document.getElementById("UserVotedProposalsList").innerHTML += ProposalHTML;
-        if (VotedProposals[i] == OngoingProposalID) {
-            document.getElementById(VotedProposals[i]).style.display = "none";
-        }
     }
 }
 runCodeWhenLoggedIn();
