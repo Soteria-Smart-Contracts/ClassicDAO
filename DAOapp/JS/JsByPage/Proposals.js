@@ -18,6 +18,8 @@
 // </div>
 // </div>
 
+runCodeWhenLoggedIn();
+
 async function runCodeWhenLoggedIn() {
     while (!LoggedIn) {
         await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
