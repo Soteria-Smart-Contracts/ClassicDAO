@@ -1,22 +1,20 @@
 
 
 // //set a countdown to genesiscountdown id, the unix start time is: 1709335406, in the format of X hours
-// setInterval(function() {
-//     var countDownDate = 1709381409 * 1000;
-//     var now = new Date().getTime();
-
-//     //if the countdown is over, display Voting on id PropStatus, and display Ongoing on genesiscountdown id
-//     if (now > countDownDate) {
-//         document.getElementById("PropStatus").innerHTML = "Voting";
-//         document.getElementById("genesiscountdown").innerHTML = "Ongoing";
-//     }
-//     else{
-//         var distance = countDownDate - now;
-//         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        
-//         document.getElementById("genesiscountdown").innerHTML = "in " + hours + " hours ";
-//     }
-// });
+{/* <div style="flex: 1;">Genesis Proposal</div>
+                <div style="flex: 1;">1</div>
+                <div style="flex: 1;">
+                    <button style="width: auto; background-color: #2908df; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" id="PropStatus" disabled>Debate</button>
+                </div>
+                <div style="flex: 1;">
+                    <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>SIMPLE</button>
+                </div>
+                <div id="genesiscountdown" style="flex: 1;"></div>
+                <div style="flex: 1; display: flex; justify-content: flex-end;">
+                    <a href="CurrentVote.html" style="text-decoration: none; color: inherit; outline: none;">
+                    <button class="view_more_button" style="background-color: #16ECD3;">View more</button>             
+                    </a>
+                </div> */}
 
 
 //Load the proposal queue and the proposal details for each proposal in the queue. Here are the details needed: ID, Status, ProposalInfo.ProposalType, VotingInstanceID, VotingInstance.Status, VotingInstance.CLDtoIncentive
