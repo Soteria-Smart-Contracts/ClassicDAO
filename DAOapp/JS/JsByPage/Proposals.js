@@ -53,7 +53,45 @@ let CLDtoIncentive = [];
 //     ChangeVotingCuts
 // }
 
-//create a function that takes in a 
+//create a function that takes in a uint and returns the string of the proposal type
+function ProposalTypeToString(type) {
+    switch (type) {
+        case 0:
+            return "Not Applicable";
+        case 1:
+            return "Asset Send";
+        case 2:
+            return "Asset Register";
+        case 3:
+            return "Change Registered Asset Limit";
+        case 4:
+            return "Treasury Replacement";
+        case 5:
+            return "Voting Replacement";
+        case 6:
+            return "Sale Factory Replacement";
+        case 7:
+            return "Core Replacement";
+        case 8:
+            return "Start Public Sale";
+        case 9:
+            return "Change Proposal Cost";
+        case 10:
+            return "Change Sale Retract Fee";
+        case 11:
+            return "Change Sale Minimum Deposit";
+        case 12:
+            return "Change Sale Default Sale Length";
+        case 13:
+            return "Change Sale Max Sale Percent";
+        case 14:
+            return "Change Default Quorum";
+        case 15:
+            return "Change Voting Length";
+        case 16:
+            return "Change Voting Cuts";
+    }
+}
 
 
 async function runCodeWhenLoggedIn() {
