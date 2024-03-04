@@ -47,7 +47,7 @@ async function GetVotedProposals(){
         //set the reward to 2 decimal places
         console.log(VoterInfo);
         UserVo
-        let Reward = parseFloat((CurrentProposalInfo[2].CLDtoIncentive) / CparseFloat(web3.utils.fromWei(Curren)).toFixed(2)) * parseFloat(web3.utils.fromWei(VoterInfo.VotesLocked)).toFixed(2);
+        let Reward = parseFloat((CurrentProposalInfo[2].CLDtoIncentive) / CparseFloat(web3.utils.fromWei(CurrentProposalInfo[2].)).toFixed(2)) * parseFloat(web3.utils.fromWei(VoterInfo.VotesLocked)).toFixed(2);
         if (IsOver) {
             ProposalStatus = "Over";
             TimeLeft = "Over";
