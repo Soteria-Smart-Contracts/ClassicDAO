@@ -79,8 +79,8 @@ async function GetVotedProposals(){
             <div style="flex: 3.4;">
                 <button style="width: auto; background-color: #16ECD3; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>${ProposalStatus}</button>
             </div>
-            <div style="flex: 2.7;">${Reward}</div>
-            <div style="flex: 2.7;">${TimeLeft}</div>
+            <div style="flex: 3;">${Reward}</div>
+            <div style="flex: 3;">${TimeLeft}</div>
             <div style="flex: 3; display: flex;">
                 <a id="${ID}" onclick="${Onclick}" style="text-decoration: none; color: inherit; outline: none;">
                 <button class="view_more_button">${AmountButton}</button>             
