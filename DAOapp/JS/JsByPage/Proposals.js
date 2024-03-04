@@ -57,6 +57,6 @@ async function LoadProposals() {
         `;
         ProposalQueueList.innerHTML += ProposalHTML;
 
-        //
+        
 }
     
