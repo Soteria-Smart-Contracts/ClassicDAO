@@ -46,7 +46,7 @@ async function LoadProposals() {
     ProposalQueueList.innerHTML = "";
     for (let i = 0; i < ProposalQueue.length; i++) {
         let VotingInstance = await DAOvoting.methods.VotingInstances(ProposalQueue[i]).call();
-        let ProposalInfo = await DAO.methods.ProposalInfo(ProposalQueue[i]).call();
+        let ProposalInfo = await DAOcore.methods.ProposalInfo(ProposalQueue[i]).call();
         let Status = "Awaiting Voting";
         if (VotingInstance.Status == 1) {
             Status = "Ended";
