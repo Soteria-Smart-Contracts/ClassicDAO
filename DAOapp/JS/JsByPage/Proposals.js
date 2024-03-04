@@ -52,9 +52,8 @@ async function LoadProposals() {
         CLDtoIncentive.push(await DAOvoting.methods.VotingInstances(ProposalQueue[i]).call());
     }
     console.log(CLDtoIncentive);
-    CLDtoIncentive.sort(function (a, b) {
-        return CLDtoIncentive[b].CLDtoIncentive - CLDtoIncentive[a].CLDtoIncentive;
-    });
+    //sort the CLDtoIncentive array by the CLDtoIncentive, the highest CLDtoIncentive will be first
+    
     console.log(CLDtoIncentive);
     ProposalQueueList.innerHTML = "";
     for (let i = 0; i < CLDtoIncentive.length; i++) {
