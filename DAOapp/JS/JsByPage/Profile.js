@@ -66,7 +66,7 @@ async function GetVotedProposals(){
         }
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
-            <div style="flex: 1;">${VotedProposals[i]}</div>
+            <div style="flex: 1.7;">${VotedProposals[i]}</div>
             <div style="flex: 2;">
                 <button style="width: auto; background-color: #16ECD3; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>${ProposalStatus}</button>
             </div>
