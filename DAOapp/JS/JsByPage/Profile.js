@@ -68,7 +68,7 @@ async function GetVotedProposals(){
             </div>
             <div style="flex: 1;">${TimeLeft}</div>
             <div style="flex: 1; display: flex; justify-content: flex-end;">
-                <a onclick="ClaimInstance(${ID})" style="text-decoration: none; color: inherit; outline: none;">
+                <a id= onclick="ClaimInstance(${ID})" style="text-decoration: none; color: inherit; outline: none;">
                 <button class="view_more_button" ${NextProposalStarted} style="display: ${IsOver};">Return Votes</button>             
                 </a>
             </div>
