@@ -65,7 +65,10 @@ async function GetVotedProposals(){
             Onclick = "ClaimInstance(" + VotedProposals[i] + ")";
         }
         //get the reward by checking IncentivePerVote in the CurrentProposalInfo array 3rd index, AND Multiply it by the amount of votes the user has locked in the proposal
+        //set the reward to 2 decimal places
         
+
+
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
             <div style="flex: 1.7;">${VotedProposals[i]}</div>
