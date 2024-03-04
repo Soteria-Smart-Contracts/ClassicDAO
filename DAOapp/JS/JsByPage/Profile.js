@@ -32,7 +32,7 @@ async function GetVotedProposals(){
                 console.log("Error above is normal")
                 break;
             }
-            VotedProposals.push(Proposal);
+            VotedProposals.push(Proposal); 
         }
 
     UserVotedProposalsList.innerHTML = "";
