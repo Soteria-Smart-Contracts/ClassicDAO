@@ -48,8 +48,8 @@ async function GetVotedProposals(){
         CLDtoIncentive = web3.utils.fromWei(CurrentProposalInfo[2].CLDtoIncentive, 'ether');
         VotesLocked = web3.utils.fromWei(CurrentProposalInfo[2].VotesLocked, 'ether');
         VoterVotesLocked = web3.utils.fromWei(VoterInfo.VotesLocked, 'ether');
+        Reward = CLDtoIncentive).toFixed(2) / parseFloat(VotesLocked).toFixed(2) * parseFloat(VoterVotesLocked).toFixed(2);
         console.log(CLDtoIncentive);
-        let Reward = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].CLDtoIncentive, 'ether')).toFixed(2) / parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].VotesLocked), 'ether').toFixed(2) * parseFloat(web3.utils.fromWei(VoterInfo.VotesLocked, 'ether')).toFixed(2);
         if (IsOver) {
             ProposalStatus = "Over";
             TimeLeft = "Over";
