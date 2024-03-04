@@ -22,25 +22,6 @@ async function LoadProposals() {
     let ProposalQueue = await DAOvoting.methods.GetVotingQueue().call();
     let ProposalQueueList = document.getElementById("ProposalQueueList");
     ProposalQueueList.innerHTML = "";
-    for (let i = 0; i < ProposalQueue.length; i++) {
-        let ProposalID = ProposalQueue[i];
-        let ProposalInfo = await DAOvoting.methods.ProposalInfo(ProposalID).call();
-        let VotingInstance = await DAOvoting.methods.VotingInstances(ProposalID).call();
-        let ProposalType = ProposalInfo.ProposalType;
-        let Status = VotingInstance.Status;
-        let CLDtoIncentive = web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether');
-        let Proposal = document.createElement("div");
-        Proposal.classList.add("Proposal");
-        Proposal.innerHTML = `
-        <div class="ProposalID">${ProposalID}</div>
-        <div class="ProposalType">${ProposalType}</div>
-        <div class="Status">${Status}</div>
-        <div class="CLDtoIncentive">${CLDtoIncentive}</div>
-        <div class="VotingInstanceID">${VotingInstance.VotingInstanceID}</div>
-        <div class="VotingInstanceStatus">${Status}</div>
-        <button class="VoteButton" onclick="Vote(${ProposalID})">Vote</button>
-        `;
-        ProposalQueueList.appendChild(Proposal);
-    }
+    
 }
     
