@@ -70,7 +70,7 @@ async function GetVotedProposals(){
             //recaculate the reward by checking the IncentivePerVote on the 3rd array of the proposal info multiplied by the users votes locked
             //set the reward to 2 decimal places
             //get propossal info from VotingInstances
-            
+            VoteInQuestion = await DAOvoting.methods.VotingInstances(VotedProposals[i]).call();
             Reward = (web3.utils.fromWei(CurrentProposalInfo[2].IncentivePerVote, 'ether') * VoterVotesLocked).toFixed(2) + " CLD";
             NextProposalStarted = "";
             AmountButton = "Claim";
