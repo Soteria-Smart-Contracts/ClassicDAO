@@ -49,8 +49,7 @@ async function GetVotedProposals(){
         VotesLocked = web3.utils.fromWei(CurrentProposalInfo[2].TotalCLDVoted, 'ether');
         VoterVotesLocked = web3.utils.fromWei(VoterInfo.VotesLocked, 'ether');
         Reward = (CLDtoIncentive / VotesLocked * VoterVotesLocked).toFixed(2) + " CLD";
-        //if the proposal is over, recaculate the reward by checking the voting incen
-        if (IsOver) {
+        //if the proposal is over, recaculate the reward by checking the IncentivePerVote on the 3rd array of the proposal info, and devide it by the votes locked , then multiply it by the users votes locked
             ProposalStatus = "Over";
             TimeLeft = "Over";
             IsOver = "flex";
