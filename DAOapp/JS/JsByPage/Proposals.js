@@ -53,7 +53,6 @@ let CLDtoIncentive = [];
 //     ChangeVotingCuts
 // }
 
-//create a function that takes in a uint and returns the string of the proposal type
 function ProposalTypeToString(type) {
     switch (type) {
         case 0:
