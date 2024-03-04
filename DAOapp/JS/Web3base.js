@@ -120,6 +120,10 @@ async function CheckHENS(address){
 function timeLeft(unixTime) {
     unixTime = parseInt(unixTime.toString())
     let timeLeft = unixTime - Math.floor(Date.now() / 1000);
+    //if the time left is less than 0, return Over
+    if (timeLeft < 0) {
+        return "Over";
+    }
     let days = Math.floor(timeLeft / (24 * 60 * 60));
     timeLeft -= days * 24 * 60 * 60;
     let hours = Math.floor(timeLeft / (60 * 60));
