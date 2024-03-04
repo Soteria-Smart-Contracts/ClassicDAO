@@ -73,5 +73,6 @@ async function GetVotedProposals(){
 runCodeWhenLoggedIn();
 
 async function ClaimInstance(ProposalID){
+    //ReturnTokens ON T
     console.log(ProposalID);
 }
