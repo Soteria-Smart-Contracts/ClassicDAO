@@ -30,7 +30,7 @@ async function LoadProposals() {
         CLDtoIncentive.push(ProposalInfo.CLDtoIncentive);
     }
     //sort the queue by the CLDtoIncentive using the sort function
-    ProposalQueue.sort(function (a, b) {
+    CLDtoIncentive.sort(function (a, b) {
         return CLDtoIncentive[b] - CLDtoIncentive[a];
     });
     ProposalQueueList.innerHTML = "";
