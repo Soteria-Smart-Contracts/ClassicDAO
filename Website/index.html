@@ -11,46 +11,163 @@
     referrerpolicy="no-referrer">
     </script>
     <link rel="stylesheet" href="css/index.css">
-    <style>
-        .CountdownDiv {
-            font-size: 48px;
-            font-weight: bold;
-            color: white;
-            text-align: center;
-            padding: 35px;
-            padding-top: 5px;
-            padding-bottom: 25px;
-            background-color: #636262;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: fit-content;
-            margin: 0 auto;
-            margin-top: 10vh;
-       }
-    </style>
     <title>ClassicDAO Dashboard</title>
-    <meta name="title" content="ClassicDAO Dashboard" />
-    <meta name="description" content="Countdown to launch!" />
     <link rel="icon" href="Ressources/Images/logoico.ico">
-    
 </head>
 <body>
  <nav>
     <div class="menu">
-        <img class="logo" onclick="WelcomePage()" src="Ressources/images/logo.png" alt="logo">
+        <img class="logo" src="Ressources/images/logo.png" target="_blank" href="https://classicdao.one/" alt="logo">
+        <a id="menutre" class="Mactive">CLD Staking</a>  
 
+        <a id="WalletB" onclick="loginWithEth()" class="wallet">Connect Wallet</a>
+    </div>
+    <hr color="grey">
+ </nav>
+
+   
+   
+
+
+    <div class="dappcontainer staking">
+        <div class="dapp-div staking">
+            <div class="dapptop staking">Flexible CLD staking</div>
+            <div id="bal1" class="balances staking">
+                <div class="inner staking">Your CLD balance:<br><a class="value staking" id="flexbal">UNCONNECTED</a></div>
+                <div class="inner staking">Your deposited CLD:<br><a class="value staking" id="flexdepo">UNCONNECTED</a></div>
             </div>
-            <hr color="grey">
-    </nav>
-            <br><br>
+            
+            <div id="ConfirmLeft" class="ConfirmBox" style="display:none">
+                <a id="closebuttonLeft" style="" onclick="CloseBoxLeft(), DisplayLeft()" class="close staking">X</a>
+
+                <div id="InputLeftDeposit" class="interface staking" style="display:none">
+                    <a class="actionname staking">Deposit CLD</a>
+                    <br>
+                    <div><input placeholder="CLD" id="depositinputleft" type="number" step=".01" class="specialinput"></input></div>
+                    <br>
+                    <button onclick="FlexDeposit()" class="actionbutton">Deposit</button>
+                    <a onclick="setMaxDepositLeft()" class="maxbutton staking">MAX</a>
+                </div>
+
+                <div id="InputLeftWithdraw" class="interface staking" style="display:none">
+                    <a class="actionname staking">Withdraw CLD</a>
+                    <br>
+                    <div><input placeholder="CLD" id="withdrawinputleft" type="number" step=".01" class="specialinput"></input></div>
+                    <br>
+                    <button onclick="FlexWithdraw()" class="actionbutton">Withdraw</button>
+                    <a onclick="setMaxWithdrawLeft()" class="maxbutton staking">MAX</a>
+                </div>
+            
+            </div>
+            <a id="ROIleft" class="ROI">Flex staking no longer accrues rewards<br> Please withdraw your deposit</a>
+            <div id="OptionsLeft" class="OpContainer">
+                <div class="OpBox left">
+                    <div onclick="ClearLeft(), DiplayBoxLeft(2)" class="innerbutton staking">Withdraw CLD</div>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+
+        <div class="dapp-div staking  right dark">
+            <div class="dapptop staking">Locked CLD staking</div>
+            <div id="bal1" class="balances staking">
+                <div class="inner staking">Your CLD balance:<br><a class="value staking" id="Lockbal">UNCONNECTED</a></div>
+                <div class="inner staking">Lock Instances:<br><a class="value staking" id="LockActive">UNCONNECTED</a></div>
+            </div>
+            <div id="ConfirmRight" class="ConfirmBox" style="display:none">
+                <a id="closebuttonRight" onclick="CloseBoxRight(), DisplayRight()" class="close staking">X</a>
+                
+                <div id="Input30" class="interface staking" style="display:none">
+                    <a class="actionname staking">Lock CLD</a>
+                    <br>
+                    <div><input placeholder="CLD" id="One" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
+                    
+                    <div class="csinfo staking">Length: <a id="UD1">30 Days</a></div>
+                    <div class="csinfo staking">CLD to return: <a id="CR1">0.00</a></div>
+                    <br>
+                    <button onclick="CreateLock(1)" class="actionbutton">Lock</button>
+                    <a onclick="setMaxDepositRight(1), GetEstimatedReturn()" class="maxbutton staking">MAX</a>
+                </div>
+
+                <div id="Input90" class="interface staking" style="display:none">
+                    <a class="actionname staking">Lock CLD</a>
+                    <br>
+                    <div><input placeholder="CLD" id="Two" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
+                    <br>
+                    <div class="csinfo staking">Length: <a id="UD2">90 Days</a></div>
+                    <div class="csinfo staking">CLD to return: <a id="CR2">0.00</a></div>
+                    <button onclick="CreateLock(3)" class="actionbutton">Lock</button>
+                    <a onclick="setMaxDepositRight(2), GetEstimatedReturn()" class="maxbutton staking">MAX</a>
+                </div>
+
+                <div id="Input180" class="interface staking" style="display:none">
+                    <a class="actionname staking">Lock CLD</a>
+                    <br>
+                    <div><input placeholder="CLD" id="Three" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
+                    <br>
+                    <div class="csinfo staking">Length: <a id="UD3">180 Days</a></div>
+                    <div class="csinfo staking">CLD to return: <a id="CR3">0.00</a></div>
+                    <button onclick="CreateLock(5)" class="actionbutton">Lock</button>
+                    <a onclick="setMaxDepositRight(3), GetEstimatedReturn()" class="maxbutton staking">MAX</a>
+                </div>
+
+                <div id="Input365" class="interface staking" style="display:none">
+                    <a class="actionname staking">Lock CLD</a>
+                    <br>
+                    <div><input placeholder="CLD" id="Four" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
+                    <br>
+                    <div class="csinfo staking">Length: <a id="UD4">365 Days</a></div>
+                    <div class="csinfo staking">CLD to return: <a id="CR4">0.00</a></div>
+                    <button onclick="CreateLock(7)" class="actionbutton">Lock</button>
+                    <a onclick="setMaxDepositRight(4), GetEstimatedReturn()" class="maxbutton staking">MAX</a>
+                </div>
+
+
+                
+            
+            </div>
+            <div id="ViewLock" class="ConfirmBox" style="display:none">
+                <a id="closebuttonRight" onclick="CloseViewBox(), DisplayRight()" class="close staking">X</a>
+                <br>
+                <br>
+                <br>
+
+                <div class="csinfo staking">Length: <a id="DL">365 Days</a></div>
+                <br>
+                <div class="csinfo staking">Amount Deposited: <a id="AD">0.00</a> CLD</div>
+                <br>
+                <div class="csinfo staking">Amount on Claim: <a id="AC">0.00</a> CLD</div>
+                <br>
+                <div class="csinfo staking">CLD Earned on Claim: <a id="CE">0.00</a> CLD</div>
+
+
+                <br>
+                <br>
+                <button id="ClaimB" onclick="ClaimLock()" style="display:none" class="actionbutton">Claim</button>
+            
+            </div>
+            
+            <div id="Instances" class="OpContainer Instances">
+                <a class="statsheader">Your locked CLD Instances:</a>
+                <div id="slot1" onclick="ClearRight(), DisplayInstance(1)" class="instance">Slot Empty</div>
+                <div id="slot2" onclick="ClearRight(), DisplayInstance(2)" class="instance">Slot Empty</div>
+                <div id="slot3" onclick="ClearRight(), DisplayInstance(3)" class="instance">Slot Empty</div>
+            </div>
+        </div>
+    </div>
+
     
-            <div id="NotCountdown" class="CountdownDiv" style="text-align: center;">
-                <h1 style="font-size: 45px;">ClassicDAO will launch in:</h1>
-                    <div id="Countdown" style="text-align: center; color: #07d846;"></div> <!-- Countdown placeholder -->
-            </div>
-        <br><br>
 
+        
 
+    <div id="overlay" class="overlay">
+        <div class="div-center connect">
+            <h1 class="connect">Please Connect your Web3 Wallet such as Metamask, TrustWallet or Brave Browser wallet in order to access this app.</h1>
+            <a onclick="loginWithEth()" class="wallet middle">Connect Wallet</a>
+        </div>
     </div>
 
     
@@ -58,35 +175,12 @@
 
 <footer>
     <div class="footertext">
-        <a class="footertext" target=”_blank” href="https://docdro.id/MS6MF2y">Protocol Paper</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/token/0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c/token-holders">CLD Contract</a>
+        <a class="footertext" target=”_blank” href="https://docdro.id/Le8sKd3">Whitepaper</a> | <a class="footertext" target=”_blank” href="https://twitter.com/ClassicDao">Twitter</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/address/0x5A98406699E2450D2b98D4f2fb1b2EaDB281076F">Flexible Staking Contract</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/address/0x00074D20e2024EEa1e8cC5b8808315cb8D419e61">Locked Staking Contract</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/token/0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c/token-holders">CLD Contract</a>
     </div>
 </footer>
-<script>
-    // Set the countdown date to February 29, 2024
-    var countdownDate = new Date("February 29, 2024 15:00:00").getTime();
 
-    // Update the countdown every second
-    var countdownInterval = setInterval(function() {
-        // Get the current date and time
-        var now = new Date().getTime();
-
-        // Calculate the remaining time
-        var timeRemaining = countdownDate - now;
-
-        // Calculate days, hours, minutes, and seconds
-        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-        // Display the countdown
-        document.getElementById("Countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-        // If the countdown is finished, display a message
-        if (timeRemaining < 0) {
-            clearInterval(countdownInterval);
-            document.getElementById("Countdown").innerHTML = "Countdown expired";
-        }
-    }, 1000);
-</script>
+<script src="JS/abi.js"></script>
+<script src="JS/hens.js"></script>
+<script src="JS/stakinginteraction.js"></script>
+<script src="JS/stakinganimations.js"></script>    
 </html>
