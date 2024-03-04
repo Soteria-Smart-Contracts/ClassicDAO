@@ -42,7 +42,6 @@ async function GetVotedProposals(){
         //if the vote ends is lower than the current time, the proposal has ended, so set the status to Ended, and set the time left to Over
         IsOver = VoteEnds < Math.floor(Date.now() / 1000);
         VoterInfo = await DAOvoting.methods.VoterInfo(VotedProposals[i], account).call();
-        
         if (IsOver) {
             ProposalStatus = "Over";
             TimeLeft = "Over";
@@ -53,6 +52,7 @@ async function GetVotedProposals(){
             IsOver = "none";
         }
         ID = VotedProposals[i];
+        //check if the ongoing proposal ID 
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
             <div style="flex: 1;">${VotedProposals[i]}</div>
