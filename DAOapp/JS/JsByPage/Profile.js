@@ -43,7 +43,7 @@ async function GetVotedProposals(){
         //if the vote ends is lower than the current time, the proposal has ended, so set the status to Ended, and set the time left to Over
         IsOver = VoteEnds < Math.floor(Date.now() / 1000);
         VoterInfo = await DAOvoting.methods.VoterInfo(VotedProposals[i], account).call();
-        //get the reward by checking IncentivePerVote in the CurrentProposalInfo array 3rd index, AND Multiply it by the amount of votes the user has locked in the proposal
+        //get the reward by checking Total
         //set the reward to 2 decimal places
         let Reward = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].IncentivePerVote) * VoterInfo.VotesLocked).toFixed(2);
         if (IsOver) {
