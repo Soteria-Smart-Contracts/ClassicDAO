@@ -55,7 +55,6 @@ async function LoadProposals() {
         if (ProposalInfo.ProposalType == 1) {
             ProposalType = "Eros";
         }
-        let Countdown = timeLeft(ProposalInfo.);
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
             <div style="flex: 1;">${i}</div>
@@ -66,7 +65,7 @@ async function LoadProposals() {
             <div style="flex: 1;">
                 <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>${ProposalType}</button>
             </div>
-            <div id="genesiscountdown" style="flex: 1;">${Countdown}</div>
+            <div style="flex: 1;">${Countdown}</div>
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <a href="CurrentVote.html" style="text-decoration: none; color: inherit; outline: none;">
                 <button class="
