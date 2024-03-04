@@ -18,7 +18,7 @@
 // </div>
 // </div>
 
-
+LoadProposals();
 //Load the proposal queue and the proposal details for each proposal in the queue. Here are the details needed: ID, Status, ProposalInfo.ProposalType, VotingInstanceID, VotingInstance.Status, VotingInstance.CLDtoIncentive
 async function LoadProposals() {
     let ProposalQueue = await DAOvoting.methods.GetVotingQueue().call();
