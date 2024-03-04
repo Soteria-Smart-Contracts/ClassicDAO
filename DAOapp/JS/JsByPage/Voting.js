@@ -10,16 +10,16 @@ async function runCodeWhenLoggedIn() {
     CurrentProposalInfo = await GetCurrentProposal();
     LoadDashboard();
     console.log(CurrentProposalInfo);
-}
 
-setInterval(function () {
-    if (Math.floor(Date.now() / 1000) > CurrentProposalInfo[2].VoteEnds) {
-        document.getElementById("VoteEnds").innerText = "Over";
-    } else {
-        document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
-    }
-    DetectVoterListChange();
-}, 1000);
+    setInterval(function () {
+        if (Math.floor(Date.now() / 1000) > CurrentProposalInfo[2].VoteEnds) {
+            document.getElementById("VoteEnds").innerText = "Over";
+        } else {
+            document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
+        }
+        DetectVoterListChange();
+    }, 1000);
+}
 
 async function LoadDashboard() {
     document.getElementById("id").innerText = (CurrentProposalInfo[2].ProposalID).toString();
