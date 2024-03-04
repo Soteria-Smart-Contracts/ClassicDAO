@@ -18,8 +18,16 @@
 // </div>
 // </div>
 
-//new code
+//new table code ht
 //<div style="display: flex; justify-content: space-between; padding: 20px; color: #fff; box-sizing: border-box;">
+    // <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">QueuePosition</div>
+    // <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Memo</div>
+    // <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Incentive</div>
+    // <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">ID</div>
+    // <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Status</div>
+    // <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Type</div>
+    // <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;"></div>
+    // </div>
 
 runCodeWhenLoggedIn();
 
