@@ -4,7 +4,7 @@ async function runCodeWhenLoggedIn() {
         await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
         console.log("Waiting for login");
     }
-    
+
     CurrentProposalInfo = await GetCurrentProposal();
     GetVotedProposals();
     console.log("Logged in");
@@ -56,7 +56,7 @@ async function GetVotedProposals(){
         //check if the ongoing proposal ID is the same as the proposal ID, if it is, set the status to Awaiting next proposal
         if (VotedProposals[i] == OngoingProposalID) {
             ProposalStatus = "Awaiting next proposal";
-            TimeLeft = "Ongoing";
+            TimeLeft = "Awaiting next proposal";
             NextProposalStarted = "disabled";
         } else {
             NextProposalStarted = "";
