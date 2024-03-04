@@ -47,7 +47,9 @@ async function GetVotedProposals(){
         //set the reward to 2 decimal places
         CLDtoIncentive = web3.utils.fromWei(CurrentProposalInfo[2].CLDtoIncentive, 'ether');
         VotesLocked = web3.utils.fromWei(CurrentProposalInfo[2].TotalCLDVoted, 'ether');
+        console.log(VotesLocked);
         VoterVotesLocked = web3.utils.fromWei(VoterInfo.VotesLocked, 'ether');
+        Cons
         Reward = (CLDtoIncentive / VotesLocked * VoterVotesLocked).toFixed(2) + " CLD";
         console.log(CLDtoIncentive);
         if (IsOver) {
