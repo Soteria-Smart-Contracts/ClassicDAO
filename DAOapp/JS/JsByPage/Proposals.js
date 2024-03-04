@@ -53,7 +53,7 @@ async function LoadProposals() {
     }
     console.log(CLDtoIncentive);
     //sort the CLDtoIncentive array by the CLDtoIncentive, the highest CLDtoIncentive will be first
-    
+    CLDtoIncentive.sort((a, b) => (a.CLDtoIncentive < b.CLDtoIncentive) ? 1 : -1);
     console.log(CLDtoIncentive);
     ProposalQueueList.innerHTML = "";
     for (let i = 0; i < CLDtoIncentive.length; i++) {
