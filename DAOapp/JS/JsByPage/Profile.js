@@ -71,7 +71,7 @@ async function GetVotedProposals(){
             //set the reward to 2 decimal places
             //get propossal info from VotingInstances
             VoteInQuestion = await DAOvoting.methods.VotingInstances(VotedProposals[i]).call();
-            Reward = (web3.utils.fromWei(CurrentProposalInfo[2].IncentivePerVote, 'ether') * VoterVotesLocked).toFixed(2) + " CLD";
+            Reward = (web3.utils.fromWei(VoteInQuestion.IncentivePerVote, 'ether') * VoterVotesLocked).toFixed(2) + " CLD";
             NextProposalStarted = "";
             AmountButton = "Claim";
             Onclick = "ClaimInstance(" + VotedProposals[i] + ")";
