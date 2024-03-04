@@ -59,7 +59,10 @@ async function LoadProposals() {
         let VotingInstance = await DAOvoting.methods.VotingInstances(ProposalQueue[i]).call();
         let ProposalInfo = await DAOcore.methods.ProposalInfos(ProposalQueue[i]).call();
         let Status = "Queued Up";
-        //if the votestart is hi
+        //if the votestart is higher than the current time, the proposal is still in grace period, so set the status to Grace Period
+        if (VotingInstance.VoteStart > Math.floor(Date.now() / 1000)) {
+            Status = "Grace Period";
+        }
         let ProposalType = "Simple";
         if (ProposalInfo.ProposalType == 1) {
             ProposalType = "Eros";
