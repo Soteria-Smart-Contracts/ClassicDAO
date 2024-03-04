@@ -131,7 +131,7 @@ async function LoadProposals() {
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; padding: 20px; color: #fff; box-sizing: border-box; padding-left: 0px;">
             <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${i + 1}</div>
-            <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${await ProposalTypeToString()}</div>
+            <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${await ProposalTypeToString(ProposalInfo.SimpleType)}</div>
             <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether')} CLD</div>
             <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${ProposalQueue[i]}</div>
             <div style="flex: 1; text-align: center; align-items: center;">
