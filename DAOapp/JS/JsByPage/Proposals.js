@@ -50,5 +50,7 @@ async function LoadProposals() {
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <a href="CurrentVote.html" style="text-decoration: none; color: inherit; outline: none;">
                 <button class="
+                view_more_button" style="background-color: #16ECD3;">View more</button>
+                
 }
     
