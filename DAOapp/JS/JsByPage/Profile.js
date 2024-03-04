@@ -43,6 +43,7 @@ async function GetVotedProposals(){
         IsOver = VoteEnds < Math.floor(Date.now() / 1000);
         VoterInfo = await DAOvoting.methods.VoterInfo(VotedProposals[i], account).call();
         if (IsOver) {
+            NextProposalStarted = 
             ProposalStatus = "Over";
             TimeLeft = "Over";
             IsOver = "flex";
