@@ -70,14 +70,14 @@ async function LoadProposals() {
             <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether')} CLD</div>
             <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${ProposalQueue[i]}</div>
             <div style="flex: 1; text-align: center; align-items: center;">
-                <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 15px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" id="PropStatus" disabled>${Status}</button>
+                <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" id="PropStatus" disabled>${Status}</button>
             </div>
             <div style="flex: 1; text-align: center; align-items: center;">
-                <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 15px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>${ProposalType}</button>
+                <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>${ProposalType}</button>
             </div>
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <a href="CurrentVote.html" style="text-decoration: none; color: inherit; outline: none;">
-                <button class="view_more_button" style="background-color: #16ECD3; font-size: 15px;">View more</button>             
+                <button class="view_more_button" style="background-color: #16ECD3; font-size: 18px;">View more</button>             
                 </a>
         </div>
         `;
