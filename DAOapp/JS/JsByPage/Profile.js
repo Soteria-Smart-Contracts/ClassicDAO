@@ -75,6 +75,7 @@ async function GetVotedProposals(){
         </div>
         `;
         document.getElementById("UserVotedProposalsList").innerHTML += ProposalHTML;
+        if
     }
 }
 runCodeWhenLoggedIn();
