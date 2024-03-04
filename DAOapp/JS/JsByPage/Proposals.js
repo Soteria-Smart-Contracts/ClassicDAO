@@ -50,6 +50,7 @@ async function LoadProposals() {
     for (let i = 0; i < ProposalQueue.length; i++) {
         CLDtoIncentive.push(await DAOvoting.methods.VotingInstances(ProposalQueue[i]).call());
     }
+    console.log(CLDtoIncentive);
     CLDtoIncentive.sort(function (a, b) {
         return CLDtoIncentive[b].CLDtoIncentive - CLDtoIncentive[a].CLDtoIncentive;
     });
