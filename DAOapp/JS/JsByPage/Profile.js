@@ -57,7 +57,7 @@ async function GetVotedProposals(){
         if (VotedProposals[i] == OngoingProposalID) {
             ProposalStatus = "Over";
             TimeLeft = "Awaiting next proposal";
-            AmountButton = parseFloat(web3.utils.fromWei(VoterInfo.VotesLocked);
+            AmountButton = parseFloat(web3.utils.fromWei(VoterInfo.VotesLocked).toFixed(2)) + " CLD";
             Onclick = "";
         } else {
             NextProposalStarted = "";
