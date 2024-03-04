@@ -66,7 +66,7 @@ async function LoadProposals() {
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; padding: 20px; color: #fff; box-sizing: border-box;">
             <div style="flex: 1;">${i + 1}</div>
-            <div style="flex: 1;">${ProposalInfo.Memo}</div>
+            <div style="flex: 1;">${ProposalInfo.Memo.substring(0, 15)}</div>
             <div style="flex: 1;">${web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether')} CLD</div>
             <div style="flex: 1;">${ProposalQueue[i]}</div>
             <div style="flex: 1;">
