@@ -29,7 +29,7 @@ async function LoadProposals() {
         let ProposalInfo = await DAOvoting.methods.ProposalInfo(ProposalQueue[i]).call();
         CLDtoIncentive.push(ProposalInfo.CLDtoIncentive);
     }
-    
+    //sort the queue by the CLDtoIncentiv
     ProposalQueueList.innerHTML = "";
     for (let i = 0; i < ProposalQueue.length; i++) {
         let VotingInstance = await DAOvoting.methods.VotingInstances(ProposalQueue[i]).call();
