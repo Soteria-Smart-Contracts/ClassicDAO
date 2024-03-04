@@ -56,6 +56,7 @@ async function GetVotedProposals(){
         if (VotedProposals[i] == OngoingProposalID) {
             ProposalStatus = "Awaiting next proposal";
             TimeLeft = "Ongoing";
+            
         }
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
@@ -66,7 +67,7 @@ async function GetVotedProposals(){
             <div style="flex: 1;">${TimeLeft}</div>
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <a onclick="ClaimInstance(${ID})" style="text-decoration: none; color: inherit; outline: none;">
-                <button class="view_more_button" ${AlreadyClaimed} style="display: ${IsOver};">Return Votes</button>             
+                <button class="view_more_button" ${NextProposalStarted} style="display: ${IsOver};">Return Votes</button>             
                 </a>
             </div>
         </div>
