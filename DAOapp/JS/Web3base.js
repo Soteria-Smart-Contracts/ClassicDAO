@@ -122,7 +122,7 @@ function timeLeft(unixTime) {
     let timeLeft = unixTime - Math.floor(Date.now() / 1000);
     //if the time left is less than 0, return Over
     if (timeLeft < 0) {
-        return "Over";
+        return ": Over";
     }
     let days = Math.floor(timeLeft / (24 * 60 * 60));
     timeLeft -= days * 24 * 60 * 60;
