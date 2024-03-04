@@ -3,6 +3,8 @@
 // //set a countdown to genesiscountdown id, the unix start time is: 1709335406, in the format of X hours
 // <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
 // <div style="flex: 1;">QueuePosition</div>
+//            <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Memo</div>
+
 // <div style="flex: 1;">ID</div>
 // <div style="flex: 1;">
 //     <button style="width: auto; background-color: #2908df; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" id="PropStatus" disabled>Status</button>
