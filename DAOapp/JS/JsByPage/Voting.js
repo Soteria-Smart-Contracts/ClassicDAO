@@ -168,9 +168,12 @@ async function SubmitVote(){
     let gasEstimate = await DAOvoting.methods.CastVote(amount, votechoice).estimateGas({ from: account });
     await DAOvoting.methods.CastVote(amount, votechoice).send({ from: account, gas: gasEstimate });
     //loop and wait for the vote to be submitted, then reload the page
-    
-
-    location.reload();
+    while (true) {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        if ((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked > 0) {
+            location.reload();
+        }
+    }
 }
 
 
