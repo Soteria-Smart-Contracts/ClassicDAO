@@ -72,4 +72,8 @@ async function GetVotedProposals(){
 }
 runCodeWhenLoggedIn();
 
-cla
+async function ClaimInstance(ProposalID){
+    console.log(ProposalID);
+    let ClaimInstance = await DAOvoting.methods.ClaimInstance(ProposalID).send({from: account});
+    console.log(ClaimInstance);
+}
