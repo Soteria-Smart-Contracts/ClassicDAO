@@ -32,6 +32,8 @@
 runCodeWhenLoggedIn();
 let CLDtoIncentive = [];
 
+//simple proposal types
+
 
 async function runCodeWhenLoggedIn() {
     while (!LoggedIn) {
