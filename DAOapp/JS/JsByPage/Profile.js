@@ -58,7 +58,7 @@ async function GetVotedProposals(){
             <div style="flex: 1;">${TimeLeft}</div>
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <a href="CurrentVoting.html" style="text-decoration: none; color: inherit; outline: none;">
-                <button class="view_more_button">Return Votes</button>             
+                <button class="view_more_button" >Return Votes</button>             
                 </a>
             </div>
         </div>
