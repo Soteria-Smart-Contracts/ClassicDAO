@@ -57,7 +57,6 @@ async function GetVotedProposals(){
         if (VotedProposals[i] == OngoingProposalID) {
             ProposalStatus = "Over";
             TimeLeft = "Awaiting next proposal";
-            NextProposalStarted = "disabled";
             AmountButton = VoterInfo.VotesLocked;
             Onclick = "";
         } else {
@@ -74,7 +73,7 @@ async function GetVotedProposals(){
             <div style="flex: 1;">${TimeLeft}</div>
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <a id="${ID}" onclick="${Onclick}" style="text-decoration: none; color: inherit; outline: none;">
-                <button class="view_more_button" ${NextProposalStarted}>${AmountButton}</button>             
+                <button class="view_more_button">${AmountButton}</button>             
                 </a>
             </div>
         </div>
