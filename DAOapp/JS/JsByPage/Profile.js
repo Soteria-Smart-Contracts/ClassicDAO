@@ -58,7 +58,7 @@ async function GetVotedProposals(){
             ProposalStatus = "Over";
             TimeLeft = "Awaiting next proposal";
             NextProposalStarted = "disabled";
-            AmountButton = VoterInfo.Amount;
+            AmountButton = VoterInfo.VotesLocked;
         } else {
             NextProposalStarted = "";
         }
