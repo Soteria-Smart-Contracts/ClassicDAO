@@ -22,6 +22,30 @@ async function LoadProposals() {
     let ProposalQueue = await DAOvoting.methods.GetVotingQueue().call();
     let ProposalQueueList = document.getElementById("ProposalQueueList");
     ProposalQueueList.innerHTML = "";
-    
+    for (let i = 0; i < ProposalQueue.length; i++) {
+        let ProposalID = ProposalQueue[i];
+        let ProposalInfo = await DAOvoting.methods.ProposalInfo(ProposalID).call();
+        let VotingInstanceID = ProposalInfo.VotingInstanceID;
+        let VotingInstance = await DAOvoting.methods.VotingInstances(VotingInstanceID).call();
+        let Status = VotingInstance.Status;
+        let CLDtoIncentive = web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether');
+        let ProposalType = ProposalInfo.ProposalType;
+        let ProposalHTML = `
+        <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
+            <div style="flex: 1;">Proposal ${ProposalID}</div>
+            <div style="flex: 1;">${Status}</div>
+            <div style="flex: 1;">${ProposalType}</div>
+            <div style="flex: 1;">${VotingInstanceID}</div>
+            <div style="flex: 1;">${Status}</div>
+            <div style="flex: 1;">${CLDtoIncentive} CLD</div>
+            <div style="flex: 1; display: flex; justify-content: flex-end;">
+                <a href="CurrentVote.html" style="text-decoration: none; color: inherit; outline: none;">
+                <button class="view_more_button" style="background-color: #16ECD3;">View more</button>             
+                </a>
+            </div>
+        </div>
+        `;
+        ProposalQueueList.innerHTML += ProposalHTML;
+    }
 }
     
