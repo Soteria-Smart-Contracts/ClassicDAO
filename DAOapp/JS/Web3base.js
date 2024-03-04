@@ -101,7 +101,7 @@ async function GetHENS(){
         //get the cld balance of the user and add a br tag to address id element and then add the balance in the format of Balance: 0.00 CLD
         let balance = await CLDtoken.methods.balanceOf(account).call();
         balance = web3.utils.fromWei(balance, 'ether');
-        document.getElementById("address").innerHTML += "<br>Balance: " + balance.toFixed(2) + " CLD";
+        document.getElementById("address").innerHTML += "<br>Balance: " + (balance).toFixed(2) + " CLD";
     }
 }
 
