@@ -19,4 +19,4 @@
 // });
 
 
-//Load all p
+//Load the proposal queue and the proposal details for ea
