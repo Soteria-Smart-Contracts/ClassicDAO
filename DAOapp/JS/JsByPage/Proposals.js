@@ -1,7 +1,7 @@
 
 
 // //set a countdown to genesiscountdown id, the unix start time is: 1709335406, in the format of X hours
-// {<div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
+// <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
 // <div style="flex: 1;">QueuePosition</div>
 // <div style="flex: 1;">ID</div>
 // <div style="flex: 1;">
@@ -16,7 +16,7 @@
 //     <button class="view_more_button" style="background-color: #16ECD3;">View more</button>             
 //     </a>
 // </div>
-// </div>}
+// </div>
 
 
 //Load the proposal queue and the proposal details for each proposal in the queue. Here are the details needed: ID, Status, ProposalInfo.ProposalType, VotingInstanceID, VotingInstance.Status, VotingInstance.CLDtoIncentive
