@@ -84,7 +84,7 @@ async function ClaimInstance(ProposalID){
     let gas = await DAOvoting.methods.ReturnTokens(ProposalID).estimateGas({from: account});
     await DAOvoting.methods.ReturnTokens(ProposalID).send({from: account, gas: gas});
 
-    alert
+    alert("Transaction sent, please wait for it to be mined, page will refresh when done");
 
     //refresh the page
     location.reload();
