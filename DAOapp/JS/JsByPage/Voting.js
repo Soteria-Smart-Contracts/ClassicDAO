@@ -170,7 +170,7 @@ async function SubmitVote(){
     //loop and wait for the vote to be submitted, then reload the page
     while (true) {
         await new Promise(resolve => setTimeout(resolve, 1000));
-        if ((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).CLDcl > 0) {
+        if ((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).CLDre > 0) {
             location.reload();
         }
     }
