@@ -1,5 +1,6 @@
 const CoreAddress = "0x121ce4833dbD3BfDb1055EA8aD90a0D253f37854";
 const VotingAddress = "0x13b0cd1a16cd8aa73d8fd42608e37b291fe3e122";
+const TreasuryAddress = "0xD4886C6757819D857D1795cF43368473BeAcFA70";
 const CLDaddress = "0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c";
 let OngoingProposal;
 let OngoingProposalID;
