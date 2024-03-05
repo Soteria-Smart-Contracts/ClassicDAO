@@ -99,20 +99,26 @@ async function LoadVoterList() {
     }
     VoterList.sort((a, b) => parseFloat(b.Amount) - parseFloat(a.Amount));
     for (i = 0; i < VoterList.length; i++) {
-        var div = document.createElement("div");
-        div.style.marginTop = "22px";
-        var span = document.createElement("span");
-        span.className = "address";
-        span.style.padding = "8px";
-        span.style.color = "black";
-        span.style.fontWeight = "bold";
-        span.style.width = "auto";
-        span.style.backgroundColor = "white";
-        userDisplay = await CheckHENS(VoterList[i].Voter);
-        span.innerHTML = "<a target='_blank' href='https://etc.blockscout.com/address/" + VoterList[i].Voter + "' style='color: black; text-decoration: none;'>" + userDisplay + "</a> | " + VoterList[i].Amount + " CLD";
-        div.appendChild(span);
-        document.getElementById("VoterList").appendChild(div);
-    }
+    var div = document.createElement("div");
+    div.style.marginTop = "22px";
+    var span = document.createElement("span");
+    span.className = "address";
+    span.style.width = "auto";
+    span.style.backgroundColor = "#ffffff";
+    span.style.marginBottom = "20px";
+    span.style.color = "#000";
+    span.style.border = "2px solid #000";
+    span.style.padding = "0px 10px";
+    span.style.borderRadius = "10px";
+    span.style.fontSize = "18px";
+    span.style.fontFamily = "GTWalsheim2, regular";
+    span.style.cursor = "pointer";
+    span.style.height = "36px";
+    userDisplay = await CheckHENS(VoterList[i].Voter);
+    span.innerHTML = "<a target='_blank' href='https://etc.blockscout.com/address/" + VoterList[i].Voter + "' style='color: black; text-decoration: none;'>" + userDisplay + "</a> | " + VoterList[i].Amount + " CLD";
+    div.appendChild(span);
+    document.getElementById("VoterList").appendChild(div);
+}
 }
 
 //detect changes in the voter list
