@@ -89,7 +89,7 @@ async function LoadVoterList() {
     document.getElementById("TotalVoters").innerText = Voters.length;
     document.getElementById("VoterList").innerHTML = "";
     var div = document.createElement("div");
-    div.innerHTML = '<h1 id="votebuttonstext" style="font-size: 30px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">Voters</h1> <hr style="border: 1px solid #fff; margin: 0;">';
+    div.innerHTML = '<h1 id="votebuttonstext" style="font-size: 30px; margin-top: 0px; margin-bottom: 0px; font-family: GTWalsheim, bold; color: #fff;">Voters</h1> <hr style="border: 1px solid #fff; marginTop = "22px"; margin: 0;">';
     document.getElementById("VoterList").appendChild(div);
 
 
