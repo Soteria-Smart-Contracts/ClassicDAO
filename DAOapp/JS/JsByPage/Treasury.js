@@ -5,7 +5,7 @@ async function runCodeWhenLoggedIn() {
         console.log("Waiting for login");
     }
 
-    
+    UpdateTokenBalances();
     
     console.log("Logged in");
 }
