@@ -9,4 +9,6 @@ async function runCodeWhenLoggedIn() {
     console.log("Logged in");
 }
 
+async function Update
+
 runCodeWhenLoggedIn();
