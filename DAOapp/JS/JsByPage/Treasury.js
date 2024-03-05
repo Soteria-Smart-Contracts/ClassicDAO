@@ -13,6 +13,7 @@ async function runCodeWhenLoggedIn() {
 async function UpdateTokenBalances(){
     let TreasuryCLD = await CLDtoken.methods.balanceOf(TreasuryAddress).call();
     let TreasuryETC = await web3.eth.getBalance(TreasuryAddress);
+    
     document.getElementById("TreasuryCLD").innerText = web3.utils.fromWei(TreasuryCLD, 'ether');
     document.getElementById("TreasuryETC").innerText = web3.utils.fromWei(TreasuryETC, 'ether');
 }
