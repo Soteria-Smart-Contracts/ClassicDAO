@@ -9,6 +9,11 @@ async function runCodeWhenLoggedIn() {
     console.log("Logged in");
 }
 
-async function Update
+async function UpdateTokenBalances(){
+    let TreasuryCLD = await CLD.methods.balanceOf(TreasuryAddress).call();
+    let TreasuryETC = await web3.eth.getBalance(TreasuryAddress);
+    document.getElementById("TreasuryCLD").innerText = web3.utils.fromWei(TreasuryCLD, 'ether');
+    document.getElementById("TreasuryETC").innerText = web3.utils.fromWei(TreasuryETC, 'ether');
+}
 
 runCodeWhenLoggedIn();
