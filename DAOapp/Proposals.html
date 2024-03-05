@@ -34,6 +34,12 @@
             src: url('fonts/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf');
         }
 
+        @media screen and (max-width: 913px) {
+            .responsive-hide-large {
+                display: none !important;
+            }
+        }
+
         .view_button, .plus, .view_button2 {
             background-color: #16ECD3;
             color: #000;
@@ -197,49 +203,84 @@
 <script src="https://cdn.jsdelivr.net/npm/web3@4.5.0/dist/web3.min.js"></script>
 </head>
 <body style="font-family: GTWalsheim2, regular; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; overflow: hidden;" id="body">
-  <div class="header" style=" z-index: 1000; position: sticky; top: 0; background-color: #000; font-family: GTWalsheim2, regular; color: #fff; border-bottom: 1px solid #fff;"> 
-    <div class="header-container"  style="display: flex; font-family: GTWalsheim2, regular; justify-content: space-between; align-items: center; margin-left: 150px; margin-right: 150px;">
-         
-        <div class="logo-and-tabs" style="display: flex; justify-content: flex-start; align-items: center; width: 100%;">
-              <div class="logo" style="display: flex; align-items: center; margin-left: -5px;">
-                <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
-                  <img src="public/external/cldblue11804-k4uw-200h.png" alt="Logo" style="margin-right: 10px;">
-                  <h1 style="color: #fff;">ClassicDAO</h1>
-                </a>
-              </div>
+    <div class="header"
+    style=" z-index: 1000; position: sticky; top: 0; background-color: #000; font-family: GTWalsheim2, regular; color: #fff; border-bottom: 1px solid #fff;">
+    <div class="header-container"
+      style="display: flex; font-family: GTWalsheim2, regular; justify-content: space-between; align-items: center; margin-left: 150px; margin-right: 150px;">
 
-              <div class="tabs" style="display: flex; margin-left: 20px; gap: 10px; ">
-                <div class="menu-container-vote" style="position: relative; display: inline-block;">
-                  <button id="votingButton" class="button">Voting</button>
-                  <div class="dropdown-menu-vote" style="display: none; background-color: white; color: black; position: absolute; left: 0; padding: 10px; margin-top: 5px; width: max-content; border-radius: 10px;">
-                    <a href="CurrentVote.html" style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">Current</a>
-                    <a href="Proposals.html" style="text-decoration: none; color: black; display: block; margin-bottom: 5px; margin-bottom: 10px;">All</a>
-                   </div>
-                </div>
-                <a href="Treasury.html" id="treasuryButton" style="text-decoration: none; color: inherit; outline: none;">
-                <button class="button">Treasury</button>
-            </a>
-            <a href="Sales.html" id="salesButton" style="text-decoration: none; color: inherit; outline: none;">
-                <button class="button">Sales</button>
-            </a>
-               </div>
-          </div>
+      <div class="logo-and-tabs" style="display: flex; justify-content: flex-start; align-items: center; width: 100%;">
+        <div class="logo" style="display: flex; align-items: center; margin-left: -5px;">
+          <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+            <img src="public/external/cldblue11804-k4uw-200h.png" alt="Logo" style="margin-right: 10px;">
+            <h1 style="color: #fff;">ClassicDAO</h1>
+          </a>
+        </div>
 
-          <div class="connect-and-hamburger" style="display: flex; justify-content: space-between; align-items: center;">
-            <a style="text-decoration: none;" id="ButtonLink">
-                <button id="buttonConnect" onclick="loginWithEth()" class="buttonConnect">Connect</button>
-            </a>
-            <div class="menu-container" style="position: relative; display: inline-block;">
-              <button class="hamburger" style="align-items: center;">
-                  <img src="public/external/iconmenu1804-38fa.svg" alt="Menu" style="width: 22px; height: 22px; margin-bottom: -3px;">
-              </button>
-              <div class="dropdown-menu-hamburger" style="margin-top: 5px; display: none; background-color: white; color: black; position: absolute; right: 0; padding: 10px; width: max-content; border-radius: 10px;">
-                <a href="Profile.html" style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">Profile</a>
-                <a href="#" style="text-decoration: none; color: black; display: block; margin-bottom: 5px;">Simple mode</a>
-              </div>
+        <div class="tabs responsive-hide-large" style="display: flex; margin-left: 20px; gap: 10px;">
+
+          <div class="menu-container-vote" style="position: relative; display: inline-block;">
+            <button id="votingButton" class="button">Voting</button>
+            <div class="dropdown-menu-vote"
+              style="display: none; background-color: white; color: black; position: absolute; left: 0; padding: 10px; margin-top: 5px; width: max-content; border-radius: 10px;">
+              <a href="CurrentVote.html"
+                style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">Current</a>
+              <a href="Proposals.html"
+                style="text-decoration: none; color: black; display: block; margin-bottom: 5px; margin-bottom: 10px;">All</a>
+            </div>
           </div>
+          <a href="Treasury.html" id="treasuryButton" style="text-decoration: none; color: inherit; outline: none;">
+            <button class="button">Treasury</button>
+          </a>
+          <a href="Sales.html" id="salesButton" style="text-decoration: none; color: inherit; outline: none;">
+            <button class="button">Sales</button>
+          </a>
+        </div>
+
+        <!-- <div class="tabs responsive-hide-small" style="display: flex; margin-left: 20px; gap: 10px;">
+          <div class="dropdown-menu-hamburger2"
+          style="margin-top: 5px; display: none; background-color: white; color: black; position: absolute; right: 0; padding: 10px; width: max-content; border-radius: 10px;">
+
+          <a href="CurrentVote.html"
+              style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">Current</a>
+          <a href="Proposals.html"
+              style="text-decoration: none; color: black; display: block; margin-bottom: 5px; margin-bottom: 10px;">All</a>
+          <a href="Treasury.html" id="treasuryButton" style="text-decoration: none; color: inherit; outline: none;">
+              <button class="button">Treasury</button>
+          </a>
+          <a href="Sales.html" id="salesButton" style="text-decoration: none; color: inherit; outline: none;">
+              <button class="button">Sales</button>
+          </a>
+      </div>
+
+        </div> -->
+
+      </div>
+
+      <div class="connect-and-hamburger" style="display: flex; justify-content: space-between; align-items: center;">
+        <a style="text-decoration: none;" id="ButtonLink">
+          <button id="buttonConnect" onclick="loginWithEth()" class="buttonConnect">Connect</button>
+        </a>
+        <div class="menu-container" style="position: relative; display: inline-block;">
+          <button class="hamburger" style="align-items: center;">
+            <img src="public/external/iconmenu1804-38fa.svg" alt="Menu"
+              style="width: 22px; height: 22px; margin-bottom: -3px;">
+          </button> 
+
+          <div class="dropdown-menu-hamburger"
+          style="margin-top: 5px; display: none; background-color: white; color: black; position: absolute; right: 0; padding: 10px; width: max-content; border-radius: 10px;">
+          <a href="Profile.html"
+            style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">Profile</a>
+          <a href="#" style="text-decoration: none; color: black; display: block; margin-bottom: 5px;">Simple mode</a>
+        </div>
+        <div class="dropdown-menu-hamburger2"
+          style="margin-top: 5px; display: none; background-color: white; color: black; position: absolute; right: 0; padding: 10px; width: max-content; border-radius: 10px;">
+          <a href="Profile.html"
+            style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">sdf</a>
+          <a href="#" style="text-decoration: none; color: black; display: block; margin-bottom: 5px;">Simple mode</a>
+        </div>
         </div>
       </div>
+    </div>
   </div>
 
 
@@ -372,16 +413,36 @@
         return Math.sqrt(dx * dx + dy * dy);
     }
 
+    document.querySelector('.menu-container').addEventListener('mouseover', function () {
+    if (window.innerWidth <= 912) {
+        var dropdown = document.querySelector('.dropdown-menu-hamburger2');
+        dropdown.style.display = 'block';
+    }
+    });
+
+    document.querySelector('.menu-container').addEventListener('mouseout', function (event) {
+    if (window.innerWidth <= 912) {
+        var dropdown = document.querySelector('.dropdown-menu-hamburger2');
+        if (getDistanceFromElement(event, dropdown) > 5) {
+        dropdown.style.display = 'none';
+        }
+    }
+    });
+
     document.querySelector('.menu-container').addEventListener('mouseover', function() {
+        if (window.innerWidth > 912) {
         var dropdown = document.querySelector('.dropdown-menu-hamburger');
         dropdown.style.display = 'block';
+        }
     });
 
     document.querySelector('.menu-container').addEventListener('mouseout', function(event) {
+        if (window.innerWidth > 912) {
         var dropdown = document.querySelector('.dropdown-menu-hamburger');
         if (getDistanceFromElement(event, dropdown) > 5) { 
             dropdown.style.display = 'none';
         }
+    }
     });
 
     document.querySelector('.menu-container-vote').addEventListener('mouseover', function() {
