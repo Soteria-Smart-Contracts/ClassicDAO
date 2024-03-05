@@ -108,7 +108,7 @@ async function LoadVoterList() {
     span.style.marginBottom = "20px";
     span.style.color = "#000";
     span.style.border = "2px solid #000";
-    span.style.padding = "0px 10px";
+    span.style.padding = "5px 10px";
     span.style.borderRadius = "10px";
     span.style.fontSize = "18px";
     span.style.fontFamily = "GTWalsheim2, regular";
