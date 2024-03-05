@@ -1,1 +1,1 @@
-//reasuryCLD Balance
+//TreasuryCLD Balance and TreasuryETC balance 
