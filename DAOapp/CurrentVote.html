@@ -344,11 +344,11 @@
           <br>
           <span style="font-size: 20px; font-family: GTWalsheim, bold; color: #fff;"><a id="TotalVotes">0</a> CLD / <a id="Quorum">0</a> CLD</span>
       </div>
-      <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+      <div class="queue" style="display: flex; justify-content: space-between; margin-top: 30px;">
         <a href="Proposals.html" style="text-decoration: none; color: inherit; outline: none;">
       <button id="upcomingProposals" class="buttonConnect" style="height: 50px; width: 175px; font-size: 18px;">Proposal Queue</button>
     </a>
-  </div>
+   </div>
     </div>
 
 
@@ -440,7 +440,11 @@
 
       </div>
 
-      
+      <div class="queue2" style="display: none; width: 100%; justify-content: space-between; margin-top: 30px;">
+        <a href="Proposals.html" style="text-decoration: none; color: inherit; outline: none; width: 100%;">
+      <button id="upcomingProposals" class="buttonConnect" style="height: 50px; width: 100%; font-size: 18px; ">Proposal Queue</button>
+    </a>
+    </div>
 
     </div>
   
@@ -590,6 +594,14 @@
 
             .proposalMain, .proposalResults, .proposalDetails2, .proposalVote2{
                 padding: 20px !important;
+            }
+
+            .queue {
+                display: none !important;
+              }
+
+            .queue2 {
+                display: flex !important;
             }
         }
         
