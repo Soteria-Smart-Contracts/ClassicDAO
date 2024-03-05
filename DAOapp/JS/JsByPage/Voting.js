@@ -110,10 +110,10 @@ async function LoadVoterList() {
     span.style.border = "2px solid #000";
     span.style.padding = "5px 10px";
     span.style.borderRadius = "10px";
-    span.style.fontSize = "18px";
+    span.style.fontSize = "20px";
     span.style.fontFamily = "GTWalsheim2, regular";
     span.style.cursor = "pointer";
-    span.style.height = "36px";
+    span.style.height = "45px";
     userDisplay = await CheckHENS(VoterList[i].Voter);
     span.innerHTML = "<a target='_blank' href='https://etc.blockscout.com/address/" + VoterList[i].Voter + "' style='color: black; text-decoration: none;'>" + userDisplay + "</a> | " + VoterList[i].Amount + " CLD";
     div.appendChild(span);
