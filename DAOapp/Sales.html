@@ -34,30 +34,7 @@
             src: url('fonts/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf');
         }
 
-        @media screen and (max-width: 755px) {
-            .responsive-hide-large {
-                display: none !important;
-            }
-            .card3 {
-                margin: 0 !important;
-            }
-            .card4 {
-                margin-left: 0 !important;
-                margin-top: 20px !important;
-            }
-
-            .proposalMain , .proposalResults, .proposalDetails2, .proposalVote2 {
-                padding: 20px !important;
-            }
-        }
         
-
-        @media screen and (max-width: 460px) {
-          .logo h1 {
-          display: none !important;
-          }
-
-        }
 
         .view_button, .plus, .view_button2 {
             background-color: #16ECD3;
@@ -514,27 +491,6 @@
 
 
 
-<style>
-  
-  @media screen and (max-width: 738px) {
-      .footer-container > div {
-          flex-basis: 100%; /* base width is 100% on small screens */
-      }
-      .socials {
-          margin-top: 30px;
-          justify-content: center !important;
-      }
-      .footLogo {
-        justify-content: center !important;
-      }
-  } 
-
-  @media screen and (min-width: 739px) and (max-width: 1053px) {
-      .socials {
-          margin-top: 30px;
-      }
-  }
-  </style>
   
   <div class="footer" style="background-color: #000; text-align: center; padding-top: 60px; padding-bottom: 60px; display: flex; justify-content: center;">
     <div class="footer-container" style="display: flex; flex-wrap: wrap; font-family: GTWalsheim2, regular; justify-content: space-between; align-items: center; color: #fff;  padding-left: 9.5%; padding-right: 9.5%; width: 100%;">
@@ -593,7 +549,33 @@
   </div>
 
 
-  <style>   
+  <style>  
+  
+  @media screen and (max-width: 760px) {
+            .responsive-hide-large {
+                display: none !important;
+            }
+            .card3 {
+                margin: 0 !important;
+            }
+            .card4 {
+                margin-left: 0 !important;
+                margin-top: 20px !important;
+            }
+
+            .proposalMain , .proposalResults, .proposalDetails2, .proposalVote2 {
+                padding: 20px !important;
+            }
+        }
+        
+
+        @media screen and (max-width: 460px) {
+          .logo h1 {
+          display: none !important;
+          }
+
+        }
+
     @media screen and (max-width: 912px) {
         .responsive-popup {
             width: 80vw !important;
@@ -618,6 +600,25 @@
         } */
 
     }
+
+    @media screen and (max-width: 738px) {
+      .footer-container > div {
+          flex-basis: 100%; /* base width is 100% on small screens */
+      }
+      .socials {
+          margin-top: 30px;
+          justify-content: center !important;
+      }
+      .footLogo {
+        justify-content: center !important;
+      }
+  } 
+
+  @media screen and (min-width: 739px) and (max-width: 1053px) {
+      .socials {
+          margin-top: 30px;
+      }
+  }
     </style>
 
 
