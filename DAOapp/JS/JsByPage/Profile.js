@@ -72,7 +72,7 @@ async function GetVotedProposals(){
             //get propossal info from VotingInstances
             VoteInQuestion = await DAOvoting.methods.VotingInstances(VotedProposals[i]).call();
             console.log(VoteInQuestion.IncentivePerVote,VoterVotesLocked);
-            Reward = ((VoteInQuestion.IncentivePerVote * VoterVotesLocked).toFixed(2) + " CLD";
+            Reward = (VoteInQuestion.IncentivePerVote * VoterVotesLocked).toFixed(2) + " CLD";
             console.log(Reward);
             NextProposalStarted = "";
             AmountButton = "Claim";
