@@ -98,7 +98,7 @@ async function LoadVoterList() {
         VoterList.push({ "Voter": Voters[i], "Amount": parseFloat(web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, Voters[i]).call()).VotesLocked, 'ether')).toFixed(2) });
     }
     VoterList.sort((a, b) => parseFloat(b.Amount) - parseFloat(a.Amount));
-    for (i = 0; i < VoterList.length; i++) {
+   for (i = 0; i < VoterList.length; i++) {
     var div = document.createElement("div");
     div.style.marginTop = "22px";
     var span = document.createElement("span");
@@ -113,9 +113,8 @@ async function LoadVoterList() {
     span.style.fontSize = "20px";
     span.style.fontFamily = "GTWalsheim2, regular";
     span.style.cursor = "pointer";
-    span.style.height = "45px";
-    span.style.whiteSpace = "normal";
-    span.style.wordWrap = "break-word";
+    span.style.display = "inline-block";
+    span.style.lineHeight = "normal";
     userDisplay = await CheckHENS(VoterList[i].Voter);
     span.innerHTML = "<a target='_blank' href='https://etc.blockscout.com/address/" + VoterList[i].Voter + "' style='color: black; text-decoration: none;'>" + userDisplay + "</a> | " + VoterList[i].Amount + " CLD";
     div.appendChild(span);
