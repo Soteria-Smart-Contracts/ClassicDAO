@@ -333,17 +333,6 @@
     }
     });
 
-    document.querySelector('.menu-container').addEventListener('mouseover', function () {
-      var dropdown = document.querySelector('.dropdown-menu-hamburger');
-      dropdown.style.display = 'block';
-    });
-
-    document.querySelector('.menu-container').addEventListener('mouseout', function (event) {
-      var dropdown = document.querySelector('.dropdown-menu-hamburger');
-      if (getDistanceFromElement(event, dropdown) > 5) {
-        dropdown.style.display = 'none';
-      }
-    });
 
     document.querySelector('.menu-container-vote').addEventListener('mouseover', function () {
       var dropdown = document.querySelector('.dropdown-menu-vote');

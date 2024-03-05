@@ -93,15 +93,15 @@ body::-webkit-scrollbar-thumb  {
     margin-right: 10px;
 }
 
-.dropdown-menu-hamburger a {
-    padding: 5px;
-}
+.dropdown-menu-hamburger a, .dropdown-menu-hamburger2 a{
+            padding: 5px;
+        }
 
-.dropdown-menu-hamburger a:hover {
-    background-color: #ddd;
-    color: black;
-    border-radius: 5px;
-}
+        .dropdown-menu-hamburger a:hover, .dropdown-menu-hamburger2 a:hover {
+            background-color: #ddd;
+            color: black;
+            border-radius: 5px;
+        }
 
 .dropdown-menu-vote a, .dropdown-menu-search a {
     padding: 5px;
