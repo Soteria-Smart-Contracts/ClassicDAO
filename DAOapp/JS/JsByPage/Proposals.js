@@ -134,14 +134,14 @@ async function LoadProposals() {
         }
         let ProposalHTML = `
         <div style="display: flex; justify-content: space-between; padding: 20px; color: #fff; box-sizing: border-box; padding-left: 0px;">
-            <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${i + 1}</div>
-            <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${await ProposalTypeToString(ProposalInfo.SimpleType)}</div>
-            <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether')} CLD</div>
-            <div style="flex: 1; text-align: center; align-items: center; font-size: 20px;">${ProposalQueue[i]}</div>
-            <div style="flex: 1; text-align: center; align-items: center;">
+            <div style="flex: 1;">${i + 1}</div>
+            <div style="flex: 1;">${await ProposalTypeToString(ProposalInfo.SimpleType)}</div>
+            <div style="flex: 1;">${web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether')} CLD</div>
+            <div style="flex: 1;">${ProposalQueue[i]}</div>
+            <div style="flex: 1;">
                 <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" id="PropStatus" disabled>${Status}</button>
             </div>
-            <div style="flex: 1; text-align: center; align-items: center;">
+            <div style="flex: 1;">
                 <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" disabled>${ProposalType}</button>
             </div>
             <div style="flex: 1; display: flex; justify-content: flex-end;">
