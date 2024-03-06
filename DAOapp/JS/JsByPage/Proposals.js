@@ -149,6 +149,7 @@ async function LoadProposals() {
                 <button class="view_more_button" style="background-color: #16ECD3; font-size: 18px;">View more</button>             
                 </a>
         </div>
+        </div>
         `;
         ProposalQueueList.innerHTML += ProposalHTML;
     }
