@@ -44,10 +44,13 @@ async function LoadDashboard() {
     }
     //else if if the user has voted again (check with VoterInfo(user, proposalId)), disable the vote buttons at votebuttons id and write You have already voted in id votebuttonstext
     else if (Uservotedbool) {
-        currentincentivereward = (web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked)) * TotalIncentivePerVote;
+        VotesLocked = web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked);
+        console.log(VotesLocked);
+        currentincentivereward = (VotesLocked) * TotalIncentivePerVote;
         ToFixedReward = parseFloat(currentincentivereward).toFixed(2);
+        VotesLocked = parseFloat(VotesLocked).toFixed(2);
         document.getElementById("votebuttons").style.display = "none";
-        document.getElementById("votebuttonstext").innerHTML = "You have already voted <br><br>Your Current Incentive Reward: " + ToFixedReward + " CLD";
+        document.getElementById("votebuttonstext").innerHTML = `You have already voted with ${VotesLocked} tokens<br><br>Your Current Incentive Reward:` + ToFixedReward + " CLD";
         console.log("You have already voted");
     }
     //there are yea and nay bars, the width of the bars are the percentage of the total votes, calculate the percentage of the total votes for each and set the width of the bars to that percentage. IDs are yeabar and naybar. do the calculations and the updating in the same line
