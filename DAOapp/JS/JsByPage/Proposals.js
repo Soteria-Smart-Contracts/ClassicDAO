@@ -133,7 +133,7 @@ async function LoadProposals() {
             ProposalType = "Eros";
         }
         let ProposalHTML = `
-        <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; border-bottom:1.81818px solid rgb(255, 255, 255); font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
+        <div style="display: flex; justify-content: space-between; align-items:center; padding: 16px 20px; font-size:16px; color:rgb(255, 255, 255); box-sizing: border-box;">
             <div style="flex: 1;">${i + 1}</div>
             <div style="flex: 1;">${await ProposalTypeToString(ProposalInfo.SimpleType)}</div>
             <div style="flex: 1;">${web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether')} CLD</div>
