@@ -93,7 +93,7 @@ async function GetHENS(){
     }
 
     //see if the current page is the profile page which is /profile.html or /profile, if it is display the HENS name at the nickname id
-    if(window.location.pathname.includes('/Profile')) {
+    if(window.location.pathname.includes('/profile')) {
         document.getElementById("nickname").innerHTML = HENSname;
         //set the address id element to the short users address found in buttonConnect
         
