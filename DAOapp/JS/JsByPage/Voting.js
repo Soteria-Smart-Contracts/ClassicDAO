@@ -50,7 +50,7 @@ async function LoadDashboard() {
         ToFixedReward = parseFloat(currentincentivereward).toFixed(2);
         VotesLocked = parseFloat(VotesLocked).toFixed(2);
         document.getElementById("votebuttons").style.display = "none";
-        document.getElementById("votebuttonstext").innerHTML = `You have already voted with ${VotesLocked} tokens<br><br>Your Current Incentive Reward:` + ToFixedReward + " CLD";
+        document.getElementById("votebuttonstext").innerHTML = `You have already voted with ${VotesLocked} tokens<br><br>Your Current Incentive Reward: ` + ToFixedReward + " CLD";
         console.log("You have already voted");
     }
     //there are yea and nay bars, the width of the bars are the percentage of the total votes, calculate the percentage of the total votes for each and set the width of the bars to that percentage. IDs are yeabar and naybar. do the calculations and the updating in the same line
