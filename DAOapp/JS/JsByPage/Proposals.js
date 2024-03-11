@@ -137,7 +137,7 @@ async function LoadProposals() {
             <div style="flex: 1;">${i + 1}</div>
             <div style="flex: 1;">${await ProposalTypeToString(ProposalInfo.SimpleType)}</div>
             <div style="flex: 1;">${web3.utils.fromWei(VotingInstance.CLDtoIncentive, 'ether')} CLD</div>
-            <div style="flex: 1;">${ProposalInfo.ProposalID}</div>
+            <div style="flex: 1;">${ProposalInfo.VotingInstanceID}</div>
             <div style="flex: 1;">
                 <button style="width: auto; background-color: #ffffff; color: #000; border: 2px solid #000; padding: 0px 10px; border-radius: 10px; font-size: 18px; font-family: GTWalsheim2, regular; cursor: pointer; height: 30px;" id="PropStatus" disabled>${Status}</button>
             </div>
