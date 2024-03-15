@@ -138,6 +138,7 @@ async function LoadVoterList() {
 
 async function BeginVote() {
     //do the same user ui stuff as in the voting function
+    let gasestimate;
     try {
         let gasEstimate = await DAOvoting.methods.BeginNextVote().estimateGas({ from: account });
     } catch (error) {
