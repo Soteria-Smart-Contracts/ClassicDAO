@@ -198,7 +198,7 @@ async function SubmitVote(){
     //transaction send, alert the user that the vote has been submitted, with a link to the transaction on blockscout, 
     //then reload the page
     document.getElementById('voteoverlay').style.display = 'none';
-    alert("Vote Submitted, view the transaction on Blockscout: https://etc.blockscout.com/tx/" + transactionHash + "The page will now reload");
+    alert("Vote Submitted, view the transaction on Blockscout: https://etc.blockscout.com/tx/" + transactionHash + "The page will reload once the vote has been submitted");
     while (true) {
         await new Promise(resolve => setTimeout(resolve, 1000));
         if ((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).CLDReturned > 0) {
