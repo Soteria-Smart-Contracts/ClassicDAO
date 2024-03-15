@@ -46,7 +46,8 @@ async function LoadDashboard() {
     else if (CurrentProposalInfo[2].VoteEnds < Math.floor(Date.now() / 1000)) {
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerText = "Proposal has Ended";
-        //display Be
+        //display Begin Vote button if the user is the proposer and the vote has ended
+        
     }
 
 
