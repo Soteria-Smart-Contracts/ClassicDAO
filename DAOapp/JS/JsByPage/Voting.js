@@ -193,7 +193,7 @@ async function SubmitVote(){
     amount = web3.utils.toWei(document.getElementById("amountInput").value, 'ether');
     let gasEstimate = await DAOvoting.methods.CastVote(amount, votechoice).estimateGas({ from: account });
     await DAOvoting.methods.CastVote(amount, votechoice).send({ from: account, gas: gasEstimate });
-    transactionHash
+    transactionHash = await web3.eth.getTransactionCount(account, 'latest');
     //loop and wait for the vote to be submitted, then reload the page
     //transaction send, alert the user that the vote has been submitted, with a link to the transaction on blockscout, 
     //then reload the page
