@@ -135,7 +135,7 @@ async function LoadVoterList() {
 }
 
 async function BeginVote() {
-    //do the same user ui s
+    //do the same user ui stuff as in the voting function
     let gasEstimate = await DAOvoting.methods.BeginNextVote().estimateGas({ from: account });
     await DAOvoting.methods.BeginNextVote().send({ from: account, gas: gasEstimate });
     location.reload();
