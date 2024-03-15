@@ -200,7 +200,7 @@ async function SubmitVote(){
             location.reload();
         }
     }
-    //
+    //transaction send, alert 
 }
 
 
