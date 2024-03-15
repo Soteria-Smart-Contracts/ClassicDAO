@@ -121,7 +121,7 @@ async function LoadProposals() {
         let Status = "Queued Up";
         //if the votestart is higher than the current time, the proposal is still in grace period, so set the status to Grace Period
         console.log(VotingInstance.VoteStarts);
-        if (VotingInstance.VoteStart > Math.floor(Date.now() / 1000)) {
+        if (VoteGrace > Math.floor(Date.now() / 1000)) {
             console.log("Grace Period");
             Status = "Grace Period";
         }
