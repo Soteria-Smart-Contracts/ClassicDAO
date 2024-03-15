@@ -134,7 +134,11 @@ async function LoadVoterList() {
 }
 }
 
-async function BeginVote
+// async function BeginVote() {
+//     let gasEstimate = await DAOvoting.methods.BeginVote().estimateGas({ from: account });
+//     await DAOvoting.methods.BeginVote().send({ from: account, gas: gasEstimate });
+//     location.reload();
+// }
 
 //detect changes in the voter list
 async function DetectVoterListChange() {
