@@ -42,6 +42,9 @@ async function LoadDashboard() {
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerText = "Proposal is in Debate Period";
     }
+    //else if the vote end time is less than the current time, the vote has ended, so disable the vote buttons at votebuttons id and write Proposal has Ended in id votebuttonstext
+
+
     //else if if the user has voted again (check with VoterInfo(user, proposalId)), disable the vote buttons at votebuttons id and write You have already voted in id votebuttonstext
     else if (Uservotedbool) {
         VotesLocked = web3.utils.fromWei((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked);
