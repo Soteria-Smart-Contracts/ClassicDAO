@@ -194,9 +194,9 @@ async function SubmitVote(){
     let gasEstimate = await DAOvoting.methods.CastVote(amount, votechoice).estimateGas({ from: account });
     await DAOvoting.methods.CastVote(amount, votechoice).send({ from: account, gas: gasEstimate });
     //loop and wait for the vote to be submitted, then reload the page
-        //transaction send, alert the user that the vote has been submitted, with a link to the transaction on blockscout, 
-        //then reload the page
-        
+    //transaction send, alert the user that the vote has been submitted, with a link to the transaction on blockscout, 
+    //then reload the page
+    document.getElementById('voteoverlay').style.display = 'none';
     while (true) {
         await new Promise(resolve => setTimeout(resolve, 1000));
         if ((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).CLDReturned > 0) {
