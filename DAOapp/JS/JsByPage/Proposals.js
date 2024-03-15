@@ -115,15 +115,11 @@ async function LoadProposals() {
     console.log(CLDtoIncentive);
     //sort the CLDtoIncentive array by the CLDtoIncentive, the highest CLDtoIncentive will be first
     CLDtoIncentive.sort((a, b) => (a.CLDtoIncentive < b.CLDtoIncentive) ? 1 : -1);
-    console.log(CLDtoIncentive);
     ProposalQueueList.innerHTML = "";
     for (let i = 0; i < CLDtoIncentive.length; i++) {
-        console.log(CLDtoIncentive[i][0]);
-
         let VotingInstance = await DAOvoting.methods.VotingInstances(Number(CLDtoIncentive[i][0])).call();
         let ProposalInfo = await DAOcore.methods.ProposalInfos(Number(CLDtoIncentive[i][0])).call();
         let Status = "Queued Up";
-        console.log(VotingInstance.ProposalID);
         //if the votestart is higher than the current time, the proposal is still in grace period, so set the status to Grace Period
         console.log(VotingInstance.VoteStart);
         if (VotingInstance.VoteStart > Math.floor(Date.now() / 1000)) {
