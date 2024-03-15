@@ -138,9 +138,9 @@ async function LoadVoterList() {
 
 async function BeginVote() {
     //do the same user ui stuff as in the voting function
-    let gasestimate;
+    let gasEstimate;
     try {
-        let gasEstimate = await DAOvoting.methods.BeginNextVote().estimateGas({ from: account });
+        gasEstimate = await DAOvoting.methods.BeginNextVote().estimateGas({ from: account });
     } catch (error) {
         console.error(error);
         alert("Transaction failed, No proposals in the queue!");
