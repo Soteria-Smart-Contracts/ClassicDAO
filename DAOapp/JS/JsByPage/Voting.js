@@ -134,6 +134,8 @@ async function LoadVoterList() {
 }
 }
 
+async function BeginVote
+
 //detect changes in the voter list
 async function DetectVoterListChange() {
     NewVoters = (await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call()).Voters;
