@@ -14,8 +14,12 @@ async function UpdateTokenBalances(){
     let TreasuryCLD = await CLDtoken.methods.balanceOf(TreasuryAddress).call();
     let TreasuryETC = await web3.eth.getBalance(TreasuryAddress);
     
-    document.getElementById("TreasuryCLD").innerText = web3.utils.fromWei(TreasuryCLD, 'ether');
-    document.getElementById("TreasuryETC").innerText = web3.utils.fromWei(TreasuryETC, 'ether');
+    document.getElementById("TreasuryCLD").innerText = formatNumber(web3.utils.fromWei(TreasuryCLD, 'ether'));
+    document.getElementById("TreasuryETC").innerText = formatNumber(web3.utils.fromWei(TreasuryETC, 'ether'));
+
+    function formatNumber(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
 }
 
 runCodeWhenLoggedIn();
