@@ -234,7 +234,12 @@ async function Incentive(){
     }
 
     //check the users cld balance, if it is less than the amount specified in the amountInput2 id, alert the user that they do not have enough tokens
-    
+    let balance = await CLDtoken.methods.balanceOf(account).call();
+    balance = (Number(web3.utils.fromWei(balance, 'ether'))).toFixed(2);
+    if(balance < document.getElementById("amountInput2").value){
+        alert("You do not have enough tokens to incentivize with");
+        return;
+    }
 
     amount = web3.utils.toWei(document.getElementById("amountInput2").value, 'ether');
     let gasEstimate = await DAOvoting.methods.Incentivize(amount).estimateGas({ from: account });
