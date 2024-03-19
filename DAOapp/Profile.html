@@ -386,6 +386,22 @@
     <div style="color: #fff; width: 80%; max-width: 800px; border: 2px solid #fff; border-radius: 16px; overflow-x: hidden; overflow-y: auto; max-height: 500px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #000; padding: 40px; z-index: 3; cursor: auto;" class="popup">
         <h2 style="margin-top: 0; margin-bottom: 0; text-align: center; font-size: 36px;">Create a Propsal</h2>
       <p style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0;">Title</p>
+      <p style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0;">Select Proposal Type</p>
+      <select id="ProposalType" style="width: 100%; border: 2px solid #ffffff; background-color: #000; color: #fff; padding: 10px; border-radius: 10px; margin-top: 5px; font-size: 20px;">
+          <optgroup label="Proposal Type">
+              <option value="Simple">Simple</option>
+              <option value="EROS">EROS</option>
+              <script>
+                  document.getElementById('ProposalType').addEventListener('change', function() {
+                      if (this.options[this.selectedIndex].value === 'EROS') {
+                          document.getElementById('TypeEntryOrEros').innerText = 'EROS Address:';
+                          document.getElementById('SimpleType').style.display = 'none';
+                          document.getElementById('EROS').style.display = 'block';
+                      }
+                  });
+              </script>
+          </optgroup>
+      </select>
 
     <input placeholder="Enter the Title of the Proposal" class="rangeIncentive" id="TitleInput" style="padding-left: 10px; width: 100%; font-size: 20px; height: 50px; margin-top: 5px; background-color: rgb(0,0,0); border: 2px solid white; border-radius: 10px; color: white; box-sizing: border-box;">
       <p style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0;">Description</p>
