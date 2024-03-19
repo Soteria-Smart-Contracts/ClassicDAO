@@ -42,13 +42,13 @@ async function LoadDashboard() {
     Uservotedbool = (await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).VotesLocked > 0;
     //set the total incentive id to the total incentive
     document.getElementById("TotalIncentive").innerText = TotalIncentive;
+    document.getElementById("Incentivize").style.display = "block";
     
 
     //if the vote start time is greater than the current time, the vote has not started yet, so disable the vote buttons at votebuttons id and write Proposal is in Debate Period in id votebuttonstext
     if (CurrentProposalInfo[2].VoteStarts > Math.floor(Date.now() / 1000)) {
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerText = "Proposal is in Debate Period";
-        document.getElementById("Incentivize").style.display = "block";
     }
     //else if the vote end time is less than the current time, the vote has ended, so disable the vote buttons at votebuttons id and write Proposal has Ended in id votebuttonstext
     else if (CurrentProposalInfo[2].VoteEnds < Math.floor(Date.now() / 1000)) {
