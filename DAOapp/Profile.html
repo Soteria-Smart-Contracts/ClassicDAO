@@ -412,6 +412,12 @@
         <optgroup label="Proposal Type">
             <option value="Simple">Simple</option>
             <option value="EROS" onclick="location.reload()">EROS</option>
+            <script>
+                document.getElementById('ProposalType').addEventListener('change', function() {
+                    if (this.options[this.selectedIndex].value === 'EROS') {
+                        location.reload();
+                    }
+                });
         </optgroup>
     </select>
     <p style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0;">Simple Type</p>
