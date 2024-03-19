@@ -416,6 +416,7 @@
                 document.getElementById('ProposalType').addEventListener('change', function() {
                     if (this.options[this.selectedIndex].value === 'EROS') {
                         document.getElementById('TypeEntryOrEros').innerText = 'EROS Address:';
+                        document.getElementById('SimpleType').style.display = 'none';
                     }
                 });
             </script>
@@ -443,6 +444,7 @@
             <option value="ChangeVotingCuts">Change Voting Cuts</option>
         </optgroup>
     </select>
+    
   
     <script>
     window.onload = function() {
