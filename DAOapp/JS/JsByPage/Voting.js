@@ -245,7 +245,6 @@ async function Incentive(){
     alert("Incentive Submitted. The page will reload once the transaction is confirmed.");
     while (true) {
         await new Promise(resolve => setTimeout(resolve, 1000));
-        //wait for balance to be updated, then reload the page
         if (await CLDtoken.methods.balanceOf(account).call() != balance) {
             location.reload();
         }
