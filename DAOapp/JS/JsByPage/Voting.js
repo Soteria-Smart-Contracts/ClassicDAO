@@ -30,7 +30,7 @@ async function LoadDashboard() {
     document.getElementById("desc").innerText = (CurrentProposalInfo[1].Memo).split("//")[1];
 
     // for every (<>) in the description text, replace it with a line break
-    document.getElementById("desc").innerHTML = document.getElementById("desc").innerHTML.replace(/((&lt;&gt;))/g, "<br>");
+    document.getElementById("desc").innerHTML = document.getElementById("desc").innerHTML.replace(/(&lt;&gt;)/g, "<br>");
     console.log(document.getElementById("desc").innerHTML);
 
     //calculate the total incentive per vote, the total incentive per vote is the total incentive divided by the total votes, total incentive is CLDtoIncetive on  current proposal info 3rd array, total votes is TotalCLDVoted in 3rd array of CurrentProposalInfo
