@@ -56,6 +56,7 @@ async function LoadDashboard() {
         document.getElementById("votebuttonstext").innerText = "Proposal has Ended";
         //display Begin Vote button for all users
         document.getElementById("BeginVote").style.display = "block";
+        //remove in
     }
 
 
