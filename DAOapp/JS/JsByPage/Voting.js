@@ -102,6 +102,7 @@ async function LoadDashboard() {
     document.getElementById("CLDtokenholdings2").innerText = Number(web3.utils.fromWei(CLDtokenholdings, 'ether')).toFixed(2);
     //set max on rangeIncentive id to the number of tokens the user has
     document.getElementById("rangeIncentive").max = Number(web3.utils.fromWei(CLDtokenholdings, 'ether')).toFixed(2) - 0.0001;
+    //rangeincentive 2
     
 }
 
