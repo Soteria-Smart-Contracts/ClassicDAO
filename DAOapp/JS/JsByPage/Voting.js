@@ -226,7 +226,9 @@ async function SubmitVote(){
     }
 }
 
-async function Incentive()
+async function Incentive(){
+    console.log("Incentivize");
+}
 
 
 //
