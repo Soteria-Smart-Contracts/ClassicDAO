@@ -240,7 +240,7 @@ async function Incentivize(){
 
     amount = web3.utils.toWei(document.getElementById("amountInput2").value, 'ether');
     let gasEstimate = await DAOvoting.methods.Incentivize(amount).estimateGas({ from: account });
-    let votingin
+    let votinginstance = await DAOvoting.methods.GetVotingInstance(CurrentProposalInfo[2].ProposalID).call();
     TX = await DAOvoting.methods.IncentivizeProposal(amount).send({ from: account, gas: gasEstimate });
     transactionHash = TX.transactionHash;
 
