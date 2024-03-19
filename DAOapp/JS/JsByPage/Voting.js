@@ -227,11 +227,17 @@ async function SubmitVote(){
 }
 
 async function Incentive(){
+
+    if(document.getElementById("amountInput2").value < 0.01){
+        alert("You must vote with at least 0.01 CLD");
+        return;
+    }
+
     amount = web3.utils.toWei(document.getElementById("amountInput2").value, 'ether');
     let gasEstimate = await DAOvoting.methods.Incentivize(amount).estimateGas({ from: account });
     TX = await DAOvoting.methods.Incentivize(amount).send({ from: account, gas: gasEstimate });
     transactionHash = TX.transactionHash;
-    
+
 }
 
 
