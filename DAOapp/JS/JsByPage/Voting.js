@@ -239,6 +239,13 @@ async function Incentive(){
     transactionHash = TX.transactionHash;
 
     document.getElementById('IncentivizeOverlay').style.display = 'none';
+    alert("Incentive Submitted. The page will reload once the transaction is confirmed.");
+    while (true) {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        if ((await DAOvoting.methods.VoterInfo(CurrentProposalInfo[2].ProposalID, account).call()).CLDReturned > 0) {
+            location.reload();
+        }
+    }
 
 
 }
