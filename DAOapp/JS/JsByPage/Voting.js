@@ -182,6 +182,7 @@ async function CheckApproveVotingCLDContitional(){
     }
 }
 
+
 //set votingchoicedisplay id to the voting choice input true or false
 async function SetVoteChoiceDisplay(choice){
     await CheckApproveVotingCLDContitional();
@@ -224,6 +225,8 @@ async function SubmitVote(){
         }
     }
 }
+
+async function SendIn
 
 
 //
