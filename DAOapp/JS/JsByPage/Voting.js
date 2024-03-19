@@ -227,7 +227,8 @@ async function SubmitVote(){
 }
 
 async function Incentive(){
-    console.log("Incentivize");
+    amount = web3.utils.toWei(document.getElementById("amountInput2").value, 'ether');
+    
 }
 
 
