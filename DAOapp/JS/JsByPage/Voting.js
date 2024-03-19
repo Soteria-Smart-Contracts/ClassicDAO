@@ -226,7 +226,7 @@ async function SubmitVote(){
     }
 }
 
-async function SendIn
+async function Incentive()
 
 
 //
