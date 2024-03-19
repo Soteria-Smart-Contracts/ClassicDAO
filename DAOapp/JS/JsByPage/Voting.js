@@ -34,7 +34,6 @@ async function LoadDashboard() {
     //remove all brackets () from the description text
     document.getElementById("desc").innerHTML = document.getElementById("desc").innerHTML.replace((/[(]/g), "");
     document.getElementById("desc").innerHTML = document.getElementById("desc").innerHTML.replace((/[)]/g), "");
-    console.log(document.getElementById("desc").innerHTML);
 
     //calculate the total incentive per vote, the total incentive per vote is the total incentive divided by the total votes, total incentive is CLDtoIncetive on  current proposal info 3rd array, total votes is TotalCLDVoted in 3rd array of CurrentProposalInfo
     TotalIncentive = parseFloat(web3.utils.fromWei(CurrentProposalInfo[2].CLDtoIncentive, 'ether')).toFixed(2);
