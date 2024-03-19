@@ -238,8 +238,8 @@ async function Incentive(){
     TX = await DAOvoting.methods.Incentivize(amount).send({ from: account, gas: gasEstimate });
     transactionHash = TX.transactionHash;
 
-    document.getElementById('voteoverlay').style.display = 'none';
-    
+    document.getElementById('IncentivizeOverlay').style.display = 'none';
+
 
 }
 
