@@ -397,6 +397,11 @@
                             document.getElementById('SimpleType').style.display = 'none';
                             document.getElementById('EROS').style.display = 'block';
                         }
+                        if (this.options[this.selectedIndex].value === 'Simple') {
+                            document.getElementById('TypeEntryOrEros').innerText = 'Simple Type:';
+                            document.getElementById('SimpleType').style.display = 'block';
+                            document.getElementById('EROS').style.display = 'none';
+                        }
                     });
                 </script>
             </optgroup>
