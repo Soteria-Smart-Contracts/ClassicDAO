@@ -229,7 +229,7 @@ async function SubmitVote(){
 async function Incentive(){
 
     if(document.getElementById("amountInput2").value < 0.01){
-        alert("You must vote with at least 0.01 CLD");
+        alert("You must incentivize with at least 0.01 CLD");
         return;
     }
 
