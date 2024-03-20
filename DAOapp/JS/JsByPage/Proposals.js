@@ -156,7 +156,7 @@ async function LoadProposals() {
         `;
         ProposalQueueList.innerHTML += ProposalHTML;
     }
-    //now to check all past proposals, 
+    //now to check all past proposals, use the lowest proposal id to get all proposals that are lower than the lowest proposal id
         
 }
     
