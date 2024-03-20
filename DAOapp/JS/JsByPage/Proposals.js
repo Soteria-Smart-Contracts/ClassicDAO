@@ -124,9 +124,7 @@ async function LoadProposals() {
         if (Number(CLDtoIncentive[i].VotingInstanceID) < LowestProposalID) {
             LowestProposalID = Number(CLDtoIncentive[i].VotingInstanceID);
         }
-
-
-        //if the votestart is higher than the current time, the proposal is still in grace period, so set the status to Grace Period
+        
         console.log(VotingInstance.VoteStarts);
         VoteGrace = Number(VotingInstance.VoteStarts);
         if (VoteGrace > Math.floor(Date.now() / 1000)) {
