@@ -156,7 +156,11 @@ async function LoadProposals() {
         `;
         ProposalQueueList.innerHTML += ProposalHTML;
     }
-    //now to check all past proposals, use the lowest proposal id to get all proposals that are lower than the lowest proposal id
+    //now to check all past proposals, use the lowest proposal id to get all proposals that are lower than the lowest proposal id in the voting queue
+    let PastProposals = [];
+    for (let i = 0; i < LowestProposalID; i++) {
+        PastProposals.push(await DAOcore.methods.Proposals(i).call());
+    }
         
 }
     
