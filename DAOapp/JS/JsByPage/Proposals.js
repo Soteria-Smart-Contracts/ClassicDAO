@@ -156,7 +156,7 @@ async function LoadProposals() {
         `;
         ProposalQueueList.innerHTML += ProposalHTML;
     }
-    //at the end of the proposal queue, add a seperator with the text "End of Queue", 
+    //now to check all past proposals, 
         
 }
     
