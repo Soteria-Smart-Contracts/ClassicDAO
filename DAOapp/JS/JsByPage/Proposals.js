@@ -117,6 +117,8 @@ async function LoadProposals() {
     ProposalQueueList.innerHTML = "";
     let LowestProposalID = 0;
     for (let i = 0; i < CLDtoIncentive.length; i++) {
+        //if the proposal is lower than the lowest proposal id, set the lowest proposal id to the current proposal id
+        
         let VotingInstance = await DAOvoting.methods.VotingInstances(Number(CLDtoIncentive[i][0])).call();
         let ProposalInfo = await DAOcore.methods.ProposalInfos(Number(CLDtoIncentive[i][0])).call();
         let Status = "Queued Up";
