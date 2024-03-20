@@ -151,7 +151,7 @@ async function LoadProposals() {
         `;
         ProposalQueueList.innerHTML += ProposalHTML;
     }
-    //at the end of the proposal queue, add a seperator
+    //at the end of the proposal queue, add a seperator with 
         
 }
     
