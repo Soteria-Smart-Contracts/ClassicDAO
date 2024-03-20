@@ -122,9 +122,9 @@ async function LoadProposals() {
         let Status = "Queued Up";
 
         if (Number(CLDtoIncentive[i].VotingInstanceID) < LowestProposalID) {
-            LowestProposalID = Number(CLDtoIncentive[i].VotingInstanceID);
+            
         }
-        
+
         console.log(VotingInstance.VoteStarts);
         VoteGrace = Number(VotingInstance.VoteStarts);
         if (VoteGrace > Math.floor(Date.now() / 1000)) {
