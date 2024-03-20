@@ -252,11 +252,6 @@ async function Incentivize(){
             location.reload();
         }
     }
-
-
 }
-
-
-//
 
 runCodeWhenLoggedIn();
