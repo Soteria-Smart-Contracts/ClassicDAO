@@ -121,8 +121,8 @@ async function LoadProposals() {
         let ProposalInfo = await DAOcore.methods.ProposalInfos(Number(CLDtoIncentive[i][0])).call();
         let Status = "Queued Up";
 
-        if (Number(CLDtoIncentive[i].VotingInstanceID) < LowestProposalID) {
-            
+        if (Number(CLDtoIncentive[i].VotingInstanceID) < LowestProposalID) { // use ProposalInfo.VotingInstanceID
+            LowestProposalID = Number(ProposalInfo.VotingInstanceID);
         }
 
         console.log(VotingInstance.VoteStarts);
