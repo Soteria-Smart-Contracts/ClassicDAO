@@ -184,6 +184,7 @@ async function CheckApproveVotingCLDContitional(){
 async function CheckApproveVotingCLDContitionalIncentivize(){
     //see if the user has approved the voting contract, if they have not, approve the voting contract for 696969696969969696969696969696969669696 tokens
     approved = BigInt(await CLDtoken.methods.allowance(account, VotingAddress).call());
+    console.log(approved);
 
     if(approved == 0){
         gas = await CLDtoken.methods.approve(VotingAddress, BigInt(11579208923731619542357098500868790785326998466564056403945758400791312963993)).estimateGas({from: account});
