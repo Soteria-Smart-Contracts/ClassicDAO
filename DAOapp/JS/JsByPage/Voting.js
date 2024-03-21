@@ -192,7 +192,7 @@ async function CheckApproveVotingCLDContitionalIncentivize(){
     }
     else{
         approved = true;
-        document.getElementById('voteoverlay').style.display = 'block';
+        document.getElementById('IncentivizeOverlay').style.display = 'block';
     }
 }
 
