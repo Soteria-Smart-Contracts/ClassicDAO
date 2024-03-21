@@ -253,12 +253,12 @@ async function Incentivize(){
     console.log(votinginstance);
 
     amount = web3.utils.toWei(document.getElementById("amountInput2").value, 'ether');
+    alert("Incentive Submitted. The page will reload once the transaction is confirmed.");
     let gasEstimate = await DAOvoting.methods.IncentivizeProposal(votinginstance, amount).estimateGas({ from: account });
     TX = await DAOvoting.methods.IncentivizeProposal(votinginstance, amount).send({ from: account, gas: gasEstimate });
     transactionHash = TX.transactionHash;
 
     document.getElementById('IncentivizeOverlay').style.display = 'none';
-    alert("Incentive Submitted. The page will reload once the transaction is confirmed.");
     while (true) {
         await new Promise(resolve => setTimeout(resolve, 1000));
         if (await CLDtoken.methods.balanceOf(account).call() != balance) {
