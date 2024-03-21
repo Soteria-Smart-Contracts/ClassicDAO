@@ -253,7 +253,7 @@ async function Incentivize(){
     console.log(votinginstance);
 
     amount = web3.utils.toWei(document.getElementById("amountInput2").value, 'ether');
-    alert("Incentive Submitted. The page will reload once the transaction is confirmed.");
+    alert("Please confirm the incentive transaction. The page will reload once the transaction is confirmed.");
     let gasEstimate = await DAOvoting.methods.IncentivizeProposal(votinginstance, amount).estimateGas({ from: account });
     TX = await DAOvoting.methods.IncentivizeProposal(votinginstance, amount).send({ from: account, gas: gasEstimate });
     transactionHash = TX.transactionHash;
