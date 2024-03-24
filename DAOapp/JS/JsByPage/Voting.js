@@ -28,7 +28,7 @@ async function LoadDashboard() {
     //HeaderMemo found as memo in 2nd array of CurrentProposalInfo (under .Memo). the memo and the description are combined in the same field in the contract, so the the memo is the first part of the description, the description is the second part of the description. they are devided by a comma, so split the description by "//".
     document.getElementById("ProposalMemo").innerText = (CurrentProposalInfo[1].Memo).split("!!")[0];
     //document.getElementById("desc").innerText = (CurrentProposalInfo[1].Memo).split("!!")[1];
-    document.getElementById("desc").innerText = (CurrentProposalInfo[1].Memo).split("!!")[1];
+    document.getElementById("desc").innerText = "(CurrentProposalInfo[1].Memo).split("!!")[1];"
 
     // for every (<>) in the description text, replace it with a line break
     document.getElementById("desc").innerHTML = document.getElementById("desc").innerHTML.replace((/[(]&lt;&gt;[)]/g), "<br><br>");
