@@ -437,7 +437,9 @@
                 <script>
                     //display none all simple inputs right off the bat not in an event listener each individually
                     var simpleInputs = document.getElementById('SimpleInputs').children;
-                    
+                    for (var i = 0; i < simpleInputs.length; i++) {
+                        simpleInputs[i].style.display = 'none';
+                    }
                     
 
                 </script>
