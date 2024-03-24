@@ -1,37 +1,4 @@
-document.getElementById('assetSendTitle').style.display = 'none';
-                    document.getElementById('assetSendEtherInput').style.display = 'none';
-                    document.getElementById('assetSendAssetInput').style.display = 'none';
-                    document.getElementById('assetRegisterTitle').style.display = 'none';
-                    document.getElementById('assetRegisterTokenInput').style.display = 'none';
-                    document.getElementById('assetRegisterSlotInput').style.display = 'none';
-                    document.getElementById('changeLimitTitle').style.display = 'none';
-                    document.getElementById('changeLimitInput').style.display = 'none';
-                    document.getElementById('treasuryReplacementTitle').style.display = 'none';
-                    document.getElementById('treasuryReplacementInput').style.display = 'none';
-                    document.getElementById('votingReplacementTitle').style.display = 'none';
-                    document.getElementById('votingReplacementInput').style.display = 'none';
-                    document.getElementById('saleFactoryReplacementTitle').style.display = 'none';
-                    document.getElementById('saleFactoryReplacementInput').style.display = 'none';
-                    document.getElementById('coreReplacementTitle').style.display = 'none';
-                    document.getElementById('coreReplacementInput').style.display = 'none';
-                    document.getElementById('startPublicSaleTitle').style.display = 'none';
-                    document.getElementById('startPublicSaleInput').style.display = 'none';
-                    document.getElementById('changeCostTitle').style.display = 'none';
-                    document.getElementById('changeCostInput').style.display = 'none';
-                    document.getElementById('changeRetractFeeTitle').style.display = 'none';
-                    document.getElementById('changeRetractFeeInput').style.display = 'none';
-                    document.getElementById('changeMinDepositTitle').style.display = 'none';
-                    document.getElementById('changeMinDepositInput').style.display = 'none';
-                    document.getElementById('changeDefaultSaleLengthTitle').style.display = 'none';
-                    document.getElementById('changeDefaultSaleLengthInput').style.display = 'none';
-                    document.getElementById('changeMaxSalePercentTitle').style.display = 'none';
-                    document.getElementById('changeMaxSalePercentInput').style.display = 'none';
-                    document.getElementById('changeDefaultQuorumTitle').style.display = 'none';
-                    document.getElementById('changeDefaultQuorumInput').style.display = 'none';
-                    document.getElementById('changeVotingLengthTitle').style.display = 'none';
-                    document.getElementById('changeVotingLengthInput').style.display = 'none';
-                    document.getElementById('changeVotingCutsTitle').style.display = 'none';
-                    document.getElementById('changeVotingCutsInput').style.display = 'none';
+
 
 
 async function runCodeWhenLoggedIn() {
