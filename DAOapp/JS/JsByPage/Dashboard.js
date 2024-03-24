@@ -19,7 +19,6 @@ async function LoadDashboard() {
     // for every (<>) in the description text, replace it with a line break
     //keep only the fist part past (/[(]&lt;&gt;[)]/g) and replace the rest with nothing
     document.getElementById("desc").innerHTML = document.getElementById("desc").innerHTML.split((/[(]&lt;&gt;[)]/g))[0];
-    document.getElementById("desc").innerHTML = document.getElementById("desc").innerHTML.replace((/[(]&lt;&gt;[)]/g), "<br><br>");
 
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
     document.getElementById("HeaderTimeLeft").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
