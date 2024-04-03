@@ -58,7 +58,7 @@ async function LoadDashboard() {
             document.getElementById("BeginVote").style.display = "block";
             document.getElementById("Incentivize").style.display = "none";
             document.getElementById("BeginVote").innerText = "No Proposals in Queue";
-            doc
+            document.getElementById("BeginVote").disabled = true;
         } else {
             document.getElementById("BeginVote").style.display = "block";
             document.getElementById("Incentivize").style.display = "none";
