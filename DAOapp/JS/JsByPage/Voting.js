@@ -60,8 +60,7 @@ async function LoadDashboard() {
         } else {
             document.getElementById("BeginVote").style.display = "block";
             document.getElementById("Incentivize").style.display = "none";
-        
-            
+        }
     }
 
 
