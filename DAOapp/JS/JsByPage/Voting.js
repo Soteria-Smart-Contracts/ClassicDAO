@@ -55,8 +55,8 @@ async function LoadDashboard() {
         document.getElementById("votebuttonstext").innerText = "Proposal has Ended";
         //display Begin Vote button for all users
         if ((await DAOvoting.methods.VotingQueue().call()).length == 0) {
-            document.getElementById("votebuttons").style.display = "none";
-            document.getElementById("votebuttonstext").innerText = "No Proposals in Queue";
+            document.getElementById("BeginVote").style.display = "block";
+            document.getElementById("Incentivize").style.display = "none";
         } else {
             document.getElementById("BeginVote").style.display = "block";
             document.getElementById("Incentivize").style.display = "none";
