@@ -57,9 +57,11 @@ async function LoadDashboard() {
         if ((await DAOvoting.methods.VotingQueue().call()).length == 0) {
             document.getElementById("votebuttons").style.display = "none";
             document.getElementById("votebuttonstext").innerText = "No Proposals in Queue";
-        }
-        document.getElementById("BeginVote").style.display = "block";
-        document.getElementById("Incentivize").style.display = "none";
+        } else {
+            document.getElementById("BeginVote").style.display = "block";
+            document.getElementById("Incentivize").style.display = "none";
+        
+            
     }
 
 
