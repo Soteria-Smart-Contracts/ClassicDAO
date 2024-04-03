@@ -48,17 +48,16 @@ async function LoadDashboard() {
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerText = "Proposal is in Debate Period";
     }
-    //check if there are any proposals in the queue and set it to a bool (call VotingQueue function in the voting contract)
-    else if ((await DAOvoting.methods.VotingQueue().call()).length == 0) {
-        document.getElementById("votebuttons").style.display = "none";
-        document.getElementById("votebuttonstext").innerText = "No Proposals in Queue";
-    }
     
     //else if the vote end time is less than the current time, the vote has ended, so disable the vote buttons at votebuttons id and write Proposal has Ended in id votebuttonstext
     else if (CurrentProposalInfo[2].VoteEnds < Math.floor(Date.now() / 1000)) {
         document.getElementById("votebuttons").style.display = "none";
         document.getElementById("votebuttonstext").innerText = "Proposal has Ended";
         //display Begin Vote button for all users
+        if ((await DAOvoting.methods.VotingQueue().call()).length == 0) {
+            document.getElementById("votebuttons").style.display = "none";
+            document.getElementById("votebuttonstext").innerText = "No Proposals in Queue";
+        }
         document.getElementById("BeginVote").style.display = "block";
         document.getElementById("Incentivize").style.display = "none";
     }
