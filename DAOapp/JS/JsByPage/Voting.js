@@ -13,17 +13,7 @@ async function runCodeWhenLoggedIn() {
 
     setInterval(function () {
         if (Math.floor(Date.now() / 1000) > CurrentProposalInfo[2].VoteEnds) {
-            const voteEndTime = CurrentProposalInfo[2].VoteEnds;
-            const currentTime = Math.floor(Date.now() / 1000);
-            const timeRemaining = voteEndTime - currentTime;
-
-            if (timeRemaining <= 0) {
-                document.getElementById("VoteEnds").innerText = "Ended";
-            } else {
-                const days = Math.floor(timeRemaining / (24 * 60 * 60));
-                const hours = Math.floor((timeRemaining % (24 * 60 * 60)) / (60 * 60));
-                document.getElementById("VoteEnds").innerText = `Ended ${days} days ${hours} hours ago`;
-            }
+            document.getElementById("VoteEnds").innerText = "Over";
         } else {
             document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
         }
