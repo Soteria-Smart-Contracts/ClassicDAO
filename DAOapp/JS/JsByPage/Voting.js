@@ -22,7 +22,7 @@ async function runCodeWhenLoggedIn() {
             const hours = Math.floor((timeRemaining % (24 * 60 * 60)) / (60 * 60));
             document.getElementById("VoteEnds").innerText = `Ended ${days} days ${hours} hours ago`;
         }
-         else {
+        else {
             document.getElementById("VoteEnds").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
         }
         DetectVoterListChange();
