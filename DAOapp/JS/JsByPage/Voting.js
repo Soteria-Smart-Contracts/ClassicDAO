@@ -7,19 +7,6 @@ async function runCodeWhenLoggedIn() {
         await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
     }
 
-    function timeLeft(voteEndTime) {
-        const currentTime = Math.floor(Date.now() / 1000);
-        const timeRemaining = voteEndTime - currentTime;
-
-        if (timeRemaining <= 0) {
-            return "Ended";
-        } else {
-            const days = Math.floor(timeRemaining / (24 * 60 * 60));
-            const hours = Math.floor((timeRemaining % (24 * 60 * 60)) / (60 * 60));
-            return `Ends in ${days} days ${hours} hours`;
-        }
-    }
-
     CurrentProposalInfo = await GetCurrentProposal();
     LoadDashboard();
     console.log(CurrentProposalInfo);
