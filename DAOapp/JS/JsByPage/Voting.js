@@ -17,11 +17,9 @@ async function runCodeWhenLoggedIn() {
             const currentTime = Math.floor(Date.now() / 1000);
             const timeRemaining = voteEndTime - currentTime;
 
-            if (timeRemaining <= 0) {
-                document.getElementById("VoteEnds").innerText = "Ended";
-            } else {
-                const days = Math.floor(timeRemaining / (24 * 60 * 60));
-                const hours = Math.floor((timeRemaining % (24 * 60 * 60)) / (60 * 60));
+
+            const days = Math.floor(timeRemaining / (24 * 60 * 60));
+            const hours = Math.floor((timeRemaining % (24 * 60 * 60)) / (60 * 60));
                 document.getElementById("VoteEnds").innerText = `Ended ${days} days ${hours} hours ago`;
             }
         } else {
