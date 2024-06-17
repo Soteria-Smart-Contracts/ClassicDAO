@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"
+    integrity="sha512-5erpERW8MxcHDF7Xea9eBQPiRtxbse70pFcaHJuOhdEBQeAxGQjUwgJbuBDWve+xP/u5IoJbKjyJk50qCnMD7A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    </script>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .CountdownDiv {
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            padding: 35px;
+            padding-top: 5px;
+            padding-bottom: 25px;
+            background-color: #636262;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: fit-content;
+            margin: 0 auto;
+            margin-top: 10vh;
+       }
+    </style>
+    <title>ClassicDAO Dashboard</title>
+    <meta name="title" content="ClassicDAO Dashboard" />
+    <meta name="description" content="Countdown to launch!" />
+    <link rel="icon" href="Ressources/Images/logoico.ico">
+    
+</head>
+<body>
+ <nav>
+    <div class="menu">
+        <img class="logo" onclick="WelcomePage()" src="Ressources/images/logo.png" alt="logo">
+
+            </div>
+            <hr color="grey">
+    </nav>
+            <br><br>
+    
+            <div id="NotCountdown" class="CountdownDiv" style="text-align: center;">
+                <h1 style="font-size: 45px;">ClassicDAO will launch in:</h1>
+                    <div id="Countdown" style="text-align: center; color: #07d846;"></div> <!-- Countdown placeholder -->
+            </div>
+        <br><br>
+
+
+    </div>
+
+    
+</body>
+
+<footer>
+    <div class="footertext">
+        <a class="footertext" target=”_blank” href="https://docdro.id/MS6MF2y">Protocol Paper</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/token/0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c/token-holders">CLD Contract</a>
+    </div>
+</footer>
+<script>
+    // Set the countdown date to February 29, 2024
+    var countdownDate = new Date("February 29, 2024 15:00:00").getTime();
+
+    // Update the countdown every second
+    var countdownInterval = setInterval(function() {
+        // Get the current date and time
+        var now = new Date().getTime();
+
+        // Calculate the remaining time
+        var timeRemaining = countdownDate - now;
+
+        // Calculate days, hours, minutes, and seconds
+        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        // Display the countdown
+        document.getElementById("Countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the countdown is finished, display a message
+        if (timeRemaining < 0) {
+            clearInterval(countdownInterval);
+            document.getElementById("Countdown").innerHTML = "Countdown expired";
+        }
+    }, 1000);
+</script>
+</html>

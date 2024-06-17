@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+          <!-- Primary Meta Tags -->
+          <meta name="title" content="SoteriaSC" />
+          <meta name="description" content="ClassicDAO is a Decentralized Autonomous Organization (DAO) built on the Ethereum Classic blockchain that aims to revolutionize the DeFi ecosystem by encouraging innovation through funding for community-voted projects." />
+      
+          <!-- Open Graph / Facebook -->
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://classicdao.one/" />
+          <meta property="og:title" content="ClassicDAO" />
+          <meta property="og:description" content="ClassicDAO is a Decentralized Autonomous Organization (DAO) built on the Ethereum Classic blockchain that aims to revolutionize the DeFi ecosystem by encouraging innovation through funding for community-voted projects." />
+          <meta property="og:image" content="https://app.classicdao.one/public/classicdao.jpeg" />
+      
+          <!-- Twitter -->
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://app.classicdao.one/" />
+          <meta property="twitter:title" content="ClassicDAO" />
+          <meta property="twitter:description" content="ClassicDAO is a Decentralized Autonomous Organization (DAO) built on the Ethereum Classic blockchain that aims to revolutionize the DeFi ecosystem by encouraging innovation through funding for community-voted projects." />
+          <meta property="twitter:image" content="https://app.classicdao.one/public/external/classicdao.jpeg" /> 
+
+<head>
+    <title>ClassicDAO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+        @font-face {
+            font-family: 'GTWalsheim';
+            src: url('fonts/GT\ WALSHEIM\ REGULAR-NORMAL-400-100.TTF');
+        }
+
+        @font-face {
+            font-family: 'GTWalsheim2';
+            src: url('fonts/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf');
+        }
+
+        @media screen and (max-width: 913px) {
+            .responsive-hide-large {
+                display: none !important;
+            }
+        }
+
+        .view_button, .plus, .view_button2 {
+            background-color: #16ECD3;
+            color: #000;
+            border: 2px solid #000;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: GTWalsheim2, regular;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 190px;
+            height: 45px;
+            transition: all 0.3s ease;
+        }
+
+        .view_button:hover, .view_button2:hover {
+            background-color: #000;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .button, .hamburger {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover,.buttonConnect:hover, .hamburger:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .buttonConnect  {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger {
+            padding: 6px;
+        }
+
+        .hamburger:hover img, .plus:hover {
+            filter: invert(1);
+        }
+
+        body::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: #292929;
+        }
+
+        body::-webkit-scrollbar-thumb  {
+            background: rgba(17, 17, 17, 0.5);
+            border-radius: 20px;
+        }
+
+        .popup::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .popup::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .popup::-webkit-scrollbar-thumb {
+            background: rgba(54, 54, 54, 0.5);
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        .dropdown-menu-hamburger a, .dropdown-menu-hamburger2 a{
+            padding: 5px;
+        }
+
+        .dropdown-menu-hamburger a:hover, .dropdown-menu-hamburger2 a:hover {
+            background-color: #ddd;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .dropdown-menu-vote a, .dropdown-menu-search a {
+            padding: 5px;
+        }
+
+        .dropdown-menu-vote a:hover, .dropdown-menu-search a:hover {
+        background-color: #ddd; 
+        color: black; 
+        border-radius: 5px;
+        }
+
+        
+        .progress-bar {
+          width: 100%;
+          background-color: #f3f3f3;
+          border-radius: 13px;
+          overflow: hidden;
+        }
+
+        .progress-bar-fill {
+          height: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          width: 0;
+          background-color: rgb(15, 216, 15);
+          transition: width 0.2s;
+        }
+
+        .progress-bar-fill.red {
+          background-color: red;
+        }
+
+        .rangeIncentive::-webkit-inner-spin-button,
+        .rangeIncentive::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        .rangeIncentive {
+        -moz-appearance: textfield;
+        }
+
+        .view_more_button {
+            background-color: #fff;
+            color: #000;
+            border: 2px solid #000;
+            padding: 0px 10px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-family: GTWalsheim2, regular;
+            cursor: pointer;
+            height: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .view_more_button:hover {
+            background-color: #000;
+            color: #fff;
+            border-color: #fff;
+        }
+
+    </style>
+
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" /> 
+<script src="https://cdn.jsdelivr.net/npm/web3@4.5.0/dist/web3.min.js"></script>
+</head>
+<body style="font-family: GTWalsheim2, regular; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; overflow: hidden;" id="body">
+  <div class="header"
+  style=" z-index: 1000; position: sticky; top: 0; background-color: #000; font-family: GTWalsheim2, regular; color: #fff; border-bottom: 1px solid #fff;">
+  <div class="header-container"
+    style="display: flex; font-family: GTWalsheim2, regular; justify-content: space-between; align-items: center; padding-left: 9.5%; padding-right: 9.5%; margin-top: 10px; margin-bottom: 10px;">
+
+    <div class="logo-and-tabs" style="display: flex; justify-content: flex-start; align-items: center; width: 100%;">
+      <div class="logo" style="display: flex; align-items: center;">
+        <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+          <img src="public/external/cldblue11804-k4uw-200h.png" alt="Logo" style="margin-right: 10px;">
+          <h1 style="color: #fff; padding: 0; margin: 0;">ClassicDAO</h1>
+        </a>
+      </div>
+
+      <div class="tabs responsive-hide-large" style="display: flex; margin-left: 20px; gap: 10px;">
+
+        <div class="menu-container-vote" style="position: relative; display: inline-block;">
+          <button id="votingButton" class="button">Voting</button>
+          <div class="dropdown-menu-vote"
+            style="display: none; background-color: white; color: black; position: absolute; left: 0; padding: 10px; margin-top: 5px; width: max-content; border-radius: 10px;">
+            <a href="CurrentVote.html"
+              style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">Current</a>
+            <a href="Proposals.html"
+              style="text-decoration: none; color: black; display: block; margin-bottom: 5px; margin-bottom: 10px;">All</a>
+          </div>
+        </div>
+        <a href="Treasury.html" id="treasuryButton" style="text-decoration: none; color: inherit; outline: none;">
+          <button class="button">Treasury</button>
+        </a>
+        <a href="Sales.html" id="salesButton" style="text-decoration: none; color: inherit; outline: none;">
+          <button class="button">Sales</button>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="connect-and-hamburger" style="display: flex; justify-content: space-between; align-items: center;">
+      <a style="text-decoration: none;" id="ButtonLink">
+        <button id="buttonConnect" onclick="loginWithEth()" class="buttonConnect">Connect</button>
+      </a>
+      <div class="menu-container" style="position: relative; display: inline-block;">
+        <button class="hamburger" style="align-items: center;">
+          <img src="public/external/iconmenu1804-38fa.svg" alt="Menu"
+            style="width: 22px; height: 22px; margin-bottom: -3px;">
+        </button> 
+
+        <div class="dropdown-menu-hamburger"
+        style="margin-top: 5px; display: none; background-color: white; color: black; position: absolute; right: 0; padding: 10px; width: max-content; border-radius: 10px;">
+        <a href="Profile.html"
+          style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">Profile</a>
+        <a href="#" style="text-decoration: none; color: black; display: block; margin-bottom: 5px;">Simple mode</a>
+      </div>
+      <div class="dropdown-menu-hamburger2"
+        style="margin-top: 5px; display: none; background-color: white; color: black; position: absolute; right: 0; padding: 10px; width: max-content; border-radius: 10px;">
+        <a href="Profile.html"
+          style="text-decoration: none; color: black; display: block; margin-bottom: 10px; margin-top: 5px;">Profile</a>
+        <a href="CurrentVote.html" style="text-decoration: none; color: black; display: block; margin-bottom: 10px;">Current Vote</a>
+        <a href="Proposals.html" style="text-decoration: none; color: black; display: block; margin-bottom: 10px;">All Votes</a>
+        <a href="Treasury.html" style="text-decoration: none; color: black; display: block; margin-bottom: 10px;">Treasury</a>
+        <a href="Sales.html" style="text-decoration: none; color: black; display: block; margin-bottom: 10px;">Sales</a>
+        <a href="#" style="text-decoration: none; color: black; display: block; margin-bottom: 5px;">Simple mode</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <div class="body" style="flex-grow: 1; background-color: #000; text-align: center;">
+    <div class="body-container"
+    style="border-radius:8px; display: flex; font-family: GTWalsheim2, regular; flex-direction: column; align-items: center; padding-left: 9.5%; padding-right: 9.5%; margin-bottom: 80px;">
+    
+    <div style="flex-grow: 1; display: flex; background-color: #000; display: flex; justify-content: center; align-items: center;">
+      <h1 style="font-size: 72px; font-family: GTWalsheim, bold; color: #fff; align-self: center; text-align: center;">All Proposals</h1>
+      </div>
+    
+
+    <div style="display: none; margin-top: 40px; width: 80%;"><!--Flex Display is default-->
+        <input placeholder="Search..." class="rangeIncentive" id="newNickname" style="margin-right: 10px; flex: 5; box-sizing: border-box; padding-left: 40px; font-size: 20px; height: 50px; background-color: rgb(0, 0, 0); border: 2px solid white; border-radius: 10px; color: white; background-size: 20px; background-image: url('public/external/icons8-search.svg'); background-repeat: no-repeat; background-position: 10px center;">
+    <div class="menu-container-search" style="position: relative; display: inline-block; width: fit-content;">
+        <button class="view_button" id="search_button" style="height: 50px; margin-top: 0; flex: 1;">All Proposals</button>
+        <div class="dropdown-menu-search" style="display: none; background-color: white; color: black; position: absolute; left: 0; padding: 10px; margin-top: 5px; width: 100%; border-radius: 10px; box-sizing: border-box;">
+            <a onclick="updateButton(this)" style="text-decoration: none; color: black; display: flex; justify-content: center; align-items: center; font-size: 18px; height: 30px; margin-bottom: 10px; margin-top: 5px;">&#10004; All Proposals</a>
+            <a onclick="updateButton(this)" style="text-decoration: none; color: black; display: flex; justify-content: center; align-items: center; font-size: 18px; height: 30px; margin-bottom: 10px; margin-top: 5px;">Past Proposals</a>
+            <a onclick="updateButton(this)" style="text-decoration: none; color: black; display: flex; justify-content: center; align-items: center; font-size: 18px; height: 30px; margin-bottom: 5px; margin-top: 10px;">Future Proposals</a>
+        </div>
+    </div>
+
+    <script>
+    function updateButton(element) {
+        document.getElementById('search_button').innerText = element.innerText.replace('✔ ', '');
+
+        var options = document.querySelectorAll('.dropdown-menu-search a');
+        options.forEach(function(option) {
+            option.innerText = option.innerText.replace('✔ ', '');
+        });
+
+        element.innerText = '✔ ' + element.innerText;
+    }
+    </script>
+
+    </div>
+    <h1 style="font-size: 40px; font-family: GTWalsheim, bold; color: #fff; margin-top: 40px; margin-bottom: 20px;">Upcoming Proposal Queue</h1
+
+    
+    <div style="border-radius:8px; margin-top:10vh; width: 100%; display: flex; justify-content: center; box-sizing: border-box; overflow-x: auto; scrollbar-width: none;">
+      <div style="border-radius:8px; display: flex; width: 80%; flex-direction: column; justify-content: center; align-items: flex-start; overflow-x: auto; scrollbar-width: none;">
+        <div style="display: flex; justify-content: space-between; padding: 20px; width: 100%; min-width: 1000px; color: #fff; box-sizing: border-box;">
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Queue Position</div>
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Memo</div>
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Incentive</div>
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">ID</div>
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Status</div>
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Type</div>
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;"></div>
+        </div>
+        
+        <div id="ProposalQueueList" style="width: 100%; min-width: 1000px; border:1.81818px solid rgb(255, 255, 255);border-radius:8px;background:rgb(0, 0, 0);box-sizing: border-box;">
+          
+        </div>
+
+        
+
+      </div>
+    </div>
+    <!--Add a nicee fancy devider-->
+    <div style="width: 100%; height: 2px; background-color: #fff; margin-top: 40px; margin-bottom: 40px;"></div>
+
+    <h1 style="font-size: 40px; font-family: GTWalsheim, bold; color: #fff; margin-top: 40px; margin-bottom: 20px;">Past proposals</h1>
+
+    <div style="border-radius:8px; margin-top:10vh; width: 100%; display: flex; justify-content: center; box-sizing: border-box; overflow-x: auto; scrollbar-width: none;">
+      <div style="border-radius:8px; display: flex; width: 80%; flex-direction: column; justify-content: center; align-items: flex-start; overflow-x: auto; scrollbar-width: none;">
+        <div style="display: flex; justify-content: space-between; padding: 20px; width: 100%; min-width: 1000px; color: #fff; box-sizing: border-box;">
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Age (In Days)</div>
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Memo</div>
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">ID</div>
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;">Result</div>
+          <div style="flex: 1; font-family: GTWalsheim, bold; font-weight:700;"></div>
+
+        </div>
+        
+        <div id="PastList" style="width: 100%; min-width: 1000px; border:1.81818px solid rgb(255, 255, 255);border-radius:8px;background:rgb(0, 0, 0);box-sizing: border-box;">
+          
+        </div>
+
+        
+
+      </div>
+    </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <div style="display: fixed; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;" id="overlay">
+    <div style=" color: #fff; width: 80%; max-width: 400px; border: 2px solid #fff; border-radius: 16px; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #000; padding: 40px; z-index: 3; cursor: auto;" class="popup2 responsive-popup">
+      <h2 style="margin-top: 0; margin-bottom: 0; text-align: center;">Welcome to ClassicDAO</h2>
+      <p style="font-size: 22px; font-family: GTWalsheim, bold; color: #fff; margin-top: 20px; margin-bottom: 0; text-align: center;">Please sign-in with your browser wallet</p>
+  
+        <button id="ConnectButton" onclick="loginWithEth()" class="buttonConnect" style="height: 50px; width: 100%; margin-top: 30px;  font-size: 18px; margin-right: -5px;">Connect</button>
+  
+      </div>
+  </div>
+  
+  
+  <div class="footer" style="background-color: #000; text-align: center; padding-top: 60px; padding-bottom: 60px; display: flex; justify-content: center;">
+    <div class="footer-container" style="display: flex; flex-wrap: wrap; font-family: GTWalsheim2, regular; justify-content: space-between; align-items: center; color: #fff;  padding-left: 9.5%; padding-right: 9.5%; width: 100%;">
+      <div class="footLogo" style="flex: 1; display: flex; align-items: center;">
+        <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+        <img src="public/external/cldblue11804-dvrq-200h.png" alt="Logo" style="margin-right: 10px;">
+        <h1 style="color: #fff;">ClassicDAO</h1>
+        </a>
+      </div>
+      <div style=" display: flex; justify-content: space-between;">
+      <div style="flex: 1; margin-right: 20px;">
+        <h3 style="font-weight: bold; font-size: 20px;">Main Contracts</h3>
+        <a href="https://etc.blockscout.com/address/0x121ce4833dbD3BfDb1055EA8aD90a0D253f37854" style="text-decoration: none; color: white;" target="_blank">DAO Core Contract</a>
+        <br>
+        <br>
+        <a href="https://etc.blockscout.com/address/0x13B0CD1a16cD8AA73d8fd42608e37B291FE3E122?tab=read_contract"  style="text-decoration: none; color: white;" target="_blank">Voting Contract</a>
+        <br>
+        <br>
+        <a href="https://etc.blockscout.com/address/0xD4886C6757819D857D1795cF43368473BeAcFA70?tab=txs"  style="text-decoration: none; color: white;" target="_blank">Treasury Contract</a>
+      </div>
+      <div style="flex: 1; margin-left: 20px;">
+        <h3 style="font-weight: bold; font-size: 20px;">Other Contracts</h3>
+        <p><a href="https://etc.blockscout.com/token/0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c" style="text-decoration: none; color: white;" target="_blank">$CLD Contract</a></p>
+        <p><a href="https://etc.blockscout.com/address/0xa228cb61eee452ab7d2e60c2479b53bde25c64e3"  style="text-decoration: none; color: white;" target="_blank">SalesFactory Contract</a></p>
+      </div>
+    </div>
+      <div class="socials" style="flex: 1; display: flex; justify-content: flex-end;">
+        <a href="https://twitter.com/ClassicDao" target="_blank">
+          <img src="public/external/icons8-twitter.svg" width="40" height="40" alt="Twitter" style="margin-right: 30px;">
+      </a>
+      <a href="https://discord.com/invite/C5Afm5hQcT" target="_blank">
+          <img src="public/external/icons8-discord (2).svg" width="40" height="40" alt="Discord" style="margin-right: 30px;">
+      </a>
+      <a href="https://t.me/ETCClassicDAO" target="_blank">
+          <img src="public/external/icons8-telegram.svg" width="40" height="40" alt="Telegram" style="margin-right: 30px;">
+      </a>
+      <a href="https://github.com/Soteria-Smart-Contracts/Harmonia_DAO_Protocol"  target="_blank" style="margin-top: -2px;">
+          <img src="public/external/icons8-github.svg" width="45" height="45" alt="Github">
+      </a>
+    </div>
+  
+  
+    </div>
+  </div>
+  
+  
+  <style>  
+  
+    @media screen and (max-width: 800px) {
+              .responsive-hide-large {
+                  display: none !important;
+              }
+              .card3 {
+                  margin: 0 !important;
+              }
+              .card4 {
+                  margin-left: 0 !important;
+                  margin-top: 20px !important;
+              }
+  
+              .proposalMain , .proposalResults, .proposalDetails2, .proposalVote2 {
+                  padding: 20px !important;
+              }
+          }
+          
+  
+          @media screen and (max-width: 520px) {
+            .logo h1 {
+            display: none !important;
+            }
+  
+          }
+  
+      @media screen and (max-width: 912px) {
+          .responsive-popup {
+              width: 80vw !important;
+              max-width: 300px !important;
+              padding: 20px !important;
+          }
+      
+          .responsive-popup h2 {
+              font-size: 1.2rem !important;
+          }
+      
+          .responsive-popup p {
+              font-size: 1rem !important;
+          }
+      
+          .responsive-popup .buttonConnect {
+              width: 80%;            
+          }
+  
+          /* .button-container {
+            width: 100px !important;
+          } */
+  
+      }
+  
+      @media screen and (max-width: 738px) {
+        .footer-container > div {
+            flex-basis: 100%; /* base width is 100% on small screens */
+        }
+        .socials {
+            margin-top: 30px;
+            justify-content: center !important;
+        }
+        .footLogo {
+          justify-content: center !important;
+        }
+    } 
+  
+    @media screen and (min-width: 739px) and (max-width: 1053px) {
+        .socials {
+            margin-top: 30px;
+        }
+    }
+      </style>
+
+
+
+<script>
+    function getDistanceFromElement(event, element) {
+        var rect = element.getBoundingClientRect();
+        var dx = Math.max(rect.left - event.clientX, 0, event.clientX - rect.right);
+        var dy = Math.max(rect.top - event.clientY, 0, event.clientY - rect.bottom);
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    document.querySelector('.menu-container').addEventListener('mouseover', function () {
+  if (window.innerWidth <= 800) {
+      var dropdown = document.querySelector('.dropdown-menu-hamburger2');
+      dropdown.style.display = 'block';
+  }
+  });
+
+  document.querySelector('.menu-container').addEventListener('mouseout', function (event) {
+  if (window.innerWidth <= 800) {
+      var dropdown = document.querySelector('.dropdown-menu-hamburger2');
+      if (getDistanceFromElement(event, dropdown) > 5) {
+      dropdown.style.display = 'none';
+      }
+  }
+  });
+
+  document.querySelector('.menu-container').addEventListener('mouseover', function() {
+        if (window.innerWidth > 800) {
+        var dropdown = document.querySelector('.dropdown-menu-hamburger');
+        dropdown.style.display = 'block';
+        }
+    });
+
+    document.querySelector('.menu-container').addEventListener('mouseout', function(event) {
+        if (window.innerWidth > 800) {
+        var dropdown = document.querySelector('.dropdown-menu-hamburger');
+        if (getDistanceFromElement(event, dropdown) > 5) { 
+            dropdown.style.display = 'none';
+        }
+    }
+    });
+
+    document.querySelector('.menu-container-vote').addEventListener('mouseover', function() {
+        var dropdown = document.querySelector('.dropdown-menu-vote');
+        dropdown.style.display = 'block';
+    });
+
+    document.querySelector('.menu-container-vote').addEventListener('mouseout', function(event) {
+        var dropdown = document.querySelector('.dropdown-menu-vote');
+        if (getDistanceFromElement(event, dropdown) > 5) { 
+            dropdown.style.display = 'none';
+        }
+    });
+
+    document.querySelector('.menu-container-search').addEventListener('mouseover', function() {
+        var dropdown = document.querySelector('.dropdown-menu-search');
+        dropdown.style.display = 'block';
+    });
+
+    document.querySelector('.menu-container-search').addEventListener('mouseout', function(event) {
+        var dropdown = document.querySelector('.dropdown-menu-search');
+        if (getDistanceFromElement(event, dropdown) > 5) { 
+            dropdown.style.display = 'none';
+        }
+    });
+
+    
+</script>
+<script src="JS/hens.js"></script>
+<script src="JS/ABIs.js"></script>
+<script src="JS/Web3base.js"></script>
+<script src="JS/JsByPage/Proposals.js"></script>
+</body>
+</html>

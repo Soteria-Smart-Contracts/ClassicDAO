@@ -18,6 +18,11 @@ body{
 
 }
 
+a.small{
+    font-size: small;
+    font-weight: 500;
+}
+
 a.info{
     color: #3b079d;
     text-decoration: none;
@@ -99,13 +104,17 @@ a.link{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin-top: 1.5%;
     border:#494949 solid 4px;
     border-radius: 30px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 3%;
+    padding-right: 3%;
     background-color: #494949;
-    max-height: 30px;
+    height: fit-content;
+    padding-bottom: 0;
 }
 
 .div-center.info{
@@ -138,7 +147,26 @@ a.link{
     padding-top: 4%;
     border: #1B3A16 solid 6px;
     border-radius: 20px;
+}
 
+.dapp-div.dark{
+    background-color: #1B3A16;
+    border-color: #00AE33;
+}
+
+.dapp-div.right{
+    margin-right: 0%;
+    align-items: center;
+    text-align: center;
+}
+
+.dapp-div.staking{
+    min-width: 26vw;
+    max-width: 26vw;
+    min-height: 65vh;
+    max-height: 75vh;
+    text-align: center;
+    margin-top: 3%;
 }
 
 .dapptop{
@@ -156,6 +184,39 @@ a.link{
     border-radius: 6px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
+}
+
+.disclaimer{
+    background-color: rgb(231, 88, 31);
+    border-radius: 25px;
+    border: solid 2px white;
+    padding: 5px;
+    font-size: 1.1vw;
+    color: black;
+    margin-left: 1%;
+    padding-left: 3%;
+}
+
+.dapptop.staking{
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    min-width: 100%;
+    padding-bottom: 1%;
+}
+
+.interface.staking{
+    display: block;
+    margin-top: 25%;
+}
+
+.ConfirmBox{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 80%;
+    border-radius: 25px;
+    margin-top: 3vh;
 }
 
 .csinfo{
@@ -177,20 +238,140 @@ a.link{
     display: inline-block;
 }
 
+.csinfo.staking{
+    font-size: 1vw;
+}
+
+.csinfo.staking.right{
+    margin-right: 0.8vw;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+.csinfo.staking.left{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+
 .balances{
     align-self: center;
     display: inline-block;
     padding: 6px;
     padding-top: 3px;
     padding-bottom: 9px;
-    text-align: left;
-    margin-top: 3%;
+    text-align: center;
+    margin-top: 2vh;
     width: 100%;
     background-color: #32EA68;
     border: black solid 2px;
     height: 17%;
     border-radius: 20px;
     box-shadow: 2px 7px 10px black;
+}
+
+.balances.staking{
+    height: 10%;
+    border: none;
+}
+
+.inner.staking{
+    font-size: 0.9vw;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+.ROI{
+    color: black;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin-top: 2.5vh;
+}
+
+.OpContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.statsheader{
+    font-size: 1.2vw;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+.statsheader.lock{
+    margin-top: 1.5vh;
+}
+
+.instance{
+    background-color: black;
+    width: 80%;
+    text-align: left;
+    font-size: large;
+    border-radius: 25px;
+    padding: .5vw;
+    padding-left: 1vw;
+    margin-top: 1.5vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.OpContainer.stats{
+    display: flex;
+    flex-direction: column;
+    background-color: #3c3c3c;
+    border-radius: 25px;
+    width: 110%;
+    margin-left: -2.6vh;
+    margin-bottom: -2vh;
+    height: 50%;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.OpContainer.Lock{
+    display: flex;
+    flex-direction: column;
+    background-color: #494949;
+    border-radius: 25px;
+    width: 90%;
+    height: 40%;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.OpContainer.Instances{
+    display: flex;
+    flex-direction: column;
+    background-color: #494949;
+    border-radius: 25px;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.OpBox{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: #3c3c3c;
+    width: 49%;
+    height: 14vh;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.OpBox.left{
+    margin-right: 1vw;
+}
+
+.value.staking{
+    font-size: 1.0vw;
 }
 
 .balances.claim{
@@ -231,6 +412,11 @@ a.link{
     display: flex;
     flex-direction: row;
     margin-left: 15%;
+    padding-bottom: 10%;
+}
+
+.dappcontainer.staking{
+    margin-left: 13.5vw;
 }
 
 .functionality{
@@ -263,6 +449,11 @@ a.link{
     cursor: pointer;
 }
 
+.close.staking{
+    top: 28%;
+    right: 10%;
+}
+
 .maxbutton{
     position: absolute;
     top:  59%;
@@ -274,6 +465,11 @@ a.link{
     cursor: pointer;
     border-bottom-right-radius: 17px;
     border-top-right-radius: 17px;
+}
+
+.maxbutton.staking{
+    top: 50.6%;
+    right: 18%;
 }
 
 .actionbutton{
@@ -299,6 +495,10 @@ a.actionname{
     text-align: center;
 }
 
+a.actionname.staking{
+    margin-top: 50%;
+}
+
 .specialinput{
     width: 70%;
     height: 35px;
@@ -313,7 +513,7 @@ a.actionname{
 .innerbutton{
     display: inline-block;
     cursor: pointer;
-    margin-top: 10%;
+    margin-top: 18%;
     background-color: black;
     padding: 10px;
     padding-left: 20%;
@@ -321,6 +521,18 @@ a.actionname{
     border-radius: 17px;
     font-size: larger;
     font-weight: bold;
+}
+
+.innerbutton.staking{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0;
+    align-self: center;
+    padding: 1vh;
+    margin-top: 1.7vh;
+    font-size: 2vh;
 }
 
 .innerbutton.btm{
@@ -412,7 +624,19 @@ a.actionname{
     padding-bottom: 8px;
     border: #1a3b15 solid 3px;
     border-radius: 30px;
-    margin-left: 88%;
+    margin-left: 88vw;
+}
+
+.NiceButton{
+    background-color: #05af33;
+    font-size: medium;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: #1a3b15 solid 3px;
+    border-radius: 30px;
 }
 
 .wallet.middle{
@@ -433,6 +657,143 @@ a.actionname{
     background-color: rgba(0, 0, 0, 0.754);
     z-index: 2; 
     cursor: pointer;
+  }
+
+
+
+
+
+  @media (pointer:none), (pointer:coarse) {
+    .logo{
+        width: 10%;
+    }
+    .Minactive{
+        display: none;
+    }
+
+    .wallet{
+        margin-left: 55%;
+    }
+
+    .div-center.info{
+        min-width: 75vw;
+        max-width: 75vw;
+        margin: 0;
+        margin-top: 5vh;
+        margin-left: 4.5vw;
+    }
+
+    .dappcontainer{
+        margin-left: 0%;
+        min-width: 80vw;
+        flex-direction: column;
+        margin: 0;
+        min-width: 0;
+        align-items: center;
+    }
+
+    .OpContainer.stats{
+        margin-left: -3.6vw;
+        height: 20vh;
+        background-color: transparent;
+        margin-top: 1vh;
+    }
+
+    .OpContainer.Instances{
+        padding-bottom: 2vh;
+    }
+
+    .OpContainer.Lock{
+        min-height: 40vh;
+    }
+    
+    .dapptop.staking{
+        font-size: 5vw;
+        min-height: 30px;
+    }
+
+    .ROI{
+        font-size: 3vw;
+    }
+
+    .dapp-div.staking{
+        min-height: 57vh;
+    }
+    
+    .value.staking{
+        font-size: 3vw;
+    }
+
+    .instance{
+        font-size: 3.5vw;
+        padding: 5px;
+    }
+
+    .csinfo.staking{
+        font-size: 3vw;
+    }
+
+    .inner.staking{
+        font-size: 2.5vw;
+    }
+
+    .footertext{
+        font-size: 4vw;
+    }
+
+    .balances.staking{
+        margin-top: 3vh;
+    }
+
+    .statsheader{
+        font-size: 3.5vw;
+    }
+
+    .OpBox{
+        height: fit-content;
+        padding-bottom: 1.6vh;
+    }
+
+    .innerbutton.staking{
+        font-size: 3.5vw;
+    }
+
+    .dappcontainer.staking{
+        margin-left: 0;
+    }
+
+    .dapp-div{
+        width: 95vw;
+        margin: 0;
+        min-width: 80vw; 
+        padding-top: 5.7vh;
+        margin-top: 3vh;
+    }
+
+    .dapp-div.staking{
+        max-width: 65vw;
+    }
+
+    .dapptop{
+        width: 95vw;
+        margin: 0;
+    }
+
+    
+    .div-center.connect{
+        height: fit-content;
+    }
+
+    .wallet.middle{
+        margin-top: 60%;
+    }
+
+    .footertext{
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+
   }
 
   

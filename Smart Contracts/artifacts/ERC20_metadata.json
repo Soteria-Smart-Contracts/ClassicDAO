@@ -1,29 +1,10 @@
 {
 	"compiler": {
-		"version": "0.8.6+commit.11564f7e"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "AddytoCheck",
-						"type": "address"
-					}
-				],
-				"name": "CheckMinter",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
 			{
 				"inputs": [
 					{
@@ -189,9 +170,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Smart Contracts/CLDcrowdsale.sol": "ERC20"
+			"Smart Contracts/FlexibleStaking.sol": "ERC20"
 		},
-		"evmVersion": "berlin",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -203,12 +184,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Smart Contracts/CLDcrowdsale.sol": {
-			"keccak256": "0x7137de6845b70d11f1e5e10ed4fbc111a3421c798c05b6ea61bc7c32183f4aa7",
-			"license": "UNLICENSED",
+		"Smart Contracts/FlexibleStaking.sol": {
+			"keccak256": "0x5d773ffa40f16a4de400f1f9e4c662a0925802e8954d6fafaeda5eebc8660f26",
+			"license": "UNLICENSE",
 			"urls": [
-				"bzz-raw://9cff4dfa7fad7bb08c38572e2304c06341680681fd21e5881671e887d5840128",
-				"dweb:/ipfs/QmPxRRvpixLVrgMatNLkmPtExR8eLtFmexLKofd27F1fZA"
+				"bzz-raw://5a4977016ea864020664ce85bcf22fd3d95c62e86eba4632e268c148dc1561e1",
+				"dweb:/ipfs/Qmcwx255G5QfT9MHhvJxwA8V6EK6aBxvU95tGU6RiAuUBV"
 			]
 		}
 	},

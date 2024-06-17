@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"
+    integrity="sha512-5erpERW8MxcHDF7Xea9eBQPiRtxbse70pFcaHJuOhdEBQeAxGQjUwgJbuBDWve+xP/u5IoJbKjyJk50qCnMD7A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    </script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>ClassicDAO Dashboard</title>
+    <link rel="icon" href="Ressources/Images/logoico.ico">
+</head>
+<body>
+ <nav>
+    <div class="menu">
+        <img class="logo" onclick="WelcomePage()" src="Ressources/images/logo.png" alt="logo">
+        <a id="menuone" href="/index" class="Minactive">Private Sale</a>
+        <a id="menutre" class="Mactive">CLD Staking</a>
+
+        <a id="WalletB" onclick="loginWithEth()" class="wallet">Connect Wallet</a>
+    </div>
+    <hr color="grey">
+ </nav>
+
+    <div class="dappcontainer staking">
+        <div class="dapp-div staking">
+            <div class="dapptop staking">Flexible CLD staking</div>
+            <div id="bal1" class="balances staking">
+                <div class="inner staking">Your CLD balance:<br><a class="value staking" id="flexbal">UNCONNECTED</a></div>
+                <div class="inner staking">Your deposited CLD:<br><a class="value staking" id="flexdepo">UNCONNECTED</a></div>
+            </div>
+            
+            <div id="ConfirmLeft" class="ConfirmBox" style="display:none">
+                <a id="closebuttonLeft" style="" onclick="CloseBox(), DisplayLeft()" class="close staking">X</a>
+
+                <div id="InputLeftDeposit" class="interface staking" style="display:none">
+                    <a class="actionname staking">Deposit CLD</a>
+                    <br>
+                    <div><input placeholder="CLD" id="depositinputleft" type="number" step=".01" class="specialinput"></input></div>
+                    <br>
+                    <button onclick="FlexDeposit()" class="actionbutton">Deposit</button>
+                    <a onclick="setMaxDeposit()" class="maxbutton staking">MAX</a>
+                </div>
+
+                <div id="InputLeftWithdraw" class="interface staking" style="display:none">
+                    <a class="actionname staking">Withdraw CLD</a>
+                    <br>
+                    <div><input placeholder="CLD" id="withdrawinputleft" type="number" step=".01" class="specialinput"></input></div>
+                    <br>
+                    <button onclick="FlexWithdraw()" class="actionbutton">Withdraw</button>
+                    <a onclick="setMaxWithdraw()" class="maxbutton staking">MAX</a>
+                </div>
+            
+            </div>
+            <a id="ROIleft" class="ROI">Fixed 25%-30% return in CLD per annum </a>
+            <div id="OptionsLeft" class="OpContainer">
+                <div class="OpBox left">
+                    <div onclick="ClearLeft(), DiplayBox(2)" class="innerbutton staking">Withdraw CLD</div>
+                </div>
+                <div class="OpBox">
+                </div>
+            </div>
+            <div id="StatsLeft" class="OpContainer stats">
+                <a class="statsheader">Your Statistics:</a>
+                <div class="csinfo staking">CLD Deposited: <a id="statdepo">0.00</a></div>
+                <div class="csinfo staking">Total CLD Unclaimed: <a id="statunclaimed">f</a></div>
+                <div class="csinfo staking">Expected Staking Balance In 1 Year: <a id="expected">0.00</a></div>
+            </div>
+            
+            
+            
+        </div>
+
+        <div class="dapp-div staking  right dark" style="display:none">
+            <div class="dapptop staking">Locked CLD staking</div>
+            <div id="bal1" class="balances staking">
+                <div class="inner staking">Your CLD balance:<br><a class="value staking" id="bal">UNCONNECTED</a></div>
+                <div class="inner staking">Total CLD Locked:<br><a class="value staking" id="bal">UNCONNECTED</a></div>
+            </div>
+            <div class="OpContainer Lock">
+                <div class="statsheader lock">Lock CLD</div>
+                <a>Select Staking Period:</a>
+                <div style="display:flex flex-direction:row">
+                    <div class="csinfo staking right">30 Days <br>
+                        <a class="small">2.5% CLD return</a>
+                    </div>
+                    <div class="csinfo staking left">90 Days <br>
+                        <a class="small">8.75% CLD return</a>
+                    </div>
+                    <div class="csinfo staking right">180 Days <br>
+                        <a class="small">20% CLD return</a>
+                    </div>
+                    <div class="csinfo staking left">365 Days <br>
+                        <a class="small">50% CLD return</a>
+                    </div>
+                </div>
+            </div>
+            <div class="OpContainer Instances">
+                <a class="statsheader">Your locked CLD Instances:</a>
+                <div class="instance">Slot Empty</div>
+                <div class="instance">Slot Empty</div>
+                <div class="instance">Slot Empty</div>
+            </div>
+        </div>
+    </div>
+
+    
+
+        
+
+    <div id="overlay" class="overlay">
+        <div class="div-center connect">
+            <h1 class="connect">Please Connect your Web3 Wallet such as Metamask, TrustWallet or Brave Browser wallet in order to participate in the Crowdsale.</h1>
+            <a onclick="loginWithEth()" class="wallet middle">Connect Wallet</a>
+        </div>
+    </div>
+
+    
+</body>
+
+<footer>
+    <div class="footertext">
+        <a class="footertext" target=”_blank” href="https://docdro.id/Le8sKd3">Whitepaper</a> | <a class="footertext" target=”_blank” href="https://twitter.com/ClassicDao">Twitter</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/address/0x11Ec18Ef909AC582084114C2cA8dC3cE1b3c38C2">Flexible Staking Contract</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/token/0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c/token-holders">CLD Contract</a>
+    </div>
+</footer>
+
+<script src="JS/abi.js"></script>
+<script src="JS/stakinginteraction-old.js"></script>
+<script src="JS/stakinganimations-old.js"></script>    
+</html>
