@@ -60,7 +60,7 @@ async function getID(){
 }
 
 async function GetLatestProposal(){
-    OngoingProposal = await DAOcore.methods.MRIdentifier().call();
+    LatestProposal = await DAOcore.methods.MRIdentifier().call();
     OngoingProposalID = parseInt(OngoingProposal).toString();
     OngoingProposal = [];
     
