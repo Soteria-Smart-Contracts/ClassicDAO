@@ -64,9 +64,9 @@ async function GetLatestProposal(){
     OngoingProposalID = parseInt(OngoingProposal).toString();
     OngoingProposal = [];
     
-    OngoingProposal.push(await DAOcore.methods.Proposals(OngoingProposalID).call());
-    OngoingProposal.push(await DAOcore.methods.ProposalInfos(OngoingProposalID).call());
-    OngoingProposal.push(await DAOvoting.methods.VotingInstances(OngoingProposalID).call());
+    OngoingProposal.push(await DAOcore.methods.Proposals(LatestProposal).call());
+    OngoingProposal.push(await DAOcore.methods.ProposalInfos(LatestProposal).call());
+    OngoingProposal.push(await DAOvoting.methods.VotingInstances(LatestProposal).call());
     console.log(OngoingProposalID);
 
     return OngoingProposal;
