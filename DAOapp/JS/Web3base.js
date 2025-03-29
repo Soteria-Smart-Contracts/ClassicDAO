@@ -59,7 +59,7 @@ async function getID(){
     return(netID);
 }
 
-async function GetCurrentProposal(){
+async function GetLatestProposal(){
     OngoingProposal = await DAOvoting.methods.CurrentOngoingVote().call();
     OngoingProposalID = parseInt(OngoingProposal).toString();
     OngoingProposal = [];
