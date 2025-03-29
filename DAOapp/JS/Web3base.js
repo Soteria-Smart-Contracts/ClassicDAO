@@ -60,7 +60,7 @@ async function getID(){
 }
 
 async function GetLatestProposal(){
-    OngoingProposal = await DAOvoting.methods.CurrentOngoingVote().call();
+    OngoingProposal = await DAOcore.methods.MRi().call();
     OngoingProposalID = parseInt(OngoingProposal).toString();
     OngoingProposal = [];
     
