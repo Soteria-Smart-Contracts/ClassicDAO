@@ -21,7 +21,7 @@ async function LoadDashboard() {
     document.getElementById("desc").innerHTML = document.getElementById("desc").innerHTML.split((/[(]&lt;&gt;[)]/g))[0];
 
     //HeaderTimeLeft id found in 3rd array of CurrentProposalInfo as VoteEnds in unix time, convert to format as such (2 days 6 hours)
-    if (CurrentProposalInfo[2].VoteEnds === 0) {
+    if (CurrentProposalInfo[2].VoteEnds == 0) {
         document.getElementById("HeaderTimeLeft").innerText = "~2 days";
     } else {
         document.getElementById("HeaderTimeLeft").innerText = timeLeft(CurrentProposalInfo[2].VoteEnds);
