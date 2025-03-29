@@ -3,7 +3,7 @@ async function runCodeWhenLoggedIn() {
         await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second
     }
 
-    CurrentProposalInfo = await GetCurrentProposal();
+    CurrentProposalInfo = await GetLatestProposal();
     LoadDashboard();
     console.log(CurrentProposalInfo);
 }
